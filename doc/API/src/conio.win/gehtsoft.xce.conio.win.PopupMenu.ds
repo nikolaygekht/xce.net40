@@ -1,0 +1,93 @@
+@class
+    @name=PopupMenu
+    @key=gehtsoft.xce.conio.win.PopupMenu
+    @brief=The window to display a pop-up menu.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.PopupMenu
+    @parent=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+    @import=gehtsoft.xce.conio.win.Window
+
+    @member
+        @name=PopupCommandNone
+        @sig=F:gehtsoft.xce.conio.win.PopupMenu.PopupCommandNone
+        @key=PopupCommandNone.0
+        @divisor=.
+        @brief=The predefined command identifier which is used when no command has been selected.
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=PopupCommandEscape
+        @sig=F:gehtsoft.xce.conio.win.PopupMenu.PopupCommandEscape
+        @key=PopupCommandEscape.0
+        @divisor=.
+        @brief=The predefined command identifier which is used when the user cancels the menu.
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=PopupMenu
+        @sig=M:gehtsoft.xce.conio.win.PopupMenu.#ctor(gehtsoft.xce.conio.win.PopupMenuItem,gehtsoft.xce.conio.win.IColorScheme,System.Boolean)
+        @key=PopupMenu.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=PopupMenu
+            @params=[clink=gehtsoft.xce.conio.win.PopupMenuItem]PopupMenuItem[/clink] menu, [clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink] colors, bool vertical
+        @end
+
+        @param
+            @name=menu
+            The popup menu commands to be displayed.
+        @end
+
+        @param
+            @name=colors
+            The color scheme to be used.
+        @end
+
+        @param
+            @name=vertical
+            The alignment for the top-level menu.
+
+            If the flag is [c]true[/c] the top-level menu commands will be displayed vertically (from left to right)
+            If the flag is [c]false[/c] the top-level menu commands will be displayed horizontally (from top to bottom).
+
+            The flag affects top-level menu only. All sub-menus will be displayed horizontally.
+        @end
+
+        The constructor do not shows the menu. Use [clink=gehtsoft.xce.conio.win.WindowManager.showPopupMenu.0]WindowManager.showPopupMenu()[/clink]
+        menu to show the menu and let the user to choose the command.
+    @end
+    @member
+        @name=CommandChosen
+        @sig=P:gehtsoft.xce.conio.win.PopupMenu.CommandChosen
+        @key=CommandChosen.0
+        @divisor=.
+        @brief=Returns the identifier of the command chosen by the user.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CommandChosen
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

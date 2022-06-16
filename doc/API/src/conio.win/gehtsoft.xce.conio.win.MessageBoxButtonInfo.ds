@@ -1,0 +1,40 @@
+@class
+    @name=MessageBoxButtonInfo
+    @key=gehtsoft.xce.conio.win.MessageBoxButtonInfo
+    @brief=The message button descriptor.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.MessageBoxButtonInfo
+
+    @member
+        @name=MessageBoxButtonInfo
+        @sig=M:gehtsoft.xce.conio.win.MessageBoxButtonInfo.#ctor(System.String,gehtsoft.xce.conio.win.MessageBoxButton)
+        @key=MessageBoxButtonInfo.0
+        @divisor=.
+        @brief=Constructor.
+        @visibility=public
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=MessageBoxButtonInfo
+            @params=string title, [clink=gehtsoft.xce.conio.win.MessageBoxButton]MessageBoxButton[/clink] ID
+        @end
+
+        @param
+            @name=title
+            The button title.
+        @end
+
+        @param
+            @name=ID
+            The button identifier.
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end

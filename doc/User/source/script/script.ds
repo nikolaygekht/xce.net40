@@ -1,0 +1,78 @@
+@group
+    @title=gehtsoft.xce.extension.script extension
+    @ingroup=extensions
+    @key=gehtsoft.xce.extension.script
+    @brief=
+
+    The script extension is designed to utilize the Active Script engine to script the
+    XCE.NET.
+
+    To enable extension add the following line into the common section of the configuration:[br]
+    [c][common][/c][br]
+    [c]extension = gehtsoft.xce.extension.script[/c]
+
+@end
+
+@article
+    @title=script section in the configuration file.
+    @ingroup=gehtsoft.xce.extension.script
+    @key=gehtsoft.xce.extension.script.configuration
+    @brief=The articles describes how to configure the script extension.
+
+
+    To configure the script extension add the section [c][script][/c] with the following keys:
+
+    @table
+        @row
+            @col
+                [c]engine[/c]
+            @end
+            @col
+                The name of the scripting engine. The engine must be installed on the computer. The most of the
+                system has [c]VBScript[/c] or [c]JScript[/c] engines installed.
+            @end
+        @end
+        @row
+            @col
+                [c]folder[/c]
+            @end
+            @col
+                The name of the folder in which the script files must be searched.
+            @end
+        @end
+        @row
+            @col
+                [c]mask[/c]
+            @end
+            @col
+                The file mask (in [c]dir[/c] command style) to find the script files.
+            @end
+        @end
+    @end
+@end
+
+@article
+    @title=Script programming
+    @ingroup=gehtsoft.xce.extension.script
+    @key=gehtsoft.xce.extension.script.programming
+    @brief=The articles describes how to organize and program the scripts.
+
+    Each script to be executed must be made as a subroutine. Each file may contain one or more subroutines, but
+    the name of the subroutine must be unique among all scripts loaded.
+
+    To find the information about the VBScript or JScript implementations please refer [eurl=http://msdn.microsoft.com]MSDN[/eurl].
+
+    The scripts may control the editor using commands and accessing the current text window. To control the editor the script may use
+    two objects available as a global variables [clink=xce.script.xce]xce[/clink] and  [clink=xce.script.system]system[/clink].
+@end
+
+@article
+    @title=Script command
+    @ingroup=gehtsoft.xce.extension.script
+    @key=gehtsoft.xce.extension.script.command
+    @brief=The articles describes Script command
+
+    The gehtsoft.xce.extension.script extension adds one command - [c]Script[/c]. The command has obligatory parameter - the name of
+    the script subroutine to be executed.
+@end
+

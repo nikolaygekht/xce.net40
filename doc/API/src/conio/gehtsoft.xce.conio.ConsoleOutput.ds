@@ -1,0 +1,269 @@
+@class
+    @name=ConsoleOutput
+    @key=gehtsoft.xce.conio.ConsoleOutput
+    @brief=Win32 Console Output.
+    @type=class
+    @ingroup=gehtsoft.xce.conio
+    @sig=T:gehtsoft.xce.conio.ConsoleOutput
+    @parent=System.IDisposable
+    
+    @member
+        @name=ConsoleOutput
+        @sig=M:gehtsoft.xce.conio.ConsoleOutput.#ctor(System.Boolean,System.Int32,System.Int32)
+        @key=ConsoleOutput.1
+        @divisor=.
+        @brief=Constructor of console output of the specified window size.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=ConsoleOutput
+            @params=bool save, int rows, int columns
+        @end
+
+        @param
+            @name=save
+            The flag indicating that the current content of the console window must be saved 
+            and when restored when the console output object is disposed.
+        @end
+
+        @param
+            @name=rows
+            The size of the console window in rows.
+        @end
+
+        @param
+            @name=columns
+            The size of the console window in columns.
+        @end
+
+        The method changes the size of the current console window.
+    @end
+
+    @member
+        @name=ConsoleOutput
+        @sig=M:gehtsoft.xce.conio.ConsoleOutput.#ctor(System.Boolean)
+        @key=ConsoleOutput.0
+        @divisor=.
+        @brief=Constructor of the console output.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=ConsoleOutput
+            @params=bool save
+        @end
+
+        @param
+            @name=save
+            The flag indicating that the current content of the console window must be saved 
+            and when restored when the console output object is disposed.
+        @end
+    @end
+
+    @member
+        @name=paint
+        @sig=M:gehtsoft.xce.conio.ConsoleOutput.paint(gehtsoft.xce.conio.Canvas,System.Boolean)
+        @key=paint.0
+        @divisor=.
+        @brief=Writes the canvas object to the screen.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=paint
+            @return=void
+            @params=[clink=gehtsoft.xce.conio.Canvas]Canvas[/clink] canvas, bool fast
+        @end
+
+        @param
+            @name=canvas
+            The reference to the canvas object.
+
+            The canvas object must have exactly the same size as the console screen window.
+        @end
+
+        @param
+            @name=fast
+            The flag selecting the mode of the drawing.
+
+            The fast drawing re-draws the screen completely. The slow mode redraws only the rows 
+            which are changed. 
+        @end
+    @end
+
+    @member
+        @name=setCursorType
+        @sig=M:gehtsoft.xce.conio.ConsoleOutput.setCursorType(System.Int32,System.Boolean)
+        @key=setCursorType.0
+        @divisor=.
+        @brief=Sets the type of the caret cursor.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=setCursorType
+            @return=void
+
+            @params=int size, bool visible
+        @end
+
+        @param
+            @name=size
+            The height of the caret cursor in percents of the full character height.
+        @end
+
+        @param
+            @name=visible
+            The flag indicating whether the caret must be visible. 
+        @end
+
+    @end
+
+    @member
+        @name=getCursorType
+        @sig=M:gehtsoft.xce.conio.ConsoleOutput.getCursorType(System.Int32@,System.Boolean@)
+        @key=getCursorType.0
+        @divisor=.
+        @brief=Gets the type of the caret cursor.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=getCursorType
+            @return=void
+
+            @params=out int size, out bool visible
+        @end
+
+        @param
+            @name=size
+            [output] The height of the caret cursor in percents of the full character height.
+        @end
+
+        @param
+            @name=visible
+            [output] The flag indicating whether the caret must be visible. 
+        @end
+
+    @end
+
+    @member
+        @name=setCursorPos
+        @sig=M:gehtsoft.xce.conio.ConsoleOutput.setCursorPos(System.Int32,System.Int32)
+        @key=setCursorPos.0
+        @divisor=.
+        @brief=Sets the caret cursor position.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=setCursorPos
+            @return=void
+
+            @params=int row, int column
+        @end
+
+        @param
+            @name=row
+            The zero-based row index.
+        @end
+
+        @param
+            @name=column
+            The zero-based column index.
+        @end
+
+    @end
+
+    @member
+        @name=getCursorPos
+        @sig=M:gehtsoft.xce.conio.ConsoleOutput.getCursorPos(System.Int32@,System.Int32@)
+        @key=getCursorPos.0
+        @divisor=.
+        @brief=Gets the caret cursor. 
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=getCursorPos
+            @return=void
+            @params=out int row, out int column
+        @end
+
+        @param
+            @name=row
+            [output] The zero-based row index.    
+        @end
+
+        @param
+            @name=column
+            [output] The zero-based column index.
+        @end
+
+    @end
+
+    @member
+        @name=updateSize
+        @sig=M:gehtsoft.xce.conio.ConsoleOutput.updateSize
+        @key=updateSize.0
+        @divisor=.
+        @brief=Re-reads the size of the console window.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=updateSize
+            @return=void
+        @end
+    @end
+
+    @member
+        @name=Columns
+        @sig=P:gehtsoft.xce.conio.ConsoleOutput.Columns
+        @key=Columns.0
+        @divisor=.
+        @brief=Returns the number of the columns of the console window.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Columns
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Rows
+        @sig=P:gehtsoft.xce.conio.ConsoleOutput.Rows
+        @key=Rows.0
+        @divisor=.
+        @brief=Returns the number of the rows of the console window.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Rows
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio]gehtsoft.xce.conio[/clink].
+@end
+

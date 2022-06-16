@@ -1,0 +1,176 @@
+@class
+    @name=FileDialog
+    @key=gehtsoft.xce.conio.win.FileDialog
+    @brief=The modal file prompt dialog.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.FileDialog
+    @parent=[clink=gehtsoft.xce.conio.win.Dialog]Dialog[/clink]
+    @import=gehtsoft.xce.conio.win.Dialog
+
+    See also [clink=gehtsoft.xce.conio.win.FileOpenDialog]FileOpenDialog[/clink] and [clink=gehtsoft.xce.conio.win.FileSaveDialog]FileSaveDialog[/clink]
+    classes.
+
+    @member
+        @name=FileDialog
+        @sig=M:gehtsoft.xce.conio.win.FileDialog.#ctor(System.String,System.String,System.String,gehtsoft.xce.conio.win.IColorScheme,System.Int32,System.Int32)
+        @key=FileDialog.0
+        @divisor=.
+        @brief=Constructor.
+        @visibility=public
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=FileDialog
+            @params=string title, string defaultDirectory, string defaultFile, [clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink] colors, int height, int width
+        @end
+
+        @param
+            @name=title
+            Dialog title.
+        @end
+
+        @param
+            @name=defaultDirectory
+            Default directory to show.
+
+            If the value is null and default file is specified, the directory containing the default will be shown.
+            If the value is null and default file is not specified, the current working directory will be shown.
+        @end
+
+        @param
+            @name=defaultFile
+            The default file name to show on dialog open.
+        @end
+
+        @param
+            @name=colors
+            The color scheme.
+        @end
+
+        @param
+            @name=height
+            Height of the dialog.
+
+            The value must be not less than 9.
+        @end
+
+        @param
+            @name=width
+            Width of the dialog.
+
+            The value must be not less than 20.
+        @end
+
+    @end
+
+
+    @member
+        @name=AddLocation
+        @sig=M:gehtsoft.xce.conio.win.FileDialog.AddLocation(System.String)
+        @key=AddLocation.0
+        @divisor=.
+        @brief=Adds a location to the location list.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddLocation
+            @return=void
+
+            @params=string location
+        @end
+
+        @param
+            @name=location
+            The folder name to add into locations.
+        @end
+
+    @end
+
+    @member
+        @name=CheckFileName
+        @sig=M:gehtsoft.xce.conio.win.FileDialog.CheckFileName(System.String)
+        @key=CheckFileName.0
+        @divisor=.
+        @brief=The method validates the file name.
+        @visibility=protected
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=CheckFileName
+            @prefix=protected virtual
+            @return=bool
+            @params=string name
+        @end
+
+        @param
+            @name=name
+            The file name chosen by the user.
+        @end
+
+        If the method returns [c]true[/c] the dialog ends and file name will be returned to the caller.
+
+        If the method returns [c]false[/c] the dialog continues to work.
+    @end
+
+    @member
+        @name=AddCustomButton
+        @sig=M:gehtsoft.xce.conio.win.FileDialog.AddCustomButton(System.Int32,System.String)
+        @key=AddCustomButton.0
+        @divisor=.
+        @brief=Adds a custom button in addition to Ok and Cancel.
+        @visibility=protected
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddCustomButton
+            @return=void
+
+            @params=int id, string title
+        @end
+
+        @param
+            @name=id
+            The button identifier (use identifiers 0x2000 and above).
+        @end
+
+        @param
+            @name=title
+            The button title.
+        @end
+
+    @end
+
+
+    @member
+        @name=File
+        @sig=P:gehtsoft.xce.conio.win.FileDialog.File
+        @key=File.0
+        @divisor=.
+        @brief=The file name chosen by the user.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=File
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end

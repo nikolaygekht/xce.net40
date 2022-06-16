@@ -1,0 +1,12 @@
+@group
+    @title=gehtsoft.xce.text
+    @key=gehtsoft.xce.text
+    @ingroup=index
+    @brief=The editor text buffer.
+
+    The editor text buffer is based on [eurl=http://www.scintilla.org/]scintilla[/eurl] editor.
+@end
+
+
+
+

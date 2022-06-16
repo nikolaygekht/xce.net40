@@ -1,0 +1,56 @@
+@group
+    @title=XCE
+    @ingroup=
+    @key=index
+    @sortarticles=no
+    @sortgroups=no
+    @brief=
+
+    XCE.NET is a console-mode text editor designed to be used in Win32 and Win64 environments with .NET 2.0 or above installed.
+
+    XCE.NET utilizes the following open-source components:
+
+    @list
+        @list-item
+            [eurl=http://www.scintilla.org/]Scintilla[/eurl] to implement the text buffers.
+        @end
+        @list-item
+            [eurl=http://colorer.sourceforge.net/]Colorer-take5[/eurl] for syntax highlighting and regular expressions.
+        @end
+        @list-item
+            [eurl=http://hunspell.sourceforge.net]Hunspell[/eurl] for spell-checking.
+        @end
+        @list-item
+            Parts of [eurl=http://www.icsharpcode.net/opensource/sd/]#develop[/eurl] for C# intellisense.
+        @end
+    @end
+
+    The XCE editor is fully customizable may be extended via scripting or developing the extensions on any .NET language.
+@end
+
+@group
+    @title=User interface
+    @ingroup=index
+    @key=ui
+    @sortarticles=no
+    @sortgroups=no
+    @brief=
+@end
+
+@group
+    @title=Configuration
+    @ingroup=index
+    @key=configuration
+    @sortarticles=no
+    @sortgroups=no
+    @brief=
+@end
+
+@group
+    @title=Extensions
+    @ingroup=index
+    @key=extensions
+    @sortarticles=no
+    @sortgroups=no
+    @brief=
+@end

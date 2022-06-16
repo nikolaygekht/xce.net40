@@ -1,0 +1,820 @@
+@group
+    @title=XCE Configuration
+    @key=config-files
+    @ingroup=configuration
+    @brief=The article describes XCE configuration files
+
+    XCE can be completely customized using configuration files.
+
+    To configure the editor options, the user interface and key maps you should edit [c]xce.ini[/c]
+    file. To configure the colors you should edit colorer's
+    hrd color schemes in the [c]colorer/hrd/console[/c] folder.
+@end
+
+@group
+    @title=xce.ini file
+    @key=xce-ini
+    @ingroup=config-files
+    @brief=The article describes XCE.INI configuration file.
+
+    The file is located in the same folder where the [c]xce.exe[/c] file is located.
+@end
+
+@article
+    @title=common section
+    @key=xce-ini-common
+    @brief=The article describes the [common] section of the configuration.
+    @ingroup=xce-ini
+
+    The [common] section configures application-level settings of XCE.
+
+    The section can contain the following keys:
+
+    @table
+        @row
+            @header=yes
+            @col
+                Key
+            @end
+            @col
+                Description
+            @end
+        @end
+
+        @row
+            @col
+                [c]menu[/c]
+            @end
+            @col
+                The name of the menu. The menu must be described in the [[i]name[/i].menu] section
+                in the configuration file.
+                See also [link=xce-ini-menu]how to configure the menu[/link].
+            @end
+        @end
+        @row
+            @col
+                [c]keymap[/c]
+            @end
+            @col
+                The name of the keymap. The keymap must be described in the [[i]name[/i].keymap]
+                section in the configuration file.
+                See also [link=xce-ini-keymap]how to configure the menu[/link].
+            @end
+        @end
+        @row
+            @col
+                [c]colorer-config[/c]
+            @end
+            @col
+                The path to the colorer's catalog file. The path may be an absolute path or a path
+                relative to the folder which contains [c]xce.exe[/c]
+                file.
+            @end
+        @end
+        @row
+            @col
+                [c]colorer-color-scheme[/c]
+            @end
+            @col
+                The name of the color scheme located in the [c]colorer/hrd/console[/c] folder. See
+                also [link=hrd]how to configure the color scheme[/link]
+            @end
+        @end
+        @row
+            @col
+                [c]default-tab-size[/c]
+            @end
+            @col
+                The default size of the tabulation. The user can be override the global setting for
+                a particular file type
+                using [link=xce-ini-filetype][filetype][/link] section(s).
+            @end
+        @end
+        @row
+            @col
+                [c]default-encoding[/c]
+            @end
+            @col
+                The name of the encoding to be used to open files by default. The user may override
+                the option using:
+                @list
+                    @list-item
+                        [link=xce-ini-filetype][filetype][/link] section(s).
+                    @end
+                    @list-item
+                        Using [c]/e:[i]encoding-name[/i][/c] command line parameter.
+                    @end
+                    @list-item
+                        Using [c]<Force Encoding>[/c] button in the File Open dialog.
+                    @end
+                @end
+                See also [link=encoding-list]the list of the supported encodings[/link].
+            @end
+        @end
+        @row
+            @col
+                [c]default-auto-indent[/c]
+            @end
+            @col
+                [c]true[/c] or [c]false[/c].
+
+                The auto-indent flag to be used by default. If auto-indent is switched on
+                ([c]true[/c]), the cursor will be moved
+                under the beginning of the previous line when Enter command is executed.
+            @end
+        @end
+        @row
+            @col
+                [c]persistent-blocks[/c]
+            @end
+            @col
+                [c]true[/c] or [c]false[/c].
+
+                The block mode in the editor.
+
+                If the option is [c]true[/c], the block remains until the user deletes or de-selects
+                the block. The text modification
+                operations to not replace to block selected.
+
+                If the option is [c]false[/c], the block is deselected when user moves a cursor. The
+                text modification options replaces
+                the block.
+            @end
+        @end
+        @row
+            @col
+                [c]spell-check-assembly[/c]
+            @end
+            @col
+                The file name of the spell checking assembly.
+            @end
+        @end
+        @row
+            @col
+                [c]spell-check-class[/c]
+            @end
+            @col
+                The full name of the spell checking factory.
+            @end
+        @end
+        @row
+            @col
+                [c]spell-check-data[/c]
+            @end
+            @col
+                The path where the spell checker data (for example dictionaries) is located.
+            @end
+        @end
+        @row
+            @col
+                [c]spell-check-dict[/c]
+            @end
+            @col
+                The list of the dictionaries for a particular language. The key may be used more
+                than once to load
+                a number of the different languages. For the hunspell spell checker the first
+                dictionary must be the name
+                of the main dictionary and then the optional custom dictionary (which is a simple
+                text file in UTF-8 encoding).
+            @end
+        @end
+        @row
+            @col
+                [c]extension[/c]
+            @end
+            @col
+                The name of the extension to be loaded. The key may be used one or more times.
+                The name is the name of the extension main class and the name of the assembly to
+                be loaded.
+            @end
+        @end
+    @end
+@end
+
+@article
+    @title=menu section
+    @key=xce-ini-menu
+    @brief=The article describes the [menu] section of the configuration.
+    @ingroup=xce-ini
+
+    The menu section must have name [c][i]name[/i].menu[/c] where name is a name of the menu. The
+    configuration file
+    can contain any number of menus.
+
+    The key name of the menu is the name of the menu item. The ampersand (&) character denotes the
+    hot key. The value of the key is
+    either a command or [c]Bar[/c] keyword, which is used to start a sub menu.
+
+    Also, there are two special keywords which may be used in the menu:
+
+    [c]EndBar[/c] keyword ends a sub menu.
+
+    [c]Separator[/c] keywords adds a separator to the current sub menu.
+
+    See also [link=commands]the list of the commands[/link] for the standard commands and the
+    [link=extensions]extensions[/link] for the
+    list of the extensions' commands.
+@end
+
+@article
+    @title=keymap section
+    @key=xce-ini-keymap
+    @brief=The article describes the [keymap] section of the configuration.
+    @ingroup=xce-ini
+
+    The keymap section must have name [c][i]name[/i].keymap[/c] where name is a name of the menu.
+    The configuration file
+    can contain any number of menus.
+
+    The key name in the section is the key shortcut. The key value in the section is the command to
+    be executed.
+
+    See also [link=commands]the list of the commands[/link] for the standard commands and the
+    [link=extensions]extensions[/link] for the
+    list of the extensions' commands.
+
+    The key name contains shift-, ctrl- and alt- flags (the flags must always be specified in this
+    order, i.e. ctrl-alt or shift-ctrl, but not
+    alt-ctrl or ctrl-shift!) and the name of the key.
+
+    The list of the key names is shown in the table below:
+
+    @list
+        @list-item
+            BACK
+        @end
+        @list-item
+            TAB
+        @end
+        @list-item
+            CLEAR
+        @end
+        @list-item
+            RETURN
+        @end
+        @list-item
+            SHIFT
+        @end
+        @list-item
+            CONTROL
+        @end
+        @list-item
+            MENU
+        @end
+        @list-item
+            PAUSE
+        @end
+        @list-item
+            CAPITAL
+        @end
+        @list-item
+            KANA
+        @end
+        @list-item
+            JUNJA
+        @end
+        @list-item
+            FINAL
+        @end
+        @list-item
+            HANJA
+        @end
+        @list-item
+            ESCAPE
+        @end
+        @list-item
+            CONVERT
+        @end
+        @list-item
+            NONCONVERT
+        @end
+        @list-item
+            ACCEPT
+        @end
+        @list-item
+            MODECHANGE
+        @end
+        @list-item
+            SPACE
+        @end
+        @list-item
+            PRIOR
+        @end
+        @list-item
+            NEXT
+        @end
+        @list-item
+            END
+        @end
+        @list-item
+            HOME
+        @end
+        @list-item
+            LEFT
+        @end
+        @list-item
+            UP
+        @end
+        @list-item
+            RIGHT
+        @end
+        @list-item
+            DOWN
+        @end
+        @list-item
+            SELECT
+        @end
+        @list-item
+            PRINT
+        @end
+        @list-item
+            EXECUTE
+        @end
+        @list-item
+            SNAPSHOT
+        @end
+        @list-item
+            INSERT
+        @end
+        @list-item
+            DEL
+        @end
+        @list-item
+            HELP
+        @end
+        @list-item
+            LWIN
+        @end
+        @list-item
+            RWIN
+        @end
+        @list-item
+            APPS
+        @end
+        @list-item
+            SLEEP
+        @end
+        @list-item
+            NUMPAD0
+        @end
+        @list-item
+            NUMPAD1
+        @end
+        @list-item
+            NUMPAD2
+        @end
+        @list-item
+            NUMPAD3
+        @end
+        @list-item
+            NUMPAD4
+        @end
+        @list-item
+            NUMPAD5
+        @end
+        @list-item
+            NUMPAD6
+        @end
+        @list-item
+            NUMPAD7
+        @end
+        @list-item
+            NUMPAD8
+        @end
+        @list-item
+            NUMPAD9
+        @end
+        @list-item
+            GRAY*
+        @end
+        @list-item
+            GRAY+
+        @end
+        @list-item
+            SEPARATOR
+        @end
+        @list-item
+            GRAY-
+        @end
+        @list-item
+            GRAY.
+        @end
+        @list-item
+            GRAY/
+        @end
+        @list-item
+            F1
+        @end
+        @list-item
+            F2
+        @end
+        @list-item
+            F3
+        @end
+        @list-item
+            F4
+        @end
+        @list-item
+            F5
+        @end
+        @list-item
+            F6
+        @end
+        @list-item
+            F7
+        @end
+        @list-item
+            F8
+        @end
+        @list-item
+            F9
+        @end
+        @list-item
+            F10
+        @end
+        @list-item
+            F11
+        @end
+        @list-item
+            F12
+        @end
+        @list-item
+            F13
+        @end
+        @list-item
+            F14
+        @end
+        @list-item
+            F15
+        @end
+        @list-item
+            F16
+        @end
+        @list-item
+            F17
+        @end
+        @list-item
+            F18
+        @end
+        @list-item
+            F19
+        @end
+        @list-item
+            F20
+        @end
+        @list-item
+            F21
+        @end
+        @list-item
+            F22
+        @end
+        @list-item
+            F23
+        @end
+        @list-item
+            F24
+        @end
+        @list-item
+            OEM_NEC_EQUAL
+        @end
+        @list-item
+            OEM_FJ_MASSHOU
+        @end
+        @list-item
+            OEM_FJ_TOUROKU
+        @end
+        @list-item
+            OEM_FJ_LOYA
+        @end
+        @list-item
+            OEM_FJ_ROYA
+        @end
+        @list-item
+            BROWSER_BACK
+        @end
+        @list-item
+            BROWSER_FORWARD
+        @end
+        @list-item
+            BROWSER_REFRESH
+        @end
+        @list-item
+            BROWSER_STOP
+        @end
+        @list-item
+            BROWSER_SEARCH
+        @end
+        @list-item
+            BROWSER_FAVORITES
+        @end
+        @list-item
+            BROWSER_HOME
+        @end
+        @list-item
+            VOLUME_MUTE
+        @end
+        @list-item
+            VOLUME_DOWN
+        @end
+        @list-item
+            VOLUME_UP
+        @end
+        @list-item
+            MEDIA_NEXT_TRACK
+        @end
+        @list-item
+            MEDIA_PREV_TRACK
+        @end
+        @list-item
+            MEDIA_STOP
+        @end
+        @list-item
+            MEDIA_PLAY_PAUSE
+        @end
+        @list-item
+            LAUNCH_MAIL
+        @end
+        @list-item
+            LAUNCH_MEDIA_SELECT
+        @end
+        @list-item
+            LAUNCH_APP1
+        @end
+        @list-item
+            LAUNCH_APP2
+        @end
+        @list-item
+            ;
+        @end
+        @list-item
+            +
+        @end
+        @list-item
+            ,
+        @end
+        @list-item
+            -
+        @end
+        @list-item
+            .
+        @end
+        @list-item
+            /
+        @end
+        @list-item
+            ~
+        @end
+        @list-item
+            [
+        @end
+        @list-item
+            \
+        @end
+        @list-item
+            ]
+        @end
+        @list-item
+            '
+        @end
+        @list-item
+            OEM_8
+        @end
+        @list-item
+            OEM_AX
+        @end
+        @list-item
+            OEM_102
+        @end
+        @list-item
+            ICO_HELP
+        @end
+        @list-item
+            ICO_00
+        @end
+        @list-item
+            0
+        @end
+        @list-item
+            1
+        @end
+        @list-item
+            2
+        @end
+        @list-item
+            3
+        @end
+        @list-item
+            4
+        @end
+        @list-item
+            5
+        @end
+        @list-item
+            6
+        @end
+        @list-item
+            7
+        @end
+        @list-item
+            8
+        @end
+        @list-item
+            9
+        @end
+        @list-item
+            A
+        @end
+        @list-item
+            B
+        @end
+        @list-item
+            C
+        @end
+        @list-item
+            D
+        @end
+        @list-item
+            E
+        @end
+        @list-item
+            F
+        @end
+        @list-item
+            G
+        @end
+        @list-item
+            H
+        @end
+        @list-item
+            I
+        @end
+        @list-item
+            J
+        @end
+        @list-item
+            K
+        @end
+        @list-item
+            L
+        @end
+        @list-item
+            M
+        @end
+        @list-item
+            N
+        @end
+        @list-item
+            O
+        @end
+        @list-item
+            P
+        @end
+        @list-item
+            Q
+        @end
+        @list-item
+            R
+        @end
+        @list-item
+            S
+        @end
+        @list-item
+            T
+        @end
+        @list-item
+            U
+        @end
+        @list-item
+            V
+        @end
+        @list-item
+            W
+        @end
+        @list-item
+            X
+        @end
+        @list-item
+            Y
+        @end
+        @list-item
+            Z
+        @end
+    @end
+@end
+
+@article
+    @title=filetype section
+    @key=xce-ini-filetype
+    @brief=The article describes the [filetype] section of the configuration.
+    @ingroup=xce-ini
+
+    The filetype section defines the editor configuration for a particular file type. The configuration
+    file may contain any number of such sections.
+
+
+    The section can contain the following keys:
+
+    @table
+        @row
+            @header=yes
+            @col
+                Key
+            @end
+            @col
+                Description
+            @end
+        @end
+
+        @row
+            @col
+                [c]mask[/c]
+            @end
+            @col
+                The regular expression to be used to detect the file type by the file name. If the file name
+                matches to the mask specified, the rules will be applied. If there are more than one
+                section which matches to the file name the first one will be applied.
+            @end
+        @end
+        @row
+            @col
+                [c]encoding[/c]
+            @end
+            @col
+                The name of the encoding to be used to open the files of that type.
+            @end
+        @end
+        @row
+            @col
+                [c]ignore-bom[/c]
+            @end
+            @col
+                [c]true[/c] or [c]false[/c].
+
+                The user may override the option using:
+                @list
+                    @list-item
+                        Using [c]/e:[i]encoding-name[/i][/c] command line parameter.
+                    @end
+                    @list-item
+                        Using [c]<Force Encoding>[/c] button in the File Open dialog.
+                    @end
+                @end
+
+                See also [link=encoding-list]the list of the supported encodings[/link].
+            @end
+        @end
+        @row
+            @col
+                [c]trim-eol-space[/c]
+            @end
+            @col
+                [c]true[/c] or [c]false[/c].
+
+                If flag is [c]true[/c], the white space characters at the end of each line will be
+                removed when the file is saved.
+            @end
+        @end
+        @row
+            @col
+                [c]tab-size[/c]
+            @end
+            @col
+                The size of the tabulation.
+            @end
+        @end
+        @row
+            @col
+                [c]auto-indent[/c]
+            @end
+            @col
+                [c]true[/c] or [c]false[/c].
+
+                The auto-indent flag. If auto-indent is switched on
+                ([c]true[/c]), the cursor will be moved
+                under the beginning of the previous line when Enter command is executed.
+
+            @end
+        @end
+        @row
+            @col
+                [c]default-spellchecker[/c]
+            @end
+            @col
+                The name of the dictionary to be used for the spellchecking by default.
+            @end
+        @end
+        @row
+            @col
+                [c]spellcheck-regions[/c]
+            @end
+            @col
+                The list of the colorer syntax regions to be spellchecked. The value must contain a comma separated list
+                of the region names (for example def:Comment, def:String to spell check only comment and string content) or
+                keyword [c](null)[/c] to spell check the text which is not recognized by the colorer.
+
+                The list of the syntax region names can be found in the [c]colorer/hrc/common.jar/lib/default.hrc[/c] file.
+            @end
+        @end
+    @end
+@end
+

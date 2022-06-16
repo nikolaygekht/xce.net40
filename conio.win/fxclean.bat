@@ -1,0 +1,25 @@
+if exist bin del bin\*.* /s /q > nul
+if exist bin rmdir bin /s /q > nul
+if exist obj del obj\*.* /s /q > nul
+if exist obj rmdir obj /s /q > nul
+if exist test\test1\bin del test\test1\bin\*.* /s /q > nul
+if exist test\test1\bin rmdir test\test1\bin /s /q > nul
+if exist test\test1\obj del test\test1\obj\*.* /s /q > nul
+if exist test\test1\obj rmdir test\test1\obj /s /q > nul
+if exist test\test2\bin del test\test2\bin\*.* /s /q > nul
+if exist test\test2\bin rmdir test\test2\bin /s /q > nul
+if exist test\test2\obj del test\test2\obj\*.* /s /q > nul
+if exist test\test2\obj rmdir test\test2\obj /s /q > nul
+if exist test\test3\bin del test\test3\bin\*.* /s /q > nul
+if exist test\test3\bin rmdir test\test3\bin /s /q > nul
+if exist test\test3\obj del test\test3\obj\*.* /s /q > nul
+if exist test\test3\obj rmdir test\test3\obj /s /q > nul
+if exist test\test4\bin del test\test4\bin\*.* /s /q > nul
+if exist test\test4\bin rmdir test\test4\bin /s /q > nul
+if exist test\test4\obj del test\test4\obj\*.* /s /q > nul
+if exist test\test4\obj rmdir test\test4\obj /s /q > nul
+if exist test\test5\bin del test\test5\bin\*.* /s /q > nul
+if exist test\test5\bin rmdir test\test5\bin /s /q > nul
+if exist test\test5\obj del test\test5\obj\*.* /s /q > nul
+if exist test\test5\obj rmdir test\test5\obj /s /q > nul
+del fxbuild.err /q > nul

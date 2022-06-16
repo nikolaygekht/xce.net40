@@ -1,0 +1,409 @@
+@group
+    @title=hrd files
+    @key=hrd
+    @ingroup=config-files
+    @brief=The article describes HRD configuration files.
+
+    The hrd files for the console are located in the [c]colorer/hrd/console[/c] folder. Each file corresponds to one
+    color scheme. The file name is the name of the scheme.
+
+    An hrd file is an XML file containing the set of [c]assign[/c] key, each key assigns a color to a syntax or XCE region.
+
+    The list of the syntax region names can be found in the [c]colorer/hrc/common.jar/lib/default.hrc[/c] file.
+
+    The list of XCE regions are shown in the table below:
+    @table
+        @row
+            @col
+                xce:TextColor
+            @end
+            @col
+                The default color for the text.
+            @end
+        @end
+        @row
+            @col
+                xce:CurrentLineTextColor
+            @end
+            @col
+                The color for the current line of the text.
+            @end
+        @end
+        @row
+            @col
+                xce:BlockTextColor
+            @end
+            @col
+                The default color for the text inside the block.
+            @end
+        @end
+        @row
+            @col
+                xce:CurrentLineBlockTextColor
+            @end
+            @col
+                The color for the current line of the text inside the block.
+            @end
+        @end
+        @row
+            @col
+                xce:StatusLineColor
+            @end
+            @col
+                The color of the XCE status line.
+            @end
+        @end
+        @row
+            @col
+                xce:SpellCheckErrorColor
+            @end
+            @col
+                The color to be used to highlight spell checking errors.
+            @end
+        @end
+        @row
+            @col
+                xce:PairHighlightColor
+            @end
+            @col
+                The color to be used to highlight the matching syntax pairs (e.g. brackets).
+            @end
+        @end
+
+        @row
+            @col
+                xce:MenuItem
+            @end
+            @col
+                The color of a enabled menu item.
+            @end
+        @end
+        @row
+            @col
+                xce:MenuItemSelected
+            @end
+            @col
+                The color of a selected enabled menu item.
+            @end
+        @end
+        @row
+            @col
+                xce:MenuDisabledItem
+            @end
+            @col
+                The color for a disabled menu item.
+            @end
+        @end
+        @row
+            @col
+                xce:MenuDisabledItemSelected
+            @end
+            @col
+                The color for a selected disabled menu item.
+            @end
+        @end
+        @row
+            @col
+                xce:MenuHotKey
+            @end
+            @col
+                The color for the menu hot key.
+            @end
+        @end
+        @row
+            @col
+                xce:MenuHotKeySelected
+            @end
+            @col
+                The color for the menu hot key of the selected item.
+            @end
+        @end
+
+        @row
+            @col
+                xce:DialogBorder
+            @end
+            @col
+                The color of the dialog border and dialog interior.
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemLabelColor
+            @end
+            @col
+                The color of the dialog label.
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemLabelHotKey
+            @end
+            @col
+                The color of the dialog label hotkey.
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemCheckBoxColor
+            @end
+            @col
+                The color of the dialog check box.
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemCheckBoxColorFocused
+            @end
+            @col
+                The color of the currently focused dialog check box.
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemCheckBoxHotKey
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemCheckBoxHotKeyFocused
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemCheckBoxColorDisabled
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemButtonColor
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemButtonColorDisabled
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemButtonColorFocused
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemButtonHotKey
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemButtonHotKeyFocused
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemEditColor
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemEditColorDisabled
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemEditColorFocused
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemEditColorPair
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemEditColorError
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemEditColorKeyword
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemEditSelection
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemEditSelectionFocused
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemListBoxColor
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemListBoxColorDisabled
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemListBoxColorFocused
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemListBoxSelection
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemListBoxSelectionFocused
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemListBoxSelectionHighlighted
+            @end
+            @col
+            @end
+        @end
+        @row
+            @col
+                xce:DialogItemListBoxSelectionFocusedHighlighted
+            @end
+            @col
+            @end
+        @end
+    @end
+@end
+
+@article
+    @title=Configuring 16-color console
+    @key=hrd-console
+    @ingroup=hrd
+    @brief=How to configure the 16-color (standard console)
+
+    The 16-color console configuration is used when XCE is started under the regular console window.
+
+    To define the colors use [c]cfore[/c] and [c]cback[/c] attributes of the [c]assign[/c] keyword.
+    The value of the attribute is the color index as specified below prefixed with a sharp sign (#).
+    BOTH colors shall be specified.
+
+    The console colors are shown below:
+
+    [img=img/console_colors.png]
+@end
+
+@article
+    @title=Configuring true-color console
+    @key=hrd-tc
+    @ingroup=hrd
+    @brief=How to configure the true-color (console2-trc or conemu consoles)
+
+    The true-color console configuration is used when XCE is started under the console2-trc or conemu simulators.
+
+    [b]How to run XCE under ConEmu simulator[/b]
+
+    1) Use 32-bit FAR and 32-bit ConEmu always, even on 64-bit system.
+
+    2) In the settings check on "TrueMod (24 bit color) Support" option on the "Features/Color Settings" tab.
+
+    3) In the setting check off "Long Console Output" settings on the "Startup/Output" tab.
+
+    Then run FAR via ConEmu shortcut and run XCE from that instance for FAR. XCE will automatically detect ConEmu and will use
+    true color settings from the color scheme.
+
+    [b]How to configure colors under ConEmu simulator[/b]
+
+    To define the colors use [c]fore[/c] and [c]back[/c] attributes of the [c]assign[/c] keyword. The value of the attributes is
+    a hexadecimal RGB squad prefixed with a sharp sign (#). The colors are specified in the following order: bbggrr, each value in range between 00 and
+    ff. BOTH colors shall be specified.
+
+    You can also specify [c]style[/c]. The style is a number which corresponds to a style or their combination prefixed with a sharp sign (#).
+
+    The following styles are supported by ConEmu:
+
+    @table
+        @row
+            @col
+                0
+            @end
+            @col
+                No style specified, show the regular view of the text.
+            @end
+        @end
+        @row
+            @col
+                1
+            @end
+            @col
+                Bold
+            @end
+        @end
+        @row
+            @col
+                2
+            @end
+            @col
+                Italic
+            @end
+        @end
+        @row
+            @col
+                4
+            @end
+            @col
+                Underline.
+            @end
+        @end
+    @end
+
+    To specify a combination of styles just write the sum of the numbers, for example 5 is (4 + 1) means bold AND underline, and
+    3 (2 + 1) means bold and italic.
+@end

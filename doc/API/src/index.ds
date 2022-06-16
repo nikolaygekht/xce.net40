@@ -1,0 +1,9 @@
+@group
+    @title=gehtsoft.xce
+    @key=index
+    @ingroup=
+    @brief=brieftext
+
+    Text is here
+@end
+

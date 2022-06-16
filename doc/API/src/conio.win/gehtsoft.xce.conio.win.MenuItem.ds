@@ -1,0 +1,45 @@
+@class
+    @name=MenuItem
+    @key=gehtsoft.xce.conio.win.MenuItem
+    @brief=The base class for the menu item. 
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.MenuItem
+
+    The class is abstract. The following implementation of the 
+    menu items are provided:
+
+    @list
+        @list-item
+            [clink=gehtsoft.xce.conio.win.CommandMenuItem]CommandMenuItem[/clink]
+        @end
+        @list-item
+            [clink=gehtsoft.xce.conio.win.SeparatorMenuItem]SeparatorMenuItem[/clink]
+        @end
+        @list-item
+            [clink=gehtsoft.xce.conio.win.PopupMenuItem]PopupMenuItem[/clink]
+        @end
+    @end
+    
+
+    @member
+        @name=MenuItem
+        @sig=M:gehtsoft.xce.conio.win.MenuItem.#ctor
+        @key=MenuItem.0
+        @divisor=.
+        @brief=Constructor
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=MenuItem
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

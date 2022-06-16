@@ -1,0 +1,128 @@
+@class
+    @name=TextClipboard
+    @key=gehtsoft.xce.conio.TextClipboard
+    @brief=The class to inter-operate with Win32 text clipboard
+    @type=class
+    @ingroup=gehtsoft.xce.conio
+    @sig=T:gehtsoft.xce.conio.TextClipboard
+    
+    @member
+        @name=IsTextAvailable
+        @sig=M:gehtsoft.xce.conio.TextClipboard.IsTextAvailable(gehtsoft.xce.conio.TextClipboardFormat)
+        @key=IsTextAvailable.0
+        @divisor=.
+        @brief=Checks whether the text in the specified format is available in the clipboard.
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=IsTextAvailable
+            @return=bool
+            @params=[clink=gehtsoft.xce.conio.TextClipboardFormat]TextClipboardFormat[/clink] format
+        @end
+
+        @param
+            @name=format
+
+        @end
+
+    @end
+
+    @member
+        @name=GetText
+        @sig=M:gehtsoft.xce.conio.TextClipboard.GetText
+        @key=GetText.0
+        @divisor=.
+        @brief=Gets the text in any available format.
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetText
+            @return=string
+        @end
+
+    @end
+
+    @member
+        @name=GetText
+        @sig=M:gehtsoft.xce.conio.TextClipboard.GetText(gehtsoft.xce.conio.TextClipboardFormat)
+        @key=GetText.1
+        @divisor=.
+        @brief=Gets the text in the specified format.
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetText
+            @return=string
+            @params=[clink=gehtsoft.xce.conio.TextClipboardFormat]TextClipboardFormat[/clink] format
+        @end
+
+        @param
+            @name=format
+
+        @end
+
+    @end
+
+    @member
+        @name=SetText
+        @sig=M:gehtsoft.xce.conio.TextClipboard.SetText(System.String)
+        @key=SetText.0
+        @divisor=.
+        @brief=Sets unicode text to the clipboard.
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=SetText
+            @return=void
+
+            @params=string text
+        @end
+
+        @param
+            @name=text
+
+        @end
+
+    @end
+
+    @member
+        @name=SetText
+        @sig=M:gehtsoft.xce.conio.TextClipboard.SetText(System.String,gehtsoft.xce.conio.TextClipboardFormat)
+        @key=SetText.1
+        @divisor=.
+        @brief=Sets the text in the specified format to the clipboard.
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=SetText
+            @return=void
+
+            @params=string text, [clink=gehtsoft.xce.conio.TextClipboardFormat]TextClipboardFormat[/clink] format
+        @end
+
+        @param
+            @name=text
+
+        @end
+
+        @param
+            @name=format
+
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio]gehtsoft.xce.conio[/clink].
+@end
+

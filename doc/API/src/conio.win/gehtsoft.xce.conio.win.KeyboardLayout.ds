@@ -1,0 +1,51 @@
+@class
+    @name=KeyboardLayout
+    @key=gehtsoft.xce.conio.win.KeyboardLayout
+    @brief=The information about the keyboard input layout
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.KeyboardLayout
+
+    @member
+        @name=LayoutCode
+        @sig=P:gehtsoft.xce.conio.win.KeyboardLayout.LayoutCode
+        @key=LayoutCode.0
+        @divisor=.
+        @brief=The language code (LCID)
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=LayoutCode
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=LayoutName
+        @sig=P:gehtsoft.xce.conio.win.KeyboardLayout.LayoutName
+        @key=LayoutName.0
+        @divisor=.
+        @brief=The name of the layout.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=LayoutName
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end

@@ -1,0 +1,43 @@
+@group
+    @title=gehtsoft.xce.extension.backup extension
+    @ingroup=extensions
+    @key=gehtsoft.xce.extension.backup
+    @brief=
+
+    The extension creates backups of the files before file is saved.
+
+    To enable extension add the following line into the common section of the configuration:[br]
+    [c][common][/c][br]
+    [c]extension = gehtsoft.xce.extension.backup[/c]
+
+    Then add a [backup] section to the configuration file.
+@end
+
+@article
+    @title=backup section in the configuration file
+    @key=backup-section
+    @ingroup=gehtsoft.xce.extension.backup
+    @brief=
+
+    The backup section can contain the following keys:
+
+    @table
+        @row
+            @col
+                [c]folder[/c]
+            @end
+            @col
+                The full path to the folder where the backups of the files will be stored.
+            @end
+        @end
+        @row
+            @col
+                [c]copies[/c]
+            @end
+            @col
+                The number of the last copies to store. The number of a copy will be added to the file name after the original
+                extension. The bigger number means the later copy.
+            @end
+        @end
+    @end
+@end

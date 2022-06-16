@@ -1,0 +1,579 @@
+@class
+    @name=IColorScheme
+    @key=gehtsoft.xce.conio.win.IColorScheme
+    @brief=The interface to the provider of the color information.
+    @type=interface
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.IColorScheme
+
+    The namespace also has the default implementation of this interface. See [clink=gehtsoft.xce.conio.win.ColorScheme]ColorScheme[/clink]
+
+    Please note that in console application "color" usually means both, background and foreground color. For more information about the colors
+    please see [clink=gehtsoft.xce.conio.Canvas]Canvas[/clink].
+
+    @member
+        @name=MenuItem
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.MenuItem
+        @key=MenuItem.0
+        @divisor=.
+        @brief=The color for the enabled, non-selected menu item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuItem
+            @return=short
+            @suffix= get;
+        @end
+    @end
+
+    @member
+        @name=MenuItemSelected
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.MenuItemSelected
+        @key=MenuItemSelected.0
+        @divisor=.
+        @brief=The color for the enabled, selected menu item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuItemSelected
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=MenuDisabledItem
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.MenuDisabledItem
+        @key=MenuDisabledItem.0
+        @divisor=.
+        @brief=The color for the disabled, non-selected menu item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuDisabledItem
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=MenuDisabledItemSelected
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.MenuDisabledItemSelected
+        @key=MenuDisabledItemSelected.0
+        @divisor=.
+        @brief=The color for the disabled, selected menu item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuDisabledItemSelected
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=MenuHotKey
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.MenuHotKey
+        @key=MenuHotKey.0
+        @divisor=.
+        @brief=The color for the hot key character on non-selected menu item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuHotKey
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=MenuHotKeySelected
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.MenuHotKeySelected
+        @key=MenuHotKeySelected.0
+        @divisor=.
+        @brief=The color for the hot key character on selected menu item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuHotKeySelected
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogBorder
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogBorder
+        @key=DialogBorder.0
+        @divisor=.
+        @brief=The color of the dialog border.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogBorder
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemLabelColor
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemLabelColor
+        @key=DialogItemLabelColor.0
+        @divisor=.
+        @brief=The color of the label control.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemLabelColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemLabelHotKey
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemLabelHotKey
+        @key=DialogItemLabelHotKey.0
+        @divisor=.
+        @brief=The color of the hot key character on the label control.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemLabelHotKey
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemCheckBoxColor
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemCheckBoxColor
+        @key=DialogItemCheckBoxColor.0
+        @divisor=.
+        @brief=The color of the check box control.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemCheckBoxColorFocused
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemCheckBoxColorFocused
+        @key=DialogItemCheckBoxColorFocused.0
+        @divisor=.
+        @brief=The color of the active (focused) check box control.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxColorFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemCheckBoxHotKey
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemCheckBoxHotKey
+        @key=DialogItemCheckBoxHotKey.0
+        @divisor=.
+        @brief=The color of the hot key on check box control.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxHotKey
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemCheckBoxHotKeyFocused
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemCheckBoxHotKeyFocused
+        @key=DialogItemCheckBoxHotKeyFocused.0
+        @divisor=.
+        @brief=The color of the hot key on active (focused) check box control.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxHotKeyFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemCheckBoxColorDisabled
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemCheckBoxColorDisabled
+        @key=DialogItemCheckBoxColorDisabled.0
+        @divisor=.
+        @brief=The color of the disabled check box control.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxColorDisabled
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemButtonColor
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemButtonColor
+        @key=DialogItemButtonColor.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemButtonColorDisabled
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemButtonColorDisabled
+        @key=DialogItemButtonColorDisabled.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonColorDisabled
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemButtonColorFocused
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemButtonColorFocused
+        @key=DialogItemButtonColorFocused.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonColorFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemButtonHotKey
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemButtonHotKey
+        @key=DialogItemButtonHotKey.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonHotKey
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemButtonHotKeyFocused
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemButtonHotKeyFocused
+        @key=DialogItemButtonHotKeyFocused.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonHotKeyFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemEditColor
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemEditColor
+        @key=DialogItemEditColor.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemEditColorDisabled
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemEditColorDisabled
+        @key=DialogItemEditColorDisabled.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditColorDisabled
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemEditColorFocused
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemEditColorFocused
+        @key=DialogItemEditColorFocused.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditColorFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemEditSelection
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemEditSelection
+        @key=DialogItemEditSelection.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditSelection
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemEditSelectionFocused
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemEditSelectionFocused
+        @key=DialogItemEditSelectionFocused.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditSelectionFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemListBoxColor
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemListBoxColor
+        @key=DialogItemListBoxColor.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemListBoxColorDisabled
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemListBoxColorDisabled
+        @key=DialogItemListBoxColorDisabled.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxColorDisabled
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemListBoxColorFocused
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemListBoxColorFocused
+        @key=DialogItemListBoxColorFocused.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxColorFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemListBoxSelection
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemListBoxSelection
+        @key=DialogItemListBoxSelection.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxSelection
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemListBoxSelectionFocused
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemListBoxSelectionFocused
+        @key=DialogItemListBoxSelectionFocused.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxSelectionFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemListBoxSelectionHighlighted
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemListBoxSelectionHighlighted
+        @key=DialogItemListBoxSelectionHighlighted.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxSelectionHighlighted
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemListBoxSelectionFocusedHighlighted
+        @sig=P:gehtsoft.xce.conio.win.IColorScheme.DialogItemListBoxSelectionFocusedHighlighted
+        @key=DialogItemListBoxSelectionFocusedHighlighted.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxSelectionFocusedHighlighted
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

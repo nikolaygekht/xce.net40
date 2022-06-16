@@ -1,0 +1,78 @@
+@class
+    @name=DialogItemListBoxString
+    @key=gehtsoft.xce.conio.win.DialogItemListBoxString
+    @brief=The item of the dialog list box.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.DialogItemListBoxString
+
+    @member
+        @name=DialogItemListBoxString
+        @sig=M:gehtsoft.xce.conio.win.DialogItemListBoxString.#ctor(System.String,System.Object)
+        @key=DialogItemListBoxString.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxString
+            @params=string label, object userData
+        @end
+
+        @param
+            @name=label
+            The label (text) of the list box item.
+        @end
+
+        @param
+            @name=userData
+            The user data associated with the list box.
+        @end
+
+    @end
+
+
+    @member
+        @name=Label
+        @sig=P:gehtsoft.xce.conio.win.DialogItemListBoxString.Label
+        @key=Label.0
+        @divisor=.
+        @brief=Returns the label (text) of the list box item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Label
+            @prefix=virtual
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=UserData
+        @sig=P:gehtsoft.xce.conio.win.DialogItemListBoxString.UserData
+        @key=UserData.0
+        @divisor=.
+        @brief=Returns the user data associated with the list box item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=UserData
+            @prefix=virtual
+            @return=object
+            @suffix= get; set;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

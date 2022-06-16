@@ -1,0 +1,35 @@
+
+@class
+    
+    @name=TextClipboardFormat
+    @key=gehtsoft.xce.conio.TextClipboardFormat
+    @brief=
+    @type=enum
+    @ingroup=gehtsoft.xce.conio
+    @sig=T:gehtsoft.xce.conio.TextClipboardFormat
+    @member
+        @name=UnicodeText
+        @sig=F:gehtsoft.xce.conio.TextClipboardFormat.UnicodeText
+        @key=UnicodeText.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+            
+    @end
+    
+    @member
+        @name=Text
+        @sig=F:gehtsoft.xce.conio.TextClipboardFormat.Text
+        @key=Text.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+            
+    @end
+    
+    The type defined in the [c]gehtsoft.xce.conio.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio]gehtsoft.xce.conio[/clink].
+@end
+    

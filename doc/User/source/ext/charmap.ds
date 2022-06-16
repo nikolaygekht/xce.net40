@@ -1,0 +1,79 @@
+@group
+    @title=gehtsoft.xce.extension.charmap extension
+    @ingroup=extensions
+    @key=gehtsoft.xce.extension.charmap
+    @brief=
+
+    The extension provides additional commands for the XCE.NET.
+
+    The extension has no specific configuration.
+
+    To enable extension add the following line into the common section of the configuration:[br]
+    [c][common][/c][br]
+    [c]extension = gehtsoft.xce.extension.charmap[/c]
+@end
+
+@article
+    @title=ShowDefaultSnapshot command
+    @key=ShowDefaultSnapshot-command
+    @brief=The command shows pre-defined image.
+    @ingroup=gehtsoft.xce.extension.charmap
+
+    The command parameter defines which image must be shown. The parameter
+    can have the following values:
+
+    @table
+        @row
+            @col
+                ascii
+            @end
+            @col
+                Shows the default CP866 character map.
+            @end
+        @end
+        @row
+            @col
+                color
+            @end
+            @col
+                Shows the default console color map.
+            @end
+        @end
+    @end
+@end
+
+@article
+    @title=ShowCharmap command
+    @key=ShowCharmap-command
+    @brief=The command shows unicode character map.
+    @ingroup=gehtsoft.xce.extension.charmap
+
+    The command works in both, editor and text fields in dialogs.
+
+    The command shows the unicode character map and inserts the chosen character when
+    the user clicks Ok.
+
+    The command has no parameters.
+@end
+
+@article
+    @title=ShowColorerRegions command
+    @key=ShowColorerRegions-command
+    @brief=The command shows the colorer syntax regions in the current line.
+    @ingroup=gehtsoft.xce.extension.charmap
+@end
+
+@article
+    @title=ShowWhitespace command
+    @key=ShowWhitespace-command
+    @brief=The command toggles the whitespace visualization mode.
+    @ingroup=gehtsoft.xce.extension.charmap
+@end
+
+@article
+    @title=ShowNonLatin command
+    @key=ShowNonLatin-command
+    @brief=The command toggles highlighting of the non-ASCII characters.
+    @ingroup=gehtsoft.xce.extension.charmap
+@end
+

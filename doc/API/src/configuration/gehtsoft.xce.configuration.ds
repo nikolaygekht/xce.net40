@@ -1,0 +1,25 @@
+@group
+    @title=gehtsoft.xce.configuration
+    @key=gehtsoft.xce.configuration
+    @ingroup=index
+    @brief=Configuration file reader
+
+    The configuration file (profile) is just a regular [c].ini[/c] file. The file contains sections, the section 
+    is started with the section name enclosed into square brackets. The section can contain the comments started with semicolon and 
+    key/value pairs. 
+
+    The example of the profile is shown below:
+    @example
+        @title=Profile Example
+        @show=yes
+    ![section1]
+    !;comment
+    !key1=value1
+    !key1=another occurrence of the key
+    !key2=value2
+    ![section2]
+    !key1=value1
+    !...
+    @end
+@end
+

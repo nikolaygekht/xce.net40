@@ -1,0 +1,688 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	./source\ConsoleInput.h	/^    const static int A = (int)'A';                 \/\/A$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+ACCEPT	./source\ConsoleInput.h	/^    const static int ACCEPT = 0x1E;                \/\/ACCEPT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+ADD	./source\ConsoleInput.h	/^    const static int ADD = 0x6B;                   \/\/Gray+$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+APPS	./source\ConsoleInput.h	/^    const static int APPS = 0x5D;                  \/\/APPS$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+B	./source\ConsoleInput.h	/^    const static int B = (int)'B';                 \/\/B$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+BACK	./source\ConsoleInput.h	/^    const static int BACK = 0x08;                  \/\/BACK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+BROWSER_BACK	./source\ConsoleInput.h	/^    const static int BROWSER_BACK = 0xA6;          \/\/BROWSER_BACK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+BROWSER_FAVORITES	./source\ConsoleInput.h	/^    const static int BROWSER_FAVORITES = 0xAB;     \/\/BROWSER_FAVORITES$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+BROWSER_FORWARD	./source\ConsoleInput.h	/^    const static int BROWSER_FORWARD = 0xA7;       \/\/BROWSER_FORWARD$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+BROWSER_HOME	./source\ConsoleInput.h	/^    const static int BROWSER_HOME = 0xAC;          \/\/BROWSER_HOME$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+BROWSER_REFRESH	./source\ConsoleInput.h	/^    const static int BROWSER_REFRESH = 0xA8;       \/\/BROWSER_REFRESH$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+BROWSER_SEARCH	./source\ConsoleInput.h	/^    const static int BROWSER_SEARCH = 0xAA;        \/\/BROWSER_SEARCH$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+BROWSER_STOP	./source\ConsoleInput.h	/^    const static int BROWSER_STOP = 0xA9;          \/\/BROWSER_STOP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+BoxBorder	./source\canvas.cpp	/^BoxBorder::BoxBorder(wchar_t topLeft, wchar_t top, wchar_t topRight, wchar_t left, wchar_t right, wchar_t bottomLeft, wchar_t bottom, wchar_t bottomRight)$/;"	f	class:gehtsoft::xce::conio::BoxBorder	signature:(wchar_t topLeft, wchar_t top, wchar_t topRight, wchar_t left, wchar_t right, wchar_t bottomLeft, wchar_t bottom, wchar_t bottomRight)
+BoxBorder	./source\canvas.h	/^    BoxBorder(wchar_t topLeft, wchar_t top, wchar_t topRight, wchar_t left, wchar_t right, wchar_t bottomLeft, wchar_t bottom, wchar_t bottomRight);$/;"	p	class:gehtsoft::xce::conio::BoxBorder	access:public	signature:(wchar_t topLeft, wchar_t top, wchar_t topRight, wchar_t left, wchar_t right, wchar_t bottomLeft, wchar_t bottom, wchar_t bottomRight)
+BoxBorder	./source\canvas.h	/^public ref class BoxBorder$/;"	c	namespace:gehtsoft::xce::conio	access:public
+C	./source\ConsoleInput.h	/^    const static int C = (int)'C';                 \/\/C$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+CANCEL	./source\ConsoleInput.h	/^    const static int CANCEL = 0x03;                \/\/CANCEL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+CAPITAL	./source\ConsoleInput.h	/^    const static int CAPITAL = 0x14;               \/\/CAPITAL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+CLEAR	./source\ConsoleInput.h	/^    const static int CLEAR = 0x0C;                 \/\/CLEAR$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+CONTROL	./source\ConsoleInput.h	/^    const static int CONTROL = 0x11;               \/\/CONTROL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+CONVERT	./source\ConsoleInput.h	/^    const static int CONVERT = 0x1C;               \/\/CONVERT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+Canvas	./source\canvas.cpp	/^Canvas::!Canvas()$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:()
+Canvas	./source\canvas.cpp	/^Canvas::Canvas(int rows, int columns)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int rows, int columns)
+Canvas	./source\canvas.h	/^    !Canvas();$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:()
+Canvas	./source\canvas.h	/^    Canvas( int rows,  int columns);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:( int rows, int columns)
+Canvas	./source\canvas.h	/^public ref class Canvas$/;"	c	namespace:gehtsoft::xce::conio	access:public
+ConsoleInput	./source\ConsoleInput.cpp	/^ConsoleInput::!ConsoleInput()$/;"	f	class:gehtsoft::xce::conio::ConsoleInput	signature:()
+ConsoleInput	./source\ConsoleInput.cpp	/^ConsoleInput::ConsoleInput()$/;"	f	class:gehtsoft::xce::conio::ConsoleInput	signature:()
+ConsoleInput	./source\ConsoleInput.h	/^    !ConsoleInput();$/;"	p	class:gehtsoft::xce::conio::ConsoleInput	access:public	signature:()
+ConsoleInput	./source\ConsoleInput.h	/^    ConsoleInput();$/;"	p	class:gehtsoft::xce::conio::ConsoleInput	access:public	signature:()
+ConsoleInput	./source\ConsoleInput.h	/^public ref class ConsoleInput$/;"	c	namespace:gehtsoft::xce::conio	access:public
+ConsoleInputListener	./source\ConsoleInput.h	/^public interface class ConsoleInputListener$/;"	c	namespace:gehtsoft::xce::conio	access:public
+ConsoleOutput	./source\ConsoleOutput.cpp	/^ConsoleOutput::!ConsoleOutput()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:()
+ConsoleOutput	./source\ConsoleOutput.cpp	/^ConsoleOutput::ConsoleOutput(bool save)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(bool save)
+ConsoleOutput	./source\ConsoleOutput.cpp	/^ConsoleOutput::ConsoleOutput(bool save, int rows, int columns)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(bool save, int rows, int columns)
+ConsoleOutput	./source\ConsoleOutput.h	/^    !ConsoleOutput();$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:()
+ConsoleOutput	./source\ConsoleOutput.h	/^    ConsoleOutput(bool save);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:(bool save)
+ConsoleOutput	./source\ConsoleOutput.h	/^    ConsoleOutput(bool save, int rows, int columns);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:(bool save, int rows, int columns)
+ConsoleOutput	./source\ConsoleOutput.h	/^public ref class ConsoleOutput$/;"	c	namespace:gehtsoft::xce::conio	access:public
+D	./source\ConsoleInput.h	/^    const static int D = (int)'D';                 \/\/D$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+DECIMAL	./source\ConsoleInput.h	/^    const static int DECIMAL = 0x6E;               \/\/Gray.$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+DEL	./source\ConsoleInput.h	/^    const static int DEL = 0x2E;                   \/\/DEL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+DIVIDE	./source\ConsoleInput.h	/^    const static int DIVIDE = 0x6F;                \/\/Gray\/$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+DOWN	./source\ConsoleInput.h	/^    const static int DOWN = 0x28;                  \/\/DOWN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+E	./source\ConsoleInput.h	/^    const static int E = (int)'E';                 \/\/E$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+EIGHT	./source\ConsoleInput.h	/^    const static int EIGHT = 0x38;                 \/\/8$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+END	./source\ConsoleInput.h	/^    const static int END = 0x23;                   \/\/END$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+ESCAPE	./source\ConsoleInput.h	/^    const static int ESCAPE = 0x1B;                \/\/ESCAPE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+EXECUTE	./source\ConsoleInput.h	/^    const static int EXECUTE = 0x2B;               \/\/EXECUTE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F	./source\ConsoleInput.h	/^    const static int F = (int)'F';                 \/\/F$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F1	./source\ConsoleInput.h	/^    const static int F1 = 0x70;                    \/\/F1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F10	./source\ConsoleInput.h	/^    const static int F10 = 0x79;                   \/\/F10$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F11	./source\ConsoleInput.h	/^    const static int F11 = 0x7A;                   \/\/F11$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F12	./source\ConsoleInput.h	/^    const static int F12 = 0x7B;                   \/\/F12$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F13	./source\ConsoleInput.h	/^    const static int F13 = 0x7C;                   \/\/F13$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F14	./source\ConsoleInput.h	/^    const static int F14 = 0x7D;                   \/\/F14$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F15	./source\ConsoleInput.h	/^    const static int F15 = 0x7E;                   \/\/F15$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F16	./source\ConsoleInput.h	/^    const static int F16 = 0x7F;                   \/\/F16$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F17	./source\ConsoleInput.h	/^    const static int F17 = 0x80;                   \/\/F17$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F18	./source\ConsoleInput.h	/^    const static int F18 = 0x81;                   \/\/F18$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F19	./source\ConsoleInput.h	/^    const static int F19 = 0x82;                   \/\/F19$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F2	./source\ConsoleInput.h	/^    const static int F2 = 0x71;                    \/\/F2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F20	./source\ConsoleInput.h	/^    const static int F20 = 0x83;                   \/\/F20$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F21	./source\ConsoleInput.h	/^    const static int F21 = 0x84;                   \/\/F21$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F22	./source\ConsoleInput.h	/^    const static int F22 = 0x85;                   \/\/F22$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F23	./source\ConsoleInput.h	/^    const static int F23 = 0x86;                   \/\/F23$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F24	./source\ConsoleInput.h	/^    const static int F24 = 0x87;                   \/\/F24$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F3	./source\ConsoleInput.h	/^    const static int F3 = 0x72;                    \/\/F3$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F4	./source\ConsoleInput.h	/^    const static int F4 = 0x73;                    \/\/F4$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F5	./source\ConsoleInput.h	/^    const static int F5 = 0x74;                    \/\/F5$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F6	./source\ConsoleInput.h	/^    const static int F6 = 0x75;                    \/\/F6$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F7	./source\ConsoleInput.h	/^    const static int F7 = 0x76;                    \/\/F7$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F8	./source\ConsoleInput.h	/^    const static int F8 = 0x77;                    \/\/F8$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+F9	./source\ConsoleInput.h	/^    const static int F9 = 0x78;                    \/\/F9$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+FINAL	./source\ConsoleInput.h	/^    const static int FINAL = 0x18;                 \/\/FINAL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+FIVE	./source\ConsoleInput.h	/^    const static int FIVE = 0x35;                  \/\/5$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+FOUR	./source\ConsoleInput.h	/^    const static int FOUR = 0x34;                  \/\/4$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+FREE	./source\ConsoleInput.h	/^    const static int FREE = 0x33;                  \/\/3$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+G	./source\ConsoleInput.h	/^    const static int G = (int)'G';                 \/\/G$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+GetConsoleKeyboardLayoutNameA	./source\ConsoleInput.h	/^    ::PGetConsoleKeyboardLayoutNameA GetConsoleKeyboardLayoutNameA;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+GetText	./source\TextClipboard.cpp	/^String ^TextClipboard::GetText()$/;"	f	class:gehtsoft::xce::conio::TextClipboard	signature:()
+GetText	./source\TextClipboard.cpp	/^String ^TextClipboard::GetText(TextClipboardFormat format)$/;"	f	class:gehtsoft::xce::conio::TextClipboard	signature:(TextClipboardFormat format)
+GetText	./source\TextClipboard.h	/^    static String ^GetText();$/;"	p	class:gehtsoft::xce::conio::sealed	access:public	signature:()
+GetText	./source\TextClipboard.h	/^    static String ^GetText(TextClipboardFormat format);$/;"	p	class:gehtsoft::xce::conio::sealed	access:public	signature:(TextClipboardFormat format)
+H	./source\ConsoleInput.h	/^    const static int H = (int)'H';                 \/\/H$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+HANGEUL	./source\ConsoleInput.h	/^    const static int HANGEUL = 0x15;               \/\/HANGEUL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+HANGUL	./source\ConsoleInput.h	/^    const static int HANGUL = 0x15;                \/\/HANGUL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+HANJA	./source\ConsoleInput.h	/^    const static int HANJA = 0x19;                 \/\/HANJA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+HELP	./source\ConsoleInput.h	/^    const static int HELP = 0x2F;                  \/\/HELP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+HOME	./source\ConsoleInput.h	/^    const static int HOME = 0x24;                  \/\/HOME$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+I	./source\ConsoleInput.h	/^    const static int I = (int)'I';                 \/\/I$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+ICO_00	./source\ConsoleInput.h	/^    const static int ICO_00 = 0xE4;                \/\/ICO_00$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+ICO_HELP	./source\ConsoleInput.h	/^    const static int ICO_HELP = 0xE3;              \/\/ICO_HELP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+INSERT	./source\ConsoleInput.h	/^    const static int INSERT = 0x2D;                \/\/INSERT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+IsTextAvailable	./source\TextClipboard.cpp	/^bool TextClipboard::IsTextAvailable(TextClipboardFormat format)$/;"	f	class:gehtsoft::xce::conio::TextClipboard	signature:(TextClipboardFormat format)
+IsTextAvailable	./source\TextClipboard.h	/^    static bool IsTextAvailable(TextClipboardFormat format);$/;"	p	class:gehtsoft::xce::conio::sealed	access:public	signature:(TextClipboardFormat format)
+J	./source\ConsoleInput.h	/^    const static int J = (int)'J';                 \/\/J$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+JUNJA	./source\ConsoleInput.h	/^    const static int JUNJA = 0x17;                 \/\/JUNJA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+K	./source\ConsoleInput.h	/^    const static int K = (int)'K';                 \/\/K$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+KANA	./source\ConsoleInput.h	/^    const static int KANA = 0x15;                  \/\/KANA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+KANJI	./source\ConsoleInput.h	/^    const static int KANJI = 0x19;                 \/\/KANJI$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+L	./source\ConsoleInput.h	/^    const static int L = (int)'L';                 \/\/L$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LAUNCH_APP1	./source\ConsoleInput.h	/^    const static int LAUNCH_APP1 = 0xB6;           \/\/LAUNCH_APP1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LAUNCH_APP2	./source\ConsoleInput.h	/^    const static int LAUNCH_APP2 = 0xB7;           \/\/LAUNCH_APP2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LAUNCH_MAIL	./source\ConsoleInput.h	/^    const static int LAUNCH_MAIL = 0xB4;           \/\/LAUNCH_MAIL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LAUNCH_MEDIA_SELECT	./source\ConsoleInput.h	/^    const static int LAUNCH_MEDIA_SELECT = 0xB5;   \/\/LAUNCH_MEDIA_SELECT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LBUTTON	./source\ConsoleInput.h	/^    const static int LBUTTON = 0x01;               \/\/LBUTTON$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LCONTROL	./source\ConsoleInput.h	/^    const static int LCONTROL = 0xA2;              \/\/LCONTROL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LEFT	./source\ConsoleInput.h	/^    const static int LEFT = 0x25;                  \/\/LEFT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LMENU	./source\ConsoleInput.h	/^    const static int LMENU = 0xA4;                 \/\/LMENU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LSHIFT	./source\ConsoleInput.h	/^    const static int LSHIFT = 0xA0;                \/\/LSHIFT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+LWIN	./source\ConsoleInput.h	/^    const static int LWIN = 0x5B;                  \/\/LWIN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+M	./source\ConsoleInput.h	/^    const static int M = (int)'M';                 \/\/M$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+MBUTTON	./source\ConsoleInput.h	/^    const static int MBUTTON = 0x04;               \/\/MBUTTON$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+MEDIA_NEXT_TRACK	./source\ConsoleInput.h	/^    const static int MEDIA_NEXT_TRACK = 0xB0;      \/\/MEDIA_NEXT_TRACK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+MEDIA_PLAY_PAUSE	./source\ConsoleInput.h	/^    const static int MEDIA_PLAY_PAUSE = 0xB3;      \/\/MEDIA_PLAY_PAUSE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+MEDIA_PREV_TRACK	./source\ConsoleInput.h	/^    const static int MEDIA_PREV_TRACK = 0xB1;      \/\/MEDIA_PREV_TRACK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+MEDIA_STOP	./source\ConsoleInput.h	/^    const static int MEDIA_STOP = 0xB2;            \/\/MEDIA_STOP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+MENU	./source\ConsoleInput.h	/^    const static int MENU = 0x12;                  \/\/MENU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+MODECHANGE	./source\ConsoleInput.h	/^    const static int MODECHANGE = 0x1F;            \/\/MODECHANGE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+MULTIPLY	./source\ConsoleInput.h	/^    const static int MULTIPLY = 0x6A;              \/\/MULTIPLY$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+N	./source\ConsoleInput.h	/^    const static int N = (int)'N';                 \/\/N$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NEXT	./source\ConsoleInput.h	/^    const static int NEXT = 0x22;                  \/\/NEXT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NINE	./source\ConsoleInput.h	/^    const static int NINE = 0x39;                  \/\/9$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NONCONVERT	./source\ConsoleInput.h	/^    const static int NONCONVERT = 0x1D;            \/\/NONCONVERT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMLOCK	./source\ConsoleInput.h	/^    const static int NUMLOCK = 0x90;               \/\/NUMLOCK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD0	./source\ConsoleInput.h	/^    const static int NUMPAD0 = 0x60;               \/\/NUMPAD0$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD1	./source\ConsoleInput.h	/^    const static int NUMPAD1 = 0x61;               \/\/NUMPAD1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD2	./source\ConsoleInput.h	/^    const static int NUMPAD2 = 0x62;               \/\/NUMPAD2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD3	./source\ConsoleInput.h	/^    const static int NUMPAD3 = 0x63;               \/\/NUMPAD3$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD4	./source\ConsoleInput.h	/^    const static int NUMPAD4 = 0x64;               \/\/NUMPAD4$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD5	./source\ConsoleInput.h	/^    const static int NUMPAD5 = 0x65;               \/\/NUMPAD5$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD6	./source\ConsoleInput.h	/^    const static int NUMPAD6 = 0x66;               \/\/NUMPAD6$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD7	./source\ConsoleInput.h	/^    const static int NUMPAD7 = 0x67;               \/\/NUMPAD7$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD8	./source\ConsoleInput.h	/^    const static int NUMPAD8 = 0x68;               \/\/NUMPAD8$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+NUMPAD9	./source\ConsoleInput.h	/^    const static int NUMPAD9 = 0x69;               \/\/NUMPAD9$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+O	./source\ConsoleInput.h	/^    const static int O = (int)'O';                 \/\/O$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_1	./source\ConsoleInput.h	/^    const static int OEM_1 = 0xBA;                 \/\/;$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_102	./source\ConsoleInput.h	/^    const static int OEM_102 = 0xE2;               \/\/OEM_102$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_2	./source\ConsoleInput.h	/^    const static int OEM_2 = 0xBF;                 \/\/\/$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_3	./source\ConsoleInput.h	/^    const static int OEM_3 = 0xC0;                 \/\/~$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_4	./source\ConsoleInput.h	/^    const static int OEM_4 = 0xDB;                 \/\/[$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_5	./source\ConsoleInput.h	/^    const static int OEM_5 = 0xDC;                 \/\/\\ back slash$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_6	./source\ConsoleInput.h	/^    const static int OEM_6 = 0xDD;                 \/\/]$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_7	./source\ConsoleInput.h	/^    const static int OEM_7 = 0xDE;                 \/\/'$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_8	./source\ConsoleInput.h	/^    const static int OEM_8 = 0xDF;                 \/\/OEM_8$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_AX	./source\ConsoleInput.h	/^    const static int OEM_AX = 0xE1;                \/\/OEM_AX$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_COMMA	./source\ConsoleInput.h	/^    const static int OEM_COMMA = 0xBC;             \/\/,$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_FJ_JISHO	./source\ConsoleInput.h	/^    const static int OEM_FJ_JISHO = 0x92;          \/\/OEM_FJ_JISHO$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_FJ_LOYA	./source\ConsoleInput.h	/^    const static int OEM_FJ_LOYA = 0x95;           \/\/OEM_FJ_LOYA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_FJ_MASSHOU	./source\ConsoleInput.h	/^    const static int OEM_FJ_MASSHOU = 0x93;        \/\/OEM_FJ_MASSHOU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_FJ_ROYA	./source\ConsoleInput.h	/^    const static int OEM_FJ_ROYA = 0x96;           \/\/OEM_FJ_ROYA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_FJ_TOUROKU	./source\ConsoleInput.h	/^    const static int OEM_FJ_TOUROKU = 0x94;        \/\/OEM_FJ_TOUROKU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_MINUS	./source\ConsoleInput.h	/^    const static int OEM_MINUS = 0xBD;             \/\/-$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_NEC_EQUAL	./source\ConsoleInput.h	/^    const static int OEM_NEC_EQUAL = 0x92;         \/\/OEM_NEC_EQUAL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_PERIOD	./source\ConsoleInput.h	/^    const static int OEM_PERIOD = 0xBE;            \/\/.$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+OEM_PLUS	./source\ConsoleInput.h	/^    const static int OEM_PLUS = 0xBB;              \/\/+$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+ONE	./source\ConsoleInput.h	/^    const static int ONE = 0x31;                   \/\/1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+P	./source\ConsoleInput.h	/^    const static int P = (int)'P';                 \/\/P$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+PAUSE	./source\ConsoleInput.h	/^    const static int PAUSE = 0x13;                 \/\/PAUSE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+PGetConsoleKeyboardLayoutNameA	./source\ConsoleInput.h	/^typedef BOOL (_stdcall *PGetConsoleKeyboardLayoutNameA)(PSTR);$/;"	t
+PRINT	./source\ConsoleInput.h	/^    const static int PRINT = 0x2A;                 \/\/PRINT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+PRIOR	./source\ConsoleInput.h	/^    const static int PRIOR = 0x21;                 \/\/PRIOR$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+Q	./source\ConsoleInput.h	/^    const static int Q = (int)'Q';                 \/\/Q$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+R	./source\ConsoleInput.h	/^    const static int R = (int)'R';                 \/\/R$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+RBUTTON	./source\ConsoleInput.h	/^    const static int RBUTTON = 0x02;               \/\/RBUTTON$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+RCONTROL	./source\ConsoleInput.h	/^    const static int RCONTROL = 0xA3;              \/\/RCONTROL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+RETURN	./source\ConsoleInput.h	/^    const static int RETURN = 0x0D;                \/\/RETURN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+RIGHT	./source\ConsoleInput.h	/^    const static int RIGHT = 0x27;                 \/\/RIGHT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+RMENU	./source\ConsoleInput.h	/^    const static int RMENU = 0xA5;                 \/\/RMENU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+RSHIFT	./source\ConsoleInput.h	/^    const static int RSHIFT = 0xA1;                \/\/RSHIFT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+RWIN	./source\ConsoleInput.h	/^    const static int RWIN = 0x5C;                  \/\/RWIN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+S	./source\ConsoleInput.h	/^    const static int S = (int)'S';                 \/\/S$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SCROLL	./source\ConsoleInput.h	/^    const static int SCROLL = 0x91;                \/\/SCROLL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SELECT	./source\ConsoleInput.h	/^    const static int SELECT = 0x29;                \/\/SELECT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SEPARATOR	./source\ConsoleInput.h	/^    const static int SEPARATOR = 0x6C;             \/\/Gray\/$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SEVEN	./source\ConsoleInput.h	/^    const static int SEVEN = 0x37;                 \/\/7$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SHIFT	./source\ConsoleInput.h	/^    const static int SHIFT = 0x10;                 \/\/SHIFT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SIX	./source\ConsoleInput.h	/^    const static int SIX = 0x36;                   \/\/6$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SLEEP	./source\ConsoleInput.h	/^    const static int SLEEP = 0x5F;                 \/\/SLEEP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SNAPSHOT	./source\ConsoleInput.h	/^    const static int SNAPSHOT = 0x2C;              \/\/SNAPSHOT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SPACE	./source\ConsoleInput.h	/^    const static int SPACE = 0x20;                 \/\/SPACE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+SUBTRACT	./source\ConsoleInput.h	/^    const static int SUBTRACT = 0x6D;              \/\/Gray-$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+ScanCode	./source\ConsoleInput.cpp	/^ScanCode::ScanCode()$/;"	f	class:gehtsoft::xce::conio::ScanCode	signature:()
+ScanCode	./source\ConsoleInput.h	/^    ScanCode();$/;"	p	class:gehtsoft::xce::conio::sealed	access:private	signature:()
+T	./source\ConsoleInput.h	/^    const static int T = (int)'T';                 \/\/T$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+TAB	./source\ConsoleInput.h	/^    const static int TAB = 0x09;                   \/\/TAB$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+TWO	./source\ConsoleInput.h	/^    const static int TWO = 0x32;                   \/\/2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+Text	./source\TextClipboard.h	/^    Text = CF_TEXT,$/;"	m	class:gehtsoft::xce::conio::TextClipboardFormat	access:private
+TextClipboard	./source\TextClipboard.cpp	/^TextClipboard::TextClipboard()$/;"	f	class:gehtsoft::xce::conio::TextClipboard	signature:()
+TextClipboard	./source\TextClipboard.h	/^    TextClipboard();$/;"	p	class:gehtsoft::xce::conio::sealed	access:private	signature:()
+TextClipboardFormat	./source\TextClipboard.h	/^public enum class TextClipboardFormat $/;"	c	namespace:gehtsoft::xce::conio	access:public
+U	./source\ConsoleInput.h	/^    const static int U = (int)'U';                 \/\/U$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+UP	./source\ConsoleInput.h	/^    const static int UP = 0x26;                    \/\/UP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+UnicodeText	./source\TextClipboard.h	/^    UnicodeText = CF_UNICODETEXT,$/;"	m	class:gehtsoft::xce::conio::TextClipboardFormat	access:private
+V	./source\ConsoleInput.h	/^    const static int V = (int)'V';                 \/\/V$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+VOLUME_DOWN	./source\ConsoleInput.h	/^    const static int VOLUME_DOWN = 0xAE;           \/\/VOLUME_DOWN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+VOLUME_MUTE	./source\ConsoleInput.h	/^    const static int VOLUME_MUTE = 0xAD;           \/\/VOLUME_MUTE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+VOLUME_UP	./source\ConsoleInput.h	/^    const static int VOLUME_UP = 0xAF;             \/\/VOLUME_UP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+W	./source\ConsoleInput.h	/^    const static int W = (int)'W';                 \/\/W$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+X	./source\ConsoleInput.h	/^    const static int X = (int)'X';                 \/\/X$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+XBUTTON1	./source\ConsoleInput.h	/^    const static int XBUTTON1 = 0x05;              \/\/XBUTTON1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+XBUTTON2	./source\ConsoleInput.h	/^    const static int XBUTTON2 = 0x06;              \/\/XBUTTON2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+Y	./source\ConsoleInput.h	/^    const static int Y = (int)'Y';                 \/\/Y$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+Z	./source\ConsoleInput.h	/^    const static int Z = (int)'Z';                 \/\/Z$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+ZERO	./source\ConsoleInput.h	/^    const static int ZERO = 0x30;                  \/\/0$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+box	./source\canvas.cpp	/^void Canvas::box(int row, int column, int rows, int columns, BoxBorder ^border, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, BoxBorder ^border, short color)
+box	./source\canvas.cpp	/^void Canvas::box(int row, int column, int rows, int columns, BoxBorder ^border, short color, wchar_t fillchar)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, BoxBorder ^border, short color, wchar_t fillchar)
+box	./source\canvas.h	/^    void box(int row, int column, int rows, int columns, BoxBorder ^border, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, BoxBorder ^border, short color)
+box	./source\canvas.h	/^    void box(int row, int column, int rows, int columns, BoxBorder ^border, short color, wchar_t fillchar);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, BoxBorder ^border, short color, wchar_t fillchar)
+conio	./source\ConsoleInput.cpp	/^namespace conio$/;"	n	namespace:gehtsoft::xce	file:
+conio	./source\ConsoleInput.h	/^namespace conio$/;"	n	namespace:gehtsoft::xce
+conio	./source\ConsoleOutput.cpp	/^namespace conio$/;"	n	namespace:gehtsoft::xce	file:
+conio	./source\ConsoleOutput.h	/^namespace conio$/;"	n	namespace:gehtsoft::xce
+conio	./source\TextClipboard.cpp	/^namespace conio$/;"	n	namespace:gehtsoft::xce	file:
+conio	./source\TextClipboard.h	/^namespace conio$/;"	n	namespace:gehtsoft::xce
+conio	./source\canvas.cpp	/^namespace conio$/;"	n	namespace:gehtsoft::xce	file:
+conio	./source\canvas.h	/^namespace conio$/;"	n	namespace:gehtsoft::xce
+fill	./source\canvas.cpp	/^void Canvas::fill(int row, int column, int rows, int columns, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, short color)
+fill	./source\canvas.cpp	/^void Canvas::fill(int row, int column, int rows, int columns, wchar_t chr)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, wchar_t chr)
+fill	./source\canvas.cpp	/^void Canvas::fill(int row, int column, int rows, int columns, wchar_t chr, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, wchar_t chr, short color)
+fill	./source\canvas.h	/^    void fill(int row, int column, int rows, int columns, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, short color)
+fill	./source\canvas.h	/^    void fill(int row, int column, int rows, int columns, wchar_t chr);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, wchar_t chr)
+fill	./source\canvas.h	/^    void fill(int row, int column, int rows, int columns, wchar_t chr, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, wchar_t chr, short color)
+fillFg	./source\canvas.cpp	/^void Canvas::fillFg(int row, int column, int rows, int columns, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, short color)
+fillFg	./source\canvas.h	/^    void fillFg(int row, int column, int rows, int columns, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, short color)
+gehtsoft	./source\ConsoleInput.cpp	/^namespace gehtsoft$/;"	n	file:
+gehtsoft	./source\ConsoleInput.h	/^namespace gehtsoft$/;"	n
+gehtsoft	./source\ConsoleOutput.cpp	/^namespace gehtsoft$/;"	n	file:
+gehtsoft	./source\ConsoleOutput.h	/^namespace gehtsoft$/;"	n
+gehtsoft	./source\TextClipboard.cpp	/^namespace gehtsoft$/;"	n	file:
+gehtsoft	./source\TextClipboard.h	/^namespace gehtsoft$/;"	n
+gehtsoft	./source\canvas.cpp	/^namespace gehtsoft$/;"	n	file:
+gehtsoft	./source\canvas.h	/^namespace gehtsoft$/;"	n
+gehtsoft::xce	./source\ConsoleInput.cpp	/^namespace xce$/;"	n	namespace:gehtsoft	file:
+gehtsoft::xce	./source\ConsoleInput.h	/^namespace xce$/;"	n	namespace:gehtsoft
+gehtsoft::xce	./source\ConsoleOutput.cpp	/^namespace xce$/;"	n	namespace:gehtsoft	file:
+gehtsoft::xce	./source\ConsoleOutput.h	/^namespace xce$/;"	n	namespace:gehtsoft
+gehtsoft::xce	./source\TextClipboard.cpp	/^namespace xce$/;"	n	namespace:gehtsoft	file:
+gehtsoft::xce	./source\TextClipboard.h	/^namespace xce$/;"	n	namespace:gehtsoft
+gehtsoft::xce	./source\canvas.cpp	/^namespace xce$/;"	n	namespace:gehtsoft	file:
+gehtsoft::xce	./source\canvas.h	/^namespace xce$/;"	n	namespace:gehtsoft
+gehtsoft::xce::conio	./source\ConsoleInput.cpp	/^namespace conio$/;"	n	namespace:gehtsoft::xce	file:
+gehtsoft::xce::conio	./source\ConsoleInput.h	/^namespace conio$/;"	n	namespace:gehtsoft::xce
+gehtsoft::xce::conio	./source\ConsoleOutput.cpp	/^namespace conio$/;"	n	namespace:gehtsoft::xce	file:
+gehtsoft::xce::conio	./source\ConsoleOutput.h	/^namespace conio$/;"	n	namespace:gehtsoft::xce
+gehtsoft::xce::conio	./source\TextClipboard.cpp	/^namespace conio$/;"	n	namespace:gehtsoft::xce	file:
+gehtsoft::xce::conio	./source\TextClipboard.h	/^namespace conio$/;"	n	namespace:gehtsoft::xce
+gehtsoft::xce::conio	./source\canvas.cpp	/^namespace conio$/;"	n	namespace:gehtsoft::xce	file:
+gehtsoft::xce::conio	./source\canvas.h	/^namespace conio$/;"	n	namespace:gehtsoft::xce
+gehtsoft::xce::conio::BoxBorder	./source\canvas.h	/^public ref class BoxBorder$/;"	c	namespace:gehtsoft::xce::conio	access:public
+gehtsoft::xce::conio::BoxBorder::Bottom::get	./source\canvas.cpp	/^wchar_t BoxBorder::Bottom::get() { return mBottom; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::Bottom	signature:()
+gehtsoft::xce::conio::BoxBorder::BottomLeft::get	./source\canvas.cpp	/^wchar_t BoxBorder::BottomLeft::get() { return mBottomLeft; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::BottomLeft	signature:()
+gehtsoft::xce::conio::BoxBorder::BottomRight::get	./source\canvas.cpp	/^wchar_t BoxBorder::BottomRight::get() { return mBottomRight; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::BottomRight	signature:()
+gehtsoft::xce::conio::BoxBorder::BoxBorder	./source\canvas.cpp	/^BoxBorder::BoxBorder(wchar_t topLeft, wchar_t top, wchar_t topRight, wchar_t left, wchar_t right, wchar_t bottomLeft, wchar_t bottom, wchar_t bottomRight)$/;"	f	class:gehtsoft::xce::conio::BoxBorder	signature:(wchar_t topLeft, wchar_t top, wchar_t topRight, wchar_t left, wchar_t right, wchar_t bottomLeft, wchar_t bottom, wchar_t bottomRight)
+gehtsoft::xce::conio::BoxBorder::BoxBorder	./source\canvas.h	/^    BoxBorder(wchar_t topLeft, wchar_t top, wchar_t topRight, wchar_t left, wchar_t right, wchar_t bottomLeft, wchar_t bottom, wchar_t bottomRight);$/;"	p	class:gehtsoft::xce::conio::BoxBorder	access:public	signature:(wchar_t topLeft, wchar_t top, wchar_t topRight, wchar_t left, wchar_t right, wchar_t bottomLeft, wchar_t bottom, wchar_t bottomRight)
+gehtsoft::xce::conio::BoxBorder::DoubleBorderBox::get	./source\canvas.cpp	/^BoxBorder ^BoxBorder::DoubleBorderBox::get()$/;"	f	class:gehtsoft::xce::conio::BoxBorder::DoubleBorderBox	signature:()
+gehtsoft::xce::conio::BoxBorder::Left::get	./source\canvas.cpp	/^wchar_t BoxBorder::Left::get() { return mLeft; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::Left	signature:()
+gehtsoft::xce::conio::BoxBorder::Right::get	./source\canvas.cpp	/^wchar_t BoxBorder::Right::get() { return mRight; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::Right	signature:()
+gehtsoft::xce::conio::BoxBorder::SingleBorderBox::get	./source\canvas.cpp	/^BoxBorder ^BoxBorder::SingleBorderBox::get()$/;"	f	class:gehtsoft::xce::conio::BoxBorder::SingleBorderBox	signature:()
+gehtsoft::xce::conio::BoxBorder::Top::get	./source\canvas.cpp	/^wchar_t BoxBorder::Top::get() { return mTop; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::Top	signature:()
+gehtsoft::xce::conio::BoxBorder::TopLeft::get	./source\canvas.cpp	/^wchar_t BoxBorder::TopLeft::get() { return mTopLeft; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::TopLeft	signature:()
+gehtsoft::xce::conio::BoxBorder::TopRight::get	./source\canvas.cpp	/^wchar_t BoxBorder::TopRight::get() { return mTopRight; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::TopRight	signature:()
+gehtsoft::xce::conio::BoxBorder::mBottom	./source\canvas.h	/^    wchar_t mBottom;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::BoxBorder::mBottomLeft	./source\canvas.h	/^    wchar_t mBottomLeft;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::BoxBorder::mBottomRight	./source\canvas.h	/^    wchar_t mBottomRight;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::BoxBorder::mDoubleBorder	./source\canvas.h	/^    static BoxBorder ^mDoubleBorder = nullptr;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::BoxBorder::mLeft	./source\canvas.h	/^    wchar_t mLeft;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::BoxBorder::mRight	./source\canvas.h	/^    wchar_t mRight;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::BoxBorder::mSingleBorder	./source\canvas.h	/^    static BoxBorder ^mSingleBorder = nullptr;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::BoxBorder::mTop	./source\canvas.h	/^    wchar_t mTop;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::BoxBorder::mTopLeft	./source\canvas.h	/^    wchar_t mTopLeft;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::BoxBorder::mTopRight	./source\canvas.h	/^    wchar_t mTopRight;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+gehtsoft::xce::conio::Canvas	./source\canvas.h	/^public ref class Canvas$/;"	c	namespace:gehtsoft::xce::conio	access:public
+gehtsoft::xce::conio::Canvas::Canvas	./source\canvas.cpp	/^Canvas::!Canvas()$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:()
+gehtsoft::xce::conio::Canvas::Canvas	./source\canvas.cpp	/^Canvas::Canvas(int rows, int columns)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int rows, int columns)
+gehtsoft::xce::conio::Canvas::Canvas	./source\canvas.h	/^    !Canvas();$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:()
+gehtsoft::xce::conio::Canvas::Canvas	./source\canvas.h	/^    Canvas( int rows,  int columns);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:( int rows, int columns)
+gehtsoft::xce::conio::Canvas::Columns::get	./source\canvas.cpp	/^int Canvas::Columns::get()$/;"	f	class:gehtsoft::xce::conio::Canvas::Columns	signature:()
+gehtsoft::xce::conio::Canvas::Data::get	./source\canvas.cpp	/^CHAR_INFO *Canvas::Data::get()$/;"	f	class:gehtsoft::xce::conio::Canvas::Data	signature:()
+gehtsoft::xce::conio::Canvas::Rows::get	./source\canvas.cpp	/^int Canvas::Rows::get()$/;"	f	class:gehtsoft::xce::conio::Canvas::Rows	signature:()
+gehtsoft::xce::conio::Canvas::box	./source\canvas.cpp	/^void Canvas::box(int row, int column, int rows, int columns, BoxBorder ^border, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, BoxBorder ^border, short color)
+gehtsoft::xce::conio::Canvas::box	./source\canvas.cpp	/^void Canvas::box(int row, int column, int rows, int columns, BoxBorder ^border, short color, wchar_t fillchar)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, BoxBorder ^border, short color, wchar_t fillchar)
+gehtsoft::xce::conio::Canvas::box	./source\canvas.h	/^    void box(int row, int column, int rows, int columns, BoxBorder ^border, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, BoxBorder ^border, short color)
+gehtsoft::xce::conio::Canvas::box	./source\canvas.h	/^    void box(int row, int column, int rows, int columns, BoxBorder ^border, short color, wchar_t fillchar);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, BoxBorder ^border, short color, wchar_t fillchar)
+gehtsoft::xce::conio::Canvas::fill	./source\canvas.cpp	/^void Canvas::fill(int row, int column, int rows, int columns, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, short color)
+gehtsoft::xce::conio::Canvas::fill	./source\canvas.cpp	/^void Canvas::fill(int row, int column, int rows, int columns, wchar_t chr)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, wchar_t chr)
+gehtsoft::xce::conio::Canvas::fill	./source\canvas.cpp	/^void Canvas::fill(int row, int column, int rows, int columns, wchar_t chr, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, wchar_t chr, short color)
+gehtsoft::xce::conio::Canvas::fill	./source\canvas.h	/^    void fill(int row, int column, int rows, int columns, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, short color)
+gehtsoft::xce::conio::Canvas::fill	./source\canvas.h	/^    void fill(int row, int column, int rows, int columns, wchar_t chr);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, wchar_t chr)
+gehtsoft::xce::conio::Canvas::fill	./source\canvas.h	/^    void fill(int row, int column, int rows, int columns, wchar_t chr, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, wchar_t chr, short color)
+gehtsoft::xce::conio::Canvas::fillFg	./source\canvas.cpp	/^void Canvas::fillFg(int row, int column, int rows, int columns, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, int rows, int columns, short color)
+gehtsoft::xce::conio::Canvas::fillFg	./source\canvas.h	/^    void fillFg(int row, int column, int rows, int columns, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, int rows, int columns, short color)
+gehtsoft::xce::conio::Canvas::get	./source\canvas.cpp	/^bool Canvas::get(int row, int column, [Out]wchar_t %chr, [Out]short %color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, [Out]wchar_t %chr, [Out]short %color)
+gehtsoft::xce::conio::Canvas::get	./source\canvas.h	/^    bool get(int row, int column, [Out]wchar_t %chr, [Out]short %color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, [Out]wchar_t %chr, [Out]short %color)
+gehtsoft::xce::conio::Canvas::mColumns	./source\canvas.h	/^     int mColumns;$/;"	m	class:gehtsoft::xce::conio::Canvas	access:private
+gehtsoft::xce::conio::Canvas::mData	./source\canvas.h	/^    CHAR_INFO *mData;$/;"	m	class:gehtsoft::xce::conio::Canvas	access:private
+gehtsoft::xce::conio::Canvas::mRows	./source\canvas.h	/^     int mRows;$/;"	m	class:gehtsoft::xce::conio::Canvas	access:private
+gehtsoft::xce::conio::Canvas::paint	./source\canvas.cpp	/^void Canvas::paint(int row, int column, Canvas ^canvas)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, Canvas ^canvas)
+gehtsoft::xce::conio::Canvas::paint	./source\canvas.h	/^    void paint(int row, int column, Canvas ^canvas);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, Canvas ^canvas)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, String ^text)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, String ^text)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, String ^text, int offset, int length)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, String ^text, int offset, int length)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, String ^text, int offset, int length, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, String ^text, int offset, int length, short color)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, String ^text, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, String ^text, short color)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, System::Text::StringBuilder ^text, int offset, int length)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, System::Text::StringBuilder ^text, int offset, int length)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, System::Text::StringBuilder ^text, int offset, int length, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, System::Text::StringBuilder ^text, int offset, int length, short color)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, array<wchar_t> ^text, int offset, int length)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, array<wchar_t> ^text, int offset, int length)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, short color)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, wchar_t chr)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, wchar_t chr)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.cpp	/^void Canvas::write(int row, int column, wchar_t chr, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, wchar_t chr, short color)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, String ^text);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, String ^text)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, String ^text, int offset, int length);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, String ^text, int offset, int length)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, String ^text, int offset, int length, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, String ^text, int offset, int length, short color)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, String ^text, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, String ^text, short color)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, System::Text::StringBuilder ^text, int offset, int length);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, System::Text::StringBuilder ^text, int offset, int length)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, System::Text::StringBuilder ^text, int offset, int length, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, System::Text::StringBuilder ^text, int offset, int length, short color)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, array<wchar_t> ^text, int offset, int length);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, array<wchar_t> ^text, int offset, int length)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, short color)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, wchar_t chr);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, wchar_t chr)
+gehtsoft::xce::conio::Canvas::write	./source\canvas.h	/^    void write(int row, int column, wchar_t chr, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, wchar_t chr, short color)
+gehtsoft::xce::conio::Canvas::~Canvas	./source\canvas.cpp	/^Canvas::~Canvas()$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:()
+gehtsoft::xce::conio::Canvas::~Canvas	./source\canvas.h	/^    ~Canvas();$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:()
+gehtsoft::xce::conio::ConsoleInput	./source\ConsoleInput.h	/^public ref class ConsoleInput$/;"	c	namespace:gehtsoft::xce::conio	access:public
+gehtsoft::xce::conio::ConsoleInput::ConsoleInput	./source\ConsoleInput.cpp	/^ConsoleInput::!ConsoleInput()$/;"	f	class:gehtsoft::xce::conio::ConsoleInput	signature:()
+gehtsoft::xce::conio::ConsoleInput::ConsoleInput	./source\ConsoleInput.cpp	/^ConsoleInput::ConsoleInput()$/;"	f	class:gehtsoft::xce::conio::ConsoleInput	signature:()
+gehtsoft::xce::conio::ConsoleInput::ConsoleInput	./source\ConsoleInput.h	/^    !ConsoleInput();$/;"	p	class:gehtsoft::xce::conio::ConsoleInput	access:public	signature:()
+gehtsoft::xce::conio::ConsoleInput::ConsoleInput	./source\ConsoleInput.h	/^    ConsoleInput();$/;"	p	class:gehtsoft::xce::conio::ConsoleInput	access:public	signature:()
+gehtsoft::xce::conio::ConsoleInput::CurrentLayout::get	./source\ConsoleInput.cpp	/^int ConsoleInput::CurrentLayout::get()$/;"	f	class:gehtsoft::xce::conio::ConsoleInput::CurrentLayout	signature:()
+gehtsoft::xce::conio::ConsoleInput::GetConsoleKeyboardLayoutNameA	./source\ConsoleInput.h	/^    ::PGetConsoleKeyboardLayoutNameA GetConsoleKeyboardLayoutNameA;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+gehtsoft::xce::conio::ConsoleInput::keyCodeToName	./source\ConsoleInput.cpp	/^String ^ConsoleInput::keyCodeToName(int code)$/;"	f	class:gehtsoft::xce::conio::ConsoleInput	signature:(int code)
+gehtsoft::xce::conio::ConsoleInput::keyCodeToName	./source\ConsoleInput.h	/^    static String ^keyCodeToName(int code);$/;"	p	class:gehtsoft::xce::conio::ConsoleInput	access:public	signature:(int code)
+gehtsoft::xce::conio::ConsoleInput::mLeftButtonPressed	./source\ConsoleInput.h	/^    bool mLeftButtonPressed;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+gehtsoft::xce::conio::ConsoleInput::mMouseColumn	./source\ConsoleInput.h	/^    int mMouseRow, mMouseColumn;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+gehtsoft::xce::conio::ConsoleInput::mMouseRow	./source\ConsoleInput.h	/^    int mMouseRow, mMouseColumn;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+gehtsoft::xce::conio::ConsoleInput::mRightButtonPressed	./source\ConsoleInput.h	/^    bool mRightButtonPressed;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+gehtsoft::xce::conio::ConsoleInput::~ConsoleInput	./source\ConsoleInput.cpp	/^ConsoleInput::~ConsoleInput()$/;"	f	class:gehtsoft::xce::conio::ConsoleInput	signature:()
+gehtsoft::xce::conio::ConsoleInput::~ConsoleInput	./source\ConsoleInput.h	/^    ~ConsoleInput();$/;"	p	class:gehtsoft::xce::conio::ConsoleInput	access:public	signature:()
+gehtsoft::xce::conio::ConsoleInputListener	./source\ConsoleInput.h	/^public interface class ConsoleInputListener$/;"	c	namespace:gehtsoft::xce::conio	access:public
+gehtsoft::xce::conio::ConsoleInputListener::onGetFocus	./source\ConsoleInput.h	/^    void onGetFocus(bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(bool shift, bool ctrl, bool alt)
+gehtsoft::xce::conio::ConsoleInputListener::onKeyPressed	./source\ConsoleInput.h	/^    void onKeyPressed(int scanCode, wchar_t character, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int scanCode, wchar_t character, bool shift, bool ctrl, bool alt)
+gehtsoft::xce::conio::ConsoleInputListener::onKeyReleased	./source\ConsoleInput.h	/^    void onKeyReleased(int scanCode, wchar_t character, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int scanCode, wchar_t character, bool shift, bool ctrl, bool alt)
+gehtsoft::xce::conio::ConsoleInputListener::onMouseLButtonDown	./source\ConsoleInput.h	/^    void onMouseLButtonDown(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+gehtsoft::xce::conio::ConsoleInputListener::onMouseLButtonUp	./source\ConsoleInput.h	/^    void onMouseLButtonUp(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+gehtsoft::xce::conio::ConsoleInputListener::onMouseMove	./source\ConsoleInput.h	/^    void onMouseMove(int row, int column, bool shift, bool ctrl, bool alt, bool lb, bool rb);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt, bool lb, bool rb)
+gehtsoft::xce::conio::ConsoleInputListener::onMouseRButtonDown	./source\ConsoleInput.h	/^    void onMouseRButtonDown(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+gehtsoft::xce::conio::ConsoleInputListener::onMouseRButtonUp	./source\ConsoleInput.h	/^    void onMouseRButtonUp(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+gehtsoft::xce::conio::ConsoleInputListener::onMouseWheelDown	./source\ConsoleInput.h	/^    void onMouseWheelDown(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+gehtsoft::xce::conio::ConsoleInputListener::onMouseWheelUp	./source\ConsoleInput.h	/^    void onMouseWheelUp(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+gehtsoft::xce::conio::ConsoleInputListener::onScreenBufferChanged	./source\ConsoleInput.h	/^    void onScreenBufferChanged(int rows, int columns);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int rows, int columns)
+gehtsoft::xce::conio::ConsoleOutput	./source\ConsoleOutput.h	/^public ref class ConsoleOutput$/;"	c	namespace:gehtsoft::xce::conio	access:public
+gehtsoft::xce::conio::ConsoleOutput::Columns::get	./source\ConsoleOutput.cpp	/^int ConsoleOutput::Columns::get()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput::Columns	signature:()
+gehtsoft::xce::conio::ConsoleOutput::ConsoleOutput	./source\ConsoleOutput.cpp	/^ConsoleOutput::!ConsoleOutput()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:()
+gehtsoft::xce::conio::ConsoleOutput::ConsoleOutput	./source\ConsoleOutput.cpp	/^ConsoleOutput::ConsoleOutput(bool save)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(bool save)
+gehtsoft::xce::conio::ConsoleOutput::ConsoleOutput	./source\ConsoleOutput.cpp	/^ConsoleOutput::ConsoleOutput(bool save, int rows, int columns)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(bool save, int rows, int columns)
+gehtsoft::xce::conio::ConsoleOutput::ConsoleOutput	./source\ConsoleOutput.h	/^    !ConsoleOutput();$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:()
+gehtsoft::xce::conio::ConsoleOutput::ConsoleOutput	./source\ConsoleOutput.h	/^    ConsoleOutput(bool save);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:(bool save)
+gehtsoft::xce::conio::ConsoleOutput::ConsoleOutput	./source\ConsoleOutput.h	/^    ConsoleOutput(bool save, int rows, int columns);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:(bool save, int rows, int columns)
+gehtsoft::xce::conio::ConsoleOutput::Rows::get	./source\ConsoleOutput.cpp	/^int ConsoleOutput::Rows::get()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput::Rows	signature:()
+gehtsoft::xce::conio::ConsoleOutput::getCursorPos	./source\ConsoleOutput.cpp	/^void ConsoleOutput::getCursorPos([Out]int %row, [Out]int %column)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:([Out]int %row, [Out]int %column)
+gehtsoft::xce::conio::ConsoleOutput::getCursorPos	./source\ConsoleOutput.h	/^    void getCursorPos([Out]int %row, [Out]int %column);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:([Out]int %row, [Out]int %column)
+gehtsoft::xce::conio::ConsoleOutput::getCursorType	./source\ConsoleOutput.cpp	/^void ConsoleOutput::getCursorType([Out]int %size, [Out]bool %visible)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:([Out]int %size, [Out]bool %visible)
+gehtsoft::xce::conio::ConsoleOutput::getCursorType	./source\ConsoleOutput.h	/^    void getCursorType([Out]int %size, [Out]bool %visible);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:([Out]int %size, [Out]bool %visible)
+gehtsoft::xce::conio::ConsoleOutput::init	./source\ConsoleOutput.cpp	/^void ConsoleOutput::init(bool save, bool changeResolution, int rows, int columns)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(bool save, bool changeResolution, int rows, int columns)
+gehtsoft::xce::conio::ConsoleOutput::init	./source\ConsoleOutput.h	/^    void init(bool save, bool changeResolution, int rows, int columns);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:private	signature:(bool save, bool changeResolution, int rows, int columns)
+gehtsoft::xce::conio::ConsoleOutput::mColumns	./source\ConsoleOutput.h	/^    int mColumns;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mCursorColumn	./source\ConsoleOutput.h	/^    int mCursorColumn;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mCursorRow	./source\ConsoleOutput.h	/^    int mCursorRow;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mCursorSize	./source\ConsoleOutput.h	/^    int mCursorSize;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mCursorVisible	./source\ConsoleOutput.h	/^    bool mCursorVisible;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mOldCP	./source\ConsoleOutput.h	/^    UINT mOldCP;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mOrgColumns	./source\ConsoleOutput.h	/^    int mOrgColumns;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mOrgContent	./source\ConsoleOutput.h	/^    CHAR_INFO *mOrgContent;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mOrgRows	./source\ConsoleOutput.h	/^    int mOrgRows;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mRestoreContent	./source\ConsoleOutput.h	/^    bool mRestoreContent;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mRestoreRes	./source\ConsoleOutput.h	/^    bool mRestoreRes;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::mRows	./source\ConsoleOutput.h	/^    int mRows;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+gehtsoft::xce::conio::ConsoleOutput::setCursorPos	./source\ConsoleOutput.cpp	/^void ConsoleOutput::setCursorPos(int row, int column)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(int row, int column)
+gehtsoft::xce::conio::ConsoleOutput::setCursorPos	./source\ConsoleOutput.h	/^    void setCursorPos(int row, int column);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:(int row, int column)
+gehtsoft::xce::conio::ConsoleOutput::setCursorType	./source\ConsoleOutput.cpp	/^void ConsoleOutput::setCursorType(int size, bool visible)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(int size, bool visible)
+gehtsoft::xce::conio::ConsoleOutput::setCursorType	./source\ConsoleOutput.h	/^    void setCursorType(int size, bool visible);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:(int size, bool visible)
+gehtsoft::xce::conio::ConsoleOutput::updateSize	./source\ConsoleOutput.cpp	/^void ConsoleOutput::updateSize()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:()
+gehtsoft::xce::conio::ConsoleOutput::updateSize	./source\ConsoleOutput.h	/^    void updateSize();$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:()
+gehtsoft::xce::conio::ConsoleOutput::~ConsoleOutput	./source\ConsoleOutput.cpp	/^ConsoleOutput::~ConsoleOutput()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:()
+gehtsoft::xce::conio::ConsoleOutput::~ConsoleOutput	./source\ConsoleOutput.h	/^    ~ConsoleOutput();$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:()
+gehtsoft::xce::conio::ScanCode::ScanCode	./source\ConsoleInput.cpp	/^ScanCode::ScanCode()$/;"	f	class:gehtsoft::xce::conio::ScanCode	signature:()
+gehtsoft::xce::conio::TextClipboard::GetText	./source\TextClipboard.cpp	/^String ^TextClipboard::GetText()$/;"	f	class:gehtsoft::xce::conio::TextClipboard	signature:()
+gehtsoft::xce::conio::TextClipboard::GetText	./source\TextClipboard.cpp	/^String ^TextClipboard::GetText(TextClipboardFormat format)$/;"	f	class:gehtsoft::xce::conio::TextClipboard	signature:(TextClipboardFormat format)
+gehtsoft::xce::conio::TextClipboard::IsTextAvailable	./source\TextClipboard.cpp	/^bool TextClipboard::IsTextAvailable(TextClipboardFormat format)$/;"	f	class:gehtsoft::xce::conio::TextClipboard	signature:(TextClipboardFormat format)
+gehtsoft::xce::conio::TextClipboard::TextClipboard	./source\TextClipboard.cpp	/^TextClipboard::TextClipboard()$/;"	f	class:gehtsoft::xce::conio::TextClipboard	signature:()
+gehtsoft::xce::conio::TextClipboardFormat	./source\TextClipboard.h	/^public enum class TextClipboardFormat $/;"	c	namespace:gehtsoft::xce::conio	access:public
+gehtsoft::xce::conio::TextClipboardFormat::Text	./source\TextClipboard.h	/^    Text = CF_TEXT,$/;"	m	class:gehtsoft::xce::conio::TextClipboardFormat	access:private
+gehtsoft::xce::conio::TextClipboardFormat::UnicodeText	./source\TextClipboard.h	/^    UnicodeText = CF_UNICODETEXT,$/;"	m	class:gehtsoft::xce::conio::TextClipboardFormat	access:private
+gehtsoft::xce::conio::sealed	./source\ConsoleInput.h	/^public ref class ScanCode sealed$/;"	c	namespace:gehtsoft::xce::conio	access:public
+gehtsoft::xce::conio::sealed	./source\TextClipboard.h	/^public ref class TextClipboard sealed$/;"	c	namespace:gehtsoft::xce::conio	access:public
+gehtsoft::xce::conio::sealed::A	./source\ConsoleInput.h	/^    const static int A = (int)'A';                 \/\/A$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::ACCEPT	./source\ConsoleInput.h	/^    const static int ACCEPT = 0x1E;                \/\/ACCEPT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::ADD	./source\ConsoleInput.h	/^    const static int ADD = 0x6B;                   \/\/Gray+$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::APPS	./source\ConsoleInput.h	/^    const static int APPS = 0x5D;                  \/\/APPS$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::B	./source\ConsoleInput.h	/^    const static int B = (int)'B';                 \/\/B$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::BACK	./source\ConsoleInput.h	/^    const static int BACK = 0x08;                  \/\/BACK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::BROWSER_BACK	./source\ConsoleInput.h	/^    const static int BROWSER_BACK = 0xA6;          \/\/BROWSER_BACK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::BROWSER_FAVORITES	./source\ConsoleInput.h	/^    const static int BROWSER_FAVORITES = 0xAB;     \/\/BROWSER_FAVORITES$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::BROWSER_FORWARD	./source\ConsoleInput.h	/^    const static int BROWSER_FORWARD = 0xA7;       \/\/BROWSER_FORWARD$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::BROWSER_HOME	./source\ConsoleInput.h	/^    const static int BROWSER_HOME = 0xAC;          \/\/BROWSER_HOME$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::BROWSER_REFRESH	./source\ConsoleInput.h	/^    const static int BROWSER_REFRESH = 0xA8;       \/\/BROWSER_REFRESH$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::BROWSER_SEARCH	./source\ConsoleInput.h	/^    const static int BROWSER_SEARCH = 0xAA;        \/\/BROWSER_SEARCH$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::BROWSER_STOP	./source\ConsoleInput.h	/^    const static int BROWSER_STOP = 0xA9;          \/\/BROWSER_STOP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::C	./source\ConsoleInput.h	/^    const static int C = (int)'C';                 \/\/C$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::CANCEL	./source\ConsoleInput.h	/^    const static int CANCEL = 0x03;                \/\/CANCEL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::CAPITAL	./source\ConsoleInput.h	/^    const static int CAPITAL = 0x14;               \/\/CAPITAL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::CLEAR	./source\ConsoleInput.h	/^    const static int CLEAR = 0x0C;                 \/\/CLEAR$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::CONTROL	./source\ConsoleInput.h	/^    const static int CONTROL = 0x11;               \/\/CONTROL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::CONVERT	./source\ConsoleInput.h	/^    const static int CONVERT = 0x1C;               \/\/CONVERT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::D	./source\ConsoleInput.h	/^    const static int D = (int)'D';                 \/\/D$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::DECIMAL	./source\ConsoleInput.h	/^    const static int DECIMAL = 0x6E;               \/\/Gray.$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::DEL	./source\ConsoleInput.h	/^    const static int DEL = 0x2E;                   \/\/DEL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::DIVIDE	./source\ConsoleInput.h	/^    const static int DIVIDE = 0x6F;                \/\/Gray\/$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::DOWN	./source\ConsoleInput.h	/^    const static int DOWN = 0x28;                  \/\/DOWN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::E	./source\ConsoleInput.h	/^    const static int E = (int)'E';                 \/\/E$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::EIGHT	./source\ConsoleInput.h	/^    const static int EIGHT = 0x38;                 \/\/8$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::END	./source\ConsoleInput.h	/^    const static int END = 0x23;                   \/\/END$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::ESCAPE	./source\ConsoleInput.h	/^    const static int ESCAPE = 0x1B;                \/\/ESCAPE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::EXECUTE	./source\ConsoleInput.h	/^    const static int EXECUTE = 0x2B;               \/\/EXECUTE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F	./source\ConsoleInput.h	/^    const static int F = (int)'F';                 \/\/F$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F1	./source\ConsoleInput.h	/^    const static int F1 = 0x70;                    \/\/F1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F10	./source\ConsoleInput.h	/^    const static int F10 = 0x79;                   \/\/F10$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F11	./source\ConsoleInput.h	/^    const static int F11 = 0x7A;                   \/\/F11$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F12	./source\ConsoleInput.h	/^    const static int F12 = 0x7B;                   \/\/F12$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F13	./source\ConsoleInput.h	/^    const static int F13 = 0x7C;                   \/\/F13$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F14	./source\ConsoleInput.h	/^    const static int F14 = 0x7D;                   \/\/F14$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F15	./source\ConsoleInput.h	/^    const static int F15 = 0x7E;                   \/\/F15$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F16	./source\ConsoleInput.h	/^    const static int F16 = 0x7F;                   \/\/F16$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F17	./source\ConsoleInput.h	/^    const static int F17 = 0x80;                   \/\/F17$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F18	./source\ConsoleInput.h	/^    const static int F18 = 0x81;                   \/\/F18$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F19	./source\ConsoleInput.h	/^    const static int F19 = 0x82;                   \/\/F19$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F2	./source\ConsoleInput.h	/^    const static int F2 = 0x71;                    \/\/F2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F20	./source\ConsoleInput.h	/^    const static int F20 = 0x83;                   \/\/F20$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F21	./source\ConsoleInput.h	/^    const static int F21 = 0x84;                   \/\/F21$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F22	./source\ConsoleInput.h	/^    const static int F22 = 0x85;                   \/\/F22$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F23	./source\ConsoleInput.h	/^    const static int F23 = 0x86;                   \/\/F23$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F24	./source\ConsoleInput.h	/^    const static int F24 = 0x87;                   \/\/F24$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F3	./source\ConsoleInput.h	/^    const static int F3 = 0x72;                    \/\/F3$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F4	./source\ConsoleInput.h	/^    const static int F4 = 0x73;                    \/\/F4$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F5	./source\ConsoleInput.h	/^    const static int F5 = 0x74;                    \/\/F5$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F6	./source\ConsoleInput.h	/^    const static int F6 = 0x75;                    \/\/F6$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F7	./source\ConsoleInput.h	/^    const static int F7 = 0x76;                    \/\/F7$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F8	./source\ConsoleInput.h	/^    const static int F8 = 0x77;                    \/\/F8$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::F9	./source\ConsoleInput.h	/^    const static int F9 = 0x78;                    \/\/F9$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::FINAL	./source\ConsoleInput.h	/^    const static int FINAL = 0x18;                 \/\/FINAL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::FIVE	./source\ConsoleInput.h	/^    const static int FIVE = 0x35;                  \/\/5$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::FOUR	./source\ConsoleInput.h	/^    const static int FOUR = 0x34;                  \/\/4$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::FREE	./source\ConsoleInput.h	/^    const static int FREE = 0x33;                  \/\/3$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::G	./source\ConsoleInput.h	/^    const static int G = (int)'G';                 \/\/G$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::GetText	./source\TextClipboard.h	/^    static String ^GetText();$/;"	p	class:gehtsoft::xce::conio::sealed	access:public	signature:()
+gehtsoft::xce::conio::sealed::GetText	./source\TextClipboard.h	/^    static String ^GetText(TextClipboardFormat format);$/;"	p	class:gehtsoft::xce::conio::sealed	access:public	signature:(TextClipboardFormat format)
+gehtsoft::xce::conio::sealed::H	./source\ConsoleInput.h	/^    const static int H = (int)'H';                 \/\/H$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::HANGEUL	./source\ConsoleInput.h	/^    const static int HANGEUL = 0x15;               \/\/HANGEUL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::HANGUL	./source\ConsoleInput.h	/^    const static int HANGUL = 0x15;                \/\/HANGUL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::HANJA	./source\ConsoleInput.h	/^    const static int HANJA = 0x19;                 \/\/HANJA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::HELP	./source\ConsoleInput.h	/^    const static int HELP = 0x2F;                  \/\/HELP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::HOME	./source\ConsoleInput.h	/^    const static int HOME = 0x24;                  \/\/HOME$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::I	./source\ConsoleInput.h	/^    const static int I = (int)'I';                 \/\/I$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::ICO_00	./source\ConsoleInput.h	/^    const static int ICO_00 = 0xE4;                \/\/ICO_00$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::ICO_HELP	./source\ConsoleInput.h	/^    const static int ICO_HELP = 0xE3;              \/\/ICO_HELP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::INSERT	./source\ConsoleInput.h	/^    const static int INSERT = 0x2D;                \/\/INSERT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::IsTextAvailable	./source\TextClipboard.h	/^    static bool IsTextAvailable(TextClipboardFormat format);$/;"	p	class:gehtsoft::xce::conio::sealed	access:public	signature:(TextClipboardFormat format)
+gehtsoft::xce::conio::sealed::J	./source\ConsoleInput.h	/^    const static int J = (int)'J';                 \/\/J$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::JUNJA	./source\ConsoleInput.h	/^    const static int JUNJA = 0x17;                 \/\/JUNJA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::K	./source\ConsoleInput.h	/^    const static int K = (int)'K';                 \/\/K$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::KANA	./source\ConsoleInput.h	/^    const static int KANA = 0x15;                  \/\/KANA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::KANJI	./source\ConsoleInput.h	/^    const static int KANJI = 0x19;                 \/\/KANJI$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::L	./source\ConsoleInput.h	/^    const static int L = (int)'L';                 \/\/L$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LAUNCH_APP1	./source\ConsoleInput.h	/^    const static int LAUNCH_APP1 = 0xB6;           \/\/LAUNCH_APP1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LAUNCH_APP2	./source\ConsoleInput.h	/^    const static int LAUNCH_APP2 = 0xB7;           \/\/LAUNCH_APP2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LAUNCH_MAIL	./source\ConsoleInput.h	/^    const static int LAUNCH_MAIL = 0xB4;           \/\/LAUNCH_MAIL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LAUNCH_MEDIA_SELECT	./source\ConsoleInput.h	/^    const static int LAUNCH_MEDIA_SELECT = 0xB5;   \/\/LAUNCH_MEDIA_SELECT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LBUTTON	./source\ConsoleInput.h	/^    const static int LBUTTON = 0x01;               \/\/LBUTTON$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LCONTROL	./source\ConsoleInput.h	/^    const static int LCONTROL = 0xA2;              \/\/LCONTROL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LEFT	./source\ConsoleInput.h	/^    const static int LEFT = 0x25;                  \/\/LEFT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LMENU	./source\ConsoleInput.h	/^    const static int LMENU = 0xA4;                 \/\/LMENU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LSHIFT	./source\ConsoleInput.h	/^    const static int LSHIFT = 0xA0;                \/\/LSHIFT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::LWIN	./source\ConsoleInput.h	/^    const static int LWIN = 0x5B;                  \/\/LWIN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::M	./source\ConsoleInput.h	/^    const static int M = (int)'M';                 \/\/M$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::MBUTTON	./source\ConsoleInput.h	/^    const static int MBUTTON = 0x04;               \/\/MBUTTON$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::MEDIA_NEXT_TRACK	./source\ConsoleInput.h	/^    const static int MEDIA_NEXT_TRACK = 0xB0;      \/\/MEDIA_NEXT_TRACK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::MEDIA_PLAY_PAUSE	./source\ConsoleInput.h	/^    const static int MEDIA_PLAY_PAUSE = 0xB3;      \/\/MEDIA_PLAY_PAUSE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::MEDIA_PREV_TRACK	./source\ConsoleInput.h	/^    const static int MEDIA_PREV_TRACK = 0xB1;      \/\/MEDIA_PREV_TRACK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::MEDIA_STOP	./source\ConsoleInput.h	/^    const static int MEDIA_STOP = 0xB2;            \/\/MEDIA_STOP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::MENU	./source\ConsoleInput.h	/^    const static int MENU = 0x12;                  \/\/MENU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::MODECHANGE	./source\ConsoleInput.h	/^    const static int MODECHANGE = 0x1F;            \/\/MODECHANGE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::MULTIPLY	./source\ConsoleInput.h	/^    const static int MULTIPLY = 0x6A;              \/\/MULTIPLY$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::N	./source\ConsoleInput.h	/^    const static int N = (int)'N';                 \/\/N$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NEXT	./source\ConsoleInput.h	/^    const static int NEXT = 0x22;                  \/\/NEXT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NINE	./source\ConsoleInput.h	/^    const static int NINE = 0x39;                  \/\/9$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NONCONVERT	./source\ConsoleInput.h	/^    const static int NONCONVERT = 0x1D;            \/\/NONCONVERT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMLOCK	./source\ConsoleInput.h	/^    const static int NUMLOCK = 0x90;               \/\/NUMLOCK$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD0	./source\ConsoleInput.h	/^    const static int NUMPAD0 = 0x60;               \/\/NUMPAD0$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD1	./source\ConsoleInput.h	/^    const static int NUMPAD1 = 0x61;               \/\/NUMPAD1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD2	./source\ConsoleInput.h	/^    const static int NUMPAD2 = 0x62;               \/\/NUMPAD2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD3	./source\ConsoleInput.h	/^    const static int NUMPAD3 = 0x63;               \/\/NUMPAD3$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD4	./source\ConsoleInput.h	/^    const static int NUMPAD4 = 0x64;               \/\/NUMPAD4$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD5	./source\ConsoleInput.h	/^    const static int NUMPAD5 = 0x65;               \/\/NUMPAD5$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD6	./source\ConsoleInput.h	/^    const static int NUMPAD6 = 0x66;               \/\/NUMPAD6$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD7	./source\ConsoleInput.h	/^    const static int NUMPAD7 = 0x67;               \/\/NUMPAD7$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD8	./source\ConsoleInput.h	/^    const static int NUMPAD8 = 0x68;               \/\/NUMPAD8$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::NUMPAD9	./source\ConsoleInput.h	/^    const static int NUMPAD9 = 0x69;               \/\/NUMPAD9$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::O	./source\ConsoleInput.h	/^    const static int O = (int)'O';                 \/\/O$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_1	./source\ConsoleInput.h	/^    const static int OEM_1 = 0xBA;                 \/\/;$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_102	./source\ConsoleInput.h	/^    const static int OEM_102 = 0xE2;               \/\/OEM_102$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_2	./source\ConsoleInput.h	/^    const static int OEM_2 = 0xBF;                 \/\/\/$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_3	./source\ConsoleInput.h	/^    const static int OEM_3 = 0xC0;                 \/\/~$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_4	./source\ConsoleInput.h	/^    const static int OEM_4 = 0xDB;                 \/\/[$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_5	./source\ConsoleInput.h	/^    const static int OEM_5 = 0xDC;                 \/\/\\ back slash$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_6	./source\ConsoleInput.h	/^    const static int OEM_6 = 0xDD;                 \/\/]$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_7	./source\ConsoleInput.h	/^    const static int OEM_7 = 0xDE;                 \/\/'$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_8	./source\ConsoleInput.h	/^    const static int OEM_8 = 0xDF;                 \/\/OEM_8$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_AX	./source\ConsoleInput.h	/^    const static int OEM_AX = 0xE1;                \/\/OEM_AX$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_COMMA	./source\ConsoleInput.h	/^    const static int OEM_COMMA = 0xBC;             \/\/,$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_FJ_JISHO	./source\ConsoleInput.h	/^    const static int OEM_FJ_JISHO = 0x92;          \/\/OEM_FJ_JISHO$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_FJ_LOYA	./source\ConsoleInput.h	/^    const static int OEM_FJ_LOYA = 0x95;           \/\/OEM_FJ_LOYA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_FJ_MASSHOU	./source\ConsoleInput.h	/^    const static int OEM_FJ_MASSHOU = 0x93;        \/\/OEM_FJ_MASSHOU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_FJ_ROYA	./source\ConsoleInput.h	/^    const static int OEM_FJ_ROYA = 0x96;           \/\/OEM_FJ_ROYA$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_FJ_TOUROKU	./source\ConsoleInput.h	/^    const static int OEM_FJ_TOUROKU = 0x94;        \/\/OEM_FJ_TOUROKU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_MINUS	./source\ConsoleInput.h	/^    const static int OEM_MINUS = 0xBD;             \/\/-$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_NEC_EQUAL	./source\ConsoleInput.h	/^    const static int OEM_NEC_EQUAL = 0x92;         \/\/OEM_NEC_EQUAL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_PERIOD	./source\ConsoleInput.h	/^    const static int OEM_PERIOD = 0xBE;            \/\/.$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::OEM_PLUS	./source\ConsoleInput.h	/^    const static int OEM_PLUS = 0xBB;              \/\/+$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::ONE	./source\ConsoleInput.h	/^    const static int ONE = 0x31;                   \/\/1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::P	./source\ConsoleInput.h	/^    const static int P = (int)'P';                 \/\/P$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::PAUSE	./source\ConsoleInput.h	/^    const static int PAUSE = 0x13;                 \/\/PAUSE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::PRINT	./source\ConsoleInput.h	/^    const static int PRINT = 0x2A;                 \/\/PRINT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::PRIOR	./source\ConsoleInput.h	/^    const static int PRIOR = 0x21;                 \/\/PRIOR$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::Q	./source\ConsoleInput.h	/^    const static int Q = (int)'Q';                 \/\/Q$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::R	./source\ConsoleInput.h	/^    const static int R = (int)'R';                 \/\/R$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::RBUTTON	./source\ConsoleInput.h	/^    const static int RBUTTON = 0x02;               \/\/RBUTTON$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::RCONTROL	./source\ConsoleInput.h	/^    const static int RCONTROL = 0xA3;              \/\/RCONTROL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::RETURN	./source\ConsoleInput.h	/^    const static int RETURN = 0x0D;                \/\/RETURN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::RIGHT	./source\ConsoleInput.h	/^    const static int RIGHT = 0x27;                 \/\/RIGHT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::RMENU	./source\ConsoleInput.h	/^    const static int RMENU = 0xA5;                 \/\/RMENU$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::RSHIFT	./source\ConsoleInput.h	/^    const static int RSHIFT = 0xA1;                \/\/RSHIFT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::RWIN	./source\ConsoleInput.h	/^    const static int RWIN = 0x5C;                  \/\/RWIN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::S	./source\ConsoleInput.h	/^    const static int S = (int)'S';                 \/\/S$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SCROLL	./source\ConsoleInput.h	/^    const static int SCROLL = 0x91;                \/\/SCROLL$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SELECT	./source\ConsoleInput.h	/^    const static int SELECT = 0x29;                \/\/SELECT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SEPARATOR	./source\ConsoleInput.h	/^    const static int SEPARATOR = 0x6C;             \/\/Gray\/$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SEVEN	./source\ConsoleInput.h	/^    const static int SEVEN = 0x37;                 \/\/7$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SHIFT	./source\ConsoleInput.h	/^    const static int SHIFT = 0x10;                 \/\/SHIFT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SIX	./source\ConsoleInput.h	/^    const static int SIX = 0x36;                   \/\/6$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SLEEP	./source\ConsoleInput.h	/^    const static int SLEEP = 0x5F;                 \/\/SLEEP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SNAPSHOT	./source\ConsoleInput.h	/^    const static int SNAPSHOT = 0x2C;              \/\/SNAPSHOT$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SPACE	./source\ConsoleInput.h	/^    const static int SPACE = 0x20;                 \/\/SPACE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::SUBTRACT	./source\ConsoleInput.h	/^    const static int SUBTRACT = 0x6D;              \/\/Gray-$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::ScanCode	./source\ConsoleInput.h	/^    ScanCode();$/;"	p	class:gehtsoft::xce::conio::sealed	access:private	signature:()
+gehtsoft::xce::conio::sealed::T	./source\ConsoleInput.h	/^    const static int T = (int)'T';                 \/\/T$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::TAB	./source\ConsoleInput.h	/^    const static int TAB = 0x09;                   \/\/TAB$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::TWO	./source\ConsoleInput.h	/^    const static int TWO = 0x32;                   \/\/2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::TextClipboard	./source\TextClipboard.h	/^    TextClipboard();$/;"	p	class:gehtsoft::xce::conio::sealed	access:private	signature:()
+gehtsoft::xce::conio::sealed::U	./source\ConsoleInput.h	/^    const static int U = (int)'U';                 \/\/U$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::UP	./source\ConsoleInput.h	/^    const static int UP = 0x26;                    \/\/UP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::V	./source\ConsoleInput.h	/^    const static int V = (int)'V';                 \/\/V$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::VOLUME_DOWN	./source\ConsoleInput.h	/^    const static int VOLUME_DOWN = 0xAE;           \/\/VOLUME_DOWN$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::VOLUME_MUTE	./source\ConsoleInput.h	/^    const static int VOLUME_MUTE = 0xAD;           \/\/VOLUME_MUTE$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::VOLUME_UP	./source\ConsoleInput.h	/^    const static int VOLUME_UP = 0xAF;             \/\/VOLUME_UP$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::W	./source\ConsoleInput.h	/^    const static int W = (int)'W';                 \/\/W$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::X	./source\ConsoleInput.h	/^    const static int X = (int)'X';                 \/\/X$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::XBUTTON1	./source\ConsoleInput.h	/^    const static int XBUTTON1 = 0x05;              \/\/XBUTTON1$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::XBUTTON2	./source\ConsoleInput.h	/^    const static int XBUTTON2 = 0x06;              \/\/XBUTTON2$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::Y	./source\ConsoleInput.h	/^    const static int Y = (int)'Y';                 \/\/Y$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::Z	./source\ConsoleInput.h	/^    const static int Z = (int)'Z';                 \/\/Z$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+gehtsoft::xce::conio::sealed::ZERO	./source\ConsoleInput.h	/^    const static int ZERO = 0x30;                  \/\/0$/;"	m	class:gehtsoft::xce::conio::sealed	access:public
+get	./source\ConsoleInput.cpp	/^int ConsoleInput::CurrentLayout::get()$/;"	f	class:gehtsoft::xce::conio::ConsoleInput::CurrentLayout	signature:()
+get	./source\ConsoleOutput.cpp	/^int ConsoleOutput::Columns::get()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput::Columns	signature:()
+get	./source\ConsoleOutput.cpp	/^int ConsoleOutput::Rows::get()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput::Rows	signature:()
+get	./source\canvas.cpp	/^BoxBorder ^BoxBorder::DoubleBorderBox::get()$/;"	f	class:gehtsoft::xce::conio::BoxBorder::DoubleBorderBox	signature:()
+get	./source\canvas.cpp	/^BoxBorder ^BoxBorder::SingleBorderBox::get()$/;"	f	class:gehtsoft::xce::conio::BoxBorder::SingleBorderBox	signature:()
+get	./source\canvas.cpp	/^CHAR_INFO *Canvas::Data::get()$/;"	f	class:gehtsoft::xce::conio::Canvas::Data	signature:()
+get	./source\canvas.cpp	/^bool Canvas::get(int row, int column, [Out]wchar_t %chr, [Out]short %color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, [Out]wchar_t %chr, [Out]short %color)
+get	./source\canvas.cpp	/^int Canvas::Columns::get()$/;"	f	class:gehtsoft::xce::conio::Canvas::Columns	signature:()
+get	./source\canvas.cpp	/^int Canvas::Rows::get()$/;"	f	class:gehtsoft::xce::conio::Canvas::Rows	signature:()
+get	./source\canvas.cpp	/^wchar_t BoxBorder::Bottom::get() { return mBottom; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::Bottom	signature:()
+get	./source\canvas.cpp	/^wchar_t BoxBorder::BottomLeft::get() { return mBottomLeft; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::BottomLeft	signature:()
+get	./source\canvas.cpp	/^wchar_t BoxBorder::BottomRight::get() { return mBottomRight; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::BottomRight	signature:()
+get	./source\canvas.cpp	/^wchar_t BoxBorder::Left::get() { return mLeft; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::Left	signature:()
+get	./source\canvas.cpp	/^wchar_t BoxBorder::Right::get() { return mRight; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::Right	signature:()
+get	./source\canvas.cpp	/^wchar_t BoxBorder::Top::get() { return mTop; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::Top	signature:()
+get	./source\canvas.cpp	/^wchar_t BoxBorder::TopLeft::get() { return mTopLeft; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::TopLeft	signature:()
+get	./source\canvas.cpp	/^wchar_t BoxBorder::TopRight::get() { return mTopRight; }$/;"	f	class:gehtsoft::xce::conio::BoxBorder::TopRight	signature:()
+get	./source\canvas.h	/^    bool get(int row, int column, [Out]wchar_t %chr, [Out]short %color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, [Out]wchar_t %chr, [Out]short %color)
+getCursorPos	./source\ConsoleOutput.cpp	/^void ConsoleOutput::getCursorPos([Out]int %row, [Out]int %column)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:([Out]int %row, [Out]int %column)
+getCursorPos	./source\ConsoleOutput.h	/^    void getCursorPos([Out]int %row, [Out]int %column);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:([Out]int %row, [Out]int %column)
+getCursorType	./source\ConsoleOutput.cpp	/^void ConsoleOutput::getCursorType([Out]int %size, [Out]bool %visible)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:([Out]int %size, [Out]bool %visible)
+getCursorType	./source\ConsoleOutput.h	/^    void getCursorType([Out]int %size, [Out]bool %visible);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:([Out]int %size, [Out]bool %visible)
+htoi	./source\ConsoleInput.cpp	/^unsigned int htoi (const char *ptr)$/;"	f	signature:(const char *ptr)
+init	./source\ConsoleOutput.cpp	/^void ConsoleOutput::init(bool save, bool changeResolution, int rows, int columns)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(bool save, bool changeResolution, int rows, int columns)
+init	./source\ConsoleOutput.h	/^    void init(bool save, bool changeResolution, int rows, int columns);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:private	signature:(bool save, bool changeResolution, int rows, int columns)
+keyCodeToName	./source\ConsoleInput.cpp	/^String ^ConsoleInput::keyCodeToName(int code)$/;"	f	class:gehtsoft::xce::conio::ConsoleInput	signature:(int code)
+keyCodeToName	./source\ConsoleInput.h	/^    static String ^keyCodeToName(int code);$/;"	p	class:gehtsoft::xce::conio::ConsoleInput	access:public	signature:(int code)
+mBottom	./source\canvas.h	/^    wchar_t mBottom;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+mBottomLeft	./source\canvas.h	/^    wchar_t mBottomLeft;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+mBottomRight	./source\canvas.h	/^    wchar_t mBottomRight;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+mColumns	./source\ConsoleOutput.h	/^    int mColumns;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mColumns	./source\canvas.h	/^     int mColumns;$/;"	m	class:gehtsoft::xce::conio::Canvas	access:private
+mCursorColumn	./source\ConsoleOutput.h	/^    int mCursorColumn;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mCursorRow	./source\ConsoleOutput.h	/^    int mCursorRow;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mCursorSize	./source\ConsoleOutput.h	/^    int mCursorSize;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mCursorVisible	./source\ConsoleOutput.h	/^    bool mCursorVisible;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mData	./source\canvas.h	/^    CHAR_INFO *mData;$/;"	m	class:gehtsoft::xce::conio::Canvas	access:private
+mDoubleBorder	./source\canvas.h	/^    static BoxBorder ^mDoubleBorder = nullptr;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+mLeft	./source\canvas.h	/^    wchar_t mLeft;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+mLeftButtonPressed	./source\ConsoleInput.h	/^    bool mLeftButtonPressed;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+mMouseColumn	./source\ConsoleInput.h	/^    int mMouseRow, mMouseColumn;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+mMouseRow	./source\ConsoleInput.h	/^    int mMouseRow, mMouseColumn;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+mOldCP	./source\ConsoleOutput.h	/^    UINT mOldCP;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mOrgColumns	./source\ConsoleOutput.h	/^    int mOrgColumns;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mOrgContent	./source\ConsoleOutput.h	/^    CHAR_INFO *mOrgContent;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mOrgRows	./source\ConsoleOutput.h	/^    int mOrgRows;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mRestoreContent	./source\ConsoleOutput.h	/^    bool mRestoreContent;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mRestoreRes	./source\ConsoleOutput.h	/^    bool mRestoreRes;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mRight	./source\canvas.h	/^    wchar_t mRight;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+mRightButtonPressed	./source\ConsoleInput.h	/^    bool mRightButtonPressed;$/;"	m	class:gehtsoft::xce::conio::ConsoleInput	access:private
+mRows	./source\ConsoleOutput.h	/^    int mRows;$/;"	m	class:gehtsoft::xce::conio::ConsoleOutput	access:private
+mRows	./source\canvas.h	/^     int mRows;$/;"	m	class:gehtsoft::xce::conio::Canvas	access:private
+mSingleBorder	./source\canvas.h	/^    static BoxBorder ^mSingleBorder = nullptr;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+mTop	./source\canvas.h	/^    wchar_t mTop;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+mTopLeft	./source\canvas.h	/^    wchar_t mTopLeft;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+mTopRight	./source\canvas.h	/^    wchar_t mTopRight;$/;"	m	class:gehtsoft::xce::conio::BoxBorder	access:private
+onGetFocus	./source\ConsoleInput.h	/^    void onGetFocus(bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(bool shift, bool ctrl, bool alt)
+onKeyPressed	./source\ConsoleInput.h	/^    void onKeyPressed(int scanCode, wchar_t character, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int scanCode, wchar_t character, bool shift, bool ctrl, bool alt)
+onKeyReleased	./source\ConsoleInput.h	/^    void onKeyReleased(int scanCode, wchar_t character, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int scanCode, wchar_t character, bool shift, bool ctrl, bool alt)
+onMouseLButtonDown	./source\ConsoleInput.h	/^    void onMouseLButtonDown(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+onMouseLButtonUp	./source\ConsoleInput.h	/^    void onMouseLButtonUp(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+onMouseMove	./source\ConsoleInput.h	/^    void onMouseMove(int row, int column, bool shift, bool ctrl, bool alt, bool lb, bool rb);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt, bool lb, bool rb)
+onMouseRButtonDown	./source\ConsoleInput.h	/^    void onMouseRButtonDown(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+onMouseRButtonUp	./source\ConsoleInput.h	/^    void onMouseRButtonUp(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+onMouseWheelDown	./source\ConsoleInput.h	/^    void onMouseWheelDown(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+onMouseWheelUp	./source\ConsoleInput.h	/^    void onMouseWheelUp(int row, int column, bool shift, bool ctrl, bool alt);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int row, int column, bool shift, bool ctrl, bool alt)
+onScreenBufferChanged	./source\ConsoleInput.h	/^    void onScreenBufferChanged(int rows, int columns);$/;"	p	class:gehtsoft::xce::conio::ConsoleInputListener	access:private	signature:(int rows, int columns)
+paint	./source\canvas.cpp	/^void Canvas::paint(int row, int column, Canvas ^canvas)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, Canvas ^canvas)
+paint	./source\canvas.h	/^    void paint(int row, int column, Canvas ^canvas);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, Canvas ^canvas)
+sealed	./source\ConsoleInput.h	/^public ref class ScanCode sealed$/;"	c	namespace:gehtsoft::xce::conio	access:public
+sealed	./source\TextClipboard.h	/^public ref class TextClipboard sealed$/;"	c	namespace:gehtsoft::xce::conio	access:public
+setCursorPos	./source\ConsoleOutput.cpp	/^void ConsoleOutput::setCursorPos(int row, int column)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(int row, int column)
+setCursorPos	./source\ConsoleOutput.h	/^    void setCursorPos(int row, int column);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:(int row, int column)
+setCursorType	./source\ConsoleOutput.cpp	/^void ConsoleOutput::setCursorType(int size, bool visible)$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:(int size, bool visible)
+setCursorType	./source\ConsoleOutput.h	/^    void setCursorType(int size, bool visible);$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:(int size, bool visible)
+updateSize	./source\ConsoleOutput.cpp	/^void ConsoleOutput::updateSize()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:()
+updateSize	./source\ConsoleOutput.h	/^    void updateSize();$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:()
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, String ^text)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, String ^text)
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, String ^text, int offset, int length)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, String ^text, int offset, int length)
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, String ^text, int offset, int length, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, String ^text, int offset, int length, short color)
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, String ^text, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, String ^text, short color)
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, System::Text::StringBuilder ^text, int offset, int length)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, System::Text::StringBuilder ^text, int offset, int length)
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, System::Text::StringBuilder ^text, int offset, int length, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, System::Text::StringBuilder ^text, int offset, int length, short color)
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, array<wchar_t> ^text, int offset, int length)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, array<wchar_t> ^text, int offset, int length)
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, short color)
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, wchar_t chr)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, wchar_t chr)
+write	./source\canvas.cpp	/^void Canvas::write(int row, int column, wchar_t chr, short color)$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:(int row, int column, wchar_t chr, short color)
+write	./source\canvas.h	/^    void write(int row, int column, String ^text);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, String ^text)
+write	./source\canvas.h	/^    void write(int row, int column, String ^text, int offset, int length);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, String ^text, int offset, int length)
+write	./source\canvas.h	/^    void write(int row, int column, String ^text, int offset, int length, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, String ^text, int offset, int length, short color)
+write	./source\canvas.h	/^    void write(int row, int column, String ^text, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, String ^text, short color)
+write	./source\canvas.h	/^    void write(int row, int column, System::Text::StringBuilder ^text, int offset, int length);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, System::Text::StringBuilder ^text, int offset, int length)
+write	./source\canvas.h	/^    void write(int row, int column, System::Text::StringBuilder ^text, int offset, int length, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, System::Text::StringBuilder ^text, int offset, int length, short color)
+write	./source\canvas.h	/^    void write(int row, int column, array<wchar_t> ^text, int offset, int length);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, array<wchar_t> ^text, int offset, int length)
+write	./source\canvas.h	/^    void write(int row, int column, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, short color)
+write	./source\canvas.h	/^    void write(int row, int column, wchar_t chr);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, wchar_t chr)
+write	./source\canvas.h	/^    void write(int row, int column, wchar_t chr, short color);$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:(int row, int column, wchar_t chr, short color)
+xce	./source\ConsoleInput.cpp	/^namespace xce$/;"	n	namespace:gehtsoft	file:
+xce	./source\ConsoleInput.h	/^namespace xce$/;"	n	namespace:gehtsoft
+xce	./source\ConsoleOutput.cpp	/^namespace xce$/;"	n	namespace:gehtsoft	file:
+xce	./source\ConsoleOutput.h	/^namespace xce$/;"	n	namespace:gehtsoft
+xce	./source\TextClipboard.cpp	/^namespace xce$/;"	n	namespace:gehtsoft	file:
+xce	./source\TextClipboard.h	/^namespace xce$/;"	n	namespace:gehtsoft
+xce	./source\canvas.cpp	/^namespace xce$/;"	n	namespace:gehtsoft	file:
+xce	./source\canvas.h	/^namespace xce$/;"	n	namespace:gehtsoft
+~Canvas	./source\canvas.cpp	/^Canvas::~Canvas()$/;"	f	class:gehtsoft::xce::conio::Canvas	signature:()
+~Canvas	./source\canvas.h	/^    ~Canvas();$/;"	p	class:gehtsoft::xce::conio::Canvas	access:public	signature:()
+~ConsoleInput	./source\ConsoleInput.cpp	/^ConsoleInput::~ConsoleInput()$/;"	f	class:gehtsoft::xce::conio::ConsoleInput	signature:()
+~ConsoleInput	./source\ConsoleInput.h	/^    ~ConsoleInput();$/;"	p	class:gehtsoft::xce::conio::ConsoleInput	access:public	signature:()
+~ConsoleOutput	./source\ConsoleOutput.cpp	/^ConsoleOutput::~ConsoleOutput()$/;"	f	class:gehtsoft::xce::conio::ConsoleOutput	signature:()
+~ConsoleOutput	./source\ConsoleOutput.h	/^    ~ConsoleOutput();$/;"	p	class:gehtsoft::xce::conio::ConsoleOutput	access:public	signature:()

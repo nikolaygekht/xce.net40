@@ -1,0 +1,753 @@
+@class
+    @name=XceColorScheme
+    @key=gehtsoft.xce.editor.configuration.XceColorScheme
+    @brief=The editor color schema.
+    @type=class
+    @ingroup=gehtsoft.xce.editor.configuration
+    @sig=T:gehtsoft.xce.editor.configuration.XceColorScheme
+    @parent=gehtsoft.xce.conio.win.IColorScheme
+    @import=gehtsoft.xce.conio.win.IColorScheme
+
+    @member
+        @name=MenuItem
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.MenuItem
+        @key=MenuItem.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuItem
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=MenuItemSelected
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.MenuItemSelected
+        @key=MenuItemSelected.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuItemSelected
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=MenuDisabledItem
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.MenuDisabledItem
+        @key=MenuDisabledItem.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuDisabledItem
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=MenuDisabledItemSelected
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.MenuDisabledItemSelected
+        @key=MenuDisabledItemSelected.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuDisabledItemSelected
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=MenuHotKey
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.MenuHotKey
+        @key=MenuHotKey.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuHotKey
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=MenuHotKeySelected
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.MenuHotKeySelected
+        @key=MenuHotKeySelected.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MenuHotKeySelected
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogBorder
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogBorder
+        @key=DialogBorder.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogBorder
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemLabelColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemLabelColor
+        @key=DialogItemLabelColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemLabelColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemLabelHotKey
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemLabelHotKey
+        @key=DialogItemLabelHotKey.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemLabelHotKey
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemCheckBoxColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemCheckBoxColor
+        @key=DialogItemCheckBoxColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemCheckBoxColorFocused
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemCheckBoxColorFocused
+        @key=DialogItemCheckBoxColorFocused.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxColorFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemCheckBoxHotKey
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemCheckBoxHotKey
+        @key=DialogItemCheckBoxHotKey.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxHotKey
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemCheckBoxHotKeyFocused
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemCheckBoxHotKeyFocused
+        @key=DialogItemCheckBoxHotKeyFocused.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxHotKeyFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemCheckBoxColorDisabled
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemCheckBoxColorDisabled
+        @key=DialogItemCheckBoxColorDisabled.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemCheckBoxColorDisabled
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemButtonColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemButtonColor
+        @key=DialogItemButtonColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemButtonColorDisabled
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemButtonColorDisabled
+        @key=DialogItemButtonColorDisabled.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonColorDisabled
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemButtonColorFocused
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemButtonColorFocused
+        @key=DialogItemButtonColorFocused.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonColorFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemButtonHotKey
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemButtonHotKey
+        @key=DialogItemButtonHotKey.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonHotKey
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemButtonHotKeyFocused
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemButtonHotKeyFocused
+        @key=DialogItemButtonHotKeyFocused.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemButtonHotKeyFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemEditColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemEditColor
+        @key=DialogItemEditColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemEditColorDisabled
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemEditColorDisabled
+        @key=DialogItemEditColorDisabled.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditColorDisabled
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemEditColorFocused
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemEditColorFocused
+        @key=DialogItemEditColorFocused.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditColorFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemEditSelection
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemEditSelection
+        @key=DialogItemEditSelection.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditSelection
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemEditSelectionFocused
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemEditSelectionFocused
+        @key=DialogItemEditSelectionFocused.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemEditSelectionFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemListBoxColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemListBoxColor
+        @key=DialogItemListBoxColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemListBoxColorDisabled
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemListBoxColorDisabled
+        @key=DialogItemListBoxColorDisabled.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxColorDisabled
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemListBoxColorFocused
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemListBoxColorFocused
+        @key=DialogItemListBoxColorFocused.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxColorFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemListBoxSelection
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemListBoxSelection
+        @key=DialogItemListBoxSelection.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxSelection
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DialogItemListBoxSelectionFocused
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.DialogItemListBoxSelectionFocused
+        @key=DialogItemListBoxSelectionFocused.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBoxSelectionFocused
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=TextColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.TextColor
+        @key=TextColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TextColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=CurrentLineTextColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.CurrentLineTextColor
+        @key=CurrentLineTextColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CurrentLineTextColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=BlockTextColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.BlockTextColor
+        @key=BlockTextColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=BlockTextColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=CurrentLineBlockTextColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.CurrentLineBlockTextColor
+        @key=CurrentLineBlockTextColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CurrentLineBlockTextColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=StatusLineColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.StatusLineColor
+        @key=StatusLineColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=StatusLineColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=SpellCheckErrorColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.SpellCheckErrorColor
+        @key=SpellCheckErrorColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=SpellCheckErrorColor
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=PairHighlightColor
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.PairHighlightColor
+        @key=PairHighlightColor.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=PairHighlightColor
+            @return=short
+            @suffix= get;
+        @end
+    @end
+
+    @member
+        @name=SearchHighlight
+        @sig=P:gehtsoft.xce.editor.configuration.XceColorScheme.SearchHighlight
+        @key=SearchHighlight.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=SearchHighlight
+            @return=short
+            @suffix= get;
+        @end
+
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.editor.configuration]gehtsoft.xce.editor.configuration[/clink].
+@end

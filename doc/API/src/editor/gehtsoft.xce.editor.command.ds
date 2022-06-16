@@ -1,0 +1,6 @@
+@group
+    @title=gehtsoft.xce.editor.command
+    @key=gehtsoft.xce.editor.command
+    @ingroup=gehtsoft.xce.editor
+    @brief=Editor commands
+@end

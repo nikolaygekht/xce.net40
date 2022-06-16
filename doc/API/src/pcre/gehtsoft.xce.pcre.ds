@@ -1,0 +1,13 @@
+@group
+    @title=gehtsoft.xce.pcre
+    @key=gehtsoft.xce.pcre
+    @ingroup=index
+    @brief=.NET wrapper for PCRE (Perl-Compatible Regular Expressions).
+    @importhhc=src\pcre\xml\syntax-hhc.xml
+    @importhhk=src\pcre\xml\syntax-hhk.xml
+
+
+    The gehtsoft.xce.colorer.dll assembly contains the set of the wrapper classes for PCRE library
+    ([eurl=http://www.pcre.org/]http://www.pcre.org/[/eurl]).
+@end
+

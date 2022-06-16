@@ -1,0 +1,54 @@
+@group
+    @title=gehtsoft.xce.spellcheck
+    @key=gehtsoft.xce.spellcheck
+    @ingroup=index
+    @brief=The interface to external spellchecker.
+@end
+
+@article
+    @title=Implementing spellcheker.
+    @key=gehtsoft.xce.spellcheck.implementing
+    @ingroup=gehtsoft.xce.spellcheck
+    @brief=
+
+    The XCE editor is designed to use the external spellchecking modules.
+    The spellchecker must be implemented as a separate assembly.
+
+    You must implement the following interfaces:
+
+    [b][clink=gehtsoft.xce.spellcheck.ISpellcheckerSuggestions]ISpellcheckerSuggestions[/clink][/b]
+
+    The interface is the simple read-only collection of the strings, designed to provide the information
+    about spell suggestions.
+
+    [b][clink=gehtsoft.xce.spellcheck.ISpellchecker]ISpellchecker[/clink][/b]
+
+    The implementation of the spellchecker. Each instance of the spellchecks is initialized to be used with
+    certain dictionary.
+
+    [b][clink=gehtsoft.xce.spellcheck.ISpellcheckerFactory]ISpellcheckerFactory[/clink][/b]
+
+    The factory of the spellcheckers. The implementation of this interface will be used to create
+    instance of the [clink=gehtsoft.xce.spellcheck.ISpellchecker]ISpellchecker[/clink] interface implemented
+    by the spellchecker.
+
+    The implementation of this class must be public in your spellchecker assembly.
+@end
+
+@article
+    @title=Existing implementations
+    @key=gehtsoft.xce.spellcheck.implemented
+    @ingroup=gehtsoft.xce.spellcheck
+    @brief=
+
+    The following spell check implementations available:
+
+    Assembly: gehtsoft.xce.spellcheck.hunspell.dll
+    
+    Factory class name: gehtsoft.xce.spellcheck.hunspell.HunspellFactory
+
+    The speller implementation: [eurl=http://hunspell.sourceforge.net/]Hunspell[/eurl]
+
+    The dictionaries included: en_US (English) and ru_RU (Russian).
+@end
+

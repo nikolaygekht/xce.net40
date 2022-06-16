@@ -1,0 +1,77 @@
+@class
+    @name=ProfileKey
+    @key=gehtsoft.xce.configuration.ProfileKey
+    @brief=One key in the profile section.
+    @type=class
+    @ingroup=gehtsoft.xce.configuration
+    @sig=T:gehtsoft.xce.configuration.ProfileKey
+
+    The instance of this class represents a key/value pair or just a line inside the section (such as a comment).
+
+    @member
+        @name=Name
+        @sig=P:gehtsoft.xce.configuration.ProfileKey.Name
+        @key=Name.0
+        @divisor=.
+        @brief=Gets the name of the key.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Name
+            @return=string
+            @suffix= get;
+        @end
+
+        If key is not the key/value pair the name is an empty line. 
+
+        The key name for key/value pair is always trimmed (the whitespace characters at the beginning of the name 
+        and at the end of the name are removed).
+    @end
+
+
+    @member
+        @name=Value
+        @sig=P:gehtsoft.xce.configuration.ProfileKey.Value
+        @key=Value.0
+        @divisor=.
+        @brief=Gets or sets the value of the key/value pair or the content of the non-key line.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Value
+            @return=string
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=IsKey
+        @sig=P:gehtsoft.xce.configuration.ProfileKey.IsKey
+        @key=IsKey.0
+        @divisor=.
+        @brief=Checks whether the line is a key/value pair.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=IsKey
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.configuration.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.configuration]gehtsoft.xce.configuration[/clink].
+@end
+

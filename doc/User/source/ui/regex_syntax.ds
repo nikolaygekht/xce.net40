@@ -1,0 +1,479 @@
+@article
+    @title=Regular Expression Syntax
+    @key=regex_syntax
+    @brief=The article describes the syntax of the colorer regular expressions
+    @ingroup=ui
+
+    [b]Metacharacters[/b]
+
+    @table
+        @row
+            @col
+                ^
+            @end
+            @col
+                Matches the beginning of the string.
+            @end
+        @end
+        @row
+            @col
+                $
+            @end
+            @col
+                Matches the end of the string.
+            @end
+        @end
+        @row
+            @col
+                .
+            @end
+            @col
+                Matches any characters
+            @end
+        @end
+        @row
+            @col
+                []
+            @end
+            @col
+                Matches the charset specified. The characters may be either listed between the square brackets or
+                specified as a range between characters.
+
+                Also may include the following character classes:
+
+                @table
+                    @row
+                        @col
+                            \d
+                        @end
+                        @col
+                            Any digit
+                        @end
+                    @end
+                    @row
+                        @col
+                            \D
+                        @end
+                        @col
+                            Any not digit
+                        @end
+                    @end
+                    @row
+                        @col
+                            \w
+                        @end
+                        @col
+                            Any letter
+                        @end
+                    @end
+                    @row
+                        @col
+                            \w
+                        @end
+                        @col
+                            Any not letter
+                        @end
+                    @end
+                    @row
+                        @col
+                            \s
+                        @end
+                        @col
+                            A space, tabulation
+                        @end
+                    @end
+                    @row
+                        @col
+                            \S
+                        @end
+                        @col
+                            Not a space, tabulation
+                        @end
+                    @end
+                    @row
+                        @col
+                            \n
+                        @end
+                        @col
+                            carriage return or line feed character.
+                        @end
+                    @end
+                    @row
+                        @col
+                            \N
+                        @end
+                        @col
+                            Not a carriage return or line feed character.
+                        @end
+                    @end
+                @end
+
+                Examples:
+                @table
+                    @row
+                        @col
+                        [abc]
+                        @end
+                        @col
+                            Matches a, b or c
+                        @end
+                    @end
+                    @row
+                        @col
+                        [a-c]
+                        @end
+                        @col
+                            Matches a, b or c
+                        @end
+                    @end
+                    @row
+                        @col
+                        [a-cz]
+                        @end
+                        @col
+                            Matches a, b, c or z
+                        @end
+                    @end
+                    @row
+                        @col
+                        [0-9a-hA-H]
+                        @end
+                        @col
+                            Matches a hexadecimal digit
+                        @end
+                    @end
+                @end
+            @end
+        @end
+        @row
+            @col
+                \
+            @end
+            @col
+                The escape character:
+
+                - If followed by the special character such as brackets - matches the character escaped.
+
+                - If followed by a letter (a-z) - matches special pattern (see below for details).
+
+                - If followed by a number (0-9) - matches previous group pattern referred by a patter index (see below for details).
+            @end
+        @end
+        @row
+            @col
+                \b
+            @end
+            @col
+                Matches a word break.
+            @end
+        @end
+        @row
+            @col
+                \B
+            @end
+            @col
+                Matches not a word break.
+            @end
+        @end
+        @row
+            @col
+                \n
+            @end
+            @col
+                Matches a line feed (0x10) or carriage return (0x13).
+            @end
+        @end
+        @row
+            @col
+                \N
+            @end
+            @col
+                Matches not a line feed (0x10) or carriage return (0x13).
+            @end
+        @end
+        @row
+            @col
+                \t
+            @end
+            @col
+                Matches a tabulation (0x09)
+            @end
+        @end
+        @row
+            @col
+                \s
+            @end
+            @col
+                Matches any whitespace character.
+            @end
+        @end
+        @row
+            @col
+                \S
+            @end
+            @col
+                Matches not a whitespace character.
+            @end
+        @end
+        @row
+            @col
+                \w
+            @end
+            @col
+                Matches a word character.
+            @end
+        @end
+        @row
+            @col
+                \W
+            @end
+            @col
+                Matches not a word character.
+            @end
+        @end
+        @row
+            @col
+                \d
+            @end
+            @col
+                Matches a digit.
+            @end
+        @end
+        @row
+            @col
+                \D
+            @end
+            @col
+                Matches not a digit.
+            @end
+        @end
+        @row
+            @col
+                \u
+            @end
+            @col
+                Matches an uppercase character.
+            @end
+        @end
+        @row
+            @col
+                \l
+            @end
+            @col
+                Matches a lowercase character.
+            @end
+        @end
+        @row
+            @col
+                \xNN
+            @end
+            @col
+                A character with a hexadecimal code XX
+            @end
+        @end
+    @end
+
+
+
+    [b]Groups and operators[/b]
+
+    @table
+        @row
+            @col
+                ([i]patterns[/i])
+            @end
+            @col
+                Groups patterns. The groups are counted from the left to right, by the opening brackets: (1(2)(3(4)))
+            @end
+        @end
+        @row
+            @col
+                (?{[i]name[/i]}[i]patterns[/i])
+            @end
+            @col
+                Group patterns and give the group a name.
+            @end
+        @end
+        @row
+            @col
+                |
+            @end
+            @col
+                Alternative. Matches previous or next pattern.
+            @end
+        @end
+        @row
+            @col
+                *
+            @end
+            @col
+                Match preceding patterns 0 or more times.
+            @end
+        @end
+        @row
+            @col
+                +
+            @end
+            @col
+                Match preceding patterns 1 or more times.
+            @end
+        @end
+        @row
+            @col
+                ?
+            @end
+            @col
+                Match preceding patterns 0 or 1 times.
+            @end
+        @end
+        @row
+            @col
+                {n}
+            @end
+            @col
+                Match preceding patterns n times.
+            @end
+        @end
+        @row
+            @col
+                {n,}
+            @end
+            @col
+                Match preceding patterns n or more times.
+            @end
+        @end
+        @row
+            @col
+                {n,m}
+            @end
+            @col
+                Match preceding patterns n to m times.
+            @end
+        @end
+        @row
+            @col
+                \[i]N[/i]
+            @end
+            @col
+                Match the value of the group N where n is a number between 1 and 9.
+            @end
+        @end
+        @row
+            @col
+                ?=
+            @end
+            @col
+                Match the preceding pattern ahead.
+            @end
+        @end
+        @row
+            @col
+                ?!
+            @end
+            @col
+                Negative match the preceding pattern ahead.
+            @end
+        @end
+    @end
+
+    [b]Replace Syntax[/b]
+
+    @table
+        @row
+            @col
+                \[i]N[/i]
+            @end
+            @col
+                The value of the group N, where N is a number between 0 and 9.
+                0 means the whole match, 1 the value of the first group (pattern enclosed into brackets), 2 the next one and so on.
+            @end
+        @end
+        @row
+            @col
+                \u
+            @end
+            @col
+                Forces conversion of all subsequent matches into upper case. The second usage of the command turns the mode off.
+            @end
+        @end
+        @row
+            @col
+                \l
+            @end
+            @col
+                Forces conversion of all subsequent matches into lower case. The second usage of the command turns the mode off.
+            @end
+        @end
+        @row
+            @col
+                \n
+            @end
+            @col
+                Inserts a end of line.
+            @end
+        @end
+        @row
+            @col
+                \\
+            @end
+            @col
+                Inserts a back slash
+            @end
+        @end
+    @end
+
+    [b]Examples[/b]
+
+    [c]foo[/c]
+
+    Matches "foo" anywhere
+
+    [c]\bfoo\b[/c]
+
+    Matches "foo" when foo is a whole word
+
+    [c]\b\w+\b[/c]
+
+    Matches any whole word
+
+    [c]\b(\w+)\b\s+\b\1\b[/c]
+
+    Matches two repeating words, for example foo foo
+
+    [c]\b[bf]oo\b[/c]
+
+    Matches either "boo" or "foo" when the match is a whole word
+
+    [c]\b(foo|boo)\b[/c]
+
+    Matches either "boo" or "foo" when the match is a whole word, but works slower than the previous example.
+
+    [c]^.+$[/c]
+
+    Matches any non-empty line.
+
+    [c]^\s*(\S.+)$[/c]
+
+    Matches any non-empty line. The first group is the text in the line starting from the first non-whitespace character.
+
+    [c]^\s*(\S.+)\n{1,2}[/c]
+
+    Matches any non-empty line including the end of line characters. The first group is the text in the line starting from the first non-whitespace character.
+
+    [c]\n{2}\n{2}[/c]
+
+    Matches an empty line. Being replace with \ne\n - puts n into empty lines
+
+    [c]^(a.+\n{1,2})(b.+\n{1,2})[/c]
+
+    Matches line started with a following by the line started with b. Being replaced with \2\1 swaps the lines.
+
+    [c]\b(\w)(\w+)\b[/c]
+
+    Matches any word but splits the word into the first character and the following characters. Being replaced with
+    \u\1\l\2\l capitalizes the first character in each word.
+
+    [c][\s\S\n]+[/c]
+
+    Matches to end of the text from the current position.
+@end

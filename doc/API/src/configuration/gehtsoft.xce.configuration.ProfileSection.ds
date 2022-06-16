@@ -1,0 +1,433 @@
+@class
+    @name=ProfileSection
+    @key=gehtsoft.xce.configuration.ProfileSection
+    @brief=The section of the profile.
+    @type=class
+    @ingroup=gehtsoft.xce.configuration
+    @sig=T:gehtsoft.xce.configuration.ProfileSection
+    @parent=System.Collections.Generic.IEnumerable<[clink=gehtsoft.xce.configuration.ProfileKey]ProfileKey[/clink]>
+
+    @member
+        @name=Add
+        @sig=M:gehtsoft.xce.configuration.ProfileSection.Add(System.String,System.String)
+        @key=Add.0
+        @divisor=.
+        @brief=Adds a new key into the section.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Add
+            @return=void
+
+            @params=string name, string value
+        @end
+
+        @param
+            @name=name
+            The name of the key.
+        @end
+
+        @param
+            @name=value
+            The value.
+        @end
+
+    @end
+
+
+    @member
+        @name=Remove
+        @sig=M:gehtsoft.xce.configuration.ProfileSection.Remove(System.Int32)
+        @key=Remove.0
+        @divisor=.
+        @brief=Removes a key by its index.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Remove
+            @return=void
+
+            @params=int index
+        @end
+
+        @param
+            @name=index
+            The index of the key inside the section.
+
+            The first key has index 0.
+        @end
+
+    @end
+
+
+    @member
+        @name=Remove
+        @sig=M:gehtsoft.xce.configuration.ProfileSection.Remove(System.String,System.Int32)
+        @key=Remove.2
+        @divisor=.
+        @brief=Removes the specified occurrence of the key.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Remove
+            @return=void
+
+            @params=string name, int occurrence
+        @end
+
+        @param
+            @name=name
+            The name of the key.
+
+            The name of the key is case insensitive.
+        @end
+
+        @param
+            @name=occurrence
+            The occurrence of the key in the section.
+
+            The first occurrence has index 0.
+        @end
+
+    @end
+
+
+    @member
+        @name=Remove
+        @sig=M:gehtsoft.xce.configuration.ProfileSection.Remove(System.String)
+        @key=Remove.1
+        @divisor=.
+        @brief=Removes the first occurrence of the key.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Remove
+            @return=void
+
+            @params=string name
+        @end
+
+        @param
+            @name=name
+            The name of the key.
+
+            The name of the key is case insensitive.
+        @end
+
+    @end
+
+
+    @member
+        @name=Exists
+        @sig=M:gehtsoft.xce.configuration.ProfileSection.Exists(System.String)
+        @key=Exists.0
+        @divisor=.
+        @brief=Checks whether the key exists.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Exists
+            @return=bool
+            @params=string name
+        @end
+
+        @param
+            @name=name
+            The name of the key.
+
+            The name of the key is case insensitive.
+        @end
+
+    @end
+
+
+    @member
+        @name=CountOf
+        @sig=M:gehtsoft.xce.configuration.ProfileSection.CountOf(System.String)
+        @key=CountOf.0
+        @divisor=.
+        @brief=Counts occurrences of the key.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=CountOf
+            @return=int
+            @params=string name
+        @end
+
+        @param
+            @name=name
+            The name of the key.
+
+            The name of the key is case insensitive.
+        @end
+
+    @end
+
+
+    @member
+        @name=Clear
+        @sig=M:gehtsoft.xce.configuration.ProfileSection.Clear
+        @key=Clear.0
+        @divisor=.
+        @brief=Removes all keys.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Clear
+            @return=void
+        @end
+    @end
+
+
+    @member
+        @name=GetEnumerator
+        @sig=M:gehtsoft.xce.configuration.ProfileSection.GetEnumerator
+        @key=GetEnumerator.0
+        @divisor=.
+        @brief=Gets enumerator of the keys.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetEnumerator
+            @return=System.Collections.Generic.IEnumerator<[clink=gehtsoft.xce.configuration.ProfileKey]ProfileKey[/clink]>
+        @end
+
+    @end
+
+
+    @member
+        @name=Count
+        @sig=P:gehtsoft.xce.configuration.ProfileSection.Count
+        @key=Count.0
+        @divisor=.
+        @brief=Returns the number of the keys in the section.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Count
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=Name
+        @sig=P:gehtsoft.xce.configuration.ProfileSection.Name
+        @key=Name.0
+        @divisor=.
+        @brief=Gets the name of the section.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Name
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.ProfileSection.Item(System.Int32)
+        @key=Item.0
+        @divisor=.
+        @brief=Gets the key by its index.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=[clink=gehtsoft.xce.configuration.ProfileKey]ProfileKey[/clink]
+            @params=int index
+            @suffix= get;
+        @end
+
+        @param
+            @name=index
+            The index of the key. The first key has index 0.
+        @end
+
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.ProfileSection.Item(System.String)
+        @key=Item.1
+        @divisor=.
+        @brief=Gets/sets the value of the first occurrence of the key.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=string
+            @params=string name
+            @suffix= get; set;
+        @end
+
+        @param
+            @name=name
+            The name of the key.
+
+            The name of the key is case insensitive.
+        @end
+
+        Get value: If the key does not exist, the [c]null[/c] is returned.
+
+        Set value: If the key does not exist, a new key is created.
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.ProfileSection.Item(System.String,System.Int32)
+        @key=Item.2
+        @divisor=.
+        @brief=Gets/sets the value of the specified occurrence of the key.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=string
+            @params=string name, int occurrence
+            @suffix= get; set;
+        @end
+
+        @param
+            @name=name
+            The name of the key.
+
+            The name of the key is case insensitive.
+        @end
+
+        @param
+            @name=occurrence
+            The index of the occurrence.
+
+            The first occurrence has index 0.
+        @end
+
+        Get value: If the key does not exist, the [c]null[/c] is returned.
+
+        Set value: If the key does not exist and the occurrence is equal to the number of keys exist (0 if there is no such keys,
+        1 if there is one such key and so on), a new key is created. Otherwise, an exception will be thrown.
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.ProfileSection.Item(System.String,System.String)
+        @key=Item.4
+        @divisor=.
+        @brief=Gets the value of the first occurrence of the key (with default value).
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=string
+            @params=string name, string defaultValue
+            @suffix= get;
+        @end
+
+        @param
+            @name=name
+            The name of the key.
+
+            The name of the key is case insensitive.
+        @end
+
+        @param
+            @name=defaultValue
+            The value to return if there is no such key.
+        @end
+
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.ProfileSection.Item(System.String,System.Int32,System.String)
+        @key=Item.3
+        @divisor=.
+        @brief=Gets the value of the specified occurrence of the key (with default value).
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=string
+            @params=string name, int occurrence, string defaultValue
+            @suffix= get;
+        @end
+
+        @param
+            @name=name
+            The name of the key.
+
+            The name of the key is case insensitive.
+        @end
+
+        @param
+            @name=occurrence
+            The index of the occurrence.
+
+            The first occurrence has index 0.
+        @end
+        
+        @param
+            @name=defaultValue
+            The value to return if there is no such key.
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.configuration.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.configuration]gehtsoft.xce.configuration[/clink].
+@end
+

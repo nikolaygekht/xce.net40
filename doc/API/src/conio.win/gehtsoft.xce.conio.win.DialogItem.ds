@@ -1,0 +1,320 @@
+@class
+    @name=DialogItem
+    @key=gehtsoft.xce.conio.win.DialogItem
+    @brief=The base class for dialog items.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.DialogItem
+    @parent=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+    @import=gehtsoft.xce.conio.win.Window
+
+    @member
+        @name=Click
+        @sig=M:gehtsoft.xce.conio.win.DialogItem.Click
+        @key=Click.0
+        @divisor=.
+        @brief=Clicks the dialog item.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Click
+            @return=void
+        @end
+    @end
+
+    @member
+        @name=Row
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.Row
+        @key=Row.0
+        @divisor=.
+        @brief=The row of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Row
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Column
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.Column
+        @key=Column.0
+        @divisor=.
+        @brief=The column of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Column
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Height
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.Height
+        @key=Height.0
+        @divisor=.
+        @brief=Height of the dialog item in rows.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Height
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Width
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.Width
+        @key=Width.0
+        @divisor=.
+        @brief=Widths of the dialog item in columns.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Width
+            @return=int
+            @suffix= get;
+        @end
+    @end
+
+    @member
+        @name=Dialog
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.Dialog
+        @key=Dialog.0
+        @divisor=.
+        @brief=The dialog object to which the dialog item belongs.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Dialog
+            @return=[clink=gehtsoft.xce.conio.win.Dialog]Dialog[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=IsInputElement
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.IsInputElement
+        @key=IsInputElement.0
+        @divisor=.
+        @brief=The flag indicating that the dialog item can process the dialog input.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=IsInputElement
+            @return=bool
+            @prefix=abstact
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Enabled
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.Enabled
+        @key=Enabled.0
+        @divisor=.
+        @brief=The flag indicating that the dialog item is enabled
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Enabled
+            @return=bool
+            @prefix=abstact
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=HasHotKey
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.HasHotKey
+        @key=HasHotKey.0
+        @divisor=.
+        @brief=The flag indicating that the dialog item has hot key.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=HasHotKey
+            @prefix=virtual
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=HotKey
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.HotKey
+        @key=HotKey.0
+        @divisor=.
+        @brief=The hot key of the dialog item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=HotKey
+            @return=char
+            @prefix=virtual
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=ID
+        @sig=P:gehtsoft.xce.conio.win.DialogItem.ID
+        @key=ID.0
+        @divisor=.
+        @brief=The dialog item identifier.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=ID
+            @return=int
+            @suffix= get;
+        @end
+    @end
+
+    @member
+        @name=DialogItem
+        @sig=M:gehtsoft.xce.conio.win.DialogItem.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+        @key=DialogItem.0
+        @divisor=.
+        @brief=Constructor.
+        @visibility=protected
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=DialogItem
+            @params=int id, int row, int column, int height, int width
+        @end
+
+        @param
+            @name=id
+            The item identifier.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=height
+            Height of the dialog item in rows.
+        @end
+
+        @param
+            @name=width
+            Widths of the dialog item in columns.
+        @end
+
+    @end
+
+    @member
+        @name=repos
+        @sig=M:gehtsoft.xce.conio.win.DialogItem.repos(System.Int32,System.Int32,System.Int32,System.Int32)
+        @key=repos.0
+        @divisor=.
+        @brief=Reposition the control.
+        @scope=instance
+        @type=method
+
+        The method must be used instead of [clink=gehtsoft.xce.conio.win.Window.move.0]move()[/clink] when the dialog
+        is not created yet.
+
+        @declaration
+            @language=cs
+            @name=repos
+            @return=void
+            @params=int row, int column, int height, int width
+        @end
+
+        @param
+            @name=row
+            The new row coordinate of the top-level corner.
+
+            The coordinate is specified relative to the top-left corner of the parent window.
+        @end
+
+        @param
+            @name=column
+            The new column coordinate of the top-level corner.
+
+            The coordinate is specified relative to the top-left corner of the parent window.
+
+        @end
+
+        @param
+            @name=height
+            The new height of the window in rows.
+        @end
+
+        @param
+            @name=width
+            The new width of the window in columns.
+        @end
+
+    @end
+
+    @member
+        @name=OnHotkeyActivated
+        @sig=M:gehtsoft.xce.conio.win.DialogItem.OnHotkeyActivated
+        @key=OnHotkeyActivated.0
+        @divisor=.
+        @brief=The method is called when the item is activated using a hot key.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnHotkeyActivated
+            @prefix=virtual
+            @return=void
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

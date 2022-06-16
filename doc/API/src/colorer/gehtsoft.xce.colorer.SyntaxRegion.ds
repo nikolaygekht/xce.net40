@@ -1,0 +1,85 @@
+@class
+    @name=SyntaxRegion
+    @key=gehtsoft.xce.colorer.SyntaxRegion
+    @brief=The syntax region definition.
+    @type=class
+    @ingroup=gehtsoft.xce.colorer
+    @sig=T:gehtsoft.xce.colorer.SyntaxRegion
+    @parent=System.IEquatable<[clink=gehtsoft.xce.colorer.SyntaxRegion]SyntaxRegion[/clink]>
+
+    @member
+        @name=IsDerivedFrom
+        @sig=M:gehtsoft.xce.colorer.SyntaxRegion.IsDerivedFrom(gehtsoft.xce.colorer.SyntaxRegion)
+        @key=IsDerivedFrom.0
+        @divisor=.
+        @brief=Checks whether this region is derived from the specified region.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=IsDerivedFrom
+            @return=bool
+            @params=[clink=gehtsoft.xce.colorer.SyntaxRegion]SyntaxRegion[/clink] region
+        @end
+
+        @param
+            @name=region
+            The region definition.
+        @end
+
+    @end
+
+
+    @member
+        @name=Equals
+        @sig=M:gehtsoft.xce.colorer.SyntaxRegion.Equals(gehtsoft.xce.colorer.SyntaxRegion)
+        @key=Equals.0
+        @divisor=.
+        @brief=Checks whether the syntax region is equal to another syntax region.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Equals
+            @return=bool
+            @params=[clink=gehtsoft.xce.colorer.SyntaxRegion]SyntaxRegion[/clink] region
+        @end
+
+        @param
+            @name=region
+            The region definition.
+        @end
+
+        The method return [c]true[/c] if both definitions points to the same colorer's definition of
+        the syntax region.
+    @end
+
+
+    @member
+        @name=Name
+        @sig=P:gehtsoft.xce.colorer.SyntaxRegion.Name
+        @key=Name.0
+        @divisor=.
+        @brief=The name of the syntax region.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Name
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.colorer.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.colorer]gehtsoft.xce.colorer[/clink].
+@end
+

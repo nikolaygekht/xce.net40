@@ -1,0 +1,204 @@
+@class
+    @name=PopupMenuItem
+    @key=gehtsoft.xce.conio.win.PopupMenuItem
+    @brief=The menu item which opens another menu.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.PopupMenuItem
+    @parent=[clink=gehtsoft.xce.conio.win.MenuItem]MenuItem[/clink]
+    @parent=System.Collections.Generic.IEnumerable<[clink=gehtsoft.xce.conio.win.MenuItem]MenuItem[/clink]>
+    @import=gehtsoft.xce.conio.win.MenuItem
+
+    @member
+        @name=PopupMenuItem
+        @sig=M:gehtsoft.xce.conio.win.PopupMenuItem.#ctor(System.String)
+        @key=PopupMenuItem.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=PopupMenuItem
+            @params=string title
+        @end
+
+        @param
+            @name=title
+            The name of the sub-menu.
+        @end
+
+    @end
+
+    @member
+        @name=addItem
+        @sig=M:gehtsoft.xce.conio.win.PopupMenuItem.addItem(gehtsoft.xce.conio.win.MenuItem)
+        @key=addItem.0
+        @divisor=.
+        @brief=Adds a new menu item to the menu.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=addItem
+            @return=void
+            @params=[clink=gehtsoft.xce.conio.win.MenuItem]MenuItem[/clink] item
+        @end
+
+        @param
+            @name=item
+            A menu item to be added.
+        @end
+
+    @end
+
+    @member
+        @name=createCommand
+        @sig=M:gehtsoft.xce.conio.win.PopupMenuItem.createCommand(System.String,System.Int32)
+        @key=createCommand.0
+        @divisor=.
+        @brief=Creates a new command and adds it to the end of the menu.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=createCommand
+            @return=void
+            @params=string title, int command
+        @end
+
+        @param
+            @name=title
+            The name of the command.
+        @end
+
+        @param
+            @name=command
+            The identifier of the command.
+        @end
+    @end
+
+    @member
+        @name=createCommand
+        @sig=M:gehtsoft.xce.conio.win.PopupMenuItem.createCommand(System.String,System.String,System.Int32)
+        @key=createCommand.1
+        @divisor=.
+        @brief=Creates a new command with hint and adds it to the end of the menu.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=createCommand
+            @return=void
+            @params=string title, string rightside, int command
+        @end
+
+        @param
+            @name=title
+            The name of the command.
+        @end
+
+        @param
+            @name=rightside
+            The hint (for example a keyboard shortcut) to be shown on right size of the command bar.
+        @end
+
+        @param
+            @name=command
+            the identifier of the command.
+        @end
+
+    @end
+
+    @member
+        @name=createSeparator
+        @sig=M:gehtsoft.xce.conio.win.PopupMenuItem.createSeparator
+        @key=createSeparator.0
+        @divisor=.
+        @brief=Create a separator and adds it to the end of the sub-menu.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=createSeparator
+            @return=void
+
+        @end
+
+    @end
+
+    @member
+        @name=createPopup
+        @sig=M:gehtsoft.xce.conio.win.PopupMenuItem.createPopup(System.String)
+        @key=createPopup.0
+        @divisor=.
+        @brief=Creates a submenu and adds it to the end of the menu.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=createPopup
+            @return=[clink=gehtsoft.xce.conio.win.PopupMenuItem]PopupMenuItem[/clink]
+            @params=string title
+        @end
+
+        @param
+            @name=title
+            The name of the submenu.
+        @end
+
+    @end
+
+    @member
+        @name=Count
+        @sig=P:gehtsoft.xce.conio.win.PopupMenuItem.Count
+        @key=Count.0
+        @divisor=.
+        @brief=Returns the number of the menu items.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Count
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.conio.win.PopupMenuItem.Item(System.Int32)
+        @key=Item.0
+        @divisor=.
+        @brief=Returns the menu item by its index.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=[clink=gehtsoft.xce.conio.win.MenuItem]MenuItem[/clink]
+            @params=int index
+            @suffix= get;
+        @end
+
+        @param
+            @name=index
+
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

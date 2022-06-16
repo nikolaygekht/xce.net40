@@ -1,0 +1,12 @@
+@group
+    @title=gehtsoft.xce.conio
+    @key=gehtsoft.xce.conio
+    @ingroup=index
+    @brief=Low-level console input and output procedure.
+
+    The gehtsoft.xce.conio namespace consists of the classes for low-level console 
+    input and output. 
+
+    The namespace is located in the assembly gehtsoft.xce.conio.dll
+@end
+

@@ -1,0 +1,48 @@
+@class
+    @name=ColorScheme
+    @key=gehtsoft.xce.conio.win.ColorScheme
+    @brief=The class implements the default container for the color scheme.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.ColorScheme
+    @parent=[clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink]
+    @import=gehtsoft.xce.conio.win.IColorScheme
+
+    @member
+        @name=ColorScheme
+        @sig=M:gehtsoft.xce.conio.win.ColorScheme.#ctor
+        @key=ColorScheme.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=ColorScheme
+        @end
+
+    @end
+
+    @member
+        @name=Default
+        @sig=P:gehtsoft.xce.conio.win.ColorScheme.Default
+        @key=Default.0
+        @divisor=.
+        @brief=Returns the default white-cyan color scheme.
+        @scope=class
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Default
+            @return=[clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

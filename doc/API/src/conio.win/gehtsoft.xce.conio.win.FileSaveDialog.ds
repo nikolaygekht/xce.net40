@@ -1,0 +1,111 @@
+@class
+    @name=FileSaveDialog
+    @key=gehtsoft.xce.conio.win.FileSaveDialog
+    @brief=The save/save as file name prompt.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.FileSaveDialog
+    @parent=[clink=gehtsoft.xce.conio.win.FileDialog]FileDialog[/clink]
+    @import=gehtsoft.xce.conio.win.FileDialog
+
+    The class is the implementation of the [clink=gehtsoft.xce.conio.win.FileDialog]FileDialog[/clink] for save file operations.
+
+    @member
+        @name=FileSaveDialog
+        @sig=M:gehtsoft.xce.conio.win.FileSaveDialog.#ctor(System.String,System.String,gehtsoft.xce.conio.win.FileSaveDialog.SaveMode,gehtsoft.xce.conio.win.IColorScheme)
+        @key=FileSaveDialog.0
+        @divisor=.
+        @brief=
+        @scope=instance
+        @visibility=public
+        @type=constructor
+        @declaration
+            @language=cs
+            @name=FileSaveDialog
+            @params=string directory, string defaultFile, [clink=gehtsoft.xce.conio.win.FileSaveDialog.SaveMode]FileSaveDialog.SaveMode[/clink] mode, [clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink] colors
+        @end
+
+        @param
+            @name=directory
+            Default directory to show.
+
+            If the value is null and default file is specified, the directory containing the default will be shown.
+            If the value is null and default file is not specified, the current working directory will be shown.
+        @end
+
+        @param
+            @name=defaultFile
+            The default file name to show on dialog open.
+        @end
+
+        @param
+            @name=colors
+            The color scheme.
+        @end
+
+        @param
+            @name=mode
+            The flags for the dialog.
+        @end
+
+        @param
+            @name=defaultFile
+            The default file name to show on dialog open.
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+
+@class
+
+    @name=FileSaveDialog.SaveMode
+    @key=gehtsoft.xce.conio.win.FileSaveDialog.SaveMode
+    @brief=
+    @type=enum
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.FileSaveDialog.SaveMode
+    @member
+        @name=None
+        @sig=F:gehtsoft.xce.conio.win.FileSaveDialog.SaveMode.None
+        @key=None.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @visibility=public
+
+        @type=field
+
+        @declaration
+            @language=cs
+            @name=None
+            @return=[clink=gehtsoft.xce.conio.win.FileSaveDialog.SaveMode]FileSaveDialog.SaveMode[/clink]
+        @end
+
+    @end
+
+    @member
+        @name=OverwritePrompt
+        @sig=F:gehtsoft.xce.conio.win.FileSaveDialog.SaveMode.OverwritePrompt
+        @key=OverwritePrompt.0
+        @divisor=.
+        @brief=The flag forces the overwrite prompt in case the file chosen already exists.
+        @scope=class
+        @visibility=public
+
+        @type=field
+
+        @declaration
+            @language=cs
+            @name=OverwritePrompt
+            @return=[clink=gehtsoft.xce.conio.win.FileSaveDialog.SaveMode]FileSaveDialog.SaveMode[/clink]
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end

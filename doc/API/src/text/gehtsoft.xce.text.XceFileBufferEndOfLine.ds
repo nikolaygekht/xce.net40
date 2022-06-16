@@ -1,0 +1,38 @@
+@class
+    @name=XceFileBufferEndOfLine
+    @key=gehtsoft.xce.text.XceFileBufferEndOfLine
+    @brief=The end of line processing modes enumeration.
+    @type=enum
+    @ingroup=gehtsoft.xce.text
+    @sig=T:gehtsoft.xce.text.XceFileBufferEndOfLine
+
+    @member
+        @name=eCr
+        @sig=F:gehtsoft.xce.text.XceFileBufferEndOfLine.eCr
+        @key=eCr.0
+        @divisor=.
+        @brief=The line is ended by carriage return (0x0d) 
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=eCrLf
+        @sig=F:gehtsoft.xce.text.XceFileBufferEndOfLine.eCrLf
+        @key=eCrLf.0
+        @divisor=.
+        @brief=The line is ended by carriage return/line feed(0x0d, 0x0a).
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.text.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.text]gehtsoft.xce.text[/clink].
+@end
+

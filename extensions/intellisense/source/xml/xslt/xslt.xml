@@ -1,0 +1,373 @@
+<schema root="stylesheet" default="content" name="Xslt" namespace="http://www.w3.org/1999/XSL/Transform" defaultPrefix="xsl">
+    <element name="stylesheet" >
+        <parameter name="id" />
+        <parameter name="version" />
+        <parameter name="extension-element-prefixes" />
+        <parameter name="extension-element-prefixes" />
+
+        <element name="template" />
+        <element name="import" />
+        <element name="include" />
+        <element name="namespace-alias" />
+        <element name="output" />
+        <element name="variable" />
+        <element name="param" />
+    </element>
+
+
+    <element name="import">
+        <parameter name="href" />
+    </element>
+
+    <element name="include">
+        <parameter name="href" />
+    </element>
+
+    <element name="namespace-alias">
+        <parameter name="stylesheet-prefix" />
+        <parameter name="result-prefix" />
+    </element>
+
+    <element name="output">
+        <parameter name="method">
+            <value>xml</value>
+            <value>html</value>
+            <value>text</value>
+        </parameter>
+        <parameter name="version" />
+        <parameter name="encoding">
+            <value>us-ascii</value>
+            <value>windows-1251</value>
+            <value>windows-1252</value>
+            <value>utf-7</value>
+            <value>utf-8</value>
+            <value>iso-8859-1</value>
+        </parameter>
+        <parameter name="omit-xml-declaration">
+            <value>yes</value>
+            <value>no</value>
+        </parameter>
+        <parameter name="standalone">
+            <value>yes</value>
+            <value>no</value>
+        </parameter>
+        <parameter name="doctype-public" />
+        <parameter name="doctype-system" />
+        <parameter name="cdata-section-elements" />
+        <parameter name="indent">
+            <value>yes</value>
+            <value>no</value>
+        </parameter>
+        <parameter name="media-type" />
+    </element>
+
+    <element name="template">
+        <parameter name="name" />
+        <parameter name="match" />
+        <parameter name="pattern" />
+        <parameter name="mode" />
+        <parameter name="priority" />
+
+        <element name="variable" />
+        <element name="param" />
+        <element name="apply-imports" />
+        <element name="apply-templates" />
+        <element name="call-template" />
+        <element name="choose" />
+        <element name="if" />
+        <element name="for-each" />
+        <element name="copy" />
+        <element name="copy-of" />
+        <element name="decimal-format" />
+        <element name="element" />
+        <element name="number" />
+        <element name="text" />
+        <element name="value-of" />
+    </element>
+
+    <element name="apply-imports" />
+
+    <element name="apply-templates">
+        <parameter name="select" xpath="yes" />
+        <parameter name="mode" />
+        <element name="sort" />
+    </element>
+
+    <element name="call-template">
+        <parameter name="name" />
+        <element name="with-param" />
+    </element>
+
+    <element name="with-param">
+        <parameter name="name" />
+        <parameter name="select" xpath="yes" />
+    </element>
+
+    <element name="variable">
+        <parameter name="name" />
+        <parameter name="select" xpath="yes" />
+    </element>
+
+    <element name="param">
+        <parameter name="name" />
+        <parameter name="select" xpath="yes" />
+    </element>
+
+    <element name="choose">
+        <element name="when" />
+        <element name="otherwise" />
+    </element>
+
+    <element name="when">
+        <parameter name="test" />
+        <element name="apply-imports" />
+        <element name="apply-templates" />
+        <element name="call-template" />
+        <element name="choose" />
+        <element name="if" />
+        <element name="for-each" />
+        <element name="copy" />
+        <element name="copy-of" />
+        <element name="decimal-format" />
+        <element name="element" />
+        <element name="number" />
+        <element name="text" />
+        <element name="value-of" />
+    </element>
+
+    <element name="otherwise">
+        <element name="apply-imports" />
+        <element name="apply-templates" />
+        <element name="call-template" />
+        <element name="choose" />
+        <element name="if" />
+        <element name="for-each" />
+        <element name="copy" />
+        <element name="copy-of" />
+        <element name="decimal-format" />
+        <element name="element" />
+        <element name="number" />
+        <element name="text" />
+        <element name="value-of" />
+    </element>
+
+    <element name="if">
+        <parameter name="test" />
+        <element name="apply-imports" />
+        <element name="apply-templates" />
+        <element name="call-template" />
+        <element name="choose" />
+        <element name="if" />
+        <element name="for-each" />
+        <element name="copy" />
+        <element name="copy-of" />
+        <element name="decimal-format" />
+        <element name="element" />
+        <element name="number" />
+        <element name="text" />
+        <element name="value-of" />
+    </element>
+
+    <element name="for-each">
+        <parameter name="select" />
+        <element name="sort" />
+        <element name="apply-imports" />
+        <element name="apply-templates" />
+        <element name="call-template" />
+        <element name="choose" />
+        <element name="if" />
+        <element name="for-each" />
+        <element name="copy" />
+        <element name="copy-of" />
+        <element name="decimal-format" />
+        <element name="element" />
+        <element name="number" />
+        <element name="text" />
+        <element name="value-of" />
+    </element>
+
+    <element name="sort">
+        <parameter name="select" />
+        <parameter name="lang">
+            <value>ar</value>
+            <value>zh</value>
+            <value>cs</value>
+            <value>da</value>
+            <value>nl</value>
+            <value>en</value>
+            <value>eo</value>
+            <value>es</value>
+            <value>et</value>
+            <value>fi</value>
+            <value>fr</value>
+            <value>de</value>
+            <value>el</value>
+            <value>he</value>
+            <value>it</value>
+            <value>en</value>
+            <value>ja</value>
+            <value>ko</value>
+            <value>la</value>
+            <value>lt</value>
+            <value>po</value>
+            <value>ro</value>
+            <value>ru</value>
+        </parameter>
+        <parameter name="data-type">
+            <value>text</value>
+            <value>number</value>
+            <value>qname</value>
+        </parameter>
+        <parameter name="order">
+            <value>ascending</value>
+            <value>descending</value>
+        </parameter>
+        <parameter name="case-order">
+            <value>upper-first</value>
+            <value>lower-first</value>
+        </parameter>
+
+        <element name="apply-imports" />
+        <element name="apply-templates" />
+        <element name="call-template" />
+        <element name="choose" />
+        <element name="if" />
+        <element name="for-each" />
+        <element name="copy" />
+        <element name="copy-of" />
+        <element name="decimal-format" />
+        <element name="element" />
+        <element name="number" />
+        <element name="text" />
+        <element name="value-of" />
+    </element>
+
+    <element name="copy" />
+
+    <element name="copy-of">
+        <parameter name="select" xpath="yes" />
+    </element>
+
+    <element name="decimal-format">
+        <parameter name="name" />
+        <parameter name="decimal-separator" />
+        <parameter name="grouping-separator" />
+        <parameter name="infinity" />
+        <parameter name="NaN" />
+        <parameter name="percent" />
+        <parameter name="per-mille" />
+        <parameter name="zero-digit" />
+        <parameter name="digit" />
+        <parameter name="pattern-separator" />
+    </element>
+
+    <element name="element">
+        <parameter name="name" />
+        <parameter name="namespace" />
+        <element name="attribute" />
+        <element name="apply-imports" />
+        <element name="apply-templates" />
+        <element name="call-template" />
+        <element name="choose" />
+        <element name="if" />
+        <element name="for-each" />
+        <element name="copy" />
+        <element name="copy-of" />
+        <element name="decimal-format" />
+        <element name="element" />
+        <element name="number" />
+        <element name="text" />
+        <element name="value-of" />
+    </element>
+
+    <element name="attribute">
+        <parameter name="name" />
+        <element name="apply-imports" />
+        <element name="apply-templates" />
+        <element name="call-template" />
+        <element name="choose" />
+        <element name="if" />
+        <element name="for-each" />
+        <element name="copy" />
+        <element name="copy-of" />
+        <element name="decimal-format" />
+        <element name="element" />
+        <element name="number" />
+        <element name="text" />
+        <element name="value-of" />
+    </element>
+
+    <element name="number">
+        <parameter name="count" xpath="yes" />
+        <parameter name="level">
+            <value>single</value>
+            <value>multiple</value>
+            <value>any</value>
+        </parameter>
+        <parameter name="from" xpath="yes"  />
+        <parameter name="value" xpath="yes"  />
+        <parameter name="format"  />
+        <parameter name="lang">
+            <value>ar</value>
+            <value>zh</value>
+            <value>cs</value>
+            <value>da</value>
+            <value>nl</value>
+            <value>en</value>
+            <value>eo</value>
+            <value>es</value>
+            <value>et</value>
+            <value>fi</value>
+            <value>fr</value>
+            <value>de</value>
+            <value>el</value>
+            <value>he</value>
+            <value>it</value>
+            <value>en</value>
+            <value>ja</value>
+            <value>ko</value>
+            <value>la</value>
+            <value>lt</value>
+            <value>po</value>
+            <value>ro</value>
+            <value>ru</value>
+        </parameter>
+        <parameter name="letter-value">
+            <value>alphabetic</value>
+            <value>traditional</value>
+        </parameter>
+        <parameter name="groupping-separator"  />
+        <parameter name="groupping-size"  />
+    </element>
+
+    <element name="text">
+        <parameter name="disable-output-escaping">
+            <value>yes</value>
+            <value>no</value>
+        </parameter>
+    </element>
+
+    <element name="value-of">
+        <parameter name="select" xpath="yes" />
+        <parameter name="disable-output-escaping">
+            <value>yes</value>
+            <value>no</value>
+        </parameter>
+    </element>
+
+    <element name="content">
+        <element name="apply-imports" />
+        <element name="apply-templates" />
+        <element name="call-template" />
+        <element name="choose" />
+        <element name="if" />
+        <element name="for-each" />
+        <element name="copy" />
+        <element name="copy-of" />
+        <element name="decimal-format" />
+        <element name="element" />
+        <element name="number" />
+        <element name="text" />
+        <element name="value-of" />
+    </element>
+</schema>

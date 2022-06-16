@@ -1,0 +1,1240 @@
+@class
+    @name=XceFileBuffer
+    @key=gehtsoft.xce.text.XceFileBuffer
+    @brief=The text buffer.
+    @type=class
+    @ingroup=gehtsoft.xce.text
+    @sig=T:gehtsoft.xce.text.XceFileBuffer
+    @parent=System.IDisposable
+
+    An instance of the class must be disposed after usage.
+
+    @member
+        @name=XceFileBuffer
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.#ctor
+        @key=XceFileBuffer.0
+        @divisor=.
+        @brief=Constructor.
+        @visibility=public
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=XceFileBuffer
+        @end
+    @end
+
+    @member
+        @name=GetRange
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.GetRange(System.Int32,System.Int32,System.Char[],System.Int32)
+        @key=GetRange.1
+        @divisor=.
+        @brief=Gets a range of the characters into a character array.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetRange
+            @return=int
+            @params=int position, int length, char[] buffer, int offset
+        @end
+
+        @param
+            @name=position
+            The position of the first character in the buffer.
+        @end
+
+        @param
+            @name=length
+            The length of the range.
+        @end
+
+        @param
+            @name=buffer
+            The buffer to be filled.
+        @end
+
+        @param
+            @name=offset
+            The offset in the buffer to put the characters from.
+        @end
+
+    @end
+
+
+    @member
+        @name=GetRange
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.GetRange(System.Int32,System.Int32)
+        @key=GetRange.0
+        @divisor=.
+        @brief=Gets a range of the characters as a string.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetRange
+            @return=string
+            @params=int position, int length
+        @end
+
+        @param
+            @name=position
+            The index of the first character in the range.
+        @end
+
+        @param
+            @name=length
+            The length of the range.
+        @end
+    @end
+
+    @member
+        @name=DeleteRange
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.DeleteRange(System.Int32,System.Int32)
+        @key=DeleteRange.0
+        @divisor=.
+        @brief=Deletes a range from from the buffer.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DeleteRange
+            @return=void
+
+            @params=int position, int length
+        @end
+
+        @param
+            @name=position
+            The index of the first character in the range.
+        @end
+
+        @param
+            @name=length
+            The length of the range.
+        @end
+
+    @end
+
+
+    @member
+        @name=InsertRange
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.InsertRange(System.Int32,System.Char[],System.Int32,System.Int32)
+        @key=InsertRange.0
+        @divisor=.
+        @brief=Inserts the content of the char array into the text buffer.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=InsertRange
+            @return=void
+
+            @params=int position, char[] buffer, int offset, int length
+        @end
+
+        @param
+            @name=position
+            The index of the position to insert the text.
+        @end
+
+        @param
+            @name=buffer
+            The character array containing the text.
+        @end
+
+        @param
+            @name=offset
+            The offset of the text to be inserted in the character array.
+        @end
+
+        @param
+            @name=length
+            The length of the text to be inserted.
+        @end
+
+    @end
+
+
+    @member
+        @name=InsertRange
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.InsertRange(System.Int32,System.String)
+        @key=InsertRange.1
+        @divisor=.
+        @brief=Inserts the string into the text buffer.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=InsertRange
+            @return=void
+
+            @params=int position, string text
+        @end
+
+        @param
+            @name=position
+            The index of the position in the buffer to insert the text.
+        @end
+
+        @param
+            @name=text
+            The text to be inserted.
+        @end
+
+    @end
+
+
+    @member
+        @name=LineStart
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.LineStart(System.Int32)
+        @key=LineStart.0
+        @divisor=.
+        @brief=Gets the index of the position where the line specified starts.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=LineStart
+            @return=int
+            @params=int lineIndex
+        @end
+
+        @param
+            @name=lineIndex
+            The index of the line.
+        @end
+
+        See also [clink=gehtsoft.xce.text.XceFileBuffer.LineLength.0]LineLength[/clink]
+
+    @end
+
+
+    @member
+        @name=LineLength
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.LineLength(System.Int32)
+        @key=LineLength.0
+        @divisor=.
+        @brief=Gets the length of the line without end of line characters.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=LineLength
+            @return=int
+            @params=int lineIndex
+        @end
+
+        @param
+            @name=lineIndex
+            The index of the line.
+        @end
+
+        See also [clink=gehtsoft.xce.text.XceFileBuffer.LineStart.0]LineStart[/clink]
+
+        Note: The end-of-line characters are NOT counted into the length. To get the length of the line
+        including the end-of-line characters use [link=gehtsoft.xce.text.XceFileBuffer.LineLength.1]another version[/link] of the method.
+
+    @end
+
+
+    @member
+        @name=LineLength
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.LineLength(System.Int32,System.Boolean)
+        @key=LineLength.1
+        @divisor=.
+        @brief=Gets the length of the line with or without end of line characters.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=LineLength
+            @return=int
+            @params=int lineIndex, bool includeEof
+        @end
+
+        @param
+            @name=lineIndex
+            The index of the line.
+        @end
+
+        @param
+            @name=includeEof
+            The flag indicating whether the end of line character(s) must be counted.
+        @end
+
+    @end
+
+
+    @member
+        @name=LineFromPosition
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.LineFromPosition(System.Int32)
+        @key=LineFromPosition.0
+        @divisor=.
+        @brief=Gets the line index by the character index.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=LineFromPosition
+            @return=int
+            @params=int position
+        @end
+
+        @param
+            @name=position
+            The index of the position in the buffer.
+        @end
+
+        The method returns the index of the line to which the position belongs.
+    @end
+
+
+    @member
+        @name=AppendLine
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.AppendLine
+        @key=AppendLine.0
+        @divisor=.
+        @brief=Appends an empty line to the buffer.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AppendLine
+            @return=int
+        @end
+
+    @end
+
+
+    @member
+        @name=InsertLine
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.InsertLine(System.Int32)
+        @key=InsertLine.0
+        @divisor=.
+        @brief=Inserts an empty line into the buffer.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=InsertLine
+            @return=int
+            @params=int lineIndex
+        @end
+
+        @param
+            @name=lineIndex
+            The index of the line to be inserted. Use 0 to insert the line in the
+            beginning of the file.
+        @end
+
+    @end
+
+
+    @member
+        @name=DeleteLine
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.DeleteLine(System.Int32)
+        @key=DeleteLine.0
+        @divisor=.
+        @brief=Deletes a line.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DeleteLine
+            @return=void
+
+            @params=int lineIndex
+        @end
+
+        @param
+            @name=lineIndex
+            The line index.
+        @end
+
+        The method is equal to [c]buffer.DeleteRange(buffer.LineStart(lineIndex), buffer.LineLength(lineIndex, true))[/c];
+    @end
+
+
+    @member
+        @name=InsertToLine
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.InsertToLine(System.Int32,System.Int32,System.String)
+        @key=InsertToLine.2
+        @divisor=.
+        @brief=Inserts a string into the line.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=InsertToLine
+            @return=void
+
+            @params=int lineIndex, int position, string buffer
+        @end
+
+        @param
+            @name=lineIndex
+            The line index.
+        @end
+
+        @param
+            @name=position
+            The position index in the line.
+        @end
+
+        @param
+            @name=buffer
+            The text to be inserted.
+        @end
+
+        Please note that the method adds the lines and characters into the line if the buffer (or line) are shorter than
+        the position(s) requested.
+    @end
+
+
+    @member
+        @name=InsertToLine
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.InsertToLine(System.Int32,System.Int32,System.Char[],System.Int32,System.Int32)
+        @key=InsertToLine.1
+        @divisor=.
+        @brief=Inserts content of a char array into the line.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=InsertToLine
+            @return=int
+            @params=int lineIndex, int position, char[] buffer, int offset, int length
+        @end
+
+        @param
+            @name=lineIndex
+            The line index.
+        @end
+
+        @param
+            @name=position
+            The position index in the line.
+        @end
+
+        @param
+            @name=buffer
+            The char array containing the text to be inserted.
+        @end
+
+        @param
+            @name=offset
+            The offset of the text inside the char array.
+        @end
+
+        @param
+            @name=length
+            The length of the text.
+        @end
+
+        Please note that the method adds the lines and characters into the line if the buffer (or line) are shorter than
+        the position(s) requested.
+
+    @end
+
+
+    @member
+        @name=InsertToLine
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.InsertToLine(System.Int32,System.Int32,System.Char,System.Int32)
+        @key=InsertToLine.0
+        @divisor=.
+        @brief=Insert one or more characters into the line.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=InsertToLine
+            @return=int
+            @params=int lineIndex, int position, char c, int count
+        @end
+
+        @param
+            @name=lineIndex
+            The line index.
+        @end
+
+        @param
+            @name=position
+            The position index in the line.
+        @end
+
+        @param
+            @name=c
+            The character to insert.
+        @end
+
+        @param
+            @name=count
+            The number of the character to be inserted.
+        @end
+
+    @end
+
+
+    @member
+        @name=DeleteFromLine
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.DeleteFromLine(System.Int32,System.Int32,System.Int32)
+        @key=DeleteFromLine.0
+        @divisor=.
+        @brief=Delete a part of the line.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DeleteFromLine
+            @return=void
+
+            @params=int lineIndex, int position, int length
+        @end
+
+        @param
+            @name=lineIndex
+            The line index.
+        @end
+
+        @param
+            @name=position
+            The index of the position in the line.
+        @end
+
+        @param
+            @name=length
+            The length of the text to be deleted.
+        @end
+
+        Please note that the method won't delete the line even if the length specified is bigger than the length of the line.
+
+        To delete the whole line use [c]DeleteLine[/c] or [c]DeleteRange[/c] methods.
+    @end
+
+
+    @member
+        @name=SplitLine
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.SplitLine(System.Int32,System.Int32)
+        @key=SplitLine.0
+        @divisor=.
+        @brief=Splits the line at the specified position.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=SplitLine
+            @return=void
+
+            @params=int lineIndex, int position
+        @end
+
+        @param
+            @name=lineIndex
+            The index of the line.
+        @end
+
+        @param
+            @name=position
+            The index of the position in the line.
+        @end
+
+    @end
+
+
+    @member
+        @name=JoinWithNext
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.JoinWithNext(System.Int32)
+        @key=JoinWithNext.0
+        @divisor=.
+        @brief=Joins the line with the next one.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=JoinWithNext
+            @return=void
+
+            @params=int lineIndex
+        @end
+
+        @param
+            @name=lineIndex
+            The line index.
+        @end
+
+        The next line will be added to the end of the line.
+
+    @end
+
+
+    @member
+        @name=JoinWithNext
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.JoinWithNext(System.Int32,System.Int32)
+        @key=JoinWithNext.1
+        @divisor=.
+        @brief=Join the line with the next line at the position specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=JoinWithNext
+            @return=void
+
+            @params=int lineIndex, int position
+        @end
+
+        @param
+            @name=lineIndex
+            The index of the line.
+        @end
+
+        @param
+            @name=position
+            The index of the position.
+        @end
+
+        In case the position is bigger than the line length, the line will be extended to the specified position and then
+        the next line will be appended. if the position specified is less than the line length, the next line will be
+        appended to the end of the line specified.
+    @end
+
+
+    @member
+        @name=ExpandTabsInRange
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.ExpandTabsInRange(System.Int32,System.Int32)
+        @key=ExpandTabsInRange.0
+        @divisor=.
+        @brief=Expands the tabulation characters inside the range specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=ExpandTabsInRange
+            @return=int
+            @params=int startPosition, int length
+        @end
+
+        @param
+            @name=startPosition
+            The index of the first character of the range.
+        @end
+
+        @param
+            @name=length
+            The range length.
+        @end
+    @end
+
+
+    @member
+        @name=TabLength
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.TabLength(System.Int32)
+        @key=TabLength.0
+        @divisor=.
+        @brief=Returns the next tabulation position for the position in the line.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=TabLength
+            @return=int
+            @params=int linePosition
+        @end
+
+        @param
+            @name=linePosition
+            The position in the line.
+        @end
+
+    @end
+
+
+    @member
+        @name=ChangeEncoding
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.ChangeEncoding(System.Text.Encoding)
+        @key=ChangeEncoding.0
+        @divisor=.
+        @brief=Changes the text encoding.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=ChangeEncoding
+            @return=bool
+            @params=System.Text.Encoding encoding
+        @end
+
+        @param
+            @name=encoding
+            The new encoding.
+        @end
+
+    @end
+
+
+    @member
+        @name=Load
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.Load(System.Text.Encoding,System.String,System.Boolean)
+        @key=Load.0
+        @divisor=.
+        @brief=Loads the file in the specified encoding.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Load
+            @return=void
+            @params=System.Text.Encoding encoding, string file, bool ignoreBOM
+        @end
+
+        @param
+            @name=encoding
+            The encoding.
+        @end
+
+        @param
+            @name=file
+            The name of the file.
+        @end
+
+        @param
+            @name=ignoreBOM
+            The flag indicating that begin-of-file encoding mark must be ignored.
+        @end
+
+    @end
+
+
+    @member
+        @name=Save
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.Save(System.Boolean,System.Text.Encoding)
+        @key=Save.0
+        @divisor=.
+        @brief=Save the file.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Save
+            @return=void
+
+            @params=bool writeBom, Encoding encoding
+        @end
+
+        @param
+            @name=writeBom
+            The flag indicating that begin-of-file encoding mark must be written.
+        @end
+
+        @param
+            @name=encoding
+            The encoding to save in or null to save in the default file encoding.
+        @end
+    @end
+
+
+    @member
+        @name=SaveAs
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.SaveAs(System.String,System.Text.Encoding,System.Boolean)
+        @key=SaveAs.0
+        @divisor=.
+        @brief=Save the file under a new name.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=SaveAs
+            @return=void
+            @params=string fileName, Encoding encoding, bool writeBom
+        @end
+
+        @param
+            @name=fileName
+            A new file name.
+        @end
+
+        @param
+            @name=encoding
+            The encoding to save in or null to save in the default file encoding.
+        @end
+
+        @param
+            @name=writeBom
+            The flag indicating that begin-of-file encoding mark must be written.
+        @end
+    @end
+
+
+    @member
+        @name=Undo
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.Undo
+        @key=Undo.0
+        @divisor=.
+        @brief=Undoes one previous action.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Undo
+            @return=int
+        @end
+
+    @end
+
+
+    @member
+        @name=Redo
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.Redo
+        @key=Redo.0
+        @divisor=.
+        @brief=Redoes on previous action.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Redo
+            @return=int
+        @end
+
+    @end
+
+
+    @member
+        @name=BeginUndoTransaction
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.BeginUndoTransaction
+        @key=BeginUndoTransaction.0
+        @divisor=.
+        @brief=Marks the start of the complex undo action.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=BeginUndoTransaction
+            @return=void
+
+        @end
+
+        All actions executed between calls of [c]BeginUndoTransaction[/c] and
+        [clink=gehtsoft.xce.text.XceFileBuffer.EndUndoTransaction.0]EndUndoTransaction()[/clink]
+        methods will be undone/redone as one action.
+
+        The complex undo actions can be nested. The borders of the actions to undo/redo will be determined by
+        the most complex completely closed action.
+    @end
+
+
+    @member
+        @name=EndUndoTransaction
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.EndUndoTransaction
+        @key=EndUndoTransaction.0
+        @divisor=.
+        @brief=Marks the end of the complex undo action.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=EndUndoTransaction
+            @return=void
+        @end
+    @end
+
+
+    @member
+        @name=EnableUndo
+        @sig=M:gehtsoft.xce.text.XceFileBuffer.EnableUndo(System.Boolean)
+        @key=EnableUndo.0
+        @divisor=.
+        @brief=Enables or disabled undo/redo support on the buffer.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=EnableUndo
+            @return=void
+
+            @params=bool enable
+        @end
+
+        @param
+            @name=enable
+            Specify true to enable undo support and false to disable undo support.
+        @end
+    @end
+
+
+    @member
+        @name=Length
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.Length
+        @key=Length.0
+        @divisor=.
+        @brief=Returns number of the characters in the buffer.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Length
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.Item(System.Int32)
+        @key=Item.0
+        @divisor=.
+        @brief=Gets the character code by its position.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=char
+            @params=int index
+            @suffix= get;
+        @end
+
+        @param
+            @name=index
+            The index of the character.
+        @end
+
+    @end
+
+
+    @member
+        @name=LinesCount
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.LinesCount
+        @key=LinesCount.0
+        @divisor=.
+        @brief=Returns the number of the lines in the buffer.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=LinesCount
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=ExpandTabs
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.ExpandTabs
+        @key=ExpandTabs.0
+        @divisor=.
+        @brief=Gets or sets "expand tab" mode.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=ExpandTabs
+            @return=bool
+            @suffix= get; set;
+        @end
+
+        If the flag is true any tabulation character will be expanded into spaces.
+
+        For the current version of the XCE.NET this flag must ALWAYS be [c]true[/c].
+
+    @end
+
+
+    @member
+        @name=TabSize
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.TabSize
+        @key=TabSize.0
+        @divisor=.
+        @brief=Get or sets the size of the tabulation.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TabSize
+            @return=int
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=TrimSpace
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.TrimSpace
+        @key=TrimSpace.0
+        @divisor=.
+        @brief=Gets or sets the flag which forces trimming whitespaces at the end of the lines when saving.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TrimSpace
+            @return=bool
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=EolMode
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.EolMode
+        @key=EolMode.0
+        @divisor=.
+        @brief=Gets or sets the end of line mode.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=EolMode
+            @return=[clink=gehtsoft.xce.text.XceFileBufferEndOfLine]XceFileBufferEndOfLine[/clink]
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=Encoding
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.Encoding
+        @key=Encoding.0
+        @divisor=.
+        @brief=Gets the encoding.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Encoding
+            @return=System.Text.Encoding
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=FileName
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.FileName
+        @key=FileName.0
+        @divisor=.
+        @brief=Gets the file name.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=FileName
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=CanUndo
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.CanUndo
+        @key=CanUndo.0
+        @divisor=.
+        @brief=Gets the flag indicating that Undo is possible.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CanUndo
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=CanRedo
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.CanRedo
+        @key=CanRedo.0
+        @divisor=.
+        @brief=Gets the flag indicating that Redo is possible.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CanRedo
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=AtSavePoint
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.AtSavePoint
+        @key=AtSavePoint.0
+        @divisor=.
+        @brief=Gets or sets the save point flag.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=AtSavePoint
+            @return=bool
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=Markers
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.Markers
+        @key=Markers.0
+        @divisor=.
+        @brief=Gets the markers.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Markers
+            @return=[clink=gehtsoft.xce.text.XceFileBufferMarkers]XceFileBufferMarkers[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=OnChanged
+        @sig=E:gehtsoft.xce.text.XceFileBuffer.OnChanged
+        @key=OnChanged.0
+        @divisor=.
+        @brief=The event sent when the text was changed.
+        @visibility=public
+        @scope=instance
+        @custom=event
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnChanged
+            @return=void
+            @prefix=event
+            @params=XceFileBuffer sender, int position, bool major
+        @end
+    @end
+
+    @member
+        @name=LastChange
+        @sig=P:gehtsoft.xce.text.XceFileBuffer.LastChange
+        @key=LastChange.0
+        @divisor=.
+        @brief=Gets date and time expressed in DateTime ticks when the buffer has been changed the last time.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=LastChange
+            @return=long
+            @suffix= get;
+        @end
+    @end
+
+
+
+    The type defined in the [c]gehtsoft.xce.text.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.text]gehtsoft.xce.text[/clink].
+@end
+

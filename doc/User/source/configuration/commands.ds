@@ -1,0 +1,544 @@
+@group
+    @title=Standard commands
+    @ingroup=configuration
+    @key=commands
+    @sortarticles=yes
+    @sortgroups=no
+    @brief=
+
+    Here is the list of the commands supported by the editor.
+
+    See also the [link=extensions]Extensions[/link] section of the documentation for the commands
+    supported by extensions.
+@end
+
+@article
+    @title=Exit Command
+    @brief=Exits the editor.
+    @ingroup=commands
+    @key=command_Exit
+
+    The command prompts to save all unsaved windows and closes the editor if all files are saved or the user
+    decided to do not save a file.
+
+    The command has no parameters.
+@end
+
+@article
+    @title=Menu Command
+    @brief=Shows the main menu.
+    @ingroup=commands
+    @key=command_Menu
+
+    The command has no parameters.
+
+@end
+@article
+    @title=NextWindow Command
+    @brief=Activate the next text window.
+    @ingroup=commands
+    @key=command_NextWindow
+
+    The command has no parameters.
+@end
+@article
+    @title=Cursor Command
+    @brief=Performs a cursor movement.
+    @ingroup=commands
+    @key=command_Cursor
+
+    The parameter of the command is obligatory and defines the operations executed. The first two character of the parameter
+    defines the cursor operation and the last one (if exist) defines the block operation. The last (third) character may be omited.
+
+    The cursor operators:
+
+    @table
+        @row
+            @col
+                [c]lc[/c]
+            @end
+            @col
+                Move the cursor left one character
+            @end
+        @end
+        @row
+            @col
+                [c]rc[/c]
+            @end
+            @col
+                Move the cursor right one character
+            @end
+        @end
+        @row
+            @col
+                [c]uc[/c]
+            @end
+            @col
+                Move the cursor up one line
+            @end
+        @end
+        @row
+            @col
+                [c]dc[/c]
+            @end
+            @col
+                Move the cursor down one line
+            @end
+        @end
+        @row
+            @col
+                [c]up[/c]
+            @end
+            @col
+                Move the cursor up one page
+            @end
+        @end
+        @row
+            @col
+                [c]dp[/c]
+            @end
+            @col
+                Move the cursor down one page
+            @end
+        @end
+        @row
+            @col
+                [c]hl[/c]
+            @end
+            @col
+                Move the cursor to the beginning of the line.
+            @end
+        @end
+        @row
+            @col
+                [c]el[/c]
+            @end
+            @col
+                Move the cursor to the end of the line.
+            @end
+        @end
+        @row
+            @col
+                [c]ht[/c]
+            @end
+            @col
+                Move the cursor to the begin of the text.
+            @end
+        @end
+        @row
+            @col
+                [c]et[/c]
+            @end
+            @col
+                Move the cursor to the end of the text.
+            @end
+        @end
+        @row
+            @col
+                [c]lw[/c]
+            @end
+            @col
+                Move the cursor to the begin or the end of word left.
+            @end
+        @end
+        @row
+            @col
+                [c]rw[/c]
+            @end
+            @col
+                Move the cursor to the begin or the end of word right.
+            @end
+        @end
+    @end
+
+    The block operators:
+    @table
+        @row
+            @col
+                [c]n[/c]
+            @end
+            @col
+                No block
+            @end
+        @end
+        @row
+            @col
+                [c]s[/c]
+            @end
+            @col
+                A stream block is being selected.
+            @end
+        @end
+        @row
+            @col
+                [c]b[/c]
+            @end
+            @col
+                A box block is being selected.
+            @end
+        @end
+        @row
+            @col
+                [c]l[/c]
+            @end
+            @col
+                 A line block is being selected.
+            @end
+        @end
+    @end
+@end
+@article
+    @title=MarkBlock Command
+    @brief=Marks or unmarks the block
+    @ingroup=commands
+    @key=command_MarkBlock
+
+    The parameter of the command is obligatory and must one character:
+
+    @table
+        @row
+            @col
+                [c]n[/c]
+            @end
+            @col
+                No block
+            @end
+        @end
+        @row
+            @col
+                [c]s[/c]
+            @end
+            @col
+                A stream block is being selected.
+            @end
+        @end
+        @row
+            @col
+                [c]b[/c]
+            @end
+            @col
+                A box block is being selected.
+            @end
+        @end
+        @row
+            @col
+                [c]l[/c]
+            @end
+            @col
+                 A line block is being selected.
+            @end
+        @end
+    @end
+
+@end
+@article
+    @title=InsertMode Command
+    @brief=Toggles the insert mode.
+    @ingroup=commands
+    @key=command_InsertMode
+
+@end
+@article
+    @title=Undo Command
+    @brief=Undoes the last operation.
+    @ingroup=commands
+    @key=command_Undo
+
+@end
+@article
+    @title=Redo Command
+    @brief=Redoes the last undone operation.
+    @ingroup=commands
+    @key=command_Redo
+
+@end
+@article
+    @title=Tab Command
+    @brief=Performs a tabulation cursor operation.
+    @ingroup=commands
+    @key=command_Tab
+
+    When command has no parameter, the forward tabulation is performed.
+
+    When command has parameter value [c]b[/c], the backward tabulation is performed.
+
+@end
+@article
+    @title=Delete Command
+    @brief=Deletes one character at the cursor.
+    @ingroup=commands
+    @key=command_Delete
+    The command has no parameters.
+
+@end
+@article
+    @title=DeleteLine Command
+    @brief=Deletes the whole word at the cursor.
+    @ingroup=commands
+    @key=command_DeleteLine
+    The command has no parameters.
+
+@end
+@article
+    @title=Backspace Command
+    @brief=Deletes one character at the left of the cursor.
+    @ingroup=commands
+    @key=command_Backspace
+
+    The command has no parameters.
+
+@end
+@article
+    @title=BackspaceWord Command
+    @brief=Deletes at the left of the cursor till the word border
+    @ingroup=commands
+    @key=command_BackspaceWord
+
+    The command has no parameters.
+@end
+@article
+    @title=DeleteToEndOfLine Command
+    @brief=Deletes from the cursor and to the end of the line.
+    @ingroup=commands
+    @key=command_DeleteToEndOfLine
+
+    The command has no parameters.
+@end
+@article
+    @title=DeleteToEndOfWord Command
+    @brief=Deletes from the cursor position and till the word border.
+    @ingroup=commands
+    @key=command_DeleteToEndOfWord
+
+    The command has no parameters.
+@end
+@article
+    @title=Enter Command
+    @brief=Goes to the next line.
+    @ingroup=commands
+    @key=command_Enter
+
+    The command has no parameters.
+@end
+@article
+    @title=ChooseSpellLanguage Command
+    @brief=Shows the dialog to choose the current spelling language.
+    @ingroup=commands
+    @key=command_ChooseSpellLanguage
+
+    The command has no parameters.
+@end
+@article
+    @title=ChooseSpellSuggest Command
+    @brief=Shows the dialog with the spelling suggestions for the word at the cursor.
+    @ingroup=commands
+    @key=command_ChooseSpellSuggest
+
+    The command has no parameters.
+@end
+@article
+    @title=ChangeCodePage Command
+    @brief=Shows the dialog to choose a new code page for the file.
+    @ingroup=commands
+    @key=command_ChangeCodePage
+
+    The command has no parameters.
+@end
+@article
+    @title=OpenFile Command
+    @brief=Opens a file.
+    @ingroup=commands
+    @key=command_OpenFile
+
+    If the command has no parameters, the dialog to choose the file name will be shown.
+
+    If the command has a parameter, the parameter will be used as the file name.
+
+@end
+@article
+    @title=SaveFile Command
+    @brief=
+    @ingroup=commands
+    @key=command_SaveFile
+
+    Saves the file.
+
+@end
+@article
+    @title=SaveFileAs Command
+    @brief=Saves the file under a new name.
+    @ingroup=commands
+    @key=command_SaveFileAs
+    If the command has no parameters, the dialog to choose the file name will be shown.
+
+    If the command has a parameter, the parameter will be used as the file name.
+
+@end
+@article
+    @title=CloseFile Command
+    @brief=Closes the file.
+    @ingroup=commands
+    @key=command_CloseFile
+
+    If file has been changed the save file prompt will be shown.
+
+    The command has no parameters.
+
+@end
+@article
+    @title=DeleteBlock Command
+    @brief=Deletes the currently selected block.
+    @ingroup=commands
+    @key=command_DeleteBlock
+
+    The command has no parameters.
+
+@end
+@article
+    @title=CopyBlockToClipboard Command
+    @brief=Copies the currently selected block into the windows clipboard.
+    @ingroup=commands
+    @key=command_CopyBlockToClipboard
+    The command has no parameters.
+
+@end
+@article
+    @title=CutBlockToClipboard Command
+    @brief=Cuts the currently selected block into the windows clipboard.
+    @ingroup=commands
+    @key=command_CutBlockToClipboard
+
+    The command has no parameters.
+@end
+@article
+    @title=PasteBlockFromClipboard Command
+    @brief=Pastes the block from the windows clipboard at the cursor position.
+    @ingroup=commands
+    @key=command_PasteBlockFromClipboard
+
+    The command has no parameters.
+@end
+@article
+    @title=CopyBlock Command
+    @brief=Copies the currently selected block at the cursor position.
+    @ingroup=commands
+    @key=command_CopyBlock
+    The command has no parameters.
+
+@end
+@article
+    @title=MoveBlock Command
+    @brief=Moves the currently selected block at the cursor position.
+    @ingroup=commands
+    @key=command_MoveBlock
+    The command has no parameters.
+
+@end
+@article
+    @title=InterwindowCopyBlock Command
+    @brief=Copies the selected block from another text window.
+    @ingroup=commands
+    @key=command_InterwindowCopyBlock
+
+    The dialog to select a window to copy the block from will be shown.
+
+    The command has no parameters.
+
+@end
+@article
+    @title=SwitchWindow Command
+    @brief=Switches to another window.
+    @ingroup=commands
+    @key=command_SwitchWindow
+
+    The dialog to select a window will be shown.
+
+    The command has no parameters.
+
+@end
+@article
+    @title=CheckPair Command
+    @brief=Moves the cursor to the opposite syntax highlighting pair for the pair side at the cursor.
+    @ingroup=commands
+    @key=command_CheckPair
+
+    If the cursor is not at the syntax highlighting pair side nothing happens.
+
+    The command has no parameters.
+
+@end
+@article
+    @title=Search Command
+    @brief=Starts a search operation.
+    @ingroup=commands
+    @key=command_Search
+
+    The dialog for the search parameters will be shown.
+
+    The command has no parameters.
+@end
+@article
+    @title=SearchNext Command
+    @brief=Repeats the last search operation.
+    @ingroup=commands
+    @key=command_SearchNext
+
+    The command has no parameters.
+@end
+@article
+    @title=Replace Command
+    @brief=Starts a replace operation.
+    @ingroup=commands
+    @key=command_Replace
+
+    The dialog for the replace parameters will be shown.
+
+    The command has no parameters.
+@end
+@article
+    @title=GoTo Command
+    @brief=Moves the cursor to the line number specified.
+    @ingroup=commands
+    @key=command_GoTo
+
+    The dialog for the line number prompt will be shown.
+
+    The command has no parameters.
+
+@end
+@article
+    @title=SetMarker Command
+    @brief=Stores the current cursor line position.
+    @ingroup=commands
+    @key=command_SetMarker
+
+    If the command has no parameter,  the dialog for the market number prompt will be shown.
+
+    If the parameter is specified, it must a number between 0 and 9 to choose the marker number.
+@end
+@article
+    @title=GoMarker Command
+    @brief=Restores the previously stored cursor line position.
+    @ingroup=commands
+    @key=command_GoMarker
+
+    If the command has no parameter,  the dialog for the market number prompt will be shown.
+
+    If the parameter is specified, it must a number between 0 and 9 to choose the marker number.
+@end
+@article
+    @title=DuplicateLine Command
+    @brief=Duplicates the line under cursor.
+    @ingroup=commands
+    @key=command_DuplicateLine
+
+    The command has no parameters.
+@end
+@article
+    @title=Execute Command
+    @brief=Prompts the command and its parameters and executes the chosen command.
+    @ingroup=commands
+    @key=command_Execute
+
+    The command has no parameters.
+@end

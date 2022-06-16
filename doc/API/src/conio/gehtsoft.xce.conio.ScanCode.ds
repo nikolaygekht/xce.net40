@@ -1,0 +1,1888 @@
+@class
+    @name=ScanCode
+    @key=gehtsoft.xce.conio.ScanCode
+    @brief=The list of scan-codes.
+    @type=class
+    @ingroup=gehtsoft.xce.conio
+    @sig=T:gehtsoft.xce.conio.ScanCode
+
+    @member
+        @name=LBUTTON
+        @sig=F:gehtsoft.xce.conio.ScanCode.LBUTTON
+        @key=LBUTTON.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+    @end
+
+    @member
+        @name=RBUTTON
+        @sig=F:gehtsoft.xce.conio.ScanCode.RBUTTON
+        @key=RBUTTON.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+    @end
+
+    @member
+        @name=CANCEL
+        @sig=F:gehtsoft.xce.conio.ScanCode.CANCEL
+        @key=CANCEL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+    @end
+
+    @member
+        @name=MBUTTON
+        @sig=F:gehtsoft.xce.conio.ScanCode.MBUTTON
+        @key=MBUTTON.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=XBUTTON1
+        @sig=F:gehtsoft.xce.conio.ScanCode.XBUTTON1
+        @key=XBUTTON1.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=XBUTTON2
+        @sig=F:gehtsoft.xce.conio.ScanCode.XBUTTON2
+        @key=XBUTTON2.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=BACK
+        @sig=F:gehtsoft.xce.conio.ScanCode.BACK
+        @key=BACK.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+    @end
+
+    @member
+        @name=TAB
+        @sig=F:gehtsoft.xce.conio.ScanCode.TAB
+        @key=TAB.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+    @end
+
+    @member
+        @name=CLEAR
+        @sig=F:gehtsoft.xce.conio.ScanCode.CLEAR
+        @key=CLEAR.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=RETURN
+        @sig=F:gehtsoft.xce.conio.ScanCode.RETURN
+        @key=RETURN.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SHIFT
+        @sig=F:gehtsoft.xce.conio.ScanCode.SHIFT
+        @key=SHIFT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=CONTROL
+        @sig=F:gehtsoft.xce.conio.ScanCode.CONTROL
+        @key=CONTROL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=MENU
+        @sig=F:gehtsoft.xce.conio.ScanCode.MENU
+        @key=MENU.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=PAUSE
+        @sig=F:gehtsoft.xce.conio.ScanCode.PAUSE
+        @key=PAUSE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=CAPITAL
+        @sig=F:gehtsoft.xce.conio.ScanCode.CAPITAL
+        @key=CAPITAL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=KANA
+        @sig=F:gehtsoft.xce.conio.ScanCode.KANA
+        @key=KANA.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=HANGEUL
+        @sig=F:gehtsoft.xce.conio.ScanCode.HANGEUL
+        @key=HANGEUL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=HANGUL
+        @sig=F:gehtsoft.xce.conio.ScanCode.HANGUL
+        @key=HANGUL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=JUNJA
+        @sig=F:gehtsoft.xce.conio.ScanCode.JUNJA
+        @key=JUNJA.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=FINAL
+        @sig=F:gehtsoft.xce.conio.ScanCode.FINAL
+        @key=FINAL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=HANJA
+        @sig=F:gehtsoft.xce.conio.ScanCode.HANJA
+        @key=HANJA.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=KANJI
+        @sig=F:gehtsoft.xce.conio.ScanCode.KANJI
+        @key=KANJI.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=ESCAPE
+        @sig=F:gehtsoft.xce.conio.ScanCode.ESCAPE
+        @key=ESCAPE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=CONVERT
+        @sig=F:gehtsoft.xce.conio.ScanCode.CONVERT
+        @key=CONVERT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NONCONVERT
+        @sig=F:gehtsoft.xce.conio.ScanCode.NONCONVERT
+        @key=NONCONVERT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=ACCEPT
+        @sig=F:gehtsoft.xce.conio.ScanCode.ACCEPT
+        @key=ACCEPT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=MODECHANGE
+        @sig=F:gehtsoft.xce.conio.ScanCode.MODECHANGE
+        @key=MODECHANGE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SPACE
+        @sig=F:gehtsoft.xce.conio.ScanCode.SPACE
+        @key=SPACE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=PRIOR
+        @sig=F:gehtsoft.xce.conio.ScanCode.PRIOR
+        @key=PRIOR.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NEXT
+        @sig=F:gehtsoft.xce.conio.ScanCode.NEXT
+        @key=NEXT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=END
+        @sig=F:gehtsoft.xce.conio.ScanCode.END
+        @key=END.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=HOME
+        @sig=F:gehtsoft.xce.conio.ScanCode.HOME
+        @key=HOME.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=LEFT
+        @sig=F:gehtsoft.xce.conio.ScanCode.LEFT
+        @key=LEFT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=UP
+        @sig=F:gehtsoft.xce.conio.ScanCode.UP
+        @key=UP.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=RIGHT
+        @sig=F:gehtsoft.xce.conio.ScanCode.RIGHT
+        @key=RIGHT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=DOWN
+        @sig=F:gehtsoft.xce.conio.ScanCode.DOWN
+        @key=DOWN.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SELECT
+        @sig=F:gehtsoft.xce.conio.ScanCode.SELECT
+        @key=SELECT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=PRINT
+        @sig=F:gehtsoft.xce.conio.ScanCode.PRINT
+        @key=PRINT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=EXECUTE
+        @sig=F:gehtsoft.xce.conio.ScanCode.EXECUTE
+        @key=EXECUTE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SNAPSHOT
+        @sig=F:gehtsoft.xce.conio.ScanCode.SNAPSHOT
+        @key=SNAPSHOT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=INSERT
+        @sig=F:gehtsoft.xce.conio.ScanCode.INSERT
+        @key=INSERT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=DEL
+        @sig=F:gehtsoft.xce.conio.ScanCode.DEL
+        @key=DEL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=HELP
+        @sig=F:gehtsoft.xce.conio.ScanCode.HELP
+        @key=HELP.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=LWIN
+        @sig=F:gehtsoft.xce.conio.ScanCode.LWIN
+        @key=LWIN.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=RWIN
+        @sig=F:gehtsoft.xce.conio.ScanCode.RWIN
+        @key=RWIN.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=APPS
+        @sig=F:gehtsoft.xce.conio.ScanCode.APPS
+        @key=APPS.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SLEEP
+        @sig=F:gehtsoft.xce.conio.ScanCode.SLEEP
+        @key=SLEEP.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD0
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD0
+        @key=NUMPAD0.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD1
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD1
+        @key=NUMPAD1.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD2
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD2
+        @key=NUMPAD2.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD3
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD3
+        @key=NUMPAD3.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD4
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD4
+        @key=NUMPAD4.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD5
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD5
+        @key=NUMPAD5.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD6
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD6
+        @key=NUMPAD6.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD7
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD7
+        @key=NUMPAD7.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD8
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD8
+        @key=NUMPAD8.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMPAD9
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMPAD9
+        @key=NUMPAD9.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=MULTIPLY
+        @sig=F:gehtsoft.xce.conio.ScanCode.MULTIPLY
+        @key=MULTIPLY.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=ADD
+        @sig=F:gehtsoft.xce.conio.ScanCode.ADD
+        @key=ADD.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SEPARATOR
+        @sig=F:gehtsoft.xce.conio.ScanCode.SEPARATOR
+        @key=SEPARATOR.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SUBTRACT
+        @sig=F:gehtsoft.xce.conio.ScanCode.SUBTRACT
+        @key=SUBTRACT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=DECIMAL
+        @sig=F:gehtsoft.xce.conio.ScanCode.DECIMAL
+        @key=DECIMAL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=DIVIDE
+        @sig=F:gehtsoft.xce.conio.ScanCode.DIVIDE
+        @key=DIVIDE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F1
+        @sig=F:gehtsoft.xce.conio.ScanCode.F1
+        @key=F1.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F2
+        @sig=F:gehtsoft.xce.conio.ScanCode.F2
+        @key=F2.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F3
+        @sig=F:gehtsoft.xce.conio.ScanCode.F3
+        @key=F3.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F4
+        @sig=F:gehtsoft.xce.conio.ScanCode.F4
+        @key=F4.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F5
+        @sig=F:gehtsoft.xce.conio.ScanCode.F5
+        @key=F5.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F6
+        @sig=F:gehtsoft.xce.conio.ScanCode.F6
+        @key=F6.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F7
+        @sig=F:gehtsoft.xce.conio.ScanCode.F7
+        @key=F7.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F8
+        @sig=F:gehtsoft.xce.conio.ScanCode.F8
+        @key=F8.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F9
+        @sig=F:gehtsoft.xce.conio.ScanCode.F9
+        @key=F9.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F10
+        @sig=F:gehtsoft.xce.conio.ScanCode.F10
+        @key=F10.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F11
+        @sig=F:gehtsoft.xce.conio.ScanCode.F11
+        @key=F11.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F12
+        @sig=F:gehtsoft.xce.conio.ScanCode.F12
+        @key=F12.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F13
+        @sig=F:gehtsoft.xce.conio.ScanCode.F13
+        @key=F13.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F14
+        @sig=F:gehtsoft.xce.conio.ScanCode.F14
+        @key=F14.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F15
+        @sig=F:gehtsoft.xce.conio.ScanCode.F15
+        @key=F15.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F16
+        @sig=F:gehtsoft.xce.conio.ScanCode.F16
+        @key=F16.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F17
+        @sig=F:gehtsoft.xce.conio.ScanCode.F17
+        @key=F17.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F18
+        @sig=F:gehtsoft.xce.conio.ScanCode.F18
+        @key=F18.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F19
+        @sig=F:gehtsoft.xce.conio.ScanCode.F19
+        @key=F19.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F20
+        @sig=F:gehtsoft.xce.conio.ScanCode.F20
+        @key=F20.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F21
+        @sig=F:gehtsoft.xce.conio.ScanCode.F21
+        @key=F21.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F22
+        @sig=F:gehtsoft.xce.conio.ScanCode.F22
+        @key=F22.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F23
+        @sig=F:gehtsoft.xce.conio.ScanCode.F23
+        @key=F23.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F24
+        @sig=F:gehtsoft.xce.conio.ScanCode.F24
+        @key=F24.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NUMLOCK
+        @sig=F:gehtsoft.xce.conio.ScanCode.NUMLOCK
+        @key=NUMLOCK.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SCROLL
+        @sig=F:gehtsoft.xce.conio.ScanCode.SCROLL
+        @key=SCROLL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_NEC_EQUAL
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_NEC_EQUAL
+        @key=OEM_NEC_EQUAL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_FJ_JISHO
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_FJ_JISHO
+        @key=OEM_FJ_JISHO.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_FJ_MASSHOU
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_FJ_MASSHOU
+        @key=OEM_FJ_MASSHOU.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_FJ_TOUROKU
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_FJ_TOUROKU
+        @key=OEM_FJ_TOUROKU.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_FJ_LOYA
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_FJ_LOYA
+        @key=OEM_FJ_LOYA.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_FJ_ROYA
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_FJ_ROYA
+        @key=OEM_FJ_ROYA.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=LSHIFT
+        @sig=F:gehtsoft.xce.conio.ScanCode.LSHIFT
+        @key=LSHIFT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=RSHIFT
+        @sig=F:gehtsoft.xce.conio.ScanCode.RSHIFT
+        @key=RSHIFT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=LCONTROL
+        @sig=F:gehtsoft.xce.conio.ScanCode.LCONTROL
+        @key=LCONTROL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=RCONTROL
+        @sig=F:gehtsoft.xce.conio.ScanCode.RCONTROL
+        @key=RCONTROL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=LMENU
+        @sig=F:gehtsoft.xce.conio.ScanCode.LMENU
+        @key=LMENU.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=RMENU
+        @sig=F:gehtsoft.xce.conio.ScanCode.RMENU
+        @key=RMENU.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=BROWSER_BACK
+        @sig=F:gehtsoft.xce.conio.ScanCode.BROWSER_BACK
+        @key=BROWSER_BACK.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=BROWSER_FORWARD
+        @sig=F:gehtsoft.xce.conio.ScanCode.BROWSER_FORWARD
+        @key=BROWSER_FORWARD.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=BROWSER_REFRESH
+        @sig=F:gehtsoft.xce.conio.ScanCode.BROWSER_REFRESH
+        @key=BROWSER_REFRESH.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=BROWSER_STOP
+        @sig=F:gehtsoft.xce.conio.ScanCode.BROWSER_STOP
+        @key=BROWSER_STOP.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=BROWSER_SEARCH
+        @sig=F:gehtsoft.xce.conio.ScanCode.BROWSER_SEARCH
+        @key=BROWSER_SEARCH.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=BROWSER_FAVORITES
+        @sig=F:gehtsoft.xce.conio.ScanCode.BROWSER_FAVORITES
+        @key=BROWSER_FAVORITES.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=BROWSER_HOME
+        @sig=F:gehtsoft.xce.conio.ScanCode.BROWSER_HOME
+        @key=BROWSER_HOME.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=VOLUME_MUTE
+        @sig=F:gehtsoft.xce.conio.ScanCode.VOLUME_MUTE
+        @key=VOLUME_MUTE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=VOLUME_DOWN
+        @sig=F:gehtsoft.xce.conio.ScanCode.VOLUME_DOWN
+        @key=VOLUME_DOWN.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=VOLUME_UP
+        @sig=F:gehtsoft.xce.conio.ScanCode.VOLUME_UP
+        @key=VOLUME_UP.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=MEDIA_NEXT_TRACK
+        @sig=F:gehtsoft.xce.conio.ScanCode.MEDIA_NEXT_TRACK
+        @key=MEDIA_NEXT_TRACK.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=MEDIA_PREV_TRACK
+        @sig=F:gehtsoft.xce.conio.ScanCode.MEDIA_PREV_TRACK
+        @key=MEDIA_PREV_TRACK.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=MEDIA_STOP
+        @sig=F:gehtsoft.xce.conio.ScanCode.MEDIA_STOP
+        @key=MEDIA_STOP.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=MEDIA_PLAY_PAUSE
+        @sig=F:gehtsoft.xce.conio.ScanCode.MEDIA_PLAY_PAUSE
+        @key=MEDIA_PLAY_PAUSE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=LAUNCH_MAIL
+        @sig=F:gehtsoft.xce.conio.ScanCode.LAUNCH_MAIL
+        @key=LAUNCH_MAIL.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=LAUNCH_MEDIA_SELECT
+        @sig=F:gehtsoft.xce.conio.ScanCode.LAUNCH_MEDIA_SELECT
+        @key=LAUNCH_MEDIA_SELECT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=LAUNCH_APP1
+        @sig=F:gehtsoft.xce.conio.ScanCode.LAUNCH_APP1
+        @key=LAUNCH_APP1.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=LAUNCH_APP2
+        @sig=F:gehtsoft.xce.conio.ScanCode.LAUNCH_APP2
+        @key=LAUNCH_APP2.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_1
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_1
+        @key=OEM_1.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_PLUS
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_PLUS
+        @key=OEM_PLUS.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_COMMA
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_COMMA
+        @key=OEM_COMMA.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_MINUS
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_MINUS
+        @key=OEM_MINUS.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_PERIOD
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_PERIOD
+        @key=OEM_PERIOD.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_2
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_2
+        @key=OEM_2.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_3
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_3
+        @key=OEM_3.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_4
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_4
+        @key=OEM_4.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_5
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_5
+        @key=OEM_5.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_6
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_6
+        @key=OEM_6.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_7
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_7
+        @key=OEM_7.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_8
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_8
+        @key=OEM_8.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_AX
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_AX
+        @key=OEM_AX.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=OEM_102
+        @sig=F:gehtsoft.xce.conio.ScanCode.OEM_102
+        @key=OEM_102.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=ICO_HELP
+        @sig=F:gehtsoft.xce.conio.ScanCode.ICO_HELP
+        @key=ICO_HELP.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=ICO_00
+        @sig=F:gehtsoft.xce.conio.ScanCode.ICO_00
+        @key=ICO_00.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=ZERO
+        @sig=F:gehtsoft.xce.conio.ScanCode.ZERO
+        @key=ZERO.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=ONE
+        @sig=F:gehtsoft.xce.conio.ScanCode.ONE
+        @key=ONE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=TWO
+        @sig=F:gehtsoft.xce.conio.ScanCode.TWO
+        @key=TWO.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=FREE
+        @sig=F:gehtsoft.xce.conio.ScanCode.FREE
+        @key=FREE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=FOUR
+        @sig=F:gehtsoft.xce.conio.ScanCode.FOUR
+        @key=FOUR.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=FIVE
+        @sig=F:gehtsoft.xce.conio.ScanCode.FIVE
+        @key=FIVE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SIX
+        @sig=F:gehtsoft.xce.conio.ScanCode.SIX
+        @key=SIX.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=SEVEN
+        @sig=F:gehtsoft.xce.conio.ScanCode.SEVEN
+        @key=SEVEN.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=EIGHT
+        @sig=F:gehtsoft.xce.conio.ScanCode.EIGHT
+        @key=EIGHT.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=NINE
+        @sig=F:gehtsoft.xce.conio.ScanCode.NINE
+        @key=NINE.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=A
+        @sig=F:gehtsoft.xce.conio.ScanCode.A
+        @key=A.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=B
+        @sig=F:gehtsoft.xce.conio.ScanCode.B
+        @key=B.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=C
+        @sig=F:gehtsoft.xce.conio.ScanCode.C
+        @key=C.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=D
+        @sig=F:gehtsoft.xce.conio.ScanCode.D
+        @key=D.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=E
+        @sig=F:gehtsoft.xce.conio.ScanCode.E
+        @key=E.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=F
+        @sig=F:gehtsoft.xce.conio.ScanCode.F
+        @key=F.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=G
+        @sig=F:gehtsoft.xce.conio.ScanCode.G
+        @key=G.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=H
+        @sig=F:gehtsoft.xce.conio.ScanCode.H
+        @key=H.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=I
+        @sig=F:gehtsoft.xce.conio.ScanCode.I
+        @key=I.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=J
+        @sig=F:gehtsoft.xce.conio.ScanCode.J
+        @key=J.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=K
+        @sig=F:gehtsoft.xce.conio.ScanCode.K
+        @key=K.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=L
+        @sig=F:gehtsoft.xce.conio.ScanCode.L
+        @key=L.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=M
+        @sig=F:gehtsoft.xce.conio.ScanCode.M
+        @key=M.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=N
+        @sig=F:gehtsoft.xce.conio.ScanCode.N
+        @key=N.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=O
+        @sig=F:gehtsoft.xce.conio.ScanCode.O
+        @key=O.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=P
+        @sig=F:gehtsoft.xce.conio.ScanCode.P
+        @key=P.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=Q
+        @sig=F:gehtsoft.xce.conio.ScanCode.Q
+        @key=Q.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=R
+        @sig=F:gehtsoft.xce.conio.ScanCode.R
+        @key=R.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=S
+        @sig=F:gehtsoft.xce.conio.ScanCode.S
+        @key=S.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=T
+        @sig=F:gehtsoft.xce.conio.ScanCode.T
+        @key=T.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=U
+        @sig=F:gehtsoft.xce.conio.ScanCode.U
+        @key=U.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=V
+        @sig=F:gehtsoft.xce.conio.ScanCode.V
+        @key=V.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=W
+        @sig=F:gehtsoft.xce.conio.ScanCode.W
+        @key=W.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=X
+        @sig=F:gehtsoft.xce.conio.ScanCode.X
+        @key=X.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=Y
+        @sig=F:gehtsoft.xce.conio.ScanCode.Y
+        @key=Y.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=Z
+        @sig=F:gehtsoft.xce.conio.ScanCode.Z
+        @key=Z.0
+        @divisor=.
+        @brief=
+        @scope=class
+        @type=field
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio]gehtsoft.xce.conio[/clink].
+@end
+

@@ -1,0 +1,249 @@
+@class
+    @name=BoxBorder
+    @key=gehtsoft.xce.conio.BoxBorder
+    @brief=The borders for a box.
+    @type=class
+    @ingroup=gehtsoft.xce.conio
+    @sig=T:gehtsoft.xce.conio.BoxBorder
+
+    @member
+        @name=BoxBorder
+        @sig=M:gehtsoft.xce.conio.BoxBorder.#ctor(System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char,System.Char)
+        @key=BoxBorder.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=BoxBorder
+            @params=char topLeft, char top, char topRight, char left, char right, char bottomLeft, char bottom, char bottomRight
+        @end
+
+        @param
+            @name=topLeft
+            A character for top-left corner of the box.
+        @end
+
+        @param
+            @name=top
+            A character for filling the top line of the box.
+        @end
+
+        @param
+            @name=topRight
+            A character for top-right corner of the box.
+        @end
+
+        @param
+            @name=left
+            A character for filling the left line of the box.
+        @end
+
+        @param
+            @name=right
+            A character for filling the right line of the box.
+        @end
+
+        @param
+            @name=bottomLeft
+            A character for bottom-left corner of the box.
+        @end
+
+        @param
+            @name=bottom
+            A character for filling the top line of the box.
+        @end
+
+        @param
+            @name=bottomRight
+            A character for bottom-right corner of the box.
+        @end
+    @end
+
+    @member
+        @name=DoubleBorderBox
+        @sig=P:gehtsoft.xce.conio.BoxBorder.DoubleBorderBox
+        @key=DoubleBorderBox.0
+        @divisor=.
+        @brief=The borders for a double-lined box.
+        @scope=class
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DoubleBorderBox
+            @return=[clink=gehtsoft.xce.conio.BoxBorder]BoxBorder[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=SingleBorderBox
+        @sig=P:gehtsoft.xce.conio.BoxBorder.SingleBorderBox
+        @key=SingleBorderBox.0
+        @divisor=.
+        @brief=The borders for a single-lined box.
+        @scope=class
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=SingleBorderBox
+            @return=[clink=gehtsoft.xce.conio.BoxBorder]BoxBorder[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Right
+        @sig=P:gehtsoft.xce.conio.BoxBorder.Right
+        @key=Right.0
+        @divisor=.
+        @brief=A character for filling the right line of the box.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Right
+            @return=char
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Left
+        @sig=P:gehtsoft.xce.conio.BoxBorder.Left
+        @key=Left.0
+        @divisor=.
+        @brief=A character for filling the left line of the box.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Left
+            @return=char
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=BottomRight
+        @sig=P:gehtsoft.xce.conio.BoxBorder.BottomRight
+        @key=BottomRight.0
+        @divisor=.
+        @brief=A character for bottom-right corner of the box.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=BottomRight
+            @return=char
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Bottom
+        @sig=P:gehtsoft.xce.conio.BoxBorder.Bottom
+        @key=Bottom.0
+        @divisor=.
+        @brief=A character for filling the top line of the box.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Bottom
+            @return=char
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=BottomLeft
+        @sig=P:gehtsoft.xce.conio.BoxBorder.BottomLeft
+        @key=BottomLeft.0
+        @divisor=.
+        @brief=A character for bottom-left corner of the box.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=BottomLeft
+            @return=char
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=TopRight
+        @sig=P:gehtsoft.xce.conio.BoxBorder.TopRight
+        @key=TopRight.0
+        @divisor=.
+        @brief=A character for top-right corner of the box.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TopRight
+            @return=char
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Top
+        @sig=P:gehtsoft.xce.conio.BoxBorder.Top
+        @key=Top.0
+        @divisor=.
+        @brief=A character for filling the top line of the box.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Top
+            @return=char
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=TopLeft
+        @sig=P:gehtsoft.xce.conio.BoxBorder.TopLeft
+        @key=TopLeft.0
+        @divisor=.
+        @brief=A character for top-left corner of the box.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TopLeft
+            @return=char
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio]gehtsoft.xce.conio[/clink].
+@end
+

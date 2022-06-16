@@ -1,0 +1,321 @@
+@class
+    @name=DialogItemSingleLineTextBox
+    @key=gehtsoft.xce.conio.win.DialogItemSingleLineTextBox
+    @brief=Dialog single-line edit box.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox
+    @parent=[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink]
+    @import=gehtsoft.xce.conio.win.DialogItem
+
+    @member
+        @name=DialogItemSingleLineTextBox
+        @sig=M:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+        @key=DialogItemSingleLineTextBox.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=DialogItemSingleLineTextBox
+            @params=string text, int id, int row, int column, int width
+        @end
+
+        @param
+            @name=text
+            The initial text.
+        @end
+
+        @param
+            @name=id
+            The item identifier.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=width
+            Width of the dialog item in columns.
+        @end
+
+    @end
+
+    @member
+        @name=Enable
+        @sig=M:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.Enable(System.Boolean)
+        @key=Enable.0
+        @divisor=.
+        @brief=Enables or disables the control.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Enable
+            @return=void
+
+            @params=bool enable
+        @end
+
+        @param
+            @name=enable
+
+        @end
+
+    @end
+
+    @member
+        @name=SetText
+        @sig=M:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.SetText(System.String)
+        @key=SetText.0
+        @divisor=.
+        @brief=Sets the text.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=SetText
+            @return=void
+
+            @params=string text
+        @end
+
+        @param
+            @name=text
+            The new text to set.
+        @end
+
+    @end
+
+    @member
+        @name=SetSel
+        @sig=M:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.SetSel(System.Int32,System.Int32)
+        @key=SetSel.0
+        @divisor=.
+        @brief=Sets the selection.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=SetSel
+            @return=void
+
+            @params=int from, int to
+        @end
+
+        @param
+            @name=from
+            The first character of the selection.
+        @end
+
+        @param
+            @name=to
+            The first character after the selection end.
+        @end
+    @end
+
+    @member
+        @name=Text
+        @sig=P:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.Text
+        @key=Text.0
+        @divisor=.
+        @brief=Gets the current text in the control.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Text
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Readonly
+        @sig=P:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.Readonly
+        @key=Readonly.0
+        @divisor=.
+        @brief=Gets or sets the readonly mode of the control.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Readonly
+            @return=bool
+            @suffix= get; set;
+        @end
+
+    @end
+
+    @member
+        @name=mText
+        @sig=F:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.mText
+        @key=mText.0
+        @divisor=.
+        @brief=The text of the control.
+        @scope=instance
+        @visibility=protected
+        @type=field
+
+        @declaration
+            @language=cs
+            @return=StringBuilder
+        @end
+
+    @end
+
+    @member
+        @name=mOffset
+        @sig=F:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.mOffset
+        @key=mOffset.0
+        @divisor=.
+        @brief=The offset of the first visible character in the text.
+        @scope=instance
+        @visibility=protected
+        @type=field
+
+        @declaration
+            @language=cs
+            @return=int
+        @end
+    @end
+
+    @member
+        @name=mCaret
+        @sig=F:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.mCaret
+        @key=mCaret.0
+        @divisor=.
+        @brief=The position of the caret in the text.
+        @scope=instance
+        @visibility=protected
+        @type=field
+        @declaration
+            @language=cs
+            @return=int
+        @end
+
+    @end
+
+    @member
+        @name=mSelectionStart
+        @sig=F:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.mSelectionStart
+        @key=mSelectionStart.0
+        @divisor=.
+        @brief=The position of the first selected character in the text.
+        @scope=instance
+        @visibility=protected
+        @type=field
+
+        @declaration
+            @language=cs
+            @return=int
+        @end
+    @end
+
+    @member
+        @name=mSelectionEnd
+        @sig=F:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.mSelectionEnd
+        @key=mSelectionEnd.0
+        @divisor=.
+        @brief=The position next to the last selected character in the text.
+        @scope=instance
+        @visibility=protected
+        @type=field
+        @declaration
+            @language=cs
+            @return=int
+        @end
+
+    @end
+
+    @member
+        @name=mInsertMode
+        @sig=F:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.mInsertMode
+        @key=mInsertMode.0
+        @divisor=.
+        @brief=The insert/overtype mode.
+        @scope=instance
+        @visibility=protected
+        @type=field
+        @declaration
+            @language=cs
+            @return=bool
+        @end
+
+    @end
+
+    @member
+        @name=mReadonly
+        @sig=F:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.mReadonly
+        @key=mReadonly.0
+        @divisor=.
+        @brief=The read-only flag
+        @scope=instance
+        @visibility=protected
+        @type=field
+        @declaration
+            @language=cs
+            @return=bool
+        @end
+
+    @end
+
+    @member
+        @name=OnTextChangedByUser
+        @sig=M:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.OnTextChangedByUser
+        @key=OnTextChangedByUser.0
+        @divisor=.
+        @brief=The method is called when the user changes the text content.
+        @scope=instance
+        @visibility=protected
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnTextChangedByUser
+            @return=void
+        @end
+    @end
+
+
+    @member
+        @name=EditWidth
+        @sig=P:gehtsoft.xce.conio.win.DialogItemSingleLineTextBox.EditWidth
+        @key=EditWidth.0
+        @divisor=.
+        @brief=Gets the width of the text edit part of the window.
+        @scope=instance
+        @visibility=protected
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=EditWidth
+            @return=int
+            @suffix= get;
+            @prefix=virtual
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

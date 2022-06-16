@@ -1,0 +1,637 @@
+@class
+    @name=xce
+    @key=xce.script.xce
+    @brief=The interface to the editor.
+    @type=class
+    @ingroup=gehtsoft.xce.extension.script
+    The object with name [c]xce[/c] is available as a global variable. All properties and methods
+    are also available as a global variables, functions or subroutines.
+
+
+    @member
+        @name=MessageBox
+        @divisor=.
+        @brief=Shows a message box.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=MessageBox
+            @params=text as String, title as String
+        @end
+
+        @param
+            @name=text
+            The text to be shown.
+        @end
+
+        @param
+            @name=title
+            The message box title.
+        @end
+
+    @end
+
+
+    @member
+        @name=MessageBoxYesNo
+        @divisor=.
+        @brief=Shows a message box with Yes or No answer options.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=MessageBoxYesNo
+            @return=Boolean
+            @params=text as String, title as String
+        @end
+
+        @param
+            @name=text
+            The text to be shown.
+        @end
+
+        @param
+            @name=title
+            The message box title.
+        @end
+
+        The function returns [c]True[/c] if "Yes" answer has been chosen.
+
+    @end
+
+
+    @member
+        @name=Prompt
+        @divisor=.
+        @brief=Prompts the user to enter a string.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=Prompt
+            @return=String
+            @params=label as String, initial as String, width as Long, title as String
+        @end
+
+        @param
+            @name=label
+            The label for the prompt.
+        @end
+
+        @param
+            @name=initial
+            The initial value to show.
+        @end
+
+        @param
+            @name=width
+            The width of the prompt text in characters.
+        @end
+
+        @param
+            @name=title
+            The title of the prompt window.
+        @end
+
+    @end
+
+
+    @member
+        @name=ExecuteCommand
+        @divisor=.
+        @brief=Executes a editor command without a parameter.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=ExecuteCommand
+            @params=command as String
+        @end
+
+        @param
+            @name=command
+            A command to be executed. See [link=commands]Editor commands[/link] for the list of the commands.
+        @end
+
+    @end
+
+
+    @member
+        @name=ExecuteCommandWithParam
+        @divisor=.
+        @brief=Executes a editor command with the parameter.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=ExecuteCommandWithParam
+            @params=command as String, parameter as String
+        @end
+
+        @param
+            @name=command
+            A command to be executed. See [link=commands]Editor commands[/link] for the list of the commands.
+        @end
+
+        @param
+            @name=parameter
+            The command parameter.
+        @end
+
+    @end
+
+    @member
+        @name=Search
+        @divisor=.
+        @brief=Searches text.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=Search
+            @params=regexp as String, ignoreCase as Boolean
+        @end
+
+        @param
+            @name=regexp
+            Regular expression to be searched.
+            For the syntax see [link=regex_syntax]Regular expression syntax[/link] article.
+        @end
+
+        @param
+            @name=ignoreCase
+            The ignore case flag.
+        @end
+
+        The function searches for the regular expression specified starting at the current cursor position.
+        If any match is found, the match is selected as a stream block. If no text is found, the cursor is set
+        to the line next to the last line of the file.
+    @end
+
+
+    @member
+        @name=Stroke
+        @divisor=.
+        @brief=Strokes the text at the current cursor position.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=Stroke
+            @params=text as String
+        @end
+
+        @param
+            @name=text
+
+        @end
+
+    @end
+
+
+    @member
+        @name=Line
+        @divisor=.
+        @brief=Gets the text at the line specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=Line
+            @return=String
+            @params=lineIndex as Long
+        @end
+
+        @param
+            @name=lineIndex
+            The index of the line in the text buffer. The first line has index 0.
+        @end
+
+    @end
+
+
+    @member
+        @name=LineLength
+        @divisor=.
+        @brief=Gets the length of the line specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=LineLength
+            @return=Long
+            @params=lineIndex as Long
+        @end
+
+        @param
+            @name=lineIndex
+            The index of the line in the text buffer. The first line has index 0.
+        @end
+
+    @end
+
+
+    @member
+        @name=FirstSyntaxRegion
+        @divisor=.
+        @brief=Gets the first syntax region for the line specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=FirstSyntaxRegion
+            @return=Boolean
+            @params=lineIndex as Long
+        @end
+
+        @param
+            @name=lineIndex
+            The index of the line in the text buffer. The first line has index 0.
+        @end
+
+        The function returns [c]True[/c] if the line contains any syntax regions.
+        The information about the syntax region is available via
+        [clink=xce.script.xce.SyntaxRegionName]SyntaxRegionName[/clink],
+        [clink=xce.script.xce.SyntaxRegionStart]SyntaxRegionStart[/clink], and
+        [clink=xce.script.xce.SyntaxRegionLength]SyntaxRegionLength[/clink] properties.
+        To read the next syntax region use
+        [clink=xce.script.xce.NextSyntaxRegion]NextSyntaxRegion()[/clink] function.
+
+    @end
+
+
+    @member
+        @name=NextSyntaxRegion
+        @divisor=.
+        @brief=Gets the next syntax region.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=NextSyntaxRegion
+            @return=Boolean
+        @end
+
+        The function returns [c]True[/c] if the line contains another syntax regions.
+        The information about the syntax region is available via
+        [clink=xce.script.xce.SyntaxRegionName]SyntaxRegionName[/clink],
+        [clink=xce.script.xce.SyntaxRegionStart]SyntaxRegionStart[/clink], and
+        [clink=xce.script.xce.SyntaxRegionLength]SyntaxRegionLength[/clink] properties.
+        You must call [clink=xce.script.xce.FirstSyntaxRegion]FirstSyntaxRegion()[/clink] function to start enumeration.
+    @end
+
+
+    @member
+        @name=CursorLine
+        @divisor=.
+        @brief=Gets or sets the current cursor line.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=CursorLine
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=CursorColumn
+        @divisor=.
+        @brief=Gets or sets the current cursor column.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=CursorColumn
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=TopLine
+        @divisor=.
+        @brief=Gets or sets the first visible line.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=TopLine
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=TopColumn
+        @divisor=.
+        @brief=Gets or sets the first visible column.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=TopColumn
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=WindowWidth
+        @divisor=.
+        @brief=Gets the width of the text window.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=WindowWidth
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=WindowHeight
+        @divisor=.
+        @brief=Gets the height of the text window.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=WindowHeight
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=FileName
+        @divisor=.
+        @brief=Gets the file name.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=FileName
+            @return=String
+        @end
+
+    @end
+
+
+    @member
+        @name=InsertMode
+        @divisor=.
+        @brief=Gets the insert mode.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=InsertMode
+            @return=Boolean
+        @end
+
+    @end
+
+
+    @member
+        @name=BlockMode
+        @divisor=.
+        @brief=Gets the type of the block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=BlockMode
+            @return=Long
+        @end
+
+        The property contains one of the following values: [c]BlockType_None[/c], [c]BlockType_Line[/c], [c]BlockType_Box[/c] or [c]BlockType_Stream[/c]
+    @end
+
+
+    @member
+        @name=BlockStartLine
+        @divisor=.
+        @brief=Gets the index of the first line of the block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=BlockStartLine
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=BlockStartColumn
+        @divisor=.
+        @brief=Gets the index of the first column of the block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=BlockStartColumn
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=BlockEndLine
+        @divisor=.
+        @brief=Gets the index of the last line of the block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=BlockEndLine
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=BlockEndColumn
+        @divisor=.
+        @brief=Gets the index of the last column of the block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=BlockEndColumn
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=CurrentLine
+        @divisor=.
+        @brief=Gets the text of the line at which the cursor is located.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=CurrentLine
+            @return=String
+        @end
+
+    @end
+
+
+    @member
+        @name=CurrentLineLength
+        @divisor=.
+        @brief=Gets the length of the text of the line at which the cursor is located.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=CurrentLineLength
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=LinesCount
+        @divisor=.
+        @brief=Gets the number of the lines.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=LinesCount
+            @return=Long
+        @end
+
+    @end
+
+
+    @member
+        @name=SyntaxRegionName
+        @divisor=.
+        @brief=Gets the hrc name of the syntax region.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=SyntaxRegionName
+            @return=String
+        @end
+
+        Use [clink=xce.script.xce.FirstSyntaxRegion]FirstSyntaxRegion()[/clink] and
+        [clink=xce.script.xce.NextSyntaxRegion]NextSyntaxRegion()[/clink] before accessing this property.
+
+    @end
+
+
+    @member
+        @name=SyntaxRegionStart
+        @divisor=.
+        @brief=Gets the column at which the syntax region starts.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=SyntaxRegionStart
+            @return=Long
+        @end
+
+        Use [clink=xce.script.xce.FirstSyntaxRegion]FirstSyntaxRegion()[/clink] and
+        [clink=xce.script.xce.NextSyntaxRegion]NextSyntaxRegion()[/clink] before accessing this property.
+
+    @end
+
+
+    @member
+        @name=SyntaxRegionLength
+        @divisor=.
+        @brief=Gets the length of the syntax region.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=vb
+            @name=SyntaxRegionLength
+            @return=Long
+        @end
+
+        Use [clink=xce.script.xce.FirstSyntaxRegion]FirstSyntaxRegion()[/clink] and
+        [clink=xce.script.xce.NextSyntaxRegion]NextSyntaxRegion()[/clink] before accessing this property.
+    @end
+@end

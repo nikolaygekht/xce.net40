@@ -1,0 +1,352 @@
+@class
+    @name=Profile
+    @key=gehtsoft.xce.configuration.Profile
+    @brief=Configuration file.
+    @type=class
+    @ingroup=gehtsoft.xce.configuration
+    @sig=T:gehtsoft.xce.configuration.Profile
+    @parent=System.Collections.Generic.IEnumerable<[clink=gehtsoft.xce.configuration.ProfileSection]ProfileSection[/clink]>
+
+    @member
+        @name=GetEnumerator
+        @sig=M:gehtsoft.xce.configuration.Profile.GetEnumerator
+        @key=GetEnumerator.0
+        @divisor=.
+        @brief=Gets section enumerator.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetEnumerator
+            @return=System.Collections.Generic.IEnumerator<[clink=gehtsoft.xce.configuration.ProfileSection]ProfileSection[/clink]>
+        @end
+
+    @end
+
+
+    @member
+        @name=Profile
+        @sig=M:gehtsoft.xce.configuration.Profile.#ctor
+        @key=Profile.0
+        @divisor=.
+        @brief=Constructor.
+        @visibility=public
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=Profile
+        @end
+
+    @end
+
+
+    @member
+        @name=Load
+        @sig=M:gehtsoft.xce.configuration.Profile.Load(System.String)
+        @key=Load.0
+        @divisor=.
+        @brief=Loads the profile content.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Load
+            @return=void
+
+            @params=string fileName
+        @end
+
+        @param
+            @name=fileName
+            The file name.
+        @end
+
+    @end
+
+
+    @member
+        @name=Save
+        @sig=M:gehtsoft.xce.configuration.Profile.Save(System.String)
+        @key=Save.0
+        @divisor=.
+        @brief=Saves the profile content
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Save
+            @return=void
+
+            @params=string fileName
+        @end
+
+        @param
+            @name=fileName
+            The file name.
+        @end
+
+    @end
+
+
+    @member
+        @name=Count
+        @sig=P:gehtsoft.xce.configuration.Profile.Count
+        @key=Count.0
+        @divisor=.
+        @brief=Gets the number of the sections.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Count
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.Profile.Item(System.Int32)
+        @key=Item.0
+        @divisor=.
+        @brief=Gets the section by its index.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=[clink=gehtsoft.xce.configuration.ProfileSection]ProfileSection[/clink]
+            @params=int index
+            @suffix= get;
+        @end
+
+        @param
+            @name=index
+            The index of the section to get.
+
+            The index of the first section is 0.
+
+            The first section always has no name (an empty string) and contains all the lines
+            which exist in the profile before the first section is declared.
+        @end
+
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.Profile.Item(System.String)
+        @key=Item.1
+        @divisor=.
+        @brief=Gets the section by its name.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=[clink=gehtsoft.xce.configuration.ProfileSection]ProfileSection[/clink]
+            @params=string name
+            @suffix= get;
+        @end
+
+        @param
+            @name=name
+            The name of the section.
+
+            The section name is case insensitive.
+        @end
+
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.Profile.Item(System.String,System.String)
+        @key=Item.2
+        @divisor=.
+        @brief=Gets/Sets the value of the first key occurrence in the section specified.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=string
+            @params=string section, string key
+            @suffix= get; set;
+        @end
+
+        @param
+            @name=section
+            The name of the section.
+
+            The section name is case insensitive.
+        @end
+
+        @param
+            @name=key
+            The name of the key.
+
+            The key name is case insensitive.
+        @end
+
+        Get value: if there is no such key or section, the [c]null[/c] value is returned.
+
+        Set value: if there is no such key or section, the section and/or value will be created.
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.Profile.Item(System.String,System.String,System.String)
+        @key=Item.5
+        @divisor=.
+        @brief=Gets the value of the first key occurrence in the section specified (with default value).
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=string
+            @params=string section, string key, string defaultValue
+            @suffix= get;
+        @end
+
+        @param
+            @name=section
+            The name of the section.
+
+            The section name is case insensitive.
+        @end
+
+        @param
+            @name=key
+            The name of the key.
+
+            The key name is case insensitive.
+        @end
+
+        @param
+            @name=defaultValue
+
+            The default value to return.
+        @end
+
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.Profile.Item(System.String,System.String,System.Int32,System.String)
+        @key=Item.4
+        @divisor=.
+        @brief=Gets the value of the specified key occurrence in the section specified (with default value).
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=string
+            @params=string section, string key, int occurrence, string defaultValue
+            @suffix= get;
+        @end
+
+        @param
+            @name=section
+            The name of the section.
+
+            The section name is case insensitive.
+        @end
+
+        @param
+            @name=key
+            The name of the key.
+
+            The key name is case insensitive.
+        @end
+
+        @param
+            @name=occurrence
+
+            The index of the occurrence. The first occurrence has index 0.
+        @end
+
+        @param
+            @name=defaultValue
+
+            The default value to return.
+        @end
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.configuration.Profile.Item(System.String,System.String,System.Int32)
+        @key=Item.3
+        @divisor=.
+        @brief=Gets/Sets the value of the specified key key occurrence in the section specified.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=string
+            @params=string section, string key, int occurrence
+            @suffix= get; set;
+        @end
+
+        @param
+            @name=section
+            The name of the section.
+
+            The section name is case insensitive.
+        @end
+
+        @param
+            @name=key
+            The name of the key.
+
+            The key name is case insensitive.
+        @end
+
+        @param
+            @name=occurrence
+
+            The index of the occurrence. The first occurrence has index 0.
+        @end
+
+        Get value: If the section or the specified key occurrence does not exist, the method returns [c]null[/c].
+
+        Set value: If the section does not exist and occurrence is 0, or if the occurrence would be next occurrence after the last existing occurrence
+        (0 in case no such keys exists, 1 if one such key exists and so on), a new section and/or key is created. If occurrence has a bigger value,
+        the exception will be thrown.
+    @end
+
+    The type defined in the [c]gehtsoft.xce.configuration.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.configuration]gehtsoft.xce.configuration[/clink].
+@end
+

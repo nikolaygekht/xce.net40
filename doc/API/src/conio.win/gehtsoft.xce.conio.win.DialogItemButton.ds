@@ -1,0 +1,137 @@
+@class
+    @name=DialogItemButton
+    @key=gehtsoft.xce.conio.win.DialogItemButton
+    @brief=Dialog button control.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.DialogItemButton
+    @parent=[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink]
+    @import=gehtsoft.xce.conio.win.DialogItem
+
+    @member
+        @name=DialogItemButton
+        @sig=M:gehtsoft.xce.conio.win.DialogItemButton.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+        @key=DialogItemButton.1
+        @divisor=.
+        @brief=Constructor for the specified button size.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=DialogItemButton
+            @params=string title, int id, int row, int column, int width
+        @end
+
+        @param
+            @name=title
+            The button title.
+        @end
+
+        @param
+            @name=id
+            The item identifier.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=width
+            Widths of the dialog item in columns.
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemButton
+        @sig=M:gehtsoft.xce.conio.win.DialogItemButton.#ctor(System.String,System.Int32,System.Int32,System.Int32)
+        @key=DialogItemButton.0
+        @divisor=.
+        @brief=Constructor for the default button size.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=DialogItemButton
+            @params=string title, int id, int row, int column
+        @end
+
+        @param
+            @name=title
+            The button title.
+        @end
+
+        @param
+            @name=id
+            The item identifier.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        The default width of the button is equal to the length of the title.
+    @end
+
+    @member
+        @name=Enable
+        @sig=M:gehtsoft.xce.conio.win.DialogItemButton.Enable(System.Boolean)
+        @key=Enable.0
+        @divisor=.
+        @brief=Enables or disables the button.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Enable
+            @return=void
+
+            @params=bool enable
+        @end
+
+        @param
+            @name=enable
+        @end
+    @end
+
+    @member
+        @name=Title
+        @sig=P:gehtsoft.xce.conio.win.DialogItemButton.Title
+        @key=Title.0
+        @divisor=.
+        @brief=Gets the button title.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Title
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

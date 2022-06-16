@@ -1,0 +1,121 @@
+@class
+    @name=ConsoleInput
+    @key=gehtsoft.xce.conio.ConsoleInput
+    @brief=Win32 Console Input.
+    @type=class
+    @ingroup=gehtsoft.xce.conio
+    @sig=T:gehtsoft.xce.conio.ConsoleInput
+    @parent=System.IDisposable
+
+    @member
+        @name=ConsoleInput
+        @sig=M:gehtsoft.xce.conio.ConsoleInput.#ctor
+        @key=ConsoleInput.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=ConsoleInput
+        @end
+    @end
+
+    @member
+        @name=read
+        @sig=M:gehtsoft.xce.conio.ConsoleInput.read(gehtsoft.xce.conio.ConsoleInputListener,System.Int32)
+        @key=read.0
+        @divisor=.
+        @brief=Waits for one console input event and call the listener if event happened.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=read
+            @return=bool
+            @params=[clink=gehtsoft.xce.conio.ConsoleInputListener]ConsoleInputListener[/clink] listener, int timeout
+        @end
+
+        @param
+            @name=listener
+            A reference to a class which implements the console listener interface.
+        @end
+
+        @param
+            @name=timeout
+            The timeout of waiting for the event expressed in milliseconds.
+        @end
+
+    @end
+
+    @member
+        @name=keyNameToCode
+        @sig=M:gehtsoft.xce.conio.ConsoleInput.keyNameToCode(System.String)
+        @key=keyNameToCode.0
+        @divisor=.
+        @brief=Gets the scan code by its name.
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=keyNameToCode
+            @return=int
+            @params=string name
+        @end
+
+        @param
+            @name=name
+            The name of the scan code.
+        @end
+
+    @end
+
+    @member
+        @name=keyCodeToName
+        @sig=M:gehtsoft.xce.conio.ConsoleInput.keyCodeToName(System.Int32)
+        @key=keyCodeToName.0
+        @divisor=.
+        @brief=Gets the scancode name by scan code.
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=keyCodeToName
+            @return=string
+            @params=int code
+        @end
+
+        @param
+            @name=code
+            The scan code.
+        @end
+
+    @end
+
+    @member
+        @name=CurrentLayout
+        @sig=P:gehtsoft.xce.conio.ConsoleInput.CurrentLayout
+        @key=CurrentLayout.0
+        @divisor=.
+        @brief=Gets the name of the current keyboard layout.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CurrentLayout
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.conio.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio]gehtsoft.xce.conio[/clink].
+@end
+

@@ -1,0 +1,46 @@
+@class
+    @name=IDialogCommand
+    @key=gehtsoft.xce.editor.command.IDialogCommand
+    @brief=The interface of the command which can be executed inside the dialog.
+    @type=interface
+    @ingroup=gehtsoft.xce.editor.command
+    @sig=T:gehtsoft.xce.editor.command.IDialogCommand
+
+    @member
+        @name=DialogExecute
+        @sig=M:gehtsoft.xce.editor.command.IDialogCommand.DialogExecute(gehtsoft.xce.editor.application.Application,gehtsoft.xce.editor.application.XceDialog,System.String)
+        @key=DialogExecute.0
+        @divisor=.
+        @brief=The method is called to executed the command in the dialog.
+        @scope=instance
+        @visibility=public
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DialogExecute
+            @return=void
+            @prefix=virtual
+            @params=[clink=gehtsoft.xce.editor.application.Application]gehtsoft.xce.editor.application.Application[/clink] application, [clink=gehtsoft.xce.editor.application.XceDialog]gehtsoft.xce.editor.application.XceDialog[/clink] dialog, string parameter
+        @end
+
+        @param
+            @name=application
+            The reference to the application.
+        @end
+
+        @param
+            @name=dialog
+            The currently active dialog.
+        @end
+
+        @param
+            @name=parameter
+            The command parameter.
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.editor.command]gehtsoft.xce.editor.command[/clink].
+@end

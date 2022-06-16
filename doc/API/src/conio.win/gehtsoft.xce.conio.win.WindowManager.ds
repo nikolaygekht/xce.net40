@@ -1,0 +1,653 @@
+@class
+    @name=WindowManager
+    @key=gehtsoft.xce.conio.win.WindowManager
+    @brief=The console windows manager.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.WindowManager
+    @parent=System.IDisposable
+    @parent=[clink=gehtsoft.xce.conio.ConsoleInputListener]gehtsoft.xce.conio.ConsoleInputListener[/clink]
+
+    The window manager object processed the console input and output and routes the messages among all CUA windows in the application.
+
+    It is recommended to have only one manager object per the whole console application.
+
+    @member
+        @name=WindowManager
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.#ctor(System.Boolean)
+        @key=WindowManager.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=WindowManager
+            @params=bool save
+        @end
+
+        @param
+            @name=save
+            The flag indicating that the content of the console window must be saved in order
+            to be restored when the window manager object is disposed.
+        @end
+
+    @end
+
+    @member
+        @name=WindowManager
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.#ctor(System.Boolean,System.Int32,System.Int32)
+        @key=WindowManager.1
+        @divisor=.
+        @brief=Constructor for the console window of the specified window size.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=WindowManager
+            @params=bool save, int rows, int columns
+        @end
+
+        @param
+            @name=save
+            The flag indicating that the content of the console window must be saved in order
+            to be restored when the window manager object is disposed.
+        @end
+
+        @param
+            @name=rows
+            The size of the console window in rows.
+        @end
+
+        @param
+            @name=columns
+            The size of the console window in columns.
+        @end
+
+        The constructing of the object will change the size of the current console window. The size of the window
+        will be restored when the object is disposed. Please note that the size will be restored regardless to the value of the
+        [c]save[/c] flag. This flag manages only saving/restoring of the window content.
+    @end
+
+    @member
+        @name=create
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.create(gehtsoft.xce.conio.win.Window,gehtsoft.xce.conio.win.Window,System.Int32,System.Int32,System.Int32,System.Int32)
+        @key=create.0
+        @divisor=.
+        @brief=Creates a regular window.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=create
+            @return=void
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] window, [clink=gehtsoft.xce.conio.win.Window]Window[/clink] parent, int row, int column, int height, int width
+        @end
+
+        @param
+            @name=window
+            The window object.
+        @end
+
+        @param
+            @name=parent
+            The parent window. If the parent window is specified, the window will be created inside the parent window.
+            If the parent window is [c]null[/c], the window will be created right on the desktop.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the window.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the window.
+        @end
+
+        @param
+            @name=height
+            The height of the window in rows.
+        @end
+
+        @param
+            @name=width
+            The width of the window in columns.
+        @end
+    @end
+
+    @member
+        @name=doModal
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.doModal(gehtsoft.xce.conio.win.Window,System.Int32,System.Int32,System.Int32,System.Int32)
+        @key=doModal.0
+        @divisor=.
+        @brief=Creates a modal window, shows it and then pumps the message while the window is not closed.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=doModal
+            @return=void
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] window, int row, int column, int height, int width
+        @end
+
+        @param
+            @name=window
+            The window object.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the window.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the window.
+        @end
+
+        @param
+            @name=height
+            The height of the window in rows.
+        @end
+
+        @param
+            @name=width
+            The width of the window in columns.
+        @end
+
+    @end
+
+    @member
+        @name=showPopupMenu
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.showPopupMenu(gehtsoft.xce.conio.win.PopupMenu,System.Int32,System.Int32)
+        @key=showPopupMenu.0
+        @divisor=.
+        @brief=Shows a pop-up menu object and pumps the messages while the menu is not closed.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=showPopupMenu
+            @return=void
+
+            @params=[clink=gehtsoft.xce.conio.win.PopupMenu]PopupMenu[/clink] menu, int row, int column
+        @end
+
+        @param
+            @name=menu
+            The menu object to show.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the menu.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the menu.
+        @end
+
+    @end
+
+    @member
+        @name=createModal
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.createModal(gehtsoft.xce.conio.win.Window,System.Int32,System.Int32,System.Int32,System.Int32)
+        @key=createModal.0
+        @divisor=.
+        @brief=Create the modal window.
+        @scope=instance
+        @type=method
+
+        When the model window is created, the focus can be passed only to the most recently created modal window or its children windows.
+
+        @declaration
+            @language=cs
+            @name=createModal
+            @return=void
+
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] window, int row, int column, int height, int width
+        @end
+
+        @param
+            @name=window
+            The window to create.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the window.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the window.
+        @end
+
+        @param
+            @name=height
+            The height of the window in rows.
+        @end
+
+        @param
+            @name=width
+            The width of the window in columns.
+        @end
+    @end
+
+    @member
+        @name=close
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.close(gehtsoft.xce.conio.win.Window)
+        @key=close.0
+        @divisor=.
+        @brief=Close the window.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=close
+            @return=void
+
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] window
+        @end
+
+        @param
+            @name=window
+            The window to be closed.
+        @end
+
+    @end
+
+    @member
+        @name=setFocus
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.setFocus(gehtsoft.xce.conio.win.Window)
+        @key=setFocus.0
+        @divisor=.
+        @brief=Set focus to the window.
+        @scope=instance
+        @type=method
+
+        The window in focus will receive the user keyboard input.
+
+        @declaration
+            @language=cs
+            @name=setFocus
+            @return=void
+
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] window
+        @end
+
+        @param
+            @name=window
+            The window to set focus.
+        @end
+
+    @end
+
+    @member
+        @name=getFocus
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.getFocus
+        @key=getFocus.0
+        @divisor=.
+        @brief=Get the window which is currently in focus.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=getFocus
+            @return=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+        @end
+
+    @end
+
+    @member
+        @name=captureMouse
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.captureMouse(gehtsoft.xce.conio.win.Window)
+        @key=captureMouse.0
+        @divisor=.
+        @brief=Capture the mouse.
+        @scope=instance
+        @type=method
+
+        When the mouse is captured, the capturing window will receive all mouse events, regardless
+        the position where the mouse appears. By default the window receives only the mouse events
+        which appears over the window area.
+
+        If the mouse is already captured, the capture won't be set.
+
+        @declaration
+            @language=cs
+            @name=captureMouse
+            @return=bool
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] window
+        @end
+
+        @param
+            @name=window
+            The window to captures.
+        @end
+
+    @end
+
+    @member
+        @name=releaseMouse
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.releaseMouse(gehtsoft.xce.conio.win.Window)
+        @key=releaseMouse.0
+        @divisor=.
+        @brief=Releases the mouse captures.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=releaseMouse
+            @return=void
+
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] window
+        @end
+
+        @param
+            @name=window
+
+        @end
+
+    @end
+
+    @member
+        @name=windowFromPos
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.windowFromPos(System.Int32,System.Int32)
+        @key=windowFromPos.0
+        @divisor=.
+        @brief=Gets the topmost window at the specified screen position.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=windowFromPos
+            @return=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+            @params=int row, int column
+        @end
+
+        @param
+            @name=row
+            The row (screen position).
+        @end
+
+        @param
+            @name=column
+            The column (screen position).
+        @end
+
+        The method returns the window at the specified position or [c]null[/c] if there is no window at
+        the specified position.
+    @end
+
+    @member
+        @name=windowFromPos
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.windowFromPos(System.Int32,System.Int32,System.Boolean)
+        @key=windowFromPos.1
+        @divisor=.
+        @brief=Gets the topmost visible window at the specified screen position.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=windowFromPos
+            @return=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+            @params=int row, int column, bool visibleOnly
+        @end
+
+        @param
+            @name=row
+            The row (screen position).
+        @end
+
+        @param
+            @name=column
+            The column (screen position).
+        @end
+
+        The method returns the window at the specified position or [c]null[/c] if there is no window at
+        the specified position.
+
+        @param
+            @name=visibleOnly
+            The flag indicating that the only visible windows must be searched.
+        @end
+    @end
+
+
+    @member
+        @name=bringToFront
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.bringToFront(gehtsoft.xce.conio.win.Window)
+        @key=bringToFront.0
+        @divisor=.
+        @brief=Brings the specified window to the front.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=bringToFront
+            @return=void
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] window
+        @end
+
+        @param
+            @name=window
+            The window to put in front.
+        @end
+
+    @end
+
+    @member
+        @name=pumpMessage
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.pumpMessage(System.Int32)
+        @key=pumpMessage.0
+        @divisor=.
+        @brief=Pumps the messages.
+        @scope=instance
+        @type=method
+
+        The function is an analogues of the windows application message loop. At every call
+        of this method, the following activities are performed:
+
+        1) The manager checks whether any of the windows has changed the position or was invalidated. In this case the
+           manager updates all invalidated windows and then composes the new screen content and outputs it.
+
+        2) The manager waits for the input event and the routes the messages about the input events to the proper windows.
+
+        @declaration
+            @language=cs
+            @name=pumpMessage
+            @return=void
+
+            @params=int timeout
+        @end
+
+        @param
+            @name=timeout
+            The timeout to wait the message expressed in milliseconds.
+        @end
+    @end
+
+    @member
+        @name=setCaretPos
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.setCaretPos(gehtsoft.xce.conio.win.Window,System.Int32,System.Int32)
+        @key=setCaretPos.0
+        @divisor=.
+        @brief=Sets the caret position.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=setCaretPos
+            @return=void
+
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] caretWindow, int row, int column
+        @end
+
+        @param
+            @name=caretWindow
+            The window containing the caret.
+        @end
+
+        @param
+            @name=row
+            The row of the caret against the top-left corner of the window.
+        @end
+
+        @param
+            @name=column
+            The column of the caret against the top-left corner of the window.
+        @end
+
+    @end
+
+    @member
+        @name=showCaret
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.showCaret(System.Boolean)
+        @key=showCaret.0
+        @divisor=.
+        @brief=Shows or hides the caret.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=showCaret
+            @return=void
+
+            @params=bool show
+        @end
+
+        @param
+            @name=show
+            Specify [c]true[/c] to show the caret and [c]false[/c] to hide the caret.
+        @end
+
+    @end
+
+    @member
+        @name=setCaretType
+        @sig=M:gehtsoft.xce.conio.win.WindowManager.setCaretType(System.Int32,System.Boolean)
+        @key=setCaretType.0
+        @divisor=.
+        @brief=Sets the type of the caret and show or hide it.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=setCaretType
+            @return=void
+            @params=int caretSize, bool show
+        @end
+
+        @param
+            @name=caretSize
+            The height of the caret in percents of the full character height.
+        @end
+
+        @param
+            @name=show
+            Specify [c]true[/c] to show the caret and [c]false[/c] to hide the caret.
+        @end
+
+    @end
+
+    @member
+        @name=FastDrawMode
+        @sig=P:gehtsoft.xce.conio.win.WindowManager.FastDrawMode
+        @key=FastDrawMode.0
+        @divisor=.
+        @brief=The flag of the drawing mode.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=FastDrawMode
+            @return=bool
+            @suffix= get; set;
+        @end
+
+        The flag is used when the composed console image is drawn into the console window.
+
+        The fast drawing re-draws the screen completely. The slow mode redraws only the rows which are changed.
+    @end
+
+    @member
+        @name=ScreenHeight
+        @sig=P:gehtsoft.xce.conio.win.WindowManager.ScreenHeight
+        @key=ScreenHeight.0
+        @divisor=.
+        @brief=Height of the screen in rows.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=ScreenHeight
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=ScreenWidth
+        @sig=P:gehtsoft.xce.conio.win.WindowManager.ScreenWidth
+        @key=ScreenWidth.0
+        @divisor=.
+        @brief=Width of the screen in columns.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=ScreenWidth
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=KeyboardLayout
+        @sig=P:gehtsoft.xce.conio.win.WindowManager.KeyboardLayout
+        @key=KeyboardLayout.0
+        @divisor=.
+        @brief=Gets the current keyboard layout.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=KeyboardLayout
+            @return=[clink=gehtsoft.xce.conio.win.KeyboardLayout]KeyboardLayout[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

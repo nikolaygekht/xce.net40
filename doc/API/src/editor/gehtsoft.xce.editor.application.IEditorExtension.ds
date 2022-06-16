@@ -1,0 +1,66 @@
+@class
+    @name=IEditorExtension
+    @key=gehtsoft.xce.editor.application.IEditorExtension
+    @brief=An interface to the editor extension.
+    @type=interface
+    @ingroup=gehtsoft.xce.editor.application
+    @sig=T:gehtsoft.xce.editor.application.IEditorExtension
+
+    [b]Implementing extension[/b].
+
+    Each extension must be compiled as x86 assembly, must contain a class implementing [c]IEditorExtension[/c] interface and
+    the name of the assembly must be the same as the full name of that class.
+
+    To be executed, the assembly must be placed into XCE folder. Then a key with name extension must be added into the common section
+    of the configuration. The value of the key must be equal to the name of the assembly without the filename extension ([c].dll[/c]). More than
+    one such keys may be added into the configuration.
+
+    [b]Extension initialization[/b]
+
+    When the assembly is loaded, the [clink=gehtsoft.xce.editor.application.IEditorExtension.Initialize.0]Initialize()[/clink] method of the
+    extension class will be executed.
+
+    At this moment the extension can:
+
+    @list
+        @list-item
+            Add new commands using [clink=gehtsoft.xce.editor.application.Application.Commands.0]application.Commands[/clink].[clink=gehtsoft.xce.editor.command.EditorCommandCollection.AddCommand.0]AddCommand()[/clink].
+            Each command must implements [clink=gehtsoft.xce.editor.command.IEditorCommand]IEditorCommand[/clink] interface.
+        @end
+        @list-item
+            Add handlers for editor-wide events: [clink=gehtsoft.xce.editor.application.Application.AfterOpenWindowEvent.0]application..AfterOpenWindowEvent[/clink]
+            and [clink=gehtsoft.xce.editor.application.Application.BeforeCloseWindowEvent.0]application.BeforeCloseWindowEvent[/clink].
+        @end
+    @end
+
+    [b]Disposable extensions[/b]
+
+    If the extensions needs to be disposed, implement [c]IDisposable[/c] interface in the extension class. It will be called during the editor deinitialization.
+
+    @member
+        @name=Initialize
+        @sig=M:gehtsoft.xce.editor.application.IEditorExtension.Initialize(gehtsoft.xce.editor.application.Application)
+        @key=Initialize.0
+        @divisor=.
+        @brief=The method called when the extension is initially loaded.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Initialize
+            @return=bool
+            @params=[clink=gehtsoft.xce.editor.application.Application]Application[/clink] application
+        @end
+
+        @param
+            @name=application
+            An instance of the editor application object.
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.editor.application]gehtsoft.xce.editor.application[/clink].
+@end

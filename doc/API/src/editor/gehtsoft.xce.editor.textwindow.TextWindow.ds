@@ -1,0 +1,799 @@
+@class
+    @name=TextWindow
+    @key=gehtsoft.xce.editor.textwindow.TextWindow
+    @brief=Text window.
+    @type=class
+    @ingroup=gehtsoft.xce.editor.textwindow
+    @sig=T:gehtsoft.xce.editor.textwindow.TextWindow
+    @parent=gehtsoft.xce.conio.win.Window
+
+
+    @member
+        @name=EnsureCursorVisible
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.EnsureCursorVisible
+        @key=EnsureCursorVisible.0
+        @divisor=.
+        @brief=The method scrolls the window to make the cursor caret visible.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=EnsureCursorVisible
+            @return=void
+        @end
+
+    @end
+
+    @member
+        @name=DeselectBlock
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.DeselectBlock
+        @key=DeselectBlock.0
+        @divisor=.
+        @brief=Removes the current block selection.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DeselectBlock
+            @return=void
+        @end
+    @end
+
+
+    @member
+        @name=StartBlock
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.StartBlock(gehtsoft.xce.editor.textwindow.TextWindowBlock,System.Int32,System.Int32)
+        @key=StartBlock.0
+        @divisor=.
+        @brief=Starts a block selection.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=StartBlock
+            @return=void
+            @params=[clink=gehtsoft.xce.editor.textwindow.TextWindowBlock]TextWindowBlock[/clink] type, int row, int column
+        @end
+
+        @param
+            @name=type
+            A type of the block.
+        @end
+
+        @param
+            @name=row
+            The first line of the block.
+        @end
+
+        @param
+            @name=column
+            The first column of the block.
+        @end
+
+    @end
+
+
+    @member
+        @name=EndBlock
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.EndBlock(System.Int32,System.Int32)
+        @key=EndBlock.0
+        @divisor=.
+        @brief=Ends a block selection.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=EndBlock
+            @return=void
+            @params=int row, int column
+        @end
+
+        @param
+            @name=row
+            The last line of the block.
+        @end
+
+        @param
+            @name=column
+            The last column of the block.
+        @end
+
+    @end
+
+
+    @member
+        @name=Stroke
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.Stroke(System.Char,System.Int32)
+        @key=Stroke.1
+        @divisor=.
+        @brief=Enters a character(s) at the current cursor position.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Stroke
+            @return=void
+            @params=char c, int count
+        @end
+
+        @param
+            @name=c
+            A character to enter.
+        @end
+
+        @param
+            @name=count
+            A number of the characters to enter.
+        @end
+    @end
+
+    @member
+        @name=Stroke
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.Stroke(System.Char[],System.Int32,System.Int32)
+        @key=Stroke.2
+        @divisor=.
+        @brief=Enters a text from a character array at the current cursor position.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Stroke
+            @return=void
+            @params=char[] c, int from, int count
+        @end
+
+        @param
+            @name=c
+            A character array to be entered.
+        @end
+
+        @param
+            @name=from
+            The index of the first character to be entered.
+        @end
+
+        @param
+            @name=count
+            The number of the characters to be entered.
+        @end
+    @end
+
+
+    @member
+        @name=Stroke
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.Stroke(System.String,System.Int32,System.Int32)
+        @key=Stroke.3
+        @divisor=.
+        @brief=Enters a text from a string at the current cursor position.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Stroke
+            @return=void
+            @params=string c, int from, int count
+        @end
+
+        @param
+            @name=c
+            A string to be entered.
+        @end
+
+        @param
+            @name=from
+            The index of the first character to be entered.
+        @end
+
+        @param
+            @name=count
+            The number of the characters to be entered.
+        @end
+
+    @end
+
+
+    @member
+        @name=DeleteAtCursor
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.DeleteAtCursor(System.Int32)
+        @key=DeleteAtCursor.0
+        @divisor=.
+        @brief=Deletes the specified number of the characters at the cursor position.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DeleteAtCursor
+            @return=void
+            @params=int count
+        @end
+
+        @param
+            @name=count
+            The number of the characters to be deleted.
+        @end
+
+    @end
+
+
+    @member
+        @name=DeleteLineAtCursor
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.DeleteLineAtCursor
+        @key=DeleteLineAtCursor.0
+        @divisor=.
+        @brief=Deletes the line at cursor position.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DeleteLineAtCursor
+            @return=void
+        @end
+
+    @end
+
+
+    @member
+        @name=JoinNextLineAtCursor
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.JoinNextLineAtCursor
+        @key=JoinNextLineAtCursor.0
+        @divisor=.
+        @brief=Joins the next line and the the line at the cursor position.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=JoinNextLineAtCursor
+            @return=void
+        @end
+
+    @end
+
+
+    @member
+        @name=SplitLineAtCursor
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.SplitLineAtCursor
+        @key=SplitLineAtCursor.0
+        @divisor=.
+        @brief=Splits the line at cursor position.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=SplitLineAtCursor
+            @return=bool
+        @end
+
+    @end
+
+    @member
+        @name=BlockType
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.BlockType
+        @key=BlockType.0
+        @divisor=.
+        @brief=Gets the type of the currently selected block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=BlockType
+            @return=[clink=gehtsoft.xce.editor.textwindow.TextWindowBlock]TextWindowBlock[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=BlockLineStart
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.BlockLineStart
+        @key=BlockLineStart.0
+        @divisor=.
+        @brief=Gets the first line of the currently selected block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=BlockLineStart
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=BlockLineEnd
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.BlockLineEnd
+        @key=BlockLineEnd.0
+        @divisor=.
+        @brief=Gets the last line of the currently selected block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=BlockLineEnd
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=BlockColumnStart
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.BlockColumnStart
+        @key=BlockColumnStart.0
+        @divisor=.
+        @brief=Gets the first column of the currently selected block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=BlockColumnStart
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=BlockColumnEnd
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.BlockColumnEnd
+        @key=BlockColumnEnd.0
+        @divisor=.
+        @brief=Gets the last column of the currently selected block.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=BlockColumnEnd
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=Text
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.Text
+        @key=Text.0
+        @divisor=.
+        @brief=Gets the text buffer.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Text
+            @return=gehtsoft.xce.text.XceFileBuffer
+            @suffix= get;
+        @end
+
+        Avoid modification of the text directly in the buffer. Such modifications won't affect the currently
+        selected block or cursor positions. Use the methods of the [c]TextWindow[/c] class instead or call an appropriate
+        command.
+    @end
+
+
+    @member
+        @name=Highlighter
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.Highlighter
+        @key=Highlighter.0
+        @divisor=.
+        @brief=Gets an instance of the syntax highlighted.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Highlighter
+            @return=gehtsoft.xce.colorer.SyntaxHighlighter
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=CursorRow
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.CursorRow
+        @key=CursorRow.0
+        @divisor=.
+        @brief=Gets or sets the cursor line.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CursorRow
+            @return=int
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=CursorColumn
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.CursorColumn
+        @key=CursorColumn.0
+        @divisor=.
+        @brief=Gets or sets the cursor column.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CursorColumn
+            @return=int
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=TopRow
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.TopRow
+        @key=TopRow.0
+        @divisor=.
+        @brief=Gets or sets the first visible line.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TopRow
+            @return=int
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=TopColumn
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.TopColumn
+        @key=TopColumn.0
+        @divisor=.
+        @brief=Gets or sets the first visible column.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TopColumn
+            @return=int
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=InsertMode
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.InsertMode
+        @key=InsertMode.0
+        @divisor=.
+        @brief=Gets or sets the insert mode.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=InsertMode
+            @return=bool
+            @suffix= get; set;
+        @end
+
+        If the insert mode is [c]true[/c] the stroked text will be inserted at the cursor position.
+        If the insert mode is [c]false[/c] the stroked text will be overwrite the text at the cursor position.
+    @end
+
+
+    @member
+        @name=Spellchecker
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.Spellchecker
+        @key=Spellchecker.0
+        @divisor=.
+        @brief=Gets an instance of the spellchecker associated with the window.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Spellchecker
+            @return=gehtsoft.xce.spellcheck.ISpellchecker
+            @suffix= get;
+        @end
+    @end
+
+    @member
+        @name=BeforeSaveWindowEvent
+        @sig=E:gehtsoft.xce.editor.textwindow.TextWindow.BeforeSaveWindowEvent
+        @key=BeforeSaveWindowEvent.0
+        @divisor=.
+        @brief=Event fired right before the file is saved.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @custom=event
+
+        @declaration
+            @language=cs
+            @return=gehtsoft.xce.editor.application.BeforeSaveWindowHook
+            @prefix=event
+        @end
+
+        @declaration
+            @language=cs
+            @return=void
+            @prefix=public delegate
+            @name=gehtsoft.xce.editor.application.BeforeSaveWindowHook
+            @params=[link=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/link] window
+        @end
+    @end
+
+
+    @member
+        @name=AfterPaintWindowEvent
+        @sig=E:gehtsoft.xce.editor.textwindow.TextWindow.AfterPaintWindowEvent
+        @key=AfterPaintWindowEvent.0
+        @divisor=.
+        @brief=Event fired every time when paining of the window has been finished.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @custom=event
+
+        @declaration
+            @language=cs
+            @return=gehtsoft.xce.editor.application.AfterPaintWindowHook
+            @prefix=event
+        @end
+
+        @declaration
+            @language=cs
+            @return=void
+            @prefix=public delegate
+            @name=gehtsoft.xce.editor.application.AfterPaintWindowHook
+            @params=[link=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/link] window, [clink=gehtsoft.xce.conio.Canvas]gehtsoft.xce.conio.Canvas[/clink] canvas
+        @end
+    @end
+
+    @member
+        @name=Stroke
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.Stroke(System.Char)
+        @key=Stroke.0
+        @divisor=.
+        @brief=Strokes one character
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Stroke
+            @return=void
+            @params=char c
+        @end
+
+        @param
+            @name=c
+            The character to put into the current cursor position.
+        @end
+
+    @end
+
+    @member
+        @name=BeforeModify
+        @sig=M:gehtsoft.xce.editor.textwindow.TextWindow.BeforeModify
+        @key=BeforeModify.0
+        @divisor=.
+        @brief=The method shall be called before the direct modification of the text buffer content.
+        @scope=instance
+        @visibility=public
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=BeforeModify
+            @return=void
+        @end
+
+    @end
+
+
+    @member
+        @name=HighlightRangePosition
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.HighlightRangePosition
+        @key=HighlightRangePosition.0
+        @divisor=.
+        @brief=Gets or sets the position of the "search highlighted" text.
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=HighlightRangePosition
+            @return=int
+            @suffix= get; set;
+        @end
+
+        The value is the offset of the highlighted text in the text buffer.
+
+        When there is no highlight the property has -1 value.
+
+    @end
+
+    @member
+        @name=HighlightRangeLength
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.HighlightRangeLength
+        @key=HighlightRangeLength.0
+        @divisor=.
+        @brief=Gets or sets the length of the "search highlighted" text.
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=HighlightRangeLength
+            @return=int
+            @suffix= get; set;
+        @end
+
+        When there is no highlight the property has -1 value.
+    @end
+
+    @member
+        @name=SaveRequired
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.SaveRequired
+        @key=SaveRequired.0
+        @divisor=.
+        @brief=Gets or sets the flag indicating that the file must be saved if it is changed when the window is being closed.
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=SaveRequired
+            @return=bool
+            @suffix= get; set;
+        @end
+
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.Item(System.Int32,System.Int32)
+        @key=Item.0
+        @divisor=.
+        @brief=Gets a character by line and column.
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=char
+            @params=int row, int column
+            @suffix= get;
+        @end
+
+        @param
+            @name=row
+
+        @end
+
+        @param
+            @name=column
+
+        @end
+
+    @end
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.Item(System.String)
+        @key=Item.1
+        @divisor=.
+        @brief=Gets or sets the custom object associated with the window.
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=object
+            @params=string data
+            @suffix= get; set;
+        @end
+
+        @param
+            @name=data
+            The name of the object.
+        @end
+
+        To remove the associated object with the name specified use [c]null[/c] value.
+    @end
+
+    @member
+        @name=Id
+        @sig=P:gehtsoft.xce.editor.textwindow.TextWindow.Id
+        @key=Id.0
+        @divisor=.
+        @brief=The window identifier as it is shown in the status line.
+        @scope=instance
+        @visibility=public
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Id
+            @return=char
+            @suffix= get;
+        @end
+
+        The identifier is unique. The identifier remains the same until any file is opened or closed. After these operations
+        the identifiers of all windows can be changed.
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.editor.textwindow]gehtsoft.xce.editor.textwindow[/clink].
+@end

@@ -1,0 +1,2 @@
+3) add option to do not open the project for cs unless any command is being executed. probably this will required
+   an option in parser to catch "complete initialization"

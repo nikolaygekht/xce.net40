@@ -1,0 +1,749 @@
+@article
+    @title=Colorer Regular Expression Syntax
+    @key=gehtsoft.xce.colorer.RegexSyntax
+    @brief=The article describes the syntax of the colorer regular expressions
+    @ingroup=gehtsoft.xce.colorer
+
+    [b]Syntax[/b]
+
+    All regexps must be enclosed between slashes ([c]/[/c]). After the end slash there can be modifiers:[br]
+    [c]/[i]patterns[/i]/[i]modifiers[/i][/c]
+
+    [b]Modifiers[/b]
+
+    @table
+        @row
+            @col
+                i
+            @end
+            @col
+                The character case is ignored when patters are matched
+            @end
+        @end
+        @row
+            @col
+                x
+            @end
+            @col
+                The space, carriage return and line feed characters in the regular expression are ignored.
+            @end
+        @end
+        @row
+            @col
+                m
+            @end
+            @col
+                The [c]$[/c] pattern matches the carriage return and line feed characters. The ^ pattern matches the position after the line feed or
+                carriage return characters.
+            @end
+        @end
+        @row
+            @col
+                s
+            @end
+            @col
+                The [c].[/c] pattern matches the carriage return and line feed characters.
+            @end
+        @end
+    @end
+
+    [b]Metacharacters[/b]
+
+    @table
+        @row
+            @col
+                ^
+            @end
+            @col
+                Matches the beginning of the string.
+            @end
+        @end
+        @row
+            @col
+                $
+            @end
+            @col
+                Matches the end of the string.
+            @end
+        @end
+        @row
+            @col
+                .
+            @end
+            @col
+                Matches any characters
+            @end
+        @end
+        @row
+            @col
+                []
+            @end
+            @col
+                Matches the charset specified. The characters may be either listed between the square brackets or
+                specified as a range between characters.
+
+                Also may include the following character classes:
+
+                @table
+                    @row
+                        @col
+                            \d
+                        @end
+                        @col
+                            Any digit
+                        @end
+                    @end
+                    @row
+                        @col
+                            \D
+                        @end
+                        @col
+                            Any not digit
+                        @end
+                    @end
+                    @row
+                        @col
+                            \w
+                        @end
+                        @col
+                            Any letter
+                        @end
+                    @end
+                    @row
+                        @col
+                            \w
+                        @end
+                        @col
+                            Any not letter
+                        @end
+                    @end
+                    @row
+                        @col
+                            \s
+                        @end
+                        @col
+                            A space, tabulation
+                        @end
+                    @end
+                    @row
+                        @col
+                            \S
+                        @end
+                        @col
+                            Not a space, tabulation
+                        @end
+                    @end
+                    @row
+                        @col
+                            \n
+                        @end
+                        @col
+                            carriage return or line feed character.
+                        @end
+                    @end
+                    @row
+                        @col
+                            \N
+                        @end
+                        @col
+                            Not a carriage return or line feed character.
+                        @end
+                    @end
+                @end
+
+                Examples:
+                @table
+                    @row
+                        @col
+                        [abc]
+                        @end
+                        @col
+                            Matches a, b or c
+                        @end
+                    @end
+                    @row
+                        @col
+                        [a-c]
+                        @end
+                        @col
+                            Matches a, b or c
+                        @end
+                    @end
+                    @row
+                        @col
+                        [a-cz]
+                        @end
+                        @col
+                            Matches a, b, c or z
+                        @end
+                    @end
+                    @row
+                        @col
+                        [0-9a-hA-H]
+                        @end
+                        @col
+                            Matches a hexadecimal digit
+                        @end
+                    @end
+                @end
+            @end
+        @end
+        @row
+            @col
+                \
+            @end
+            @col
+                The escape character:
+
+                - If followed by the special character such as brackets - matches the character escaped.
+
+                - If followed by a letter (a-z) - matches special pattern (see below for details).
+
+                - If followed by a number (0-9) - matches previous group pattern referred by a patter index (see below for details).
+            @end
+        @end
+        @row
+            @col
+                \b
+            @end
+            @col
+                Matches a word break.
+            @end
+        @end
+        @row
+            @col
+                \B
+            @end
+            @col
+                Matches not a word break.
+            @end
+        @end
+        @row
+            @col
+                \n
+            @end
+            @col
+                Matches a line feed (0x10) or carriage return (0x13).
+            @end
+        @end
+        @row
+            @col
+                \N
+            @end
+            @col
+                Matches not a line feed (0x10) or carriage return (0x13).
+            @end
+        @end
+        @row
+            @col
+                \t
+            @end
+            @col
+                Matches a tabulation (0x09)
+            @end
+        @end
+        @row
+            @col
+                \s
+            @end
+            @col
+                Matches any whitespace character.
+            @end
+        @end
+        @row
+            @col
+                \S
+            @end
+            @col
+                Matches not a whitespace character.
+            @end
+        @end
+        @row
+            @col
+                \w
+            @end
+            @col
+                Matches a word character.
+            @end
+        @end
+        @row
+            @col
+                \W
+            @end
+            @col
+                Matches not a word character.
+            @end
+        @end
+        @row
+            @col
+                \d
+            @end
+            @col
+                Matches a digit.
+            @end
+        @end
+        @row
+            @col
+                \D
+            @end
+            @col
+                Matches not a digit.
+            @end
+        @end
+        @row
+            @col
+                \u
+            @end
+            @col
+                Matches an uppercase character.
+            @end
+        @end
+        @row
+            @col
+                \l
+            @end
+            @col
+                Matches a lowercase character.
+            @end
+        @end
+        @row
+            @col
+                \xNN
+            @end
+            @col
+                A character with a hexadecimal code XX
+            @end
+        @end
+    @end
+
+    [b]Groups and operators[/b]
+
+    @table
+        @row
+            @col
+                ([i]patterns[/i])
+            @end
+            @col
+                Groups patterns. The groups are counted from the left to right, by the opening brackets: (1(2)(3(4)))
+            @end
+        @end
+        @row
+            @col
+                (?{[i]name[/i]}[i]patterns[/i])
+            @end
+            @col
+                Group patterns and give the group a name.
+            @end
+        @end
+        @row
+            @col
+                |
+            @end
+            @col
+                Alternative. Matches previous or next pattern.
+            @end
+        @end
+        @row
+            @col
+                *
+            @end
+            @col
+                Match preceding patterns 0 or more times.
+            @end
+        @end
+        @row
+            @col
+                +
+            @end
+            @col
+                Match preceding patterns 1 or more times.
+            @end
+        @end
+        @row
+            @col
+                ?
+            @end
+            @col
+                Match preceding patterns 0 or 1 times.
+            @end
+        @end
+        @row
+            @col
+                {n}
+            @end
+            @col
+                Match preceding patterns n times.
+            @end
+        @end
+        @row
+            @col
+                {n,}
+            @end
+            @col
+                Match preceding patterns n or more times.
+            @end
+        @end
+        @row
+            @col
+                {n,m}
+            @end
+            @col
+                Match preceding patterns n to m times.
+            @end
+        @end
+        @row
+            @col
+                \[i]n[/i]
+            @end
+            @col
+                Match the value of the group n where n is a number between 1 and 9.
+            @end
+        @end
+        @row
+            @col
+                ?=
+            @end
+            @col
+                Match the preceding pattern ahead.
+            @end
+        @end
+        @row
+            @col
+                ?!
+            @end
+            @col
+                Negative match the preceding pattern ahead.
+            @end
+        @end
+    @end
+@end
+
+
+@class
+    @name=Regex
+    @key=gehtsoft.xce.colorer.Regex
+    @brief=Regular Expression
+    @type=class
+    @ingroup=gehtsoft.xce.colorer
+    @sig=T:gehtsoft.xce.colorer.Regex
+    @parent=System.IDisposable
+
+    To match an editor buffer use the [clink=gehtsoft.xce.text.XceFileBufferRegex]gehtsoft.xce.text.XceFileBufferRegex[/clink] class.
+
+    An instance of the class MUST be disposed after usage.
+
+    @member
+        @name=Match
+        @sig=M:gehtsoft.xce.colorer.Regex.Match(System.Char[],System.Int32,System.Int32)
+        @key=Match.0
+        @divisor=.
+        @brief=Matches a character array.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Match
+            @return=bool
+            @params=char[] value, int startIndex, int length
+        @end
+
+        @param
+            @name=value
+            The string to match.
+        @end
+
+        @param
+            @name=startIndex
+            The index of the first character in the string to be matched.
+        @end
+
+        @param
+            @name=length
+            The length of the string to be matched.
+        @end
+
+        The method returns [c]true[/c] if match has been found.
+    @end
+
+
+    @member
+        @name=Match
+        @sig=M:gehtsoft.xce.colorer.Regex.Match(System.String,System.Int32,System.Int32)
+        @key=Match.3
+        @divisor=.
+        @brief=Matches a sub string.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Match
+            @return=bool
+            @params=string value, int startIndex, int length
+        @end
+
+        @param
+            @name=value
+            The value to be matched.
+        @end
+
+        @param
+            @name=startIndex
+            The first index in the string to be matched.
+        @end
+
+        @param
+            @name=length
+            The length of the string to be matched.
+        @end
+
+        The method returns [c]true[/c] if match has been found.
+
+    @end
+
+
+    @member
+        @name=Match
+        @sig=M:gehtsoft.xce.colorer.Regex.Match(System.String)
+        @key=Match.2
+        @divisor=.
+        @brief=Matches a whole string.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Match
+            @return=bool
+            @params=string value
+        @end
+
+        @param
+            @name=value
+            The value to be matched.
+        @end
+
+        The method returns [c]true[/c] if match has been found.
+    @end
+
+
+    @member
+        @name=Regex
+        @sig=M:gehtsoft.xce.colorer.Regex.#ctor(System.String)
+        @key=Regex.0
+        @divisor=.
+        @brief=Constructor.
+        @visibility=public
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=Regex
+            @params=string regularExpression
+        @end
+
+        @param
+            @name=regularExpression
+            The regular expression.
+
+            See the [link=gehtsoft.xce.colorer.RegexSyntax]regular expression syntax[/link].
+        @end
+    @end
+
+
+    @member
+        @name=NextMatch
+        @sig=M:gehtsoft.xce.colorer.Regex.NextMatch
+        @key=NextMatch.0
+        @divisor=.
+        @brief=Finds the next match in the same string as specified in the previous call of the Match method.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=NextMatch
+            @return=bool
+        @end
+
+        The method returns [c]true[/c] if match has been found.
+    @end
+
+
+    @member
+        @name=Start
+        @sig=M:gehtsoft.xce.colorer.Regex.Start(System.Int32)
+        @key=Start.0
+        @divisor=.
+        @brief=Gets the index of the first character of the match of the specified group.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Start
+            @return=int
+            @params=int group
+        @end
+
+        @param
+            @name=group
+            The index of the group. The index 0 matches the whole regular expression.
+        @end
+
+    @end
+
+
+    @member
+        @name=End
+        @sig=M:gehtsoft.xce.colorer.Regex.End(System.Int32)
+        @key=End.0
+        @divisor=.
+        @brief=Get the index of the last character of the match of the specified group.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=End
+            @return=int
+            @params=int group
+        @end
+
+        @param
+            @name=group
+            The index of the group. The index 0 matches the whole regular expression.
+        @end
+
+    @end
+
+
+    @member
+        @name=Length
+        @sig=M:gehtsoft.xce.colorer.Regex.Length(System.Int32)
+        @key=Length.0
+        @divisor=.
+        @brief=Get the length of the match of the specified group.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Length
+            @return=int
+            @params=int group
+        @end
+
+        @param
+            @name=group
+            The index of the group. The index 0 matches the whole regular expression.
+        @end
+    @end
+
+
+    @member
+        @name=Value
+        @sig=M:gehtsoft.xce.colorer.Regex.Value(System.Int32)
+        @key=Value.0
+        @divisor=.
+        @brief=Gets the match value as a string.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Value
+            @return=string
+            @params=int group
+        @end
+
+        @param
+            @name=group
+            The index of the group. The index 0 matches the whole regular expression.
+        @end
+    @end
+
+
+    @member
+        @name=Name
+        @sig=M:gehtsoft.xce.colorer.Regex.Name(System.Int32)
+        @key=Name.0
+        @divisor=.
+        @brief=Gets the name of the group by its index.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Name
+            @return=string
+            @params=int group
+        @end
+
+        @param
+            @name=group
+            The index of the group. The index 0 matches the whole regular expression.
+        @end
+    @end
+
+
+    @member
+        @name=IndexOf
+        @sig=M:gehtsoft.xce.colorer.Regex.IndexOf(System.String)
+        @key=IndexOf.0
+        @divisor=.
+        @brief=Gets the index of the group by its name.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=IndexOf
+            @return=int
+            @params=string group
+        @end
+
+        @param
+            @name=group
+            The name of the group.
+        @end
+
+        If the group with the name specified is not found, -1 is returned.
+    @end
+
+
+    @member
+        @name=MatchesCount
+        @sig=P:gehtsoft.xce.colorer.Regex.MatchesCount
+        @key=MatchesCount.0
+        @divisor=.
+        @brief=Returns the number of the matches.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=MatchesCount
+            @return=int
+            @suffix= get;
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.colorer.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.colorer]gehtsoft.xce.colorer[/clink].
+@end
+

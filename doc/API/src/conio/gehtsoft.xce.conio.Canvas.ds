@@ -1,0 +1,864 @@
+@class
+    @name=Canvas
+    @key=gehtsoft.xce.conio.Canvas
+    @brief=The canvas (drawing surface) for the console output.
+    @type=class
+    @ingroup=gehtsoft.xce.conio
+    @sig=T:gehtsoft.xce.conio.Canvas
+    @parent=System.IDisposable
+
+    [b]Overview[/b]
+
+    The canvas object provides safe operations for drawing the console content.
+
+    The canvas is organized exactly in the same way as the console window. It consists of
+    rows of characters, each row consists of the columns. In each column one unicode character and
+    its color is specified.
+
+    The "safe" means that in any method:
+
+    @list
+        @list-item
+            The coordinates of the paint area MAY be out of the canvas.
+        @end
+        @list-item
+            The objects to be drawn may MAY be bigger than the canvas.
+        @end
+    @end
+
+    In other words, the canvas methods crops the objects automatically to fit the size of this
+    canvas object.
+
+    [b]Colors[/b]
+
+    The Win32 console supports 16 colors which are numbered from 0x0 to 0xf.
+    The color of the character consists of two colors. The high half-byte is the color of the background and
+    the low half-byte is the color of the character. For example 0x03 means cyan on black and 0x30 means black on cyan.
+
+    The table of the colors:
+
+    [img=img/console_colors.png]
+
+
+    @member
+        @name=Canvas
+        @sig=M:gehtsoft.xce.conio.Canvas.#ctor(System.Int32,System.Int32)
+        @key=Canvas.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=Canvas
+            @params=int rows, int columns
+        @end
+
+        @param
+            @name=rows
+            The size of the canvas in rows.
+        @end
+
+        @param
+            @name=columns
+            The size of the canvas in columns.
+        @end
+
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.Text.StringBuilder,System.Int32,System.Int32,System.Int16)
+        @key=write.8
+        @divisor=.
+        @brief=Writes the part of string builder content in the specified color.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+
+            @params=int row, int column, System.Text.StringBuilder text, int offset, int length, short color
+        @end
+
+        @param
+            @name=row
+            The row index to write the text from.
+        @end
+
+        @param
+            @name=column
+            The column index to write the text from.
+        @end
+
+        @param
+            @name=text
+            The text to be drawn.
+        @end
+
+        @param
+            @name=offset
+            The offset of the character inside the text to start the draw from.
+        @end
+
+        @param
+            @name=length
+            The length of the text to be drawn.
+        @end
+
+        @param
+            @name=color
+            The color.
+        @end
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.Int16)
+        @key=write.6
+        @divisor=.
+        @brief=Writes the part of string content in the specified color.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+
+            @params=int row, int column, string text, int offset, int length, short color
+        @end
+
+        @param
+            @name=row
+            The row index to write the text from.
+        @end
+
+        @param
+            @name=column
+            The column index to write the text from.
+        @end
+
+        @param
+            @name=text
+            The text to be drawn.
+        @end
+
+        @param
+            @name=offset
+            The offset of the character inside the text to start the draw from.
+        @end
+
+        @param
+            @name=length
+            The length of the text to be drawn.
+        @end
+
+        @param
+            @name=color
+            The color.
+        @end
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.Text.StringBuilder,System.Int32,System.Int32)
+        @key=write.7
+        @divisor=.
+        @brief=Writes the part of string builder content.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+            @params=int row, int column, System.Text.StringBuilder text, int offset, int length
+        @end
+
+        @param
+            @name=row
+            The row index to write the text from.
+        @end
+
+        @param
+            @name=column
+            The column index to write the text from.
+        @end
+
+        @param
+            @name=text
+            The text to be drawn.
+        @end
+
+        @param
+            @name=offset
+            The offset of the character inside the text to start the draw from.
+        @end
+
+        @param
+            @name=length
+            The length of the text to be drawn.
+        @end
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.String,System.Int32,System.Int32)
+        @key=write.5
+        @divisor=.
+        @brief=Writes the part of string content.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+
+            @params=int row, int column, string text, int offset, int length
+        @end
+
+        @param
+            @name=row
+            The row index to write the text from.
+        @end
+
+        @param
+            @name=column
+            The column index to write the text from.
+        @end
+
+        @param
+            @name=text
+            The text to be drawn.
+        @end
+
+        @param
+            @name=offset
+            The offset of the character inside the text to start the draw from.
+        @end
+
+        @param
+            @name=length
+            The length of the text to be drawn.
+        @end
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.String,System.Int16)
+        @key=write.4
+        @divisor=.
+        @brief=Writes the string content in the specified color.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+
+            @params=int row, int column, string text, short color
+        @end
+
+        @param
+            @name=row
+            The row index to write the text from.
+        @end
+
+        @param
+            @name=column
+            The column index to write the text from.
+        @end
+
+        @param
+            @name=text
+            The text to be drawn.
+        @end
+
+        @param
+            @name=color
+            The color to draw
+        @end
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.String)
+        @key=write.3
+        @divisor=.
+        @brief=Writes the string content.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+
+            @params=int row, int column, string text, short color
+        @end
+
+        @param
+            @name=row
+            The row index to write the text from.
+        @end
+
+        @param
+            @name=column
+            The column index to write the text from.
+        @end
+
+        @param
+            @name=text
+            The text to be drawn.
+        @end
+
+        @param
+            @name=color
+            The color to draw
+        @end
+
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.Char,System.Int16)
+        @key=write.1
+        @divisor=.
+        @brief=Writes the character and the color to the specified position.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+
+            @params=int row, int column, char chr, short color
+        @end
+
+        @param
+            @name=row
+            The row index to write.
+        @end
+
+        @param
+            @name=column
+            The column index to write.
+        @end
+
+        @param
+            @name=chr
+            The character to write.
+        @end
+
+        @param
+            @name=color
+            The color to write.
+        @end
+
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.Int16)
+        @key=write.2
+        @divisor=.
+        @brief=Writes the color at the specified position.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+
+            @params=int row, int column, short color
+        @end
+
+        @param
+            @name=row
+            The row index to write.
+        @end
+
+        @param
+            @name=column
+            The column index to write.
+        @end
+
+        @param
+            @name=color
+            The color to write.
+        @end
+
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.Char)
+        @key=write.0
+        @divisor=.
+        @brief=Writes the character at the specified position.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+
+            @params=int row, int column, char chr
+        @end
+        @param
+            @name=row
+            The row index to write.
+        @end
+
+        @param
+            @name=column
+            The column index to write.
+        @end
+
+        @param
+            @name=chr
+            The character to write.
+        @end
+    @end
+
+    @member
+        @name=fill
+        @sig=M:gehtsoft.xce.conio.Canvas.fill(System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.Int16)
+        @key=fill.1
+        @divisor=.
+        @brief=Fills the specified rectangle with the character and color.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=fill
+            @return=void
+            @params=int row, int column, int rows, int columns, char chr, short color
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the rectangle.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the rectangle.
+        @end
+
+        @param
+            @name=rows
+            The number of the rows to fill.
+        @end
+
+        @param
+            @name=columns
+            The number of the columns fill.
+        @end
+
+        @param
+            @name=chr
+            The character to fill with.
+        @end
+
+        @param
+            @name=color
+            The color to fill with.
+        @end
+
+    @end
+
+    @member
+        @name=fill
+        @sig=M:gehtsoft.xce.conio.Canvas.fill(System.Int32,System.Int32,System.Int32,System.Int32,System.Int16)
+        @key=fill.2
+        @divisor=.
+        @brief=Fills the specified rectangle with the color.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=fill
+            @return=void
+
+            @params=int row, int column, int rows, int columns, short color
+        @end
+        @param
+            @name=row
+            The row of the top-left corner of the rectangle.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the rectangle.
+        @end
+
+        @param
+            @name=rows
+            The number of the rows to fill.
+        @end
+
+        @param
+            @name=columns
+            The number of the columns fill.
+        @end
+
+        @param
+            @name=color
+            The color to fill with.
+        @end
+
+    @end
+
+    @member
+        @name=fill
+        @sig=M:gehtsoft.xce.conio.Canvas.fill(System.Int32,System.Int32,System.Int32,System.Int32,System.Char)
+        @key=fill.0
+        @divisor=.
+        @brief=Fills the specified rectangle with the character.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=fill
+            @return=void
+
+            @params=int row, int column, int rows, int columns, char chr
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the rectangle.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the rectangle.
+        @end
+
+        @param
+            @name=rows
+            The number of the rows to fill.
+        @end
+
+        @param
+            @name=columns
+            The number of the columns fill.
+        @end
+
+        @param
+            @name=chr
+            The character to fill with.
+        @end
+    @end
+
+    @member
+        @name=box
+        @sig=M:gehtsoft.xce.conio.Canvas.box(System.Int32,System.Int32,System.Int32,System.Int32,gehtsoft.xce.conio.BoxBorder,System.Int16,System.Char)
+        @key=box.1
+        @divisor=.
+        @brief=Draws and fills the box.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=box
+            @return=void
+            @params=int row, int column, int rows, int columns, [clink=gehtsoft.xce.conio.BoxBorder]BoxBorder[/clink] border, short color, char fillchar
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the box.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the box.
+        @end
+
+        @param
+            @name=rows
+            The size of the box in rows.
+        @end
+
+        @param
+            @name=columns
+            The size of the box in columns.
+        @end
+
+        @param
+            @name=border
+            The box border.
+        @end
+
+        @param
+            @name=color
+            The box color.
+        @end
+
+        @param
+            @name=fillchar
+            The character to fill the box interior.
+        @end
+    @end
+
+    @member
+        @name=box
+        @sig=M:gehtsoft.xce.conio.Canvas.box(System.Int32,System.Int32,System.Int32,System.Int32,gehtsoft.xce.conio.BoxBorder,System.Int16)
+        @key=box.0
+        @divisor=.
+        @brief=Draws the box.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=box
+            @return=void
+            @params=int row, int column, int rows, int columns, [clink=gehtsoft.xce.conio.BoxBorder]BoxBorder[/clink] border, short color
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the box.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the box.
+        @end
+
+        @param
+            @name=rows
+            The size of the box in rows.
+        @end
+
+        @param
+            @name=columns
+            The size of the box in columns.
+        @end
+
+        @param
+            @name=border
+            The box border.
+        @end
+
+        @param
+            @name=color
+            The box color.
+        @end
+    @end
+
+    @member
+        @name=paint
+        @sig=M:gehtsoft.xce.conio.Canvas.paint(System.Int32,System.Int32,gehtsoft.xce.conio.Canvas)
+        @key=paint.0
+        @divisor=.
+        @brief=Draws content of another canvas object into this canvas.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=paint
+            @return=void
+
+            @params=int row, int column, [clink=gehtsoft.xce.conio.Canvas]Canvas[/clink] canvas
+        @end
+
+        @param
+            @name=row
+            The row in this canvas to draw the other canvas from.
+        @end
+
+        @param
+            @name=column
+            The row in this canvas to draw the other canvas from.
+        @end
+
+        @param
+            @name=canvas
+            The other canvas object.
+        @end
+    @end
+
+    @member
+        @name=get
+        @sig=M:gehtsoft.xce.conio.Canvas.get(System.Int32,System.Int32,System.Char@,System.Int16@)
+        @key=get.0
+        @divisor=.
+        @brief=Gets the character and the color by the specified position.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=get
+            @return=bool
+            @params=int row, int column, out char chr, out short color
+        @end
+
+        @param
+            @name=row
+            The row.
+        @end
+
+        @param
+            @name=column
+            The column.
+        @end
+
+        @param
+            @name=chr
+            [output] The character code.
+        @end
+
+        @param
+            @name=color
+            [output] The color
+        @end
+
+    @end
+
+    @member
+        @name=Columns
+        @sig=P:gehtsoft.xce.conio.Canvas.Columns
+        @key=Columns.0
+        @divisor=.
+        @brief=Returns the number of columns in the canvas object.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Columns
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Rows
+        @sig=P:gehtsoft.xce.conio.Canvas.Rows
+        @key=Rows.0
+        @divisor=.
+        @brief=Returns the number of rows in the canvas object.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Rows
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=write
+        @sig=M:gehtsoft.xce.conio.Canvas.write(System.Int32,System.Int32,System.Char[],System.Int32,System.Int32)
+        @key=write.9
+        @divisor=.
+        @brief=Writes a part of the character buffer.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=write
+            @return=void
+            @params=int row, int column, char[] text, int offset, int length
+        @end
+
+        @param
+            @name=row
+            The line index.
+        @end
+
+        @param
+            @name=column
+            The column index to write the text at.
+
+        @end
+
+        @param
+            @name=text
+            The char array containing the text to write.
+        @end
+
+        @param
+            @name=offset
+            The offset of the text in the array.
+        @end
+
+        @param
+            @name=length
+            The length of the text in characters.
+        @end
+
+    @end
+
+    @member
+        @name=fillFg
+        @sig=M:gehtsoft.xce.conio.Canvas.fillFg(System.Int32,System.Int32,System.Int32,System.Int32,System.Int16)
+        @key=fillFg.0
+        @divisor=.
+        @brief=Fills the foreground color only
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=fillFg
+            @return=void
+            @params=int row, int column, int rows, int columns, short color
+        @end
+
+        @param
+            @name=row
+            The first row to fill.
+        @end
+
+        @param
+            @name=column
+            The first column to fill.
+        @end
+
+        @param
+            @name=rows
+            The number of rows to fill.
+        @end
+
+        @param
+            @name=columns
+            The number of columns to fill.
+
+        @end
+
+        @param
+            @name=color
+            The color to fill. Only foreground part of the color is used.
+        @end
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.conio.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio]gehtsoft.xce.conio[/clink].
+@end
+

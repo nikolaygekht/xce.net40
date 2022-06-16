@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Hunspell">
+      <UniqueIdentifier>{5595c24e-1b62-49a2-bd42-537c30bdd744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hyphen">
+      <UniqueIdentifier>{5f19255f-85be-4266-8c34-36b0bffadd2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\hunspell\affentry.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\affixmgr.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\csutil.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\dictmgr.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\filemgr.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\hashmgr.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\hunspell.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\hunzip.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\phonet.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\replist.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\suggestmgr.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hunspell\utf_info.cxx">
+      <Filter>Hunspell</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hyphen\csutil.cpp">
+      <Filter>Hyphen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hyphen\hnjalloc.cpp">
+      <Filter>Hyphen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hyphen\hyphen.cpp">
+      <Filter>Hyphen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\hyphen\substrings.cpp">
+      <Filter>Hyphen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DllMain.cpp" />
+    <ClCompile Include="source\HunspellExportFunctions.cpp" />
+    <ClCompile Include="source\HyphenExportFunctions.cpp" />
+    <ClCompile Include="source\MemoryFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\hunspell\affentry.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\affixmgr.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\atypes.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\baseaffix.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\config.h">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\csutil.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\dictmgr.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\filemgr.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\hashmgr.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\htypes.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\hunspell.h">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\hunspell.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\hunvisapi.h">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\hunzip.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\langnum.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\phonet.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\replist.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\suggestmgr.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hunspell\w_char.hxx">
+      <Filter>Hunspell</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hyphen\csutil.h">
+      <Filter>Hyphen</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hyphen\hnjalloc.h">
+      <Filter>Hyphen</Filter>
+    </ClInclude>
+    <ClInclude Include="source\hyphen\hyphen.h">
+      <Filter>Hyphen</Filter>
+    </ClInclude>
+    <ClInclude Include="source\EncodingToCodePage.h" />
+    <ClInclude Include="source\NHunspellExtensions.h" />
+    <ClInclude Include="source\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\hunspell\license.hunspell">
+      <Filter>Hunspell</Filter>
+    </None>
+    <None Include="source\hunspell\license.myspell">
+      <Filter>Hunspell</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="source\Hunspell.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="source\NHunspellExtensionsIntegrationInfo.txt" />
+  </ItemGroup>
+</Project>

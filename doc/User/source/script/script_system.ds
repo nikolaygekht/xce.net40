@@ -1,0 +1,657 @@
+@class
+    @name=system
+    @key=xce.script.system
+    @brief=The interface to the system operations
+    @type=class
+    @ingroup=gehtsoft.xce.extension.script
+
+    The object with name [c]system[/c] is available as a global variable. All properties and methods
+    are also available as a global variables, functions or subroutines.
+
+    @member
+        @name=NewGuid
+        @divisor=.
+        @brief=Generates a new GUID
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=NewGuid
+            @return=String
+        @end
+    @end
+
+        @member
+        @name=GetApplicationPath
+        @divisor=.
+        @brief=Gets a path where XCE is located.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=NewGuid
+            @return=String
+        @end
+    @end
+
+
+    @member
+        @name=GetFullPath
+        @divisor=.
+        @brief=Gets a full path of the file or directory specified
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=GetFullPath
+            @return=String
+            @params=path as String
+        @end
+
+        @param
+            @name=path
+        @end
+
+    @end
+
+    @member
+        @name=CombinePaths
+        @divisor=.
+        @brief=Combines two paths into one.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=CombinePaths
+            @return=String
+            @params=path1 as String, path2 as String
+        @end
+
+        @param
+            @name=path1
+            A base path.
+        @end
+
+        @param
+            @name=path2
+            A path to add to base path.
+        @end
+
+    @end
+
+
+    @member
+        @name=FileExists
+        @divisor=.
+        @brief=Checks whether a file exists
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=FileExists
+            @return=Boolean
+            @params=path as String
+        @end
+
+        @param
+            @name=path
+        @end
+    @end
+
+
+    @member
+        @name=DirectoryExists
+        @divisor=.
+        @brief=Checks whether directory exists.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=DirectoryExists
+            @return=Boolean
+            @params=path as String
+        @end
+
+        @param
+            @name=path
+        @end
+
+    @end
+
+
+    @member
+        @name=Environment
+        @divisor=.
+        @brief=Gets a value of the environment variable.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=Environment
+            @return=String
+            @params=variable as String
+        @end
+
+        @param
+            @name=variable
+            The name of the environment variable.
+        @end
+    @end
+
+
+    @member
+        @name=Files
+        @divisor=.
+        @brief=Gets a list of files in the specified directory.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=Files
+            @return=String()
+            @params=path as String, mask as String
+        @end
+
+        @param
+            @name=path
+            Path to search files in.
+        @end
+
+        @param
+            @name=mask
+            File mask to search files (* and ? are supported as in dir system command).
+        @end
+
+        The function returns an array of the strings, each string is a file name.
+        The file names are sorted in the ascending order. Use [c]UBound[/c] and [c]LBound[/c] VBscript
+        functions to get the array borders.
+    @end
+
+
+    @member
+        @name=Directories
+        @divisor=.
+        @brief=Gets a list of directories in the specified directory.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=Directories
+            @return=String()
+            @params=path as String
+        @end
+
+        @param
+            @name=path
+            Path to search directories in.
+        @end
+
+        The function returns an array of the strings, each string is a directory name.
+        The directory names are sorted in the ascending order. Use [c]UBound[/c] and [c]LBound[/c] VBscript
+        functions to get the array borders.
+    @end
+
+
+    @member
+        @name=ParentDirectory
+        @divisor=.
+        @brief=Gets the name of the parent directory for the specified directory.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=ParentDirectory
+            @return=String
+            @params=path as String
+        @end
+
+        @param
+            @name=path
+        @end
+
+        The method returns an empty string in case the directory specified is a root directory.
+    @end
+
+
+    @member
+        @name=DirectoryFromPath
+        @divisor=.
+        @brief=Gets the directory name from the path specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=DirectoryFromPath
+            @return=String
+            @params=path as String
+        @end
+
+        @param
+            @name=path
+
+        @end
+
+    @end
+
+
+    @member
+        @name=FileNameFromPath
+        @divisor=.
+        @brief=Gets file name and extension from the path specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=FileNameFromPath
+            @return=String
+            @params=path as String
+        @end
+
+        @param
+            @name=path
+        @end
+    @end
+
+
+    @member
+        @name=FileExtensionFromPath
+        @divisor=.
+        @brief=Gets the extension of the file name in the path specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=FileExtensionFromPath
+            @return=String
+            @params=path as String
+        @end
+
+        @param
+            @name=path
+
+        @end
+
+    @end
+
+
+    @member
+        @name=GetProfileString
+        @divisor=.
+        @brief=Gets the string from a profile (ini file) specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=GetProfileString
+            @return=string
+            @params=string file, string section, string key
+        @end
+
+        @param
+            @name=file
+            The file name.
+        @end
+
+        @param
+            @name=section
+            The section in the file.
+        @end
+
+        @param
+            @name=key
+            The key value.
+        @end
+
+        The function returns an empty string in case file, section or key is not found.
+
+    @end
+
+
+    @member
+        @name=FindInPaths
+        @divisor=.
+        @brief=Finds the file specified in the list of the paths specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=FindInPaths
+            @return=String
+            @params=pathline as String, fileName as String, currentPath as String
+        @end
+
+        @param
+            @name=pathline
+            List of the path to search the file. Paths must be separated by a semicolon (;).
+        @end
+
+        @param
+            @name=fileName
+            A file name to find.
+        @end
+
+        @param
+            @name=currentPath
+            A path to be used as "current" path in case "." appears in the path list.
+
+        @end
+
+    @end
+
+
+    @member
+        @name=ReadFile
+        @divisor=.
+        @brief=Reads the file content.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=ReadFile
+            @return=String
+            @params=file as String
+        @end
+
+        @param
+            @name=file
+            The file name.
+        @end
+
+    @end
+
+
+    @member
+        @name=RegexMatch
+        @divisor=.
+        @brief=Matches the text to the regular expression specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=RegexMatch
+            @return=String()
+            @params=regex as String, str as String
+        @end
+
+        @param
+            @name=regex
+            The regular expression. For the syntax see [link=regex_syntax]Regular expression syntax[/link] article.
+            The regular expression must be enclosed into slashes, for example: [c]"/(\d+)\.\s(\w+)/"[/c].
+        @end
+
+        @param
+            @name=str
+            The string to be matched.
+        @end
+
+        The function returns an array of the matches. The first match is the whole text matched. All further matches
+        corresponds to each group in the regular expression.
+
+        In case text does not match an empty array is returned (check using [c]UBound(a) <= LBound(a)[/c]).
+
+
+    @end
+
+
+    @member
+        @name=WriteFile
+        @divisor=.
+        @brief=Writes the text specified into the file.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=WriteFile
+            @params=file as String, text as String, encoding as String
+        @end
+
+        @param
+            @name=file
+            The file name.
+        @end
+
+        @param
+            @name=text
+            The text to write into file.
+        @end
+
+        @param
+            @name=encoding
+            The encoding to write the text. For the list of the encodings see
+            [link=encoding-list]Encodings names[/link] article.
+        @end
+    @end
+
+
+    @member
+        @name=AppendFile
+        @divisor=.
+        @brief=Appends the text specified to the file.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=AppendFile
+            @params=string file, string text, string encoding
+        @end
+
+        @param
+            @name=file
+            The file name.
+        @end
+
+        @param
+            @name=text
+            The text to write into file.
+        @end
+
+        @param
+            @name=encoding
+            The encoding to write the text. For the list of the encodings see
+            [link=encoding-list]Encodings names[/link] article.
+        @end
+    @end
+
+
+    @member
+        @name=CopyFile
+        @divisor=.
+        @brief=Copies the file.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=CopyFile
+            @params=src as String, dst as String, overwrite as Boolean
+        @end
+
+        @param
+            @name=src
+            The source file name.
+        @end
+
+        @param
+            @name=dst
+            The destination file name.
+        @end
+
+        @param
+            @name=overwrite
+            The flag indicating whether the file must be overwritten if the destination file exists.
+        @end
+
+    @end
+
+
+    @member
+        @name=MoveFile
+        @divisor=.
+        @brief=Moves the file.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=CopyFile
+            @params=src as String, dst as String, overwrite as Boolean
+        @end
+
+        @param
+            @name=src
+            The source file name.
+        @end
+
+        @param
+            @name=dst
+            The destination file name.
+        @end
+
+        @param
+            @name=overwrite
+            The flag indicating whether the file must be overwritten if the destination file exists.
+        @end
+
+    @end
+
+
+    @member
+        @name=DeleteFile
+        @divisor=.
+        @brief=Deletes the file.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=DeleteFile
+            @params=file as String
+        @end
+
+        @param
+            @name=file
+            The file name.
+        @end
+
+    @end
+
+
+    @member
+        @name=CreateDirectory
+        @divisor=.
+        @brief=Creates the directory by the path specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=CreateDirectory
+            @params=path as String
+        @end
+
+        @param
+            @name=path
+        @end
+
+    @end
+
+
+    @member
+        @name=ExecuteProcess
+        @divisor=.
+        @brief=Executes the process and returns the process output.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=function
+            @language=vb
+            @name=ExecuteProcess
+            @return=String
+            @params=application as String, commandLine as String
+        @end
+
+        @param
+            @name=application
+            The path and file name to the application.
+        @end
+
+        @param
+            @name=commandLine
+            The application command line.
+        @end
+
+        The function returns the stdout and stderr output of the application.
+    @end
+
+
+    @member
+        @name=StartProcess
+        @divisor=.
+        @brief=Starts a new application.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @declaration
+            @custom=sub
+            @language=vb
+            @name=StartProcess
+            @params=string application, string commandLine
+        @end
+
+        @param
+            @name=application
+            The path and file name to the application.
+        @end
+
+        @param
+            @name=commandLine
+            The application command line.
+        @end
+
+        The function does not wait while application is finished.
+
+    @end
+@end

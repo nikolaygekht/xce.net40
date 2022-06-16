@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0DE8B91-7547-47AA-8BF7-7BFEC8D369F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gehtsoft.xce.conio.win</RootNamespace>
+    <AssemblyName>gehtsoft.xce.conio.win</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\key.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gehtsoft.xce.conio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1f21e5609cbc189b, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\conio\bin\gehtsoft.xce.conio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\ColorScheme.cs" />
+    <Compile Include="src\dialog\DialogItemComboBox.cs" />
+    <Compile Include="src\dialog\ModalListBox.cs" />
+    <Compile Include="src\dialog\DialogItemListBox.cs" />
+    <Compile Include="src\dialog\DialogItemSingleLineText.cs" />
+    <Compile Include="src\dialog\DialogItemCheckBox.cs" />
+    <Compile Include="src\dialog\DialogItemRadioBox.cs" />
+    <Compile Include="src\dialog\Dialog.cs" />
+    <Compile Include="src\dialog\DialogItem.cs" />
+    <Compile Include="src\dialog\DialogItemButton.cs" />
+    <Compile Include="src\dialog\DialogItemLabel.cs" />
+    <Compile Include="src\dialog\FileDialog.cs" />
+    <Compile Include="src\message\MessageBox.cs" />
+    <Compile Include="src\StringUtil.cs" />
+    <Compile Include="src\menu\PopupMenu.cs" />
+    <Compile Include="src\strings.cs" />
+    <Compile Include="src\winbase\Window.cs" />
+    <Compile Include="src\winbase\WindowBorderContainer.cs" />
+    <Compile Include="src\winbase\WindowManager.cs" />
+    <Compile Include="src\winbase\KeyboardLayout.cs" />
+    <Compile Include="src\menu\Items.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\key.snk" />
+    <None Include="src\app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\auto\colorscheme.xml" />
+    <Content Include="src\auto\colorscheme.xsl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>msxsl "$(ProjectDir)src\auto\colorscheme.xml" "$(ProjectDir)src\auto\colorscheme.xsl" -o "$(ProjectDir)src\ColorScheme.cs"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

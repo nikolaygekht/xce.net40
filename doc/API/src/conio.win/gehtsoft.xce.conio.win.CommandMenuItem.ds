@@ -1,0 +1,147 @@
+@class
+    @name=CommandMenuItem
+    @key=gehtsoft.xce.conio.win.CommandMenuItem
+    @brief=The menu item associated with the command.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.CommandMenuItem
+    @parent=[clink=gehtsoft.xce.conio.win.MenuItem]MenuItem[/clink]
+    
+    @member
+        @name=CommandMenuItem
+        @sig=M:gehtsoft.xce.conio.win.CommandMenuItem.#ctor(System.String,System.Int32)
+        @key=CommandMenuItem.0
+        @divisor=.
+        @brief=Constructor for a simple name.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=CommandMenuItem
+            @params=string title, int command
+        @end
+
+        @param
+            @name=title
+            The name of the command. 
+        @end
+
+        @param
+            @name=command
+            The identifier of the command.
+        @end
+
+    @end
+
+    @member
+        @name=CommandMenuItem
+        @sig=M:gehtsoft.xce.conio.win.CommandMenuItem.#ctor(System.String,System.String,System.Int32)
+        @key=CommandMenuItem.1
+        @divisor=.
+        @brief=Constructor for the composite name.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=CommandMenuItem
+            @params=string title, string rightSide, int command
+        @end
+
+        @param
+            @name=title
+            The name of the command.
+        @end
+
+        @param
+            @name=rightSide
+            The hint (for example a keyboard shortcut) to be shown on right size of the command bar.
+        @end
+
+        @param
+            @name=command
+            The identifier of the command.
+        @end
+    @end
+
+    @member
+        @name=RightSide
+        @sig=P:gehtsoft.xce.conio.win.CommandMenuItem.RightSide
+        @key=RightSide.0
+        @divisor=.
+        @brief=The hint.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=RightSide
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Command
+        @sig=P:gehtsoft.xce.conio.win.CommandMenuItem.Command
+        @key=Command.0
+        @divisor=.
+        @brief=The identifier of the command.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Command
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Checked
+        @sig=P:gehtsoft.xce.conio.win.CommandMenuItem.Checked
+        @key=Checked.0
+        @divisor=.
+        @brief=The flag indicating that the check flag must be shown at left of the menu item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Checked
+            @return=bool
+            @suffix= get; set;
+        @end
+
+        The menu item is not checked by default. 
+    @end
+
+    @member
+        @name=Enabled
+        @sig=P:gehtsoft.xce.conio.win.CommandMenuItem.Enabled
+        @key=Enabled.0
+        @divisor=.
+        @brief=The flag indicating whether the menu item is enabled or disabled.
+        @scope=instance
+        @type=property
+
+        The disabled menu item cannot be chosen. The menu item is enabled by default. 
+
+        @declaration
+            @language=cs
+            @name=Enabled
+            @return=bool
+            @suffix= get; set;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

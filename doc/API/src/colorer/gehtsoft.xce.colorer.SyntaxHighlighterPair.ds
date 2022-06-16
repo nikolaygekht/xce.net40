@@ -1,0 +1,72 @@
+@class
+
+    @name=SyntaxHighlighterPair
+    @key=gehtsoft.xce.colorer.SyntaxHighlighterPair
+    @brief=The information about matching pair.
+    @type=class
+    @ingroup=gehtsoft.xce.colorer
+    @sig=T:gehtsoft.xce.colorer.SyntaxHighlighterPair
+    @parent=System.IDisposable
+
+    @member
+        @name=Dispose
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighterPair.Dispose
+        @key=Dispose.0
+        @divisor=.
+        @brief=Dispose the matching pair.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Dispose
+            @return=void
+
+        @end
+    @end
+
+    @member
+        @name=End
+        @sig=P:gehtsoft.xce.colorer.SyntaxHighlighterPair.End
+        @key=End.0
+        @divisor=.
+        @brief=Gets the syntax region of the end of the pair.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=End
+            @return=[clink=gehtsoft.xce.colorer.SyntaxHighlighterRegion]SyntaxHighlighterRegion[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=Start
+        @sig=P:gehtsoft.xce.colorer.SyntaxHighlighterPair.Start
+        @key=Start.0
+        @divisor=.
+        @brief=Gets the syntax region of the start of the pair.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Start
+            @return=[clink=gehtsoft.xce.colorer.SyntaxHighlighterRegion]SyntaxHighlighterRegion[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.colorer.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.colorer]gehtsoft.xce.colorer[/clink].
+@end
+

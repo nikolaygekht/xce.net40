@@ -1,0 +1,73 @@
+@class
+    @name=XceFileBufferRegex
+    @key=gehtsoft.xce.text.XceFileBufferRegex
+    @brief=The extension of the colorer regular expression class to be used to match the text buffer.
+    @type=class
+    @ingroup=gehtsoft.xce.text
+    @sig=T:gehtsoft.xce.text.XceFileBufferRegex
+    @parent=[clink=gehtsoft.xce.colorer.Regex]gehtsoft.xce.colorer.Regex[/clink]
+
+    An instance of the class MUST be disposed after usage.
+
+    @member
+        @name=XceFileBufferRegex
+        @sig=M:gehtsoft.xce.text.XceFileBufferRegex.#ctor(System.String)
+        @key=XceFileBufferRegex.0
+        @divisor=.
+        @brief=Constructor.
+        @visibility=public
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=XceFileBufferRegex
+            @params=string regularExpression
+        @end
+
+        @param
+            @name=regularExpression
+            The regular expression.
+
+            See the [link=gehtsoft.xce.colorer.RegexSyntax]regular expression syntax[/link].
+        @end
+    @end
+
+
+    @member
+        @name=Match
+        @sig=M:gehtsoft.xce.text.XceFileBufferRegex.Match(gehtsoft.xce.text.XceFileBuffer,System.Int32,System.Int32)
+        @key=Match.0
+        @divisor=.
+        @brief=Matches the text buffer.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Match
+            @return=bool
+            @params=[clink=gehtsoft.xce.text.XceFileBuffer]XceFileBuffer[/clink] buffer, int startIndex, int length
+        @end
+
+        @param
+            @name=buffer
+            The text buffer to be matched.
+        @end
+
+        @param
+            @name=startIndex
+            The index of the first character in the buffer to be matched.
+        @end
+
+        @param
+            @name=length
+            The length of the data to be matched.
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.text.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.text]gehtsoft.xce.text[/clink].
+@end
+

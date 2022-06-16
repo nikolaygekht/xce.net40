@@ -1,0 +1,8 @@
+<schema root="FictionBook"
+        namespace="http://www.gribuser.ru/xml/fictionbook/2.0"
+        defaultPrefix=""
+        name="Fb2" >
+
+
+
+</schema>

@@ -1,0 +1,175 @@
+@class
+    @name=FileTypeInfo
+    @key=gehtsoft.xce.editor.configuration.FileTypeInfo
+    @brief=The information about the file type.
+    @type=class
+    @ingroup=gehtsoft.xce.editor.configuration
+    @sig=T:gehtsoft.xce.editor.configuration.FileTypeInfo
+
+    @member
+        @name=IsSpellCheckRegion
+        @sig=M:gehtsoft.xce.editor.configuration.FileTypeInfo.IsSpellCheckRegion(gehtsoft.xce.colorer.SyntaxHighlighterRegion)
+        @key=IsSpellCheckRegion.0
+        @divisor=.
+        @brief=Checks whether the syntax region is a spell check region.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=IsSpellCheckRegion
+            @return=bool
+            @params=gehtsoft.xce.colorer.SyntaxHighlighterRegion region
+        @end
+
+        @param
+            @name=region
+            The region to be checked.
+        @end
+    @end
+
+
+    @member
+        @name=Encoding
+        @sig=P:gehtsoft.xce.editor.configuration.FileTypeInfo.Encoding
+        @key=Encoding.0
+        @divisor=.
+        @brief=Gets the default encoding
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Encoding
+            @return=System.Text.Encoding
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=NeedSpellcheck
+        @sig=P:gehtsoft.xce.editor.configuration.FileTypeInfo.NeedSpellcheck
+        @key=NeedSpellcheck.0
+        @divisor=.
+        @brief=Checks whether the file type requires the spell checking.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=NeedSpellcheck
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=IgnoreBOM
+        @sig=P:gehtsoft.xce.editor.configuration.FileTypeInfo.IgnoreBOM
+        @key=IgnoreBOM.0
+        @divisor=.
+        @brief=Checks whether the begin of file encoding mark must be ignored.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=IgnoreBOM
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=TrimEolSpace
+        @sig=P:gehtsoft.xce.editor.configuration.FileTypeInfo.TrimEolSpace
+        @key=TrimEolSpace.0
+        @divisor=.
+        @brief=Checks whether end-of-line whitespace must be removed for a file.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TrimEolSpace
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=TabSize
+        @sig=P:gehtsoft.xce.editor.configuration.FileTypeInfo.TabSize
+        @key=TabSize.0
+        @divisor=.
+        @brief=Returns the tabulation size for a file.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TabSize
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=AutoIdent
+        @sig=P:gehtsoft.xce.editor.configuration.FileTypeInfo.AutoIdent
+        @key=AutoIdent.0
+        @divisor=.
+        @brief=Checks whether the file must be auto-indented when enter is pressed.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=AutoIdent
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=DefaultSpellChecker
+        @sig=P:gehtsoft.xce.editor.configuration.FileTypeInfo.DefaultSpellChecker
+        @key=DefaultSpellChecker.0
+        @divisor=.
+        @brief=Returns the name of the default spell-checker.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=DefaultSpellChecker
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.editor.configuration]gehtsoft.xce.editor.configuration[/clink].
+@end

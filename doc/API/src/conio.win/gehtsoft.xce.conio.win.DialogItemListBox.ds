@@ -1,0 +1,283 @@
+@class
+    @name=DialogItemListBox
+    @key=gehtsoft.xce.conio.win.DialogItemListBox
+    @brief=The dialog single-selection listbox control.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.DialogItemListBox
+    @parent=[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink]
+    @parent=System.Collections.Generic.IEnumerable<[clink=gehtsoft.xce.conio.win.DialogItemListBoxString]DialogItemListBoxString[/clink]>
+    @parent=System.Collections.IEnumerable
+    @import=gehtsoft.xce.conio.win.DialogItem
+
+    @member
+        @name=Enable
+        @sig=M:gehtsoft.xce.conio.win.DialogItemListBox.Enable(System.Boolean)
+        @key=Enable.0
+        @divisor=.
+        @brief=Enables or disables the control.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Enable
+            @return=void
+
+            @params=bool enable
+        @end
+
+        @param
+            @name=enable
+
+        @end
+
+    @end
+
+    @member
+        @name=AddItem
+        @sig=M:gehtsoft.xce.conio.win.DialogItemListBox.AddItem(System.String)
+        @key=AddItem.1
+        @divisor=.
+        @brief=Creates a new item without user data and adds it to the end of the list.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddItem
+            @return=int
+            @params=string item
+        @end
+
+        @param
+            @name=item
+            The title of the item.
+        @end
+
+    @end
+
+    @member
+        @name=AddItem
+        @sig=M:gehtsoft.xce.conio.win.DialogItemListBox.AddItem(System.String,System.Object)
+        @key=AddItem.2
+        @divisor=.
+        @brief=Creates a new item with user data and adds it to the end of the list.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddItem
+            @return=int
+            @params=string item, object userData
+        @end
+
+        @param
+            @name=item
+            The title of the item.
+        @end
+
+        @param
+            @name=userData
+            The user data associated with the item.
+        @end
+
+    @end
+
+    @member
+        @name=AddItem
+        @sig=M:gehtsoft.xce.conio.win.DialogItemListBox.AddItem(gehtsoft.xce.conio.win.DialogItemListBoxString)
+        @key=AddItem.0
+        @divisor=.
+        @brief=Adds a new list box item.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddItem
+            @return=int
+            @params=[clink=gehtsoft.xce.conio.win.DialogItemListBoxString]DialogItemListBoxString[/clink] item
+        @end
+
+        @param
+            @name=item
+            The item object to be added.
+        @end
+
+    @end
+
+    @member
+        @name=RemoveItem
+        @sig=M:gehtsoft.xce.conio.win.DialogItemListBox.RemoveItem(System.Int32)
+        @key=RemoveItem.0
+        @divisor=.
+        @brief=Removes the item at the specified index.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=RemoveItem
+            @return=void
+
+            @params=int index
+        @end
+
+        @param
+            @name=index
+            The index of the item.
+        @end
+    @end
+
+    @member
+        @name=RemoveAllItems
+        @sig=M:gehtsoft.xce.conio.win.DialogItemListBox.RemoveAllItems
+        @key=RemoveAllItems.0
+        @divisor=.
+        @brief=Removes all items from the list box.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=RemoveAllItems
+            @return=void
+        @end
+    @end
+
+
+    @member
+        @name=EnsureVisible
+        @sig=M:gehtsoft.xce.conio.win.DialogItemListBox.EnsureVisible(System.Int32)
+        @key=EnsureVisible.0
+        @divisor=.
+        @brief=Scrolls the control to make the item visible.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=EnsureVisible
+            @return=void
+
+            @params=int index
+        @end
+
+        @param
+            @name=index
+            The index of the item.
+        @end
+
+    @end
+
+    @member
+        @name=DialogItemListBox
+        @sig=M:gehtsoft.xce.conio.win.DialogItemListBox.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+        @key=DialogItemListBox.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=DialogItemListBox
+            @params=int id, int row, int column, int height, int width
+        @end
+
+        @param
+            @name=id
+            The item identifier.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=height
+            Height of the dialog item in rows.
+        @end
+
+        @param
+            @name=width
+            Widths of the dialog item in columns.
+        @end
+
+    @end
+
+
+    @member
+        @name=Count
+        @sig=P:gehtsoft.xce.conio.win.DialogItemListBox.Count
+        @key=Count.0
+        @divisor=.
+        @brief=Gets the number of list items.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Count
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.conio.win.DialogItemListBox.Item(System.Int32)
+        @key=Item.0
+        @divisor=.
+        @brief=Gets the item by the index.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=[clink=gehtsoft.xce.conio.win.DialogItemListBoxString]DialogItemListBoxString[/clink]
+            @params=int index
+            @suffix= get;
+        @end
+
+        @param
+            @name=index
+
+        @end
+
+    @end
+
+    @member
+        @name=CurSel
+        @sig=P:gehtsoft.xce.conio.win.DialogItemListBox.CurSel
+        @key=CurSel.0
+        @divisor=.
+        @brief=Gets the index of the currently selected item.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CurSel
+            @return=int
+            @suffix= get; set;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

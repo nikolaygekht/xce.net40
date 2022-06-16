@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Proofing Tools\Spelling]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Proofing Tools\Spelling\1033]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Proofing Tools\Spelling\1033\Normal]
+"Engine"="C:\\Program Files\\Common Files\\Microsoft Shared\\Proof\\mssp232.dll"
+"Dictionary"="C:\\Program Files\\Common Files\\Microsoft Shared\\Proof\\mssp2_en.lex"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Proofing Tools\Spelling\1033\Normal\Clients]
+"C:\\Program Files\\Common Files\\Microsoft Shared\\Proof\\mssp232.dll"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Proofing Tools\Spelling\1049]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Proofing Tools\Spelling\1049\Normal]
+"Engine"="C:\\Program Files\\Common Files\\Microsoft Shared\\Proof\\mspru32.dll"
+"Dictionary"="C:\\Program Files\\Common Files\\Microsoft Shared\\Proof\\mssp_ru.lex"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Shared Tools\Proofing Tools\Spelling\1049\Normal\Clients]
+"C:\\Program Files\\Common Files\\Microsoft Shared\\Proof\\mspru32.dll"=""

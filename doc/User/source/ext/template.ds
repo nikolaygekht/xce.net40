@@ -1,0 +1,24 @@
+@group
+    @title=gehtsoft.xce.extension.template extension
+    @ingroup=extensions
+    @key=gehtsoft.xce.extension.template
+    @brief=
+
+    The extension provides additional commands for the XCE.NET.
+
+    The extension has no specific configuration.
+
+    To enable extension add the following line into the common section of the configuration:[br]
+    [c][common][/c][br]
+    [c]extension = gehtsoft.xce.extension.template[/c]
+
+    The templates are located in the templates.ini file located in the xce folder.
+@end
+
+@article
+    @title=InsertTemplate command
+    @key=InsertTemplate-command
+    @brief=The command inserts the template chosen by the user.
+    @ingroup=gehtsoft.xce.extension.template
+
+@end

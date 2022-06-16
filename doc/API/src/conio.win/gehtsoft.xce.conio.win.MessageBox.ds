@@ -1,0 +1,108 @@
+@class
+    @name=MessageBox
+    @key=gehtsoft.xce.conio.win.MessageBox
+    @brief=The modal message box.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.MessageBox
+
+    @member
+        @name=Show
+        @sig=M:gehtsoft.xce.conio.win.MessageBox.Show(gehtsoft.xce.conio.win.WindowManager,gehtsoft.xce.conio.win.IColorScheme,System.String,System.String,gehtsoft.xce.conio.win.MessageBoxButtonInfo[])
+        @key=Show.0
+        @divisor=.
+        @brief=Shows the message box with the custom button set.
+        @visibility=public
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Show
+            @return=[clink=gehtsoft.xce.conio.win.MessageBoxButton]MessageBoxButton[/clink]
+            @params=[clink=gehtsoft.xce.conio.win.WindowManager]WindowManager[/clink] mgr, [clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink] colors, string message, string title, [clink=gehtsoft.xce.conio.win.MessageBoxButtonInfo]MessageBoxButtonInfo[/clink][] buttons
+        @end
+
+        @param
+            @name=mgr
+            Window manager.
+        @end
+
+        @param
+            @name=colors
+            Color scheme.
+        @end
+
+        @param
+            @name=message
+            The message to be shown.
+        @end
+
+        @param
+            @name=title
+            The message box title.
+        @end
+
+        @param
+            @name=buttons
+            The array of the buttons descriptors. It is not recommended to create more than four buttons.
+        @end
+
+        @return
+            The method returns the identifier of the button pressed.
+        @end
+
+    @end
+
+
+    @member
+        @name=Show
+        @sig=M:gehtsoft.xce.conio.win.MessageBox.Show(gehtsoft.xce.conio.win.WindowManager,gehtsoft.xce.conio.win.IColorScheme,System.String,System.String,gehtsoft.xce.conio.win.MessageBoxButtonSet)
+        @key=Show.1
+        @divisor=.
+        @brief=Shows the message box with the pre-defined button set.
+        @visibility=public
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Show
+            @return=[clink=gehtsoft.xce.conio.win.MessageBoxButton]MessageBoxButton[/clink]
+            @params=[clink=gehtsoft.xce.conio.win.WindowManager]WindowManager[/clink] mgr, [clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink] colors, string message, string title, [clink=gehtsoft.xce.conio.win.MessageBoxButtonSet]MessageBoxButtonSet[/clink] buttonSet
+        @end
+
+        @param
+            @name=mgr
+            Window manager.
+        @end
+
+        @param
+            @name=colors
+            Color scheme.
+        @end
+
+        @param
+            @name=message
+            The message to be shown.
+        @end
+
+        @param
+            @name=title
+            The message box title.
+        @end
+
+        @param
+            @name=buttons
+            The buttons.
+        @end
+
+        @return
+            The method returns the identifier of the button pressed.
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end

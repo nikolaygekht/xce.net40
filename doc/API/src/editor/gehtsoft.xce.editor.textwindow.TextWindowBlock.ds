@@ -1,0 +1,62 @@
+@class
+    @name=TextWindowBlock
+    @key=gehtsoft.xce.editor.textwindow.TextWindowBlock
+    @brief=Type of the block.
+    @type=enum
+    @ingroup=gehtsoft.xce.editor.textwindow
+    @sig=T:gehtsoft.xce.editor.textwindow.TextWindowBlock
+
+    @member
+        @name=None
+        @sig=F:gehtsoft.xce.editor.textwindow.TextWindowBlock.None
+        @key=None.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Stream
+        @sig=F:gehtsoft.xce.editor.textwindow.TextWindowBlock.Stream
+        @key=Stream.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Line
+        @sig=F:gehtsoft.xce.editor.textwindow.TextWindowBlock.Line
+        @key=Line.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Box
+        @sig=F:gehtsoft.xce.editor.textwindow.TextWindowBlock.Box
+        @key=Box.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.editor.textwindow]gehtsoft.xce.editor.textwindow[/clink].
+@end

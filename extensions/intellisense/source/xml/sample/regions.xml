@@ -1,0 +1,23 @@
+<regions>
+        <region name="comment" parent="def:Comment" />
+        <region name="openTagStart" parent="def:Symbol" />
+        <region name="openTagEnd" parent="def:Symbol" />
+
+        <region name="piTagStart" parent="def:Symbol" />
+        <region name="piTagEnd" parent="def:Symbol" />
+
+        <region name="closeTagStart" parent="def:Symbol" />
+        <region name="closeTagEnd" parent="def:Symbol" />
+
+        <region name="tagName" parent="def:Keyword" />
+        <region name="namespaceDivisor" parent="def:Symbol" />
+        <region name="namespace" parent="def:Keyword" />
+        <region name="error" parent="def:Error"/>
+
+        <region name="attributeNamespace" parent="def:Keyword" />
+        <region name="attributeNamespaceDivisor" parent="def:Symbol" />
+        <region name="attributeName" parent="def:Keyword" />
+        <region name="attributeEq" parent="def:Symbol" />
+        <region name="attributeQuote" parent="def:Symbol" />
+        <region name="attributeValue" parent="def:String" />
+</regions>

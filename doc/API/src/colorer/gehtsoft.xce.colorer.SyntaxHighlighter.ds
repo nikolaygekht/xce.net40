@@ -1,0 +1,399 @@
+@class
+    @name=SyntaxHighlighter
+    @key=gehtsoft.xce.colorer.SyntaxHighlighter
+    @brief=The syntax highlighter for the text source.
+    @type=class
+    @ingroup=gehtsoft.xce.colorer
+    @sig=T:gehtsoft.xce.colorer.SyntaxHighlighter
+    @parent=System.IDisposable
+
+    @member
+        @name=Colorize
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.Colorize(System.Int32,System.Int32)
+        @key=Colorize.0
+        @divisor=.
+        @brief=Prepare the color information for the specified line range.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Colorize
+            @return=void
+            @params=int lineFrom, int lineCount
+        @end
+
+        @param
+            @name=lineFrom
+            The first line to prepare the color information.
+
+            The index of the first line is 0.
+        @end
+
+        @param
+            @name=lineCount
+            The number of the lines to prepare the color information for.
+        @end
+
+    @end
+
+
+    @member
+        @name=NotifyLineChange
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.NotifyLineChange(System.Int32)
+        @key=NotifyLineChange.0
+        @divisor=.
+        @brief=The method is used to notify that the line content has been changed.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=NotifyLineChange
+            @return=void
+            @params=int line
+        @end
+
+        @param
+            @name=line
+            The line index.
+
+            The index of the first line is 0.
+        @end
+    @end
+
+
+    @member
+        @name=NotifyMajorChange
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.NotifyMajorChange(System.Int32)
+        @key=NotifyMajorChange.0
+        @divisor=.
+        @brief=The method is used to notify about the major change inside the document.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=NotifyMajorChange
+            @return=void
+            @params=int lineFrom
+        @end
+
+        @param
+            @name=lineFrom
+            The first line affected by the major change.
+
+            The index of the first line is 0.
+        @end
+
+    @end
+
+
+    @member
+        @name=NotifyIdle
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.NotifyIdle
+        @key=NotifyIdle.0
+        @divisor=.
+        @brief=The method is used to notifythat the host application is in the idle start.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=NotifyIdle
+            @return=void
+        @end
+
+    @end
+
+
+    @member
+        @name=NotifyFileNameChange
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.NotifyFileNameChange
+        @key=NotifyFileNameChange.0
+        @divisor=.
+        @brief=The method is used to notify that the name of the file has been changed.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=NotifyFileNameChange
+            @return=void
+        @end
+    @end
+
+
+    @member
+        @name=GetFirstRegion
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.GetFirstRegion(System.Int32)
+        @key=GetFirstRegion.0
+        @divisor=.
+        @brief=Gets the first syntax region in the specified line.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetFirstRegion
+            @return=bool
+            @params=int line
+        @end
+
+        @param
+            @name=line
+            The line index.
+
+            The index of the first line is 0.
+        @end
+
+        You must call [clink=gehtsoft.xce.colorer.SyntaxHighlighter.Colorize.0]Colorize()[/clink] method before
+        getting the syntax highlight information.
+
+        The method returns [c]true[/c] if the line specified has at least one syntax region.
+
+        The last syntax region received by
+        [clink=gehtsoft.xce.colorer.SyntaxHighlighter.GetFirstRegion.0]GetFirstRegion()[/clink]
+        or
+        [clink=gehtsoft.xce.colorer.SyntaxHighlighter.GetNextRegion.0]GetNextRegion()[/clink]
+        method can be accessed via [clink=gehtsoft.xce.colorer.SyntaxHighlighter.CurrentRegion.0]CurrentRegion[/clink] property.
+    @end
+
+
+    @member
+        @name=GetNextRegion
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.GetNextRegion
+        @key=GetNextRegion.0
+        @divisor=.
+        @brief=Gets the next syntax region.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetNextRegion
+            @return=bool
+        @end
+
+        You must call [clink=gehtsoft.xce.colorer.SyntaxHighlighter.Colorize.0]Colorize()[/clink] method before
+        getting the syntax highlight information.
+
+        You must call [clink=gehtsoft.xce.colorer.SyntaxHighlighter.GetFirstRegion.0]GetFirstRegion()[/clink] method first
+        to get the first region for the line.
+
+        The method returns [c]true[/c] if the line has more syntax regions and retrieves the next syntax region.
+
+        The last syntax region received by
+        [clink=gehtsoft.xce.colorer.SyntaxHighlighter.GetFirstRegion.0]GetFirstRegion()[/clink]
+        or
+        [clink=gehtsoft.xce.colorer.SyntaxHighlighter.GetNextRegion.0]GetNextRegion()[/clink]
+        method can be accessed via [clink=gehtsoft.xce.colorer.SyntaxHighlighter.CurrentRegion.0]CurrentRegion[/clink] property.
+    @end
+
+
+    @member
+        @name=MatchPair
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.MatchPair(System.Int32,System.Int32)
+        @key=MatchPair.0
+        @divisor=.
+        @brief=The method checks whether the syntax pair exists at the position specified and returns the pair properties.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=MatchPair
+            @return=[clink=gehtsoft.xce.colorer.SyntaxHighlighterPair]SyntaxHighlighterPair[/clink]
+            @params=int line, int column
+        @end
+
+        @param
+            @name=line
+            The line index in the text to check.
+
+            The index of the first line is 0.
+        @end
+
+        @param
+            @name=column
+            The column index in the line which must belong to a pair region.
+
+            The index of the first column is 0.
+        @end
+
+        The method returns [c]null[/c] in case where is no pair at the position specified.
+
+        The returned object must be disposed after the usage.
+    @end
+
+    @member
+        @name=Dispose
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.Dispose
+        @key=Dispose.0
+        @divisor=.
+        @brief=Disposes the syntax highlighter.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Dispose
+            @return=void
+        @end
+    @end
+
+
+    @member
+        @name=CurrentRegion
+        @sig=P:gehtsoft.xce.colorer.SyntaxHighlighter.CurrentRegion
+        @key=CurrentRegion.0
+        @divisor=.
+        @brief=The syntax region.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CurrentRegion
+            @return=[clink=gehtsoft.xce.colorer.SyntaxHighlighterRegion]SyntaxHighlighterRegion[/clink]
+            @suffix= get;
+        @end
+
+        The syntax region must be retrieved by
+        [clink=gehtsoft.xce.colorer.SyntaxHighlighter.GetFirstRegion.0]GetFirstRegion()[/clink]
+        or
+        [clink=gehtsoft.xce.colorer.SyntaxHighlighter.GetNextRegion.0]GetNextRegion()[/clink]
+        methods.
+
+        Please note that retrieving the new region do [c]NOT[/c] create a new object, but fill the value of the
+        same region object. So, if you need to store the region information - do a copy of the object.
+    @end
+
+    @member
+        @name=IdleJob
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.IdleJob(System.Int32)
+        @key=IdleJob.0
+        @divisor=.
+        @brief=Performs background parsing.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=IdleJob
+            @return=void
+            @params=int timeout
+        @end
+
+        @param
+            @name=timeout
+            The maximum time to perform parsing, specified in milliseconds.
+        @end
+
+    @end
+
+    @member
+        @name=ValidateRange
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.ValidateRange(System.Int32,System.Int32)
+        @key=ValidateRange.0
+        @divisor=.
+        @brief=Forces re-parse of the range specified.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=ValidateRange
+            @return=void
+            @params=int from, int to
+        @end
+
+        @param
+            @name=from
+            The first line of the range.
+        @end
+
+        @param
+            @name=to
+            The last line of the range.
+        @end
+
+    @end
+
+    @member
+        @name=SetVisibleRange
+        @sig=M:gehtsoft.xce.colorer.SyntaxHighlighter.SetVisibleRange(System.Int32,System.Int32)
+        @key=SetVisibleRange.0
+        @divisor=.
+        @brief=Forces background re-parse of the range specified.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=SetVisibleRange
+            @return=void
+            @params=int from, int length
+        @end
+
+        @param
+            @name=from
+            The first line of the range.
+        @end
+
+        @param
+            @name=length
+            The length of the range in lines.
+        @end
+    @end
+
+    @member
+        @name=LastValidLine
+        @sig=P:gehtsoft.xce.colorer.SyntaxHighlighter.LastValidLine
+        @key=LastValidLine.0
+        @divisor=.
+        @brief=The maximum line number which is currently parsed.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=LastValidLine
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=FileType
+        @sig=P:gehtsoft.xce.colorer.SyntaxHighlighter.FileType
+        @key=FileType.0
+        @divisor=.
+        @brief=Returns the name of the scheme used to parse the file.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=FileType
+            @return=string
+            @suffix= get;
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.colorer.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.colorer]gehtsoft.xce.colorer[/clink].
+@end
+

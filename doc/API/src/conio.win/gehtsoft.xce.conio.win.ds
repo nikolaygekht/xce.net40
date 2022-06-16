@@ -1,0 +1,12 @@
+@group
+    @title=gehtsoft.xce.conio.win
+    @key=gehtsoft.xce.conio.win
+    @ingroup=index
+    @brief=CUA console interface
+
+    The namespace [c]gehtsoft.xce.conio.win[/c] consists of the classes for implementing the
+    CUA-based window user interface inside the console.
+
+    See [url=img/conio_win.png]Class Diagram[/url] of the [c]gehtsoft.xce.conio.win[/c] package.
+@end
+

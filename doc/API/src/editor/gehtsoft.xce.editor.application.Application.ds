@@ -1,0 +1,545 @@
+@class
+    @name=Application
+    @key=gehtsoft.xce.editor.application.Application
+    @brief=Main application class
+    @type=class
+    @ingroup=gehtsoft.xce.editor.application
+    @sig=T:gehtsoft.xce.editor.application.Application
+
+    @member
+        @name=PostQuitMessage
+        @sig=M:gehtsoft.xce.editor.application.Application.PostQuitMessage
+        @key=PostQuitMessage.0
+        @divisor=.
+        @brief=Forces exiting from the application.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=PostQuitMessage
+            @return=void
+        @end
+
+        Please note that execution of this method closes the editor without checking
+        that any files aren't saved yet. To close the editor with proper checking, please
+        use an appropriate command.
+    @end
+
+
+    @member
+        @name=ShowMessage
+        @sig=M:gehtsoft.xce.editor.application.Application.ShowMessage(System.String,System.String)
+        @key=ShowMessage.0
+        @divisor=.
+        @brief=Shows a message box.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=ShowMessage
+            @return=void
+            @params=string message, string title
+        @end
+
+        @param
+            @name=message
+            Message.
+        @end
+
+        @param
+            @name=title
+            Title of the message box.
+        @end
+    @end
+
+    @member
+        @name=OpenFile
+        @sig=M:gehtsoft.xce.editor.application.Application.OpenFile(System.String)
+        @key=OpenFile.0
+        @divisor=.
+        @brief=Opens a new file.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OpenFile
+            @return=[clink=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/clink]
+            @params=string fileName
+        @end
+
+        @param
+            @name=fileName
+            Name of the file to be opened.
+        @end
+
+        @return
+            The method returns an instance of the new text window.
+        @end
+    @end
+
+    @member
+        @name=CloseWindow
+        @sig=M:gehtsoft.xce.editor.application.Application.CloseWindow(gehtsoft.xce.editor.textwindow.TextWindow)
+        @key=CloseWindow.0
+        @divisor=.
+        @brief=Closes the window specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=CloseWindow
+            @return=void
+            @params=[clink=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/clink] w
+        @end
+
+        @param
+            @name=w
+            The instance of the window to be closed.
+        @end
+
+        Please note that the method closes the window even if the window content is not saved. To close
+        a window with a proper check, please use an appropriate command.
+    @end
+
+
+    @member
+        @name=ActivateWindow
+        @sig=M:gehtsoft.xce.editor.application.Application.ActivateWindow(gehtsoft.xce.editor.textwindow.TextWindow)
+        @key=ActivateWindow.0
+        @divisor=.
+        @brief=Activates the window specified.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=ActivateWindow
+            @return=void
+            @params=[clink=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/clink] w
+        @end
+
+        @param
+            @name=w
+            The instance of the window to be activated.
+        @end
+    @end
+
+    @member
+        @name=WindowManager
+        @sig=P:gehtsoft.xce.editor.application.Application.WindowManager
+        @key=WindowManager.0
+        @divisor=.
+        @brief=Gets the console window manager.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=WindowManager
+            @return=gehtsoft.xce.conio.win.WindowManager
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=ColorScheme
+        @sig=P:gehtsoft.xce.editor.application.Application.ColorScheme
+        @key=ColorScheme.0
+        @divisor=.
+        @brief=Gets the editor color scheme.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=ColorScheme
+            @return=[clink=gehtsoft.xce.editor.configuration.XceColorScheme]gehtsoft.xce.editor.configuration.XceColorScheme[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=ApplicationPath
+        @sig=P:gehtsoft.xce.editor.application.Application.ApplicationPath
+        @key=ApplicationPath.0
+        @divisor=.
+        @brief=Gets the path of the application.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=ApplicationPath
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=Configuration
+        @sig=P:gehtsoft.xce.editor.application.Application.Configuration
+        @key=Configuration.0
+        @divisor=.
+        @brief=Gets the configuration object.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Configuration
+            @return=[clink=gehtsoft.xce.editor.configuration.XceConfiguration]gehtsoft.xce.editor.configuration.XceConfiguration[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=ColorerFactory
+        @sig=P:gehtsoft.xce.editor.application.Application.ColorerFactory
+        @key=ColorerFactory.0
+        @divisor=.
+        @brief=Gets the colorer factory.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=ColorerFactory
+            @return=gehtsoft.xce.colorer.ColorerFactory
+            @suffix= get;
+        @end
+    @end
+
+
+    @member
+        @name=Commands
+        @sig=P:gehtsoft.xce.editor.application.Application.Commands
+        @key=Commands.0
+        @divisor=.
+        @brief=Gets the command collection.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Commands
+            @return=[clink=gehtsoft.xce.editor.command.EditorCommandCollection]gehtsoft.xce.editor.command.EditorCommandCollection[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=ActiveWindow
+        @sig=P:gehtsoft.xce.editor.application.Application.ActiveWindow
+        @key=ActiveWindow.0
+        @divisor=.
+        @brief=Gets the currently active window.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=ActiveWindow
+            @return=[clink=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=TextWindows
+        @sig=P:gehtsoft.xce.editor.application.Application.TextWindows
+        @key=TextWindows.0
+        @divisor=.
+        @brief=Gets a collection of all windows opened.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=TextWindows
+            @return=[clink=gehtsoft.xce.editor.textwindow.TextWindowCollection]gehtsoft.xce.editor.textwindow.TextWindowCollection[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+
+    @member
+        @name=AfterOpenWindowEvent
+        @sig=E:gehtsoft.xce.editor.application.Application.AfterOpenWindowEvent
+        @key=AfterOpenWindowEvent.0
+        @divisor=.
+        @brief=Event fired right after a new window has been opened.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @custom=event
+
+        @declaration
+            @language=cs
+            @return=AfterOpenWindowHook
+            @prefix=event
+        @end
+
+        @declaration
+            @language=cs
+            @name=gehtsoft.xce.editor.application.AfterOpenWindowHook
+            @prefix=public delegate
+            @params=[clink=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/clink] w
+            @return=void
+        @end
+
+        @param
+            @name=w
+            The window opened.
+        @end
+    @end
+
+    @member
+        @name=BeforeCloseWindowEvent
+        @sig=E:gehtsoft.xce.editor.application.Application.BeforeCloseWindowEvent
+        @key=BeforeCloseWindowEvent.0
+        @divisor=.
+        @brief=Event fired right before a window is closed.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @custom=event
+
+        @declaration
+            @language=cs
+            @prefix=event
+            @return=BeforeCloseWindowHook
+        @end
+
+        @declaration
+            @language=cs
+            @name=gehtsoft.xce.editor.application.BeforeCloseWindowHook
+            @prefix=public delegate
+            @params=[clink=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/clink] w
+            @return=void
+        @end
+
+        @param
+            @name=w
+            The window to be closed.
+        @end
+
+    @end
+
+    @member
+        @name=TimerEvent
+        @sig=E:gehtsoft.xce.editor.application.Application.TimerEvent
+        @key=TimerEvent.0
+        @divisor=.
+        @brief=Event is fired every 250 milliseconds while the editor is in the idle state.
+        @visibility=public
+        @scope=instance
+        @type=method
+        @custom=event
+
+        @declaration
+            @language=cs
+            @prefix=event
+            @return=TimerHook
+        @end
+
+        @declaration
+            @language=cs
+            @name=gehtsoft.xce.editor.application.TimerHook
+            @prefix=public delegate
+            @return=void
+        @end
+
+    @end
+
+    @member
+        @name=KeyPressedEvent
+        @sig=E:gehtsoft.xce.editor.application.Application.KeyPressedEvent
+        @key=KeyPressedEvent.0
+        @divisor=.
+        @brief=Event is fired when a key is pressed in the active editor window.
+        @scope=instance
+        @visibility=public
+        @declaration
+            @language=cs
+            @prefix=event
+            @return=KeyPressedHook
+        @end
+
+        @declaration
+            @language=cs
+            @name=gehtsoft.xce.editor.application.KeyPressedHook
+            @params=int scanCode, char character, bool shift, bool ctrl, bool alt, ref bool handled
+            @prefix=public delegate
+            @return=void
+        @end
+
+        @param
+            @name=scanCode
+            Key scan code (see [clink=gehtsoft.xce.conio.ScanCode]gehtsoft.xce.conio.ScanCode[/clink] for the list of scan codes).
+        @end
+
+        @param
+            @name=character
+            The character associated with the key or 0 in case the scancode is not associated with any character.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+        @param
+            @name=handled
+            The input/output parameter.
+
+            If the value is [c]true[/c] the key is already handled.
+
+            The event handler must put [c]true[/c] into this parameter in case the
+            key is handled and shall not be processed by other handlers or the editor.
+
+        @end
+    @end
+
+    @member
+        @name=IdleEvent
+        @sig=E:gehtsoft.xce.editor.application.Application.IdleEvent
+        @key=IdleEvent.0
+        @divisor=.
+        @brief=The event is fired when the editor is in the idle state (waits for the user input).
+        @scope=instance
+        @visibility=public
+
+        @declaration
+            @language=cs
+            @prefix=event
+            @return=IdleHook
+        @end
+
+        @declaration
+            @language=cs
+            @name=gehtsoft.xce.editor.application.IdleHook
+            @prefix=public delegate
+            @return=void
+        @end
+
+        The extensions can use this event to handle background task without creating threads.
+    @end
+
+
+
+    @member
+        @name=ShowYesNoMessage
+        @sig=M:gehtsoft.xce.editor.application.Application.ShowYesNoMessage(System.String,System.String)
+        @key=ShowYesNoMessage.0
+        @divisor=.
+        @brief=Shows Yes/No message prompt.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=ShowYesNoMessage
+            @return=bool
+            @params=string message, string title
+        @end
+
+        @param
+            @name=message
+            The message to show.
+        @end
+
+        @param
+            @name=title
+            The message title.
+        @end
+
+        @return
+            The method returns [c]true[/c] in case Yes answer is chosen.
+        @end
+    @end
+
+    @member
+        @name=ShowMainMenu
+        @sig=M:gehtsoft.xce.editor.application.Application.ShowMainMenu
+        @key=ShowMainMenu.0
+        @divisor=.
+        @brief=The method shows the main editor menu and waits for the command chosen.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=ShowMainMenu
+            @return=void
+        @end
+
+    @end
+
+    @member
+        @name=repaint
+        @sig=M:gehtsoft.xce.editor.application.Application.repaint
+        @key=repaint.0
+        @divisor=.
+        @brief=Forces repainting of the editor window.
+        @scope=instance
+        @visibility=public
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=repaint
+            @return=void
+
+        @end
+
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.editor.application]gehtsoft.xce.editor.application[/clink].
+@end

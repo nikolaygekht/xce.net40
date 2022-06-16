@@ -1,0 +1,57 @@
+@group
+    @title=gehtsoft.xce.extension.dsformat extension
+    @ingroup=extensions
+    @key=gehtsoft.xce.extension.dsformat
+    @brief=
+
+    The extension provides additional commands for the XCE.NET.
+
+    The extension has no specific configuration.
+
+    To enable extension add the following line into the common section of the configuration:[br]
+    [c][common][/c][br]
+    [c]extension = gehtsoft.xce.extension.dsformat[/c]
+@end
+
+
+@article
+    @title=FormatDocSource command
+    @key=FormatDocSource-command
+    @brief=The command formats the Doc Source file.
+    @ingroup=gehtsoft.xce.extension.dsformat
+
+    The command fixes layout of the doc source files and
+    breaks the text lines to max of 100 characters.
+@end
+
+@article
+    @title=BreakLineByWidth command
+    @key=BreakLineByWidth-command
+    @brief=The command breaks the current line by the width specified.
+    @ingroup=gehtsoft.xce.extension.dsformat
+
+    If the parameter is not specified, or the parameter is not a number, the
+    command breaks the line by the screen width.
+
+    If the parameter is a positive number, the command breaks the line by the width specified.
+
+    If the parameter is a negative number, the command break the line by the screen width minus the number
+    of the characters specified.
+
+@end
+
+@article
+    @title=FormatParaByWidth command
+    @key=FormatParaByWidth-command
+    @brief=The commands breaks the current line and all subsequent lines until the empty line is met.
+    @ingroup=gehtsoft.xce.extension.dsformat
+
+    If the parameter is not specified, or the parameter is not a number, the
+    command breaks the line by the screen width.
+
+    If the parameter is a positive number, the command breaks the line by the width specified.
+
+    If the parameter is a negative number, the command break the line by the screen width minus the number
+    of the characters specified.
+@end
+

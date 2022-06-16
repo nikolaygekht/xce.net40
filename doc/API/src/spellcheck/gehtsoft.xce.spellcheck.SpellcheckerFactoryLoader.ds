@@ -1,0 +1,61 @@
+@class
+    @name=SpellcheckerFactoryLoader
+    @key=gehtsoft.xce.spellcheck.SpellcheckerFactoryLoader
+    @brief=Spellchecker factory loader.
+    @type=class
+    @ingroup=gehtsoft.xce.spellcheck
+    @sig=T:gehtsoft.xce.spellcheck.SpellcheckerFactoryLoader
+
+    @member
+        @name=LoadFactory
+        @sig=M:gehtsoft.xce.spellcheck.SpellcheckerFactoryLoader.LoadFactory(System.String,System.String)
+        @key=LoadFactory.0
+        @divisor=.
+        @brief=Loads the speller factory.
+        @visibility=public
+        @scope=class
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=LoadFactory
+            @return=[clink=gehtsoft.xce.spellcheck.ISpellcheckerFactory]ISpellcheckerFactory[/clink]
+            @params=string assembly, string classname
+        @end
+
+        @param
+            @name=assembly
+            The assembly containing the spellchecker implementation.
+        @end
+
+        @param
+            @name=classname
+            The spellchecker factory implementation class name.
+
+            The class must implement [clink=gehtsoft.xce.spellcheck.ISpellcheckerFactory]ISpellcheckerFactory[/clink] interface and 
+            must be public.
+        @end
+    @end
+
+    @member
+        @name=SpellcheckerFactoryLoader
+        @sig=M:gehtsoft.xce.spellcheck.SpellcheckerFactoryLoader.#ctor
+        @key=SpellcheckerFactoryLoader.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=SpellcheckerFactoryLoader
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.spellcheck.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.spellcheck]gehtsoft.xce.spellcheck[/clink].
+@end
+

@@ -1,0 +1,175 @@
+@group
+    @title=gehtsoft.xce.extension.advnav extension
+    @ingroup=extensions
+    @key=gehtsoft.xce.extension.advnav
+    @brief=
+
+    The extension provides additional commands for the XCE.NET.
+
+    The extension has no specific configuration.
+
+    To enable extension add the following line into the common section of the configuration:[br]
+    [c][common][/c][br]
+    [c]extension = gehtsoft.xce.extension.advnav[/c]
+@end
+
+
+@article
+    @title=ScreenUp command
+    @key=ScreenUp-command
+    @brief=The command shift the screen one line up.
+    @ingroup=gehtsoft.xce.extension.advnav
+
+    The command has no parameters.
+
+@end
+@article
+    @title=ScreenDown command
+    @key=ScreenDown-command
+    @brief=The command shifts the screen one line down.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+@article
+    @title=ScreenRight command
+    @key=ScreenRight-command
+    @brief=The command shifts the screen one column right.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+@article
+    @title=ScreenLeft command
+    @key=ScreenLeft-command
+    @brief=The command shift the screen one column left.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+@article
+    @title=ScreenHome command
+    @key=ScreenHome-command
+    @brief=The command moves the cursor to the first visible column.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+@article
+    @title=ScreenEnd command
+    @key=ScreenEnd-command
+    @brief=The command moves the cursor the last visible column.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+
+@article
+    @title=ScreenTop command
+    @key=ScreenTop-command
+    @brief=The command moves the cursor the first visible line.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+
+@article
+    @title=ScreenBottom command
+    @key=ScreenBottom-command
+    @brief=The command moves the cursor to the last visible line.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+
+@article
+    @title=NextLineStartingFromZero command
+    @key=NextLineStartingFromZero-command
+    @brief=The command moves the cursor to the next line which starts from the first column.
+    @ingroup=gehtsoft.xce.extension.advnav
+@end
+
+@article
+    @title=PrevLineStartingFromZero command
+    @key=PrevLineStartingFromZero-command
+    @brief=The command moves the cursor to the previous line which starts from the first column.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+
+@article
+    @title=FindNextWord command
+    @key=FindNextWord-command
+    @brief=The command searches the next occurrence of the word under the cursor.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+
+@article
+    @title=FindPreviousWord command
+    @key=FindPreviousWord-command
+    @brief=The command searches the previous occurrence of the word under the cursor.
+    @ingroup=gehtsoft.xce.extension.advnav
+    The command has no parameters.
+@end
+
+@article
+    @title=FixLayoutMistype command
+    @key=FixLayoutMistype-command
+    @brief=The command fixes the layout mistype.
+    @ingroup=gehtsoft.xce.extension.advnav
+
+    The command fixes the layout mistype in the word at left of the cursor.
+
+    The command parameter defines the layout mistype to be fixed:
+    @table
+        @row
+            @col
+                en2ru
+            @end
+            @col
+                Fix a Russian word entered in English layout.
+            @end
+        @end
+        @row
+            @col
+                ru2en
+            @end
+            @col
+                Fix an English word entered in Russian layout.
+            @end
+        @end
+    @end
+
+@end
+
+@article
+    @title=CondensedView command
+    @key=CondensedView-command
+    @brief=The command shows a condensed screen view.
+    @ingroup=gehtsoft.xce.extension.advnav
+
+    The command parameter defines how to condense the text:
+
+    @table
+        @row
+            @col
+                top
+            @end
+            @col
+                The condensed view will contain only the lines which start from the first column.
+            @end
+        @end
+        @row
+            @col
+                cur
+            @end
+            @col
+                The condensed view will contain only the lines which start at or before the cursor column.
+            @end
+        @end
+        @row
+            @col
+                syntax
+            @end
+            @col
+                The condensed view will contain only the lines which contains def:Outline colorer region.
+            @end
+        @end
+    @end
+@end
+
+

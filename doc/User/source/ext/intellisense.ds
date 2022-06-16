@@ -1,0 +1,235 @@
+@group
+    @title=gehtsoft.xce.extension.intellisense extension
+    @ingroup=extensions
+    @key=gehtsoft.xce.extension.intellisense
+    @brief=
+    @sortarticles=no
+    @sortgroups=no
+    @order=custom
+
+    The extension provides intellisense features  for the XCE.NET.
+
+    The extension has no specific configuration.
+
+    To enable extension add the following line into the common section of the configuration:[br]
+    [c][common][/c][br]
+    [c]extension = gehtsoft.xce.extension.intellisense[/c]
+@end
+
+@article
+    @title=Intellisense_BrowseProject command
+    @key=Intellisense_BrowseProject-command
+    @brief=The command shows the project browser dialog.
+    @ingroup=gehtsoft.xce.extension.intellisense
+@end
+
+@article
+    @title=Intellisense_GoDefinition command
+    @key=Intellisense_GoDefinition-command
+    @brief=The command shows the project browser dialog and finds the definition of the word under the cursor.
+    @ingroup=gehtsoft.xce.extension.intellisense
+@end
+
+@article
+    @title=Intellisense_Suggestion command
+    @key=Intellisense_Suggestion-command
+    @brief=The command shows the list of the suggestions.
+    @ingroup=gehtsoft.xce.extension.intellisense
+@end
+
+@article
+    @title=Intellisense_ForceInsight command
+    @key=Intellisense_ForceInsight-command
+    @brief=The command shows the insight tooltip
+    @ingroup=gehtsoft.xce.extension.intellisense
+@end
+
+@group
+    @title=Languages supported
+    @ingroup=gehtsoft.xce.extension.intellisense
+    @key=gehtsoft.xce.extension.intellisense.lang
+    @brief=
+@end
+
+@article
+    @title=C#
+    @key=gehtsoft.xce.extension.intellisense.cs
+    @brief=
+    @ingroup=gehtsoft.xce.extension.intellisense.lang
+
+    [b]Configuration[/b]
+
+    The [c]csintellisense[/c] section must be included into the configuration file to turn the C# intellisense on.
+
+    The following keys can be used in this section:
+
+    @table
+        @row
+            @col
+                [c]enabled[/c]
+            @end
+            @col
+                [c]true[/c] or [c]false[/c].
+
+                Enables or disables C# intellisense.
+            @end
+        @end
+        @row
+            @col
+                [c]create-cache[/c]
+            @end
+            @col
+                [c]true[/c] or [c]false[/c].
+
+                Enables caching of the parsing data. The cache will be created in the temporary subfolder in the csproj project folder.
+
+                The option works for the projects only.
+            @end
+        @end
+        @row
+            @col
+                [c]parser-timeout[/c]
+            @end
+            @col
+                The timeout in milliseconds between attempts to re-parse the currently edited files.
+            @end
+        @end
+    @end
+
+
+    [b]Project Browser/Definition Search[/b]
+
+    If the current CS file is a part of any csproj project located at the current folder or
+    at any of the parent folders, the whole project will be used for navigation and definition search.
+
+    If the current CS file is not a part of any csproj project, only System, System.IO, System.Text and System.Xml namespaces
+    as well as the classes defined in the current file will be used.
+
+    [b]Suggestions[/b]
+
+    The suggestions are shown automatically when the user enters a dot character.
+
+    [b]Insight data[/b]
+
+    The insight data is shown automatically when the user enters a left bracket character.
+@end
+
+@article
+    @title=Lua
+    @key=gehtsoft.xce.extension.intellisense.lua
+    @brief=
+    @ingroup=gehtsoft.xce.extension.intellisense.lang
+
+    [b]Configuration[/b]
+
+    The [c]luaintellisense[/c] section must be included into the configuration file to turn the Lua intellisense on.
+
+    The following keys can be used in this section:
+
+    @table
+        @row
+            @col
+                [c]enabled[/c]
+            @end
+            @col
+                [c]true[/c] or [c]false[/c].
+
+                Enables or disables Lua intellisense.
+            @end
+        @end
+        @row
+            @col
+                [c]types[/c]
+            @end
+            @col
+                The comma-separated list of the types which must be shown in the suggestions and insight data.
+
+                The following values can be used:
+
+                @table
+                    @row
+                        @col
+                            [c]standart[/c]
+                        @end
+                        @col
+                            Standard Lua 5.1 tables.
+                        @end
+                    @end
+                    @row
+                        @col
+                            [c]indicore[/c]
+                        @end
+                        @col
+                            FXCM Indicator and Strategies SDK tables.
+                        @end
+                    @end
+                @end
+            @end
+        @end
+    @end
+
+    [b]Project Browser/Definition Search[/b]
+
+    Not supported.
+
+    [b]Suggestions[/b]
+
+    The suggestions are shown automatically when the user enters dot or colon characters. If the table at the left is one
+    of the standard tables (such as math) only methods of that table will be shown. Otherwise all methods and properties
+    will be shown.
+
+    [b]Insight data[/b]
+
+    The insight data is shown automatically when the user enters a left bracket character.
+@end
+
+@article
+    @title=Doc Source
+    @key=gehtsoft.xce.extension.intellisense.ds
+    @brief=
+    @ingroup=gehtsoft.xce.extension.intellisense.lang
+
+    [b]Configuration[/b]
+
+    The [c]dsintellisense[/c] section must be included into the configuration file to turn the DocSource intellisense on.
+
+    The following keys can be used in this section:
+
+    @table
+        @row
+            @col
+                [c]enabled[/c]
+            @end
+            @col
+                [c]true[/c] or [c]false[/c].
+
+                Enables or disables C# intellisense.
+            @end
+        @end
+        @row
+            @col
+                [c]parser-timeout[/c]
+            @end
+            @col
+                The timeout in milliseconds between attempts to re-parse the currently edited files.
+            @end
+        @end
+    @end
+
+    [b]Project Browser/Definition Search[/b]
+
+    To turn the project browser/definition search on you must specify the location of the doc source project file. To do that create [c]xce-project.ini[/c]
+    in the source folder or any parent folder of the source folder and specify the doc source project name in the
+    [c]doc-project[/c] key in the [c]project[/c] section. The path of the project must be either absolute or relative to
+    the folder where [c]xce-project.ini[/c] file is located.
+
+    [b]Suggestions[/b]
+
+    The suggestions are shown automatically when the user enters at, equal or left square bracket characters.
+
+    For the '=' character for @ingroup tag or link or clink bbtags the list of the keys will be shown.
+
+    [b]Insight data[/b]
+
+    Not supported.
+@end

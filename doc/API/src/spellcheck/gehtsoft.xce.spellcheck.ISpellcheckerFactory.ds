@@ -1,0 +1,48 @@
+@class
+    @name=ISpellcheckerFactory
+    @key=gehtsoft.xce.spellcheck.ISpellcheckerFactory
+    @brief=The interface to the spellchecker factory.
+    @type=interface
+    @ingroup=gehtsoft.xce.spellcheck
+    @sig=T:gehtsoft.xce.spellcheck.ISpellcheckerFactory
+    @parent=System.IDisposable
+
+    @member
+        @name=CreateInstance
+        @sig=M:gehtsoft.xce.spellcheck.ISpellcheckerFactory.CreateInstance(System.String,System.String,System.String)
+        @key=CreateInstance.0
+        @divisor=.
+        @brief=Create an instance of the spellchecker.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=CreateInstance
+            @return=[clink=gehtsoft.xce.spellcheck.ISpellchecker]ISpellchecker[/clink]
+            @params=string dictionaryPath, string dictionary, string customDictionary
+        @end
+
+        @param
+            @name=dictionaryPath
+            The path of the folder where dictionaries are located.
+        @end
+
+        @param
+            @name=dictionary
+            The main dictionary file.
+        @end
+
+        @param
+            @name=customDictionary
+            The custom words dictionary file.
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.spellcheck.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.spellcheck]gehtsoft.xce.spellcheck[/clink].
+@end
+

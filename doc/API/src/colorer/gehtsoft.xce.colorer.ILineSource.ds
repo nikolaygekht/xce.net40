@@ -1,0 +1,120 @@
+@class
+    @name=ILineSource
+    @key=gehtsoft.xce.colorer.ILineSource
+    @brief=The interface to the text to be parsed.
+    @type=interface
+    @ingroup=gehtsoft.xce.colorer
+    @sig=T:gehtsoft.xce.colorer.ILineSource
+
+    @member
+        @name=GetFileName
+        @sig=M:gehtsoft.xce.colorer.ILineSource.GetFileName
+        @key=GetFileName.0
+        @divisor=.
+        @brief=The method must return the file name.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetFileName
+            @return=string
+            @prefix=virutal
+            @suffix=abstract
+        @end
+    @end
+
+
+    @member
+        @name=GetLinesCount
+        @sig=M:gehtsoft.xce.colorer.ILineSource.GetLinesCount
+        @key=GetLinesCount.0
+        @divisor=.
+        @brief=The method must return the number of the lines in the file.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetLinesCount
+            @return=int
+            @prefix=virutal
+            @suffix=abstract
+        @end
+    @end
+
+
+    @member
+        @name=GetLineLength
+        @sig=M:gehtsoft.xce.colorer.ILineSource.GetLineLength(System.Int32)
+        @key=GetLineLength.0
+        @divisor=.
+        @brief=The method must return length of the file line in characters.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetLineLength
+            @return=int
+            @params=int lno
+            @prefix=virutal
+            @suffix=abstract
+        @end
+
+        @param
+            @name=lno
+            The index of the line. The first line has index 0.
+        @end
+
+    @end
+
+
+    @member
+        @name=GetLine
+        @sig=M:gehtsoft.xce.colorer.ILineSource.GetLine(System.Int32,System.Char[],System.Int32,System.Int32)
+        @key=GetLine.0
+        @divisor=.
+        @brief=The method must return the line content. 
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=GetLine
+            @return=int
+            @params=int line, char[] buffer, int lineColumnFrom, int length
+            @prefix=virutal
+            @suffix=abstract
+        @end
+
+        @param
+            @name=line
+            The index of the line. The first line has index 0.
+        @end
+
+        @param
+            @name=buffer
+            The buffer to copy the line content to.
+        @end
+
+        @param
+            @name=lineColumnFrom
+            The column to get the line content starting at.    
+        @end
+
+        @param
+            @name=length
+            The number of characters to get. 
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.colorer.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.colorer]gehtsoft.xce.colorer[/clink].
+@end
+

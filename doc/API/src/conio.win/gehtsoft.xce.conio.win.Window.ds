@@ -1,0 +1,1157 @@
+@class
+    @name=Window
+    @key=gehtsoft.xce.conio.win.Window
+    @brief=The base of the console window.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.Window
+    @parent=System.IDisposable
+
+
+    @member
+        @name=Window
+        @sig=M:gehtsoft.xce.conio.win.Window.#ctor
+        @key=Window.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=Window
+        @end
+
+        The constructor does [b]not[/b] create the window as a user interface object.
+
+        Use [clink=gehtsoft.xce.conio.win.WindowManager]WindowManager[/clink] to create or
+        close the windows.
+    @end
+
+    @member
+        @name=OnCreate
+        @sig=M:gehtsoft.xce.conio.win.Window.OnCreate
+        @key=OnCreate.0
+        @divisor=.
+        @brief=The method is called as a signal that the window object is created.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnCreate
+            @prefix=virtual
+            @return=void
+        @end
+    @end
+
+    @member
+        @name=OnClose
+        @sig=M:gehtsoft.xce.conio.win.Window.OnClose
+        @key=OnClose.0
+        @divisor=.
+        @brief=The method is called as a signal that the window object is closed.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnClose
+            @prefix=virtual
+            @return=void
+        @end
+
+    @end
+
+    @member
+        @name=OnSizeChanged
+        @sig=M:gehtsoft.xce.conio.win.Window.OnSizeChanged
+        @key=OnSizeChanged.0
+        @divisor=.
+        @brief=The method is called as a signal that the window size or position are changed.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnSizeChanged
+            @prefix=virtual
+            @return=void
+        @end
+
+    @end
+
+    @member
+        @name=move
+        @sig=M:gehtsoft.xce.conio.win.Window.move(System.Int32,System.Int32,System.Int32,System.Int32)
+        @key=move.0
+        @divisor=.
+        @brief=Moves the window.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=move
+            @return=void
+            @params=int row, int column, int height, int width
+        @end
+
+        @param
+            @name=row
+            The new row coordinate of the top-level corner.
+
+            The coordinate is specified relative to the top-left corner of the parent window.
+        @end
+
+        @param
+            @name=column
+            The new column coordinate of the top-level corner.
+
+            The coordinate is specified relative to the top-left corner of the parent window.
+
+        @end
+
+        @param
+            @name=height
+            The new height of the window in rows.
+        @end
+
+        @param
+            @name=width
+            The new width of the window in columns.
+        @end
+    @end
+
+    @member
+        @name=OnShow
+        @sig=M:gehtsoft.xce.conio.win.Window.OnShow(System.Boolean)
+        @key=OnShow.0
+        @divisor=.
+        @brief=The method is called as a signal that the window is shown or hidden.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnShow
+            @return=void
+            @prefix=virtual
+            @params=bool visible
+        @end
+
+        @param
+            @name=visible
+            The flag indicating whether the window is visible now.
+        @end
+
+    @end
+
+    @member
+        @name=show
+        @sig=M:gehtsoft.xce.conio.win.Window.show(System.Boolean)
+        @key=show.0
+        @divisor=.
+        @brief=Shows or hides the window.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=show
+            @return=void
+
+            @params=bool visible
+        @end
+
+        @param
+            @name=visible
+            Specify [c]true[/c] to show the window and [c]false[/c] to hide it.
+        @end
+
+    @end
+
+    @member
+        @name=invalidate
+        @sig=M:gehtsoft.xce.conio.win.Window.invalidate
+        @key=invalidate.0
+        @divisor=.
+        @brief=Invalidate the window.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=invalidate
+            @return=void
+        @end
+
+        If the window is invalid, the window manager will force the redraw of the window
+        at the next call of the [c]pumpMessage[/c] method.
+    @end
+
+    @member
+        @name=OnPaint
+        @sig=M:gehtsoft.xce.conio.win.Window.OnPaint(gehtsoft.xce.conio.Canvas)
+        @key=OnPaint.0
+        @divisor=.
+        @brief=The method is called to redraw the content of the window.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnPaint
+            @return=void
+            @prefix=virtual
+            @params=[clink=gehtsoft.xce.conio.Canvas]gehtsoft.xce.conio.Canvas[/clink] canvas
+        @end
+
+        @param
+            @name=canvas
+            The window canvas. The size of the canvas is equal to the size of the window.
+        @end
+    @end
+
+    @member
+        @name=parentToWindow
+        @sig=M:gehtsoft.xce.conio.win.Window.parentToWindow(System.Int32,System.Int32,System.Int32@,System.Int32@)
+        @key=parentToWindow.0
+        @divisor=.
+        @brief=Converts the parent coordinates into the window coordinates.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=parentToWindow
+            @return=bool
+            @params=int parentRow, int parentColumn, out int windowRow, out int windowColumn
+        @end
+
+        @param
+            @name=parentRow
+            The row relative to the top-left corner of the parent window.
+        @end
+
+        @param
+            @name=parentColumn
+            The column relative to the top-left corner of the parent window.
+        @end
+
+        @param
+            @name=windowRow
+            [output] The row relative to the top-left corner of this window.
+        @end
+
+        @param
+            @name=windowColumn
+            [output] The column relative to the top-left corner of this window.
+        @end
+
+        The method returns [c]true[/c] if the position is inside the window.
+
+    @end
+
+    @member
+        @name=windowToParent
+        @sig=M:gehtsoft.xce.conio.win.Window.windowToParent(System.Int32,System.Int32,System.Int32@,System.Int32@)
+        @key=windowToParent.0
+        @divisor=.
+        @brief=Converts the window coordinates into the parent window coordinates.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=windowToParent
+            @return=void
+
+            @params=int windowRow, int windowColumn, out int parentRow, out int parentColumn
+        @end
+
+        @param
+            @name=windowRow
+            The row relative to the top-left corner of this window.
+        @end
+
+        @param
+            @name=windowColumn
+            The column relative to the top-left corner of this window.
+        @end
+
+        @param
+            @name=parentRow
+            [output] The row relative to the top-left corner of the parent window.
+        @end
+
+        @param
+            @name=parentColumn
+            [output] The column relative to the top-left corner of the parent window.
+        @end
+
+    @end
+
+    @member
+        @name=screenToWindow
+        @sig=M:gehtsoft.xce.conio.win.Window.screenToWindow(System.Int32,System.Int32,System.Int32@,System.Int32@)
+        @key=screenToWindow.0
+        @divisor=.
+        @brief=Converts the screen coordinates into the window coordinates.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=screenToWindow
+            @return=bool
+            @params=int screenRow, int screenColumn, out int windowRow, out int windowColumn
+        @end
+
+        @param
+            @name=screenRow
+            The screen row.
+        @end
+
+        @param
+            @name=screenColumn
+            The screen column.
+
+        @end
+
+        @param
+            @name=windowRow
+            [output] The row relative to the top-left corner of this window.
+        @end
+
+        @param
+            @name=windowColumn
+            [output] The column relative to the top-left corner of this window.
+        @end
+
+        The method returns [c]true[/c] if the position is inside the window.
+    @end
+
+    @member
+        @name=windowToScreen
+        @sig=M:gehtsoft.xce.conio.win.Window.windowToScreen(System.Int32,System.Int32,System.Int32@,System.Int32@)
+        @key=windowToScreen.0
+        @divisor=.
+        @brief=Converts the window coordinates into the screen coordinates.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=windowToScreen
+            @return=void
+
+            @params=int windowRow, int windowColumn, out int screenRow, out int screenColumn
+        @end
+
+        @param
+            @name=windowRow
+            The row relative to the top-left corner of this window.
+        @end
+
+        @param
+            @name=windowColumn
+            The column relative to the top-left corner of this window.
+        @end
+
+        @param
+            @name=screenRow
+            [output] The screen row.
+        @end
+
+        @param
+            @name=screenColumn
+            [output] The screen column.
+        @end
+    @end
+
+    @member
+        @name=childFromPos
+        @sig=M:gehtsoft.xce.conio.win.Window.childFromPos(System.Int32,System.Int32)
+        @key=childFromPos.0
+        @divisor=.
+        @brief=Returns the children window at the specified position.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=childFromPos
+            @return=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+            @params=int windowRow, int windowColumn
+        @end
+
+        @param
+            @name=windowRow
+            The row relative to the top-left corner of this window.
+        @end
+
+        @param
+            @name=windowColumn
+            The column relative to the top-left corner of this window.
+        @end
+
+        The method returns the children window of this window at the specified position or [c]null[/c] if
+        such window does not exist.
+    @end
+
+    @member
+        @name=OnSetFocus
+        @sig=M:gehtsoft.xce.conio.win.Window.OnSetFocus
+        @key=OnSetFocus.0
+        @divisor=.
+        @brief=The method is called as a signal that the the window got focus.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnSetFocus
+            @return=void
+            @prefix=virtual
+        @end
+
+    @end
+
+    @member
+        @name=OnKillFocus
+        @sig=M:gehtsoft.xce.conio.win.Window.OnKillFocus
+        @key=OnKillFocus.0
+        @divisor=.
+        @brief=The method is called as a signal that the the window lost focus.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnKillFocus
+            @return=void
+            @prefix=virtual
+        @end
+
+    @end
+
+    @member
+        @name=OnKeyPressed
+        @sig=M:gehtsoft.xce.conio.win.Window.OnKeyPressed(System.Int32,System.Char,System.Boolean,System.Boolean,System.Boolean)
+        @key=OnKeyPressed.0
+        @divisor=.
+        @brief=The method is called when the user is pressed a key and the window has the focus.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnKeyPressed
+            @return=void
+            @prefix=virtual
+            @params=int scanCode, char character, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=scanCode
+            Key scan code (see [clink=gehtsoft.xce.conio.ScanCode]gehtsoft.xce.conio.ScanCode[/clink] for the list of scan codes).
+        @end
+
+        @param
+            @name=character
+            The character associated with the key or 0 in case the scancode is not associated with any character.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=OnMouseMove
+        @sig=M:gehtsoft.xce.conio.win.Window.OnMouseMove(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+        @key=OnMouseMove.0
+        @divisor=.
+        @brief=The method is called when the mouse is moved.
+        @scope=instance
+        @type=method
+
+        The method is called when:[br]
+        - The mouse is over the window
+        OR[br]
+        - The mouse cursor is captured to this window.
+
+        Please note that the coordinates specified depends on capture mode.
+
+        If the mouse cursor is not captured and the event is called when the mouse is over the window, the row and column are relative to the
+        top-left corner of the window.
+
+        If the mouse cursor is captured, the row and column are specified in the [b]screen[/b] coordinates.
+
+        @declaration
+            @language=cs
+            @name=OnMouseMove
+            @return=void
+            @prefix=virtual
+            @params=int row, int column, bool shift, bool ctrl, bool alt, bool leftButton, bool rightButton
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+        @param
+            @name=leftButton
+            The flag indicating that the left mouse button is pressed.
+        @end
+
+        @param
+            @name=rightButton
+            The flag indicating that the right mouse button is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=OnMouseLButtonDown
+        @sig=M:gehtsoft.xce.conio.win.Window.OnMouseLButtonDown(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=OnMouseLButtonDown.0
+        @divisor=.
+        @brief=The method is called when the left mouse button is pressed.
+        @scope=instance
+        @type=method
+
+        The method is called when:[br]
+        - The mouse is over the window
+        OR[br]
+        - The mouse cursor is captured to this window.
+
+        Please note that the coordinates specified depends on capture mode.
+
+        If the mouse cursor is not captured and the event is called when the mouse is over the window, the row and column are relative to the
+        top-left corner of the window.
+
+        If the mouse cursor is captured, the row and column are specified in the [b]screen[/b] coordinates.
+
+        @declaration
+            @language=cs
+            @name=OnMouseLButtonDown
+            @return=void
+            @prefix=virtual
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=OnMouseLButtonUp
+        @sig=M:gehtsoft.xce.conio.win.Window.OnMouseLButtonUp(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=OnMouseLButtonUp.0
+        @divisor=.
+        @brief=The method is called when the left mouse button is released.
+        @scope=instance
+        @type=method
+
+        The method is called when:[br]
+        - The mouse is over the window
+        OR[br]
+        - The mouse cursor is captured to this window.
+
+        Please note that the coordinates specified depends on capture mode.
+
+        If the mouse cursor is not captured and the event is called when the mouse is over the window, the row and column are relative to the
+        top-left corner of the window.
+
+        If the mouse cursor is captured, the row and column are specified in the [b]screen[/b] coordinates.
+
+        @declaration
+            @language=cs
+            @name=OnMouseLButtonUp
+            @return=void
+            @prefix=virtual
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=OnMouseRButtonDown
+        @sig=M:gehtsoft.xce.conio.win.Window.OnMouseRButtonDown(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=OnMouseRButtonDown.0
+        @divisor=.
+        @brief=The method is called when the right mouse button is pressed.
+        @scope=instance
+        @type=method
+
+        The method is called when:[br]
+        - The mouse is over the window
+        OR[br]
+        - The mouse cursor is captured to this window.
+
+        Please note that the coordinates specified depends on capture mode.
+
+        If the mouse cursor is not captured and the event is called when the mouse is over the window, the row and column are relative to the
+        top-left corner of the window.
+
+        If the mouse cursor is captured, the row and column are specified in the [b]screen[/b] coordinates.
+
+        @declaration
+            @language=cs
+            @name=OnMouseRButtonDown
+            @return=void
+            @prefix=virtual
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=OnMouseRButtonUp
+        @sig=M:gehtsoft.xce.conio.win.Window.OnMouseRButtonUp(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=OnMouseRButtonUp.0
+        @divisor=.
+        @brief=The method is called when the right mouse button is released.
+        @scope=instance
+        @type=method
+
+        The method is called when:[br]
+        - The mouse is over the window
+        OR[br]
+        - The mouse cursor is captured to this window.
+
+        Please note that the coordinates specified depends on capture mode.
+
+        If the mouse cursor is not captured and the event is called when the mouse is over the window, the row and column are relative to the
+        top-left corner of the window.
+
+        If the mouse cursor is captured, the row and column are specified in the [b]screen[/b] coordinates.
+
+        @declaration
+            @language=cs
+            @name=OnMouseRButtonUp
+            @return=void
+            @prefix=virtual
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=OnMouseWheelUp
+        @sig=M:gehtsoft.xce.conio.win.Window.OnMouseWheelUp(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=OnMouseWheelUp.0
+        @divisor=.
+        @brief=The method is called when the mouse wheel is scrolled up.
+        @scope=instance
+        @type=method
+
+        The method is called when:[br]
+        - The mouse is over the window
+        OR[br]
+        - The mouse cursor is captured to this window.
+
+        Please note that the coordinates specified depends on capture mode.
+
+        If the mouse cursor is not captured and the event is called when the mouse is over the window, the row and column are relative to the
+        top-left corner of the window.
+
+        If the mouse cursor is captured, the row and column are specified in the [b]screen[/b] coordinates.
+
+        @declaration
+            @language=cs
+            @name=OnMouseWheelUp
+            @return=void
+            @prefix=virtual
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=OnKeyboardLayoutChanged
+        @sig=M:gehtsoft.xce.conio.win.Window.OnKeyboardLayoutChanged
+        @key=OnKeyboardLayoutChanged.0
+        @divisor=.
+        @brief=The method is called when the current keyboard layout is changed.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnKeyboardLayoutChanged
+            @return=void
+            @prefix=virtual
+        @end
+
+    @end
+
+
+    @member
+        @name=OnMouseWheelDown
+        @sig=M:gehtsoft.xce.conio.win.Window.OnMouseWheelDown(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=OnMouseWheelDown.0
+        @divisor=.
+        @brief=The method is called when the mouse wheel is scrolled down.
+        @scope=instance
+        @type=method
+
+        The method is called when:[br]
+        - The mouse is over the window
+        OR[br]
+        - The mouse cursor is captured to this window.
+
+        Please note that the coordinates specified depends on capture mode.
+
+        If the mouse cursor is not captured and the event is called when the mouse is over the window, the row and column are relative to the
+        top-left corner of the window.
+
+        If the mouse cursor is captured, the row and column are specified in the [b]screen[/b] coordinates.
+
+        @declaration
+            @language=cs
+            @name=OnMouseWheelDown
+            @return=void
+            @prefix=virtual
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+    @end
+
+    @member
+        @name=Exists
+        @sig=P:gehtsoft.xce.conio.win.Window.Exists
+        @key=Exists.0
+        @divisor=.
+        @brief=The flag indicating that the window has been created as an user interface object.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Exists
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Parent
+        @sig=P:gehtsoft.xce.conio.win.Window.Parent
+        @key=Parent.0
+        @divisor=.
+        @brief=The reference to the parent window.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Parent
+            @return=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Children
+        @sig=P:gehtsoft.xce.conio.win.Window.Children
+        @key=Children.0
+        @divisor=.
+        @brief=The list of the children windows.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Children
+            @return=System.Collections.Generic.IEnumerable<[clink=gehtsoft.xce.conio.win.Window]Window[/clink]>
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Row
+        @sig=P:gehtsoft.xce.conio.win.Window.Row
+        @key=Row.0
+        @divisor=.
+        @brief=The row of the row-left corner of the window relative to parent top-left corner.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Row
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Column
+        @sig=P:gehtsoft.xce.conio.win.Window.Column
+        @key=Column.0
+        @divisor=.
+        @brief=The column of the row-left corner of the window relative to parent top-left corner.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Column
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Height
+        @sig=P:gehtsoft.xce.conio.win.Window.Height
+        @key=Height.0
+        @divisor=.
+        @brief=The height of the window in rows.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Height
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Width
+        @sig=P:gehtsoft.xce.conio.win.Window.Width
+        @key=Width.0
+        @divisor=.
+        @brief=The width of the window in columns.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Width
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Visible
+        @sig=P:gehtsoft.xce.conio.win.Window.Visible
+        @key=Visible.0
+        @divisor=.
+        @brief=The flag indicating that the window is visible.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Visible
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=childFromPos
+        @sig=M:gehtsoft.xce.conio.win.Window.childFromPos(System.Int32,System.Int32,System.Boolean)
+        @key=childFromPos.1
+        @divisor=.
+        @brief=Returns the visible children window at the specified position.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=childFromPos
+            @return=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+            @params=int windowRow, int windowColumn, bool visibleOnly
+        @end
+
+        @param
+            @name=windowRow
+            The row relative to the top-left corner of this window.
+        @end
+
+        @param
+            @name=windowColumn
+            The column relative to the top-left corner of this window.
+        @end
+
+        @param
+            @name=visibleOnly
+            The flag indicating whether only the visible windows must be checked.
+        @end
+
+        The method returns the children window of this window at the specified position or [c]null[/c] if
+        such window does not exist.
+    @end
+
+    @member
+        @name=OnScreenSizeChanged
+        @sig=M:gehtsoft.xce.conio.win.Window.OnScreenSizeChanged(System.Int32,System.Int32)
+        @key=OnScreenSizeChanged.0
+        @divisor=.
+        @brief=The method is called when the screen size is changed.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnScreenSizeChanged
+            @return=void
+            @params=int height, int width
+        @end
+
+        @param
+            @name=height
+            The new screen height in the rows.
+        @end
+
+        @param
+            @name=width
+            The new screen width in the row.
+        @end
+
+        The method is called for the top level windows only.
+    @end
+
+    @member
+        @name=WindowManager
+        @sig=P:gehtsoft.xce.conio.win.Window.WindowManager
+        @key=WindowManager.0
+        @divisor=.
+        @brief=Gets the window manager used to create the window.
+        @scope=instance
+        @visibility=public
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=WindowManager
+            @return=[clink=gehtsoft.xce.conio.win.WindowManager]WindowManager[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Valid
+        @sig=P:gehtsoft.xce.conio.win.Window.Valid
+        @key=Valid.0
+        @divisor=.
+        @brief=Gets the flag indicating whether the content of the window is valid and should not be repainted.
+        @scope=instance
+        @visibility=public
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Valid
+            @return=bool
+            @suffix= get;
+        @end
+
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

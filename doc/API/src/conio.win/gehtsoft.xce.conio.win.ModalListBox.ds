@@ -1,0 +1,308 @@
+@class
+    @name=ModalListBox
+    @key=gehtsoft.xce.conio.win.ModalListBox
+    @brief=The list box implemented as a modal window.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.ModalListBox
+    @parent=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+    @import=gehtsoft.xce.conio.win.Window
+
+    @member
+        @name=AddItem
+        @sig=M:gehtsoft.xce.conio.win.ModalListBox.AddItem(System.String)
+        @key=AddItem.1
+        @divisor=.
+        @brief=Adds a new item as a string.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddItem
+            @return=int
+            @params=string item
+        @end
+
+        @param
+            @name=item
+            The title of the item.
+        @end
+
+    @end
+
+    @member
+        @name=AddItem
+        @sig=M:gehtsoft.xce.conio.win.ModalListBox.AddItem(System.String,System.Object)
+        @key=AddItem.2
+        @divisor=.
+        @brief=Adds a new item as a string and user data.
+        @scope=instance
+        @visibility=public
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddItem
+            @return=int
+            @params=string item, object userData
+        @end
+
+        @param
+            @name=item
+            The title of the item.
+        @end
+
+        @param
+            @name=userData
+            The user data associated with the item.
+        @end
+
+    @end
+
+    @member
+        @name=AddItem
+        @sig=M:gehtsoft.xce.conio.win.ModalListBox.AddItem(gehtsoft.xce.conio.win.DialogItemListBoxString)
+        @key=AddItem.0
+        @divisor=.
+        @brief=Adds a new item as an object.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddItem
+            @return=int
+            @params=[clink=gehtsoft.xce.conio.win.DialogItemListBoxString]DialogItemListBoxString[/clink] item
+        @end
+
+        @param
+            @name=item
+            The menu item to be added.
+        @end
+    @end
+
+    @member
+        @name=RemoveItem
+        @sig=M:gehtsoft.xce.conio.win.ModalListBox.RemoveItem(System.Int32)
+        @key=RemoveItem.0
+        @divisor=.
+        @brief=Removes the specified item by the index.
+        @scope=instance
+        @visibility=public
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=RemoveItem
+            @return=void
+
+            @params=int index
+        @end
+
+        @param
+            @name=index
+            The zero-based index of the item.
+        @end
+    @end
+
+    @member
+        @name=RemoveAllItems
+        @sig=M:gehtsoft.xce.conio.win.ModalListBox.RemoveAllItems
+        @key=RemoveAllItems.0
+        @divisor=.
+        @brief=Removes all items from the list.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=RemoveAllItems
+            @return=void
+
+        @end
+
+    @end
+
+    @member
+        @name=EnsureVisible
+        @sig=M:gehtsoft.xce.conio.win.ModalListBox.EnsureVisible(System.Int32)
+        @key=EnsureVisible.0
+        @divisor=.
+        @brief=Makes the item specified visible.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=EnsureVisible
+            @return=void
+            @params=int index
+        @end
+
+        @param
+            @name=index
+            The zero-based index of the item.
+        @end
+
+    @end
+
+    @member
+        @name=ModalListBox
+        @sig=M:gehtsoft.xce.conio.win.ModalListBox.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,gehtsoft.xce.conio.win.IColorScheme)
+        @key=ModalListBox.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @visibility=public
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=ModalListBox
+            @params=int row, int column, int height, int width, [clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink] colors
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the window.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the window.
+        @end
+
+        @param
+            @name=height
+            The height of the window in rows.
+        @end
+
+        @param
+            @name=width
+            The width of the window in columns.
+        @end
+
+        @param
+            @name=colors
+            The color scheme to be used.
+        @end
+
+    @end
+
+    @member
+        @name=DoModal
+        @sig=M:gehtsoft.xce.conio.win.ModalListBox.DoModal(gehtsoft.xce.conio.win.WindowManager)
+        @key=DoModal.0
+        @divisor=.
+        @brief=Shows the modal list box.
+        @scope=instance
+        @visibility=public
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DoModal
+            @return=bool
+            @params=[clink=gehtsoft.xce.conio.win.WindowManager]WindowManager[/clink] mgr
+        @end
+
+        @param
+            @name=mgr
+        @end
+
+        The method is executed while the window is open.
+
+        The default implementation closes the window when
+        @list
+            @list-item
+                TAB, RETURN or ESCAPE keys are pressed.
+            @end
+            @list-item
+                The user clicks on the selected item.
+            @end
+            @list-item
+                The user clicks outside the window border.
+            @end
+        @end
+    @end
+
+
+    @member
+        @name=Count
+        @sig=P:gehtsoft.xce.conio.win.ModalListBox.Count
+        @key=Count.0
+        @divisor=.
+        @brief=Returns the number of the items in the list box.
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Count
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.conio.win.ModalListBox.Item(System.Int32)
+        @key=Item.0
+        @divisor=.
+        @brief=Gets the item by its index.
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=[clink=gehtsoft.xce.conio.win.DialogItemListBoxString]DialogItemListBoxString[/clink]
+            @params=int index
+            @suffix= get;
+        @end
+
+        @param
+            @name=index
+
+        @end
+
+    @end
+
+    @member
+        @name=CurSel
+        @sig=P:gehtsoft.xce.conio.win.ModalListBox.CurSel
+        @key=CurSel.0
+        @divisor=.
+        @brief=Gets or sets the index of the currently selected item.
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=CurSel
+            @return=int
+            @suffix= get; set;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end

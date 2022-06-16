@@ -1,0 +1,517 @@
+@class
+    @name=Dialog
+    @key=gehtsoft.xce.conio.win.Dialog
+    @brief=The dialog window.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.Dialog
+    @parent=[clink=gehtsoft.xce.conio.win.WindowBorderContainer]WindowBorderContainer[/clink]
+    @import=gehtsoft.xce.conio.win.WindowBorderContainer
+
+    @member
+        @name=DialogResultOK
+        @sig=F:gehtsoft.xce.conio.win.Dialog.DialogResultOK
+        @key=DialogResultOK.0
+        @divisor=.
+        @brief=The default identifier to be used for the control which must be clicked when the user presses Enter.
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=DialogResultCancel
+        @sig=F:gehtsoft.xce.conio.win.Dialog.DialogResultCancel
+        @key=DialogResultCancel.0
+        @divisor=.
+        @brief=The default identifier to be used for the control which must be clicked when the user presses Escape.
+        @scope=class
+        @type=field
+
+    @end
+
+    @member
+        @name=Dialog
+        @sig=M:gehtsoft.xce.conio.win.Dialog.#ctor(System.String,gehtsoft.xce.conio.win.IColorScheme,System.Boolean,System.Int32,System.Int32)
+        @key=Dialog.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=Dialog
+            @params=string title, [clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink] colors, bool sizeable, int height, int width
+        @end
+
+        @param
+            @name=title
+            The title of the dialog window.
+        @end
+
+        @param
+            @name=colors
+            The color scheme to be used.
+        @end
+
+        @param
+            @name=sizeable
+            The flag indicating whether the dialog window must be sizeable.
+        @end
+
+        @param
+            @name=height
+            Height of the dialog in rows (including the border).
+        @end
+
+        @param
+            @name=width
+            Width of the dialog in columns (including the border).
+        @end
+    @end
+
+    @member
+        @name=AddItem
+        @sig=M:gehtsoft.xce.conio.win.Dialog.AddItem(gehtsoft.xce.conio.win.DialogItem)
+        @key=AddItem.0
+        @divisor=.
+        @brief=Adds a new dialog item.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddItem
+            @return=void
+            @params=[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink] item
+        @end
+
+        @param
+            @name=item
+            A new dialog item.
+        @end
+
+        You don't need to create the window objects for dialog items. The window objects will be created
+        automatically when the dialog is created.
+    @end
+
+    @member
+        @name=DoModal
+        @sig=M:gehtsoft.xce.conio.win.Dialog.DoModal(gehtsoft.xce.conio.win.WindowManager)
+        @key=DoModal.0
+        @divisor=.
+        @brief=Creates the dialog window and waits until the dialog is closed.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DoModal
+            @return=int
+            @params=[clink=gehtsoft.xce.conio.win.WindowManager]WindowManager[/clink] manager
+        @end
+
+        @param
+            @name=manager
+            The window manager.
+        @end
+    @end
+
+    @member
+        @name=EndDialog
+        @sig=M:gehtsoft.xce.conio.win.Dialog.EndDialog(System.Int32)
+        @key=EndDialog.0
+        @divisor=.
+        @brief=Closes the dialog and sets the dialog result code.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=EndDialog
+            @return=void
+            @params=int resultCode
+        @end
+
+        @param
+            @name=resultCode
+            The dialog result code.
+        @end
+
+    @end
+
+    @member
+        @name=PretranslateOnKeyPressed
+        @sig=M:gehtsoft.xce.conio.win.Dialog.PretranslateOnKeyPressed(System.Int32,System.Char,System.Boolean,System.Boolean,System.Boolean)
+        @key=PretranslateOnKeyPressed.0
+        @divisor=.
+        @brief=The method must be called by an implementation of custom dialog item class before processing a key.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=PretranslateOnKeyPressed
+            @return=bool
+            @prefix=virtual
+            @params=int scanCode, char character, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=scanCode
+            The scan code received.
+        @end
+
+        @param
+            @name=character
+            The character entered.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating whether the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating whether the control key is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating whether the alt key is pressed.
+        @end
+
+        The default implementation processes the following keys:
+
+        1) The focus is passed to the next/previous item when Tab/Shift-Tab is pressed.
+
+        2) The hot keys of buttons and labels are processed.
+
+        3) When Enter is pressed, the control with [c]Dialog.DialogResultOK[/c] identifier is clicked.
+
+        4) When Escape is pressed, the control with [c]Dialog.DialogResultCancel[/c] identifier is clicked.
+    @end
+
+    @member
+        @name=OnItemClick
+        @sig=M:gehtsoft.xce.conio.win.Dialog.OnItemClick(gehtsoft.xce.conio.win.DialogItem)
+        @key=OnItemClick.0
+        @divisor=.
+        @brief=The method is called when the dialog item has been clicked.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnItemClick
+            @return=void
+            @prefix=virtual
+            @params=[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink] item
+        @end
+
+        @param
+            @name=item
+            The item clicked.
+        @end
+
+        The default implementation ends the dialog if the control with [c]Dialog.DialogResultOK[/c] or
+        [c]Dialog.DialogResultCancel[/c] identifier is clicked and puts the identifier of the clicked object into
+        the dialog result code.
+    @end
+
+    @member
+        @name=OnItemActivated
+        @sig=M:gehtsoft.xce.conio.win.Dialog.OnItemActivated(gehtsoft.xce.conio.win.DialogItem)
+        @key=OnItemActivated.0
+        @divisor=.
+        @brief=The method is called when the dialog item got focus.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnItemActivated
+            @return=void
+            @prefix=virtual
+            @params=[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink] item
+        @end
+
+        @param
+            @name=item
+            The activated item.
+        @end
+
+        The default implementation does nothing.
+    @end
+
+    @member
+        @name=OnItemChanged
+        @sig=M:gehtsoft.xce.conio.win.Dialog.OnItemChanged(gehtsoft.xce.conio.win.DialogItem)
+        @key=OnItemChanged.0
+        @divisor=.
+        @brief=The method is called when the content or the selection of the dialog item is changed.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnItemChanged
+            @return=void
+            @prefix=virtual
+            @params=[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink] item
+        @end
+
+        @param
+            @name=item
+            The changed item.
+        @end
+
+        The default implementation does nothing.
+    @end
+
+    @member
+        @name=ResultCode
+        @sig=P:gehtsoft.xce.conio.win.Dialog.ResultCode
+        @key=ResultCode.0
+        @divisor=.
+        @brief=The result code of the dialog.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=ResultCode
+            @return=int
+            @suffix= get;
+        @end
+
+        The result code of the dialog can be set by [clink=gehtsoft.xce.conio.win.Dialog.EndDialog.0]Dialog.EndDialog()[/clink] method.
+    @end
+
+    @member
+        @name=Colors
+        @sig=P:gehtsoft.xce.conio.win.Dialog.Colors
+        @key=Colors.0
+        @divisor=.
+        @brief=The color scheme of the dialog.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Colors
+            @return=[clink=gehtsoft.xce.conio.win.IColorScheme]IColorScheme[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Items
+        @sig=P:gehtsoft.xce.conio.win.Dialog.Items
+        @key=Items.0
+        @divisor=.
+        @brief=The enumeration of the dialog items.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Items
+            @return=System.Collections.Generic.IEnumerable<[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink]>
+            @suffix= get;
+        @end
+    @end
+
+    @member
+        @name=AddItemBefore
+        @sig=M:gehtsoft.xce.conio.win.Dialog.AddItemBefore(gehtsoft.xce.conio.win.DialogItem,gehtsoft.xce.conio.win.DialogItem)
+        @key=AddItemBefore.0
+        @divisor=.
+        @brief=Adds a new item before another item.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=AddItemBefore
+            @return=void
+
+            @params=[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink] item, [clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink] next
+        @end
+
+        @param
+            @name=item
+            The item to be added.
+        @end
+
+        @param
+            @name=next
+            The existing item to add the item before it.
+        @end
+
+    @end
+
+    @member
+        @name=OnOK
+        @sig=M:gehtsoft.xce.conio.win.Dialog.OnOK
+        @key=OnOK.0
+        @divisor=.
+        @brief=The method can be overridden to alternate the default behavior of the DialogResultOK button.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=OnOK
+            @prefix=virtual
+            @return=bool
+        @end
+
+        The method is called by the default implementation of the [clink=gehtsoft.xce.conio.win.Dialog.OnItemClick.0]OnItemClick()[/clink] when
+        a button with [c]DialogResultOK[/c] identifier is clicked.
+        If the method returns [c]true[/c] the dialog will be closed and the dialog result will be [c]DialogResultOK[/c].
+    @end
+
+    @member
+        @name=OnCancel
+        @sig=M:gehtsoft.xce.conio.win.Dialog.OnCancel
+        @key=OnCancel.0
+        @divisor=.
+        @brief=The method can be overridden to alternate the default behavior of the DialogResultCancel button.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @prefix=virtual
+            @name=OnCancel
+            @return=bool
+        @end
+
+        The method is called by the default implementation of the [clink=gehtsoft.xce.conio.win.Dialog.OnItemClick.0]OnItemClick()[/clink] when
+        a button with [c]DialogResultCancel[/c] identifier is clicked.
+
+        If the method returns [c]true[/c] the dialog will be closed and the dialog result will be [c]DialogResultCancel[/c].
+    @end
+
+    @member
+        @name=CenterButtons
+        @sig=M:gehtsoft.xce.conio.win.Dialog.CenterButtons(gehtsoft.xce.conio.win.DialogItemButton)
+        @key=CenterButtons.0
+        @divisor=.
+        @brief=Centers the button specified in its row.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=CenterButtons
+            @return=void
+
+            @params=[clink=gehtsoft.xce.conio.win.DialogItemButton]DialogItemButton[/clink] b1
+        @end
+
+        @param
+            @name=b1
+
+        @end
+
+    @end
+
+    @member
+        @name=CenterButtons
+        @sig=M:gehtsoft.xce.conio.win.Dialog.CenterButtons(gehtsoft.xce.conio.win.DialogItemButton,gehtsoft.xce.conio.win.DialogItemButton)
+        @key=CenterButtons.1
+        @divisor=.
+        @brief=Centers two buttons specified in their row.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=CenterButtons
+            @return=void
+            @params=[clink=gehtsoft.xce.conio.win.DialogItemButton]DialogItemButton[/clink] b1, [clink=gehtsoft.xce.conio.win.DialogItemButton]DialogItemButton[/clink] b2
+        @end
+
+        @param
+            @name=b1
+
+        @end
+
+        @param
+            @name=b2
+
+        @end
+
+        Please note that the method do NOT validate that the buttons are located in the same row.
+
+    @end
+
+    @member
+        @name=CenterButtons
+        @sig=M:gehtsoft.xce.conio.win.Dialog.CenterButtons(gehtsoft.xce.conio.win.DialogItemButton,gehtsoft.xce.conio.win.DialogItemButton,gehtsoft.xce.conio.win.DialogItemButton)
+        @key=CenterButtons.2
+        @divisor=.
+        @brief=Centers three buttons specified in their row.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=CenterButtons
+            @return=void
+
+            @params=[clink=gehtsoft.xce.conio.win.DialogItemButton]DialogItemButton[/clink] b1, [clink=gehtsoft.xce.conio.win.DialogItemButton]DialogItemButton[/clink] b2, [clink=gehtsoft.xce.conio.win.DialogItemButton]DialogItemButton[/clink] b3
+        @end
+
+        @param
+            @name=b1
+
+        @end
+
+        @param
+            @name=b2
+
+        @end
+
+        @param
+            @name=b3
+
+        @end
+
+        Please note that the method do NOT validate that the buttons are located in the same row.
+    @end
+
+    @member
+        @name=CenterButtons
+        @sig=M:gehtsoft.xce.conio.win.Dialog.CenterButtons(gehtsoft.xce.conio.win.DialogItemButton[])
+        @key=CenterButtons.4
+        @divisor=.
+        @brief=Centers the dialog item buttons.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=CenterButtons
+            @return=void
+            @params=[clink=gehtsoft.xce.conio.win.DialogItemButton]DialogItemButton[/clink][] buttons
+        @end
+
+        @param
+            @name=buttons
+            An array of the buttons to be centered.
+        @end
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

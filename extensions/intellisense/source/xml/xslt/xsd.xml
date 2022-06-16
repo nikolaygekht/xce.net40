@@ -1,0 +1,401 @@
+<schema root="schema"
+        namespace="http://www.w3.org/2001/XMLSchema"
+        defaultPrefix="xs"
+        name="Xsd" >
+
+    <element name="schema" >
+        <parameter name="targetNamespace" />
+        <parameter name="id" />
+        <parameter name="attributeFormDefault" />
+        <parameter name="elementFormDefault" />
+        <parameter name="blockDefault" />
+        <parameter name="finalDefault" />
+        <parameter name="version" />
+
+        <element name="include" />
+        <element name="import" />
+        <element name="redefine" />
+        <element name="annotation" />
+        <element name="simpleType" />
+        <element name="complexType" />
+        <element name="group" />
+        <element name="attributeGroup" />
+        <element name="element" />
+        <element name="attribute" />
+    </element>
+
+    <element name="include" >
+        <parameter name="id" />
+        <parameter name="schemaLocation" />
+        <element name="annotation" />
+    </element>
+
+    <element name="import" >
+        <parameter name="id" />
+        <parameter name="namespace" />
+        <parameter name="schemaLocation" />
+        <element name="annotation" />
+    </element>
+
+    <element name="refedine" >
+        <parameter name="id" />
+        <parameter name="schemaLocation" />
+        <element name="annotation" />
+        <element name="simpleType" />
+        <element name="complexType" />
+        <element name="group" />
+        <element name="attributeGroup" />
+    </element>
+
+    <element name="annotation" >
+        <parameter name="id" />
+        <element name="appinfo" />
+        <element name="documentation" />
+    </element>
+
+    <element name="appinfo" />
+
+    <element name="documentation" >
+        <parameter name="xml:lang" />
+    </element>
+
+    <element name="simpleType" >
+        <parameter name="id" />
+        <parameter name="name" />
+        <element name="annotation" />
+        <element name="restriction" />
+        <element name="list" />
+        <element name="union" />
+    </element>
+
+    <element name="complexType" >
+        <parameter name="id" />
+        <parameter name="name" />
+        <parameter name="abstract" />
+        <parameter name="mixed" />
+        <element name="simpleContent" />
+        <element name="complexContent" />
+        <element name="group" />
+        <element name="all" />
+        <element name="choice" />
+        <element name="sequence" />
+        <element name="attribute" />
+        <element name="attributeGroup" />
+        <element name="anyAttribute" />
+    </element>
+
+    <element name="group" >
+        <parameter name="id" />
+        <parameter name="name" />
+        <parameter name="ref" />
+        <parameter name="maxOccurs">
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+            <value>unbounded</value>
+        </parameter>
+        <parameter name="minOccurs">
+            <value>0</value>
+            <value>1</value>
+        </parameter>
+        <element name="annotation" />
+        <element name="all" />
+        <element name="choice" />
+        <element name="sequence" />
+    </element>
+
+    <element name="attributeGroup" >
+        <parameter name="id" />
+        <parameter name="name" />
+        <parameter name="ref" />
+        <element name="annotation" />
+        <element name="attribute" />
+        <element name="attributeGroup" />
+        <element name="anyAttribute" />
+    </element>
+    <element name="element" >
+        <parameter name="id" />
+        <parameter name="name" />
+        <parameter name="ref" />
+        <parameter name="type">
+            <value>$ns$string</value>
+            <value>$ns$normalizedString</value>
+            <value>$ns$token</value>
+            <value>$ns$language</value>
+            <value>$ns$boolean</value>
+            <value>$ns$base64Binary</value>
+            <value>$ns$hexBinary</value>
+            <value>$ns$float</value>
+            <value>$ns$double</value>
+            <value>$ns$decimal</value>
+            <value>$ns$integer</value>
+            <value>$ns$anyURI</value>
+            <value>$ns$QName</value>
+            <value>$ns$duration</value>
+            <value>$ns$dateTime</value>
+            <value>$ns$date</value>
+            <value>$ns$time</value>
+            <value>$ns$nonPositiveInteger</value>
+            <value>$ns$negativeInteger</value>
+            <value>$ns$nonNegativeInteger</value>
+            <value>$ns$positiveInteger</value>
+        </parameter>
+        <parameter name="substitutionGroup" />
+        <parameter name="default" />
+        <parameter name="fixed" />
+        <parameter name="form">
+            <value>qualified</value>
+            <value>unqualified</value>
+        </parameter>
+        <parameter name="maxOccurs">
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+            <value>unbounded</value>
+        </parameter>
+        <parameter name="minOccurs">
+            <value>0</value>
+            <value>1</value>
+        </parameter>
+        <parameter name="nillable" />
+        <parameter name="abstract" />
+        <parameter name="block" />
+        <parameter name="final" />
+        <element name="annotation" />
+        <element name="simpleType" />
+        <element name="complexType" />
+        <element name="unique" />
+        <element name="key" />
+        <element name="keyref" />
+    </element>
+
+    <element name="attribute" >
+        <parameter name="default" />
+        <parameter name="fixed" />
+        <parameter name="form">
+            <value>qualified</value>
+            <value>unqualified</value>
+        </parameter>
+        <parameter name="id" />
+        <parameter name="name" />
+        <parameter name="ref" />
+        <parameter name="type">
+            <value>$ns$string</value>
+            <value>$ns$normalizedString</value>
+            <value>$ns$token</value>
+            <value>$ns$language</value>
+            <value>$ns$boolean</value>
+            <value>$ns$base64Binary</value>
+            <value>$ns$hexBinary</value>
+            <value>$ns$float</value>
+            <value>$ns$double</value>
+            <value>$ns$decimal</value>
+            <value>$ns$integer</value>
+            <value>$ns$anyURI</value>
+            <value>$ns$QName</value>
+            <value>$ns$duration</value>
+            <value>$ns$dateTime</value>
+            <value>$ns$date</value>
+            <value>$ns$time</value>
+            <value>$ns$nonPositiveInteger</value>
+            <value>$ns$negativeInteger</value>
+            <value>$ns$nonNegativeInteger</value>
+            <value>$ns$positiveInteger</value>
+        </parameter>
+        <parameter name="use">
+            <value>optional</value>
+            <value>prohibited</value>
+            <value>required</value>
+        </parameter>
+        <element name="annotation" />
+        <element name="simpleType" />
+    </element>
+
+
+    <element name="list" >
+        <parameter name="id" />
+        <parameter name="itemType" />
+        <element name="annotation" />
+        <element name="simpleType" />
+    </element>
+    <element name="union" >
+        <parameter name="id" />
+        <parameter name="memberTypes" />
+    </element>
+    <element name="all" >
+        <parameter name="id" />
+        <parameter name="maxOccurs">
+            <value>1</value>
+        </parameter>
+        <parameter name="minOccurs">
+            <value>0</value>
+            <value>1</value>
+        </parameter>
+        <element name="annotation" />
+        <element name="element" />
+    </element>
+    <element name="choice" >
+        <parameter name="id" />
+        <parameter name="maxOccurs">
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+            <value>unbounded</value>
+        </parameter>
+        <parameter name="minOccurs">
+            <value>0</value>
+            <value>1</value>
+        </parameter>
+        <element name="annotation" />
+        <element name="element" />
+        <element name="group" />
+        <element name="choice" />
+        <element name="sequence" />
+        <element name="any" />
+    </element>
+    <element name="sequence" >
+        <parameter name="id" />
+        <parameter name="maxOccurs">
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+            <value>unbounded</value>
+        </parameter>
+        <parameter name="minOccurs">
+            <value>0</value>
+            <value>1</value>
+        </parameter>
+        <element name="annotation" />
+        <element name="element" />
+        <element name="group" />
+        <element name="choice" />
+        <element name="sequence" />
+        <element name="any" />
+    </element>
+    <element name="unique" >
+        <parameter name="id" />
+        <parameter name="name" />
+        <element name="annotation" />
+        <element name="selector" />
+        <element name="field" />
+    </element>
+    <element name="key" >
+        <parameter name="id" />
+        <parameter name="name" />
+        <element name="annotation" />
+        <element name="selector" />
+        <element name="field" />
+    </element>
+    <element name="keyref" >
+        <parameter name="id" />
+        <parameter name="name" />
+        <parameter name="refer" />
+        <element name="annotation" />
+        <element name="selector" />
+        <element name="field" />
+    </element>
+    <element name="any" >
+        <parameter name="id" />
+        <parameter name="maxOccurs" />
+        <parameter name="minOccurs" />
+        <parameter name="namespace" />
+        <parameter name="processContents">
+            <value>lax</value>
+            <value>skip</value>
+            <value>strict</value>
+        </parameter>
+        <element name="annotation" />
+    </element>
+    <element name="anyAttribute" >
+        <parameter name="id" />
+        <parameter name="maxOccurs" />
+        <parameter name="minOccurs" />
+        <parameter name="namespace" />
+        <parameter name="processContents">
+            <value>lax</value>
+            <value>skip</value>
+            <value>strict</value>
+        </parameter>
+        <element name="annotation" />
+    </element>
+    <element name="selector" >
+        <parameter name="id" />
+        <parameter name="xpath" xpath="yes" />
+    </element>
+    <element name="field" >
+        <parameter name="id" />
+        <parameter name="xpath" xpath="yes" />
+        <element name="annotation" />
+    </element>
+    <element name="simpleContent" >
+        <parameter name="id" />
+        <element name="annotation" />
+        <element name="restriction" />
+        <element name="extension" />
+    </element>
+    <element name="restriction" >
+        <parameter name="id" />
+        <parameter name="base">
+            <value>$ns$string</value>
+            <value>$ns$normalizedString</value>
+            <value>$ns$token</value>
+            <value>$ns$language</value>
+            <value>$ns$boolean</value>
+            <value>$ns$base64Binary</value>
+            <value>$ns$hexBinary</value>
+            <value>$ns$float</value>
+            <value>$ns$double</value>
+            <value>$ns$decimal</value>
+            <value>$ns$integer</value>
+            <value>$ns$anyURI</value>
+            <value>$ns$QName</value>
+            <value>$ns$duration</value>
+            <value>$ns$dateTime</value>
+            <value>$ns$date</value>
+            <value>$ns$time</value>
+            <value>$ns$nonPositiveInteger</value>
+            <value>$ns$negativeInteger</value>
+            <value>$ns$nonNegativeInteger</value>
+            <value>$ns$positiveInteger</value>
+        </parameter>
+
+        <element name="minExclusive" />
+        <element name="minInclusive" />
+        <element name="maxExclusive" />
+        <element name="maxInclusive" />
+        <element name="totalDigits" />
+        <element name="fractionDigits" />
+        <element name="length" />
+        <element name="minLength" />
+        <element name="maxLength" />
+        <element name="enumeration" />
+        <element name="whiteSpace" />
+        <element name="pattern" />
+    </element>
+
+    <element name="extension" >
+        <parameter name="id" />
+        <parameter name="base" />
+        <element name="annotation" />
+        <element name="group" />
+        <element name="all" />
+        <element name="choice" />
+        <element name="sequence" />
+        <element name="attribute" />
+        <element name="attributeGroup" />
+        <element name="anyAttribute" />
+    </element>
+
+    <element name="minExclusive" />
+    <element name="minInclusive" />
+    <element name="maxExclusive" />
+    <element name="maxInclusive" />
+    <element name="totalDigits" />
+    <element name="fractionDigits" />
+    <element name="length" />
+    <element name="minLength" />
+    <element name="maxLength" />
+    <element name="enumeration" />
+    <element name="whiteSpace" />
+    <element name="pattern" />
+</schema>

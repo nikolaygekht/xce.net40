@@ -1,0 +1,166 @@
+@class
+    @name=MessageBoxButton
+    @key=gehtsoft.xce.conio.win.MessageBoxButton
+    @brief=The standard identifiers of the message box buttons.
+    @type=enum
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.MessageBoxButton
+
+    @member
+        @name=Ok
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Ok
+        @key=Ok.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Cancel
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Cancel
+        @key=Cancel.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Yes
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Yes
+        @key=Yes.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=No
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.No
+        @key=No.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Abort
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Abort
+        @key=Abort.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Retry
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Retry
+        @key=Retry.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Ignore
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Ignore
+        @key=Ignore.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Option1
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Option1
+        @key=Option1.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Option2
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Option2
+        @key=Option2.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Option3
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Option3
+        @key=Option3.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Option4
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Option4
+        @key=Option4.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+
+    @member
+        @name=Unknown
+        @sig=F:gehtsoft.xce.conio.win.MessageBoxButton.Unknown
+        @key=Unknown.0
+        @divisor=.
+        @brief=
+        @visibility=public
+        @scope=class
+        @type=field
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end

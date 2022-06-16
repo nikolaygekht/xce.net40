@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C35086D-337A-4375-A68B-6A55584E2B0B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gehtsoft.xce.extension.intellisense</RootNamespace>
+    <AssemblyName>gehtsoft.xce.extension.intellisense</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\key.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gehtsoft.xce.colorer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3rdparty\colorer\managed\bin\gehtsoft.xce.colorer.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.conio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\conio\bin\gehtsoft.xce.conio.dll</HintPath>
+    </Reference>
+    <Reference Include="docgen2.parser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58cde929347d324c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdparty\docgen2.parser.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory, Version=3.2.1.6466, Culture=neutral, PublicKeyToken=efe927acf176eea2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdparty\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpDevelop.Dom, Version=3.2.1.6466, Culture=neutral, PublicKeyToken=f829da5c02be14ee, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdparty\ICSharpCode.SharpDevelop.Dom.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdparty\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="gehtsoft.xce.configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\configuration\bin\gehtsoft.xce.configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.text, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\text\bin\gehtsoft.xce.text.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\editor\bin\gehtsoft.xce.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.conio.win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\conio.win\bin\gehtsoft.xce.conio.win.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="source\common\codecompletion.cs" />
+    <Compile Include="source\common\CommonUtils.cs" />
+    <Compile Include="source\common\insightdata.cs" />
+    <Compile Include="source\common\enumconvertor.cs" />
+    <Compile Include="source\common\IInsightDataProvider.cs" />
+    <Compile Include="source\common\IIntellisenseProvider.cs" />
+    <Compile Include="source\common\IIntellisenseProjectBrowseData.cs" />
+    <Compile Include="source\csharp\core\CsInsightData.cs" />
+    <Compile Include="source\csharp\core\CsParser.cs" />
+    <Compile Include="source\csharp\core\CsParserCodeCompletion.cs" />
+    <Compile Include="source\csharp\core\CsParserExpression.cs" />
+    <Compile Include="source\csharp\core\CsParserFile.cs" />
+    <Compile Include="source\csharp\core\CsProject.cs" />
+    <Compile Include="source\csharp\core\CsProjectLoader.cs" />
+    <Compile Include="source\csharp\impl\InsightDataProvider.cs" />
+    <Compile Include="source\csharp\impl\CsIntellisenseProvider.cs" />
+    <Compile Include="source\csharp\impl\CsFileAccessor.cs" />
+    <Compile Include="source\csharp\impl\CsParserCollection.cs" />
+    <Compile Include="source\csharp\impl\CsUtils.cs" />
+    <Compile Include="source\csharp\impl\ProjectBrowseData.cs" />
+    <Compile Include="source\docsource\DsUtils.cs" />
+    <Compile Include="source\docsource\DsDocStructInfo.cs" />
+    <Compile Include="source\factory\factory.cs" />
+    <Compile Include="source\extension\extension.cs" />
+    <Compile Include="source\extension\BrowseProjectCommand.cs" />
+    <Compile Include="source\extension\GoDefinitionCommand.cs" />
+    <Compile Include="source\extension\SuggestionCommand.cs" />
+    <Compile Include="source\extension\ForceInsightCommand.cs" />
+    <Compile Include="source\extension\ui\BrowseSourceDialog.cs" />
+    <Compile Include="source\extension\ui\SearchingList.cs" />
+    <Compile Include="source\extension\ui\SearchingListWnd.cs" />
+    <Compile Include="source\extension\ui\SuggestionDialog.cs" />
+    <Compile Include="source\extension\ui\InsightWindow.cs" />
+    <Compile Include="source\extension\ui\TooltipWindow.cs" />
+    <Compile Include="source\extension\ui\PopupHintWindow.cs" />
+    <Compile Include="source\docsource\DsIntellisenseProvider.cs" />
+    <Compile Include="source\docsource\DocSourceFileAnalyzer.cs" />
+    <Compile Include="source\docsource\DsProject.cs" />
+    <Compile Include="source\lua\LuaInsightDataProvider.cs" />
+    <Compile Include="source\lua\types.cs" />
+    <Compile Include="source\lua\typefactory.cs" />
+    <Compile Include="source\lua\LuaIntellisenseProvider.cs" />
+    <Compile Include="source\vbscript\VbInsightDataProvider.cs" />
+    <Compile Include="source\vbscript\Types.cs" />
+    <Compile Include="source\vbscript\TypeFactory.cs" />
+    <Compile Include="source\vbscript\VbScriptSourceAnalyzer.cs" />
+    <Compile Include="source\vbscript\VbIntellisenseProvider.cs" />
+    <Compile Include="source\xml\Enums.cs" />
+    <Compile Include="source\xml\Schema.cs" />
+    <Compile Include="source\xml\SchemaFactory.cs" />
+    <Compile Include="source\xml\XmlParserAdapter.cs" />
+    <Compile Include="source\xml\XmlParser.cs" />
+    <Compile Include="source\xml\XmlIntellisenseProvider.cs" />
+    <!-- <Compile Include="source\xml\XmlAnalyzer.cs" /> -->
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

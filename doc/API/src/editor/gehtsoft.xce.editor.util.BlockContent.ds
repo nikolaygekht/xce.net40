@@ -1,0 +1,134 @@
+@class
+    @name=BlockContent
+    @key=gehtsoft.xce.editor.util.BlockContent
+    @brief=
+    @type=class
+    @ingroup=gehtsoft.xce.editor.util
+    @sig=T:gehtsoft.xce.editor.util.BlockContent
+    @parent=System.IDisposable
+
+    @member
+        @name=BlockContent
+        @sig=M:gehtsoft.xce.editor.util.BlockContent.#ctor(System.String,System.Int32)
+        @key=BlockContent.1
+        @divisor=.
+        @brief=Constructs a stream block content using the text specified.
+        @scope=instance
+        @visibility=public
+
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=BlockContent
+            @params=string text, int tabLength
+        @end
+
+        @param
+            @name=text
+            The text of the block content.
+        @end
+
+        @param
+            @name=tabLength
+            The length of the tabulation in positions.
+        @end
+
+    @end
+
+    @member
+        @name=BlockContent
+        @sig=M:gehtsoft.xce.editor.util.BlockContent.#ctor(gehtsoft.xce.editor.textwindow.TextWindow)
+        @key=BlockContent.0
+        @divisor=.
+        @brief=Constructs a block content using the currently selected block in the window specified.
+        @scope=instance
+        @visibility=public
+
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=BlockContent
+            @params=[clink=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/clink] w
+        @end
+
+        @param
+            @name=w
+            The window to gather the block from.
+        @end
+
+    @end
+
+    @member
+        @name=Put
+        @sig=M:gehtsoft.xce.editor.util.BlockContent.Put(gehtsoft.xce.editor.textwindow.TextWindow,System.Int32,System.Int32)
+        @key=Put.0
+        @divisor=.
+        @brief=Puts the block content into the window specified.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Put
+            @return=void
+            @params=[clink=gehtsoft.xce.editor.textwindow.TextWindow]gehtsoft.xce.editor.textwindow.TextWindow[/clink] w, int row, int column
+        @end
+
+        @param
+            @name=w
+            The window to put the block content.
+        @end
+
+        @param
+            @name=row, column
+            The position to put the block at.
+        @end
+    @end
+
+    @member
+        @name=Buffer
+        @sig=P:gehtsoft.xce.editor.util.BlockContent.Buffer
+        @key=Buffer.0
+        @divisor=.
+        @brief=The content of the block.
+        @scope=instance
+        @visibility=public
+
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Buffer
+            @return=[clink=gehtsoft.xce.text.XceFileBuffer]gehtsoft.xce.text.XceFileBuffer[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    @member
+        @name=Type
+        @sig=P:gehtsoft.xce.editor.util.BlockContent.Type
+        @key=Type.0
+        @divisor=.
+        @brief=Gets the type of the block.
+        @scope=instance
+        @visibility=public
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Type
+            @return=[clink=gehtsoft.xce.editor.textwindow.TextWindowBlock]gehtsoft.xce.editor.textwindow.TextWindowBlock[/clink]
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.editor.util]gehtsoft.xce.editor.util[/clink].
+@end

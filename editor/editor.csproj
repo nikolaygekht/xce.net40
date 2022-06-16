@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F5365A5-80F1-4812-8320-A913CAD8D5C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gehtsoft.xce.editor</RootNamespace>
+    <AssemblyName>gehtsoft.xce.editor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AssemblyOriginatorKeyFile>..\key.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gehtsoft.xce.colorer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdparty\colorer\managed\bin\gehtsoft.xce.colorer.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\configuration\bin\gehtsoft.xce.configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.conio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\conio\bin\gehtsoft.xce.conio.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.conio.win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\conio.win\bin\gehtsoft.xce.conio.win.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.spellcheck, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\spellcheck\interfaces\bin\gehtsoft.xce.spellcheck.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.spellcheck.hunspell, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdparty\hunspell\managed\bin\gehtsoft.xce.spellcheck.hunspell.dll</HintPath>
+    </Reference>
+    <Reference Include="gehtsoft.xce.text, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a862de72115574de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\text\bin\gehtsoft.xce.text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\application\Application.cs" />
+    <Compile Include="src\application\Extension.cs" />
+    <Compile Include="src\application\ApplicationWindow.cs" />
+    <Compile Include="src\application\StatusLineWindow.cs" />
+    <Compile Include="src\application\XceDialog.cs" />
+    <Compile Include="src\command\EditorCommandFactory.cs" />
+    <Compile Include="src\command\EditorCommandFactoryBuilder.cs" />
+    <Compile Include="src\command\IEditorCommand.cs" />
+    <Compile Include="src\command\impl\Assert.cs" />
+    <Compile Include="src\command\impl\Backspace.cs" />
+    <Compile Include="src\command\impl\BackspaceWord.cs" />
+    <Compile Include="src\command\impl\ChooseSpellLanguage.cs" />
+    <Compile Include="src\command\impl\ChooseSpellSuggest.cs" />
+    <Compile Include="src\command\impl\ChangeCodepage.cs" />
+    <Compile Include="src\command\impl\CloseFile.cs" />
+    <Compile Include="src\command\impl\CheckPair.cs" />
+    <Compile Include="src\command\impl\CommandList.cs" />
+    <Compile Include="src\command\impl\ExecuteCommand.cs" />
+    <Compile Include="src\command\impl\DuplicateLine.cs" />
+    <Compile Include="src\command\impl\Marker.cs" />
+    <Compile Include="src\command\impl\GoTo.cs" />
+    <Compile Include="src\command\impl\Replace.cs" />
+    <Compile Include="src\command\impl\SearchNext.cs" />
+    <Compile Include="src\command\impl\Search.cs" />
+    <Compile Include="src\command\impl\SwitchWindow.cs" />
+    <Compile Include="src\command\impl\InterwindowCopyBlock.cs" />
+    <Compile Include="src\command\impl\MoveBlock.cs" />
+    <Compile Include="src\command\impl\PasteBlockFromClipboard.cs" />
+    <Compile Include="src\command\impl\CopyBlock.cs" />
+    <Compile Include="src\command\impl\CopyBlockToClipboard.cs" />
+    <Compile Include="src\command\impl\CutBlockToClipboard.cs" />
+    <Compile Include="src\command\impl\DeleteBlock.cs" />
+    <Compile Include="src\command\impl\SaveFileAs.cs" />
+    <Compile Include="src\command\impl\SaveFile.cs" />
+    <Compile Include="src\command\impl\OpenFile.cs" />
+    <Compile Include="src\command\impl\Enter.cs" />
+    <Compile Include="src\command\impl\DeleteToEndOfWord.cs" />
+    <Compile Include="src\command\impl\DeleteToEndOfLine.cs" />
+    <Compile Include="src\command\impl\DeleteLine.cs" />
+    <Compile Include="src\command\impl\Delete.cs" />
+    <Compile Include="src\command\impl\Tab.cs" />
+    <Compile Include="src\command\impl\Redo.cs" />
+    <Compile Include="src\command\impl\Reload.cs" />
+    <Compile Include="src\command\impl\Undo.cs" />
+    <Compile Include="src\command\impl\InsertMode.cs" />
+    <Compile Include="src\command\impl\MarkBlock.cs" />
+    <Compile Include="src\command\impl\Cursor.cs" />
+    <Compile Include="src\command\impl\NextWindow.cs" />
+    <Compile Include="src\command\impl\Exit.cs" />
+    <Compile Include="src\command\impl\Menu.cs" />
+    <Compile Include="src\search\RegexBuilder.cs" />
+    <Compile Include="src\search\RegexLibrary.cs" />
+    <Compile Include="src\search\SeachController.cs" />
+    <Compile Include="src\search\SearchDialog.cs" />
+    <Compile Include="src\search\SearchInfo.cs" />
+    <Compile Include="src\configuration\fileType\FileTypeInfo.cs" />
+    <Compile Include="src\configuration\fileType\FileTypeInfoBuilder.cs" />
+    <Compile Include="src\configuration\XceConfiguration.cs" />
+    <Compile Include="src\configuration\keyboard\KeyboardShortcut.cs" />
+    <Compile Include="src\configuration\keyboard\KeyboardShortcutBuilder.cs" />
+    <Compile Include="src\configuration\keyboard\KeyboardShortcutCollection.cs" />
+    <Compile Include="src\configuration\menu\MainMenuCommand.cs" />
+    <Compile Include="src\configuration\menu\MainMenu.cs" />
+    <Compile Include="src\configuration\menu\MainMenuBuilder.cs" />
+    <Compile Include="src\configuration\XceColorScheme.cs" />
+    <Compile Include="src\configuration\XceConfigurationSpellcheckerCollection.cs" />
+    <Compile Include="src\textwindow\TextBufferColorerAdapter.cs" />
+    <Compile Include="src\textwindow\TextWindow.cs" />
+    <Compile Include="src\textwindow\TextWindowCollection.cs" />
+    <Compile Include="src\util\BlockContent.cs" />
+    <Compile Include="src\util\CharUtil.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

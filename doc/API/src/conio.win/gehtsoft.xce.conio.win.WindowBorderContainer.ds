@@ -1,0 +1,202 @@
+@class
+    @name=WindowBorderContainer
+    @key=gehtsoft.xce.conio.win.WindowBorderContainer
+    @brief=The window with border which can be moved and sized by the mouse
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.WindowBorderContainer
+    @parent=[clink=gehtsoft.xce.conio.win.Window]Window[/clink]
+    @import=gehtsoft.xce.conio.win.Window
+
+    @member
+        @name=WindowBorderContainer
+        @sig=M:gehtsoft.xce.conio.win.WindowBorderContainer.#ctor(System.String,gehtsoft.xce.conio.BoxBorder,System.Int16,gehtsoft.xce.conio.win.Window,System.Boolean,System.Boolean)
+        @key=WindowBorderContainer.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=WindowBorderContainer
+            @params=string title, [clink=gehtsoft.xce.conio.BoxBorder]gehtsoft.xce.conio.BoxBorder[/clink] border, short borderColor, [clink=gehtsoft.xce.conio.win.Window]Window[/clink] clientArea, bool moveable, bool sizeable
+        @end
+
+        @param
+            @name=title
+            The window title.
+        @end
+
+        @param
+            @name=border
+            The type of the window border.
+        @end
+
+        @param
+            @name=borderColor
+            The color of the window border.
+        @end
+
+        @param
+            @name=clientArea
+            The client area window.
+
+            The client area window will be created when the window is created and will
+            be sized to full interior size of moveable/sizeable window.
+
+            The application can use it in the same way as it uses the client area of the
+            window in GUI applications - to create other windows inside the borders or
+            to draw the content.
+        @end
+
+        @param
+            @name=moveable
+            The flag indicating that the window must be moveable.
+        @end
+
+        @param
+            @name=sizeable
+            The flag indicating that the window must be sizeable.
+        @end
+    @end
+
+    @member
+        @name=getClientArea
+        @sig=M:gehtsoft.xce.conio.win.WindowBorderContainer.getClientArea(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+        @key=getClientArea.0
+        @divisor=.
+        @brief=Gets the size and coordinates of the client area.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=getClientArea
+            @return=void
+            @prefix=virtual
+            @params=out int row, out int col, out int height, out int width
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the client area.
+        @end
+
+        @param
+            @name=col
+            The column of the top-left corner of the client area.
+        @end
+
+        @param
+            @name=height
+            The height of the client area in rows.
+        @end
+
+        @param
+            @name=width
+            The width of the client area in rows.
+        @end
+
+    @end
+
+    @member
+        @name=Title
+        @sig=P:gehtsoft.xce.conio.win.WindowBorderContainer.Title
+        @key=Title.0
+        @divisor=.
+        @brief=The title of the window.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Title
+            @return=string
+            @suffix= get; set;
+        @end
+    @end
+
+    @member
+        @name=WindowBorderContainer
+        @sig=M:gehtsoft.xce.conio.win.WindowBorderContainer.#ctor(System.String,gehtsoft.xce.conio.BoxBorder,System.Int16,System.Boolean,System.Boolean)
+        @key=WindowBorderContainer.1
+        @divisor=.
+        @brief=Constructor without the client area.
+        @scope=instance
+        @visibility=protected
+        @type=constructor
+
+        The client area must be attached later, when the window is being created using
+        [clink=gehtsoft.xce.conio.win.WindowBorderContainer.attachClientArea.0]attachClientArea()[/clink] method.
+
+        @declaration
+            @language=cs
+            @name=WindowBorderContainer
+            @params=string title, [clink=gehtsoft.xce.conio.BoxBorder]gehtsoft.xce.conio.BoxBorder[/clink] border, short borderColor, bool moveable, bool sizeable
+        @end
+
+        @param
+            @name=title
+            The window title.
+        @end
+
+        @param
+            @name=border
+            The type of the window border.
+        @end
+
+        @param
+            @name=borderColor
+            The color of the window border.
+        @end
+
+
+        @param
+            @name=moveable
+            The flag indicating that the window must be moveable.
+        @end
+
+        @param
+            @name=sizeable
+            The flag indicating that the window must be sizeable.
+        @end
+
+    @end
+
+    @member
+        @name=attachClientArea
+        @sig=M:gehtsoft.xce.conio.win.WindowBorderContainer.attachClientArea(gehtsoft.xce.conio.win.Window)
+        @key=attachClientArea.0
+        @divisor=.
+        @brief=Attaches the client area to the window.
+        @scope=instance
+        @visibility=protected
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=attachClientArea
+            @return=void
+            @params=[clink=gehtsoft.xce.conio.win.Window]Window[/clink] clientArea
+        @end
+
+        @param
+            @name=clientArea
+            The client area window.
+
+            The client area window will be created when the window is created and will
+            be sized to full interior size of moveable/sizeable window.
+
+            The application can use it in the same way as it uses the client area of the
+            window in GUI applications - to create other windows inside the borders or
+            to draw the content.
+        @end
+    @end
+
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

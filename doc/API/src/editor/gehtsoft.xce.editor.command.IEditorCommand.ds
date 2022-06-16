@@ -1,0 +1,118 @@
+@class
+    @name=IEditorCommand
+    @key=gehtsoft.xce.editor.command.IEditorCommand
+    @brief=The interface to an editor command.
+    @type=interface
+    @ingroup=gehtsoft.xce.editor.command
+    @sig=T:gehtsoft.xce.editor.command.IEditorCommand
+
+    @member
+        @name=Execute
+        @sig=M:gehtsoft.xce.editor.command.IEditorCommand.Execute(gehtsoft.xce.editor.application.Application,System.String)
+        @key=Execute.0
+        @divisor=.
+        @brief=The method is called to execute the command.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Execute
+            @return=void
+            @params=[clink=gehtsoft.xce.editor.application.Application]gehtsoft.xce.editor.application.Application[/clink] application, string parameter
+        @end
+
+        @param
+            @name=application
+            The application.
+        @end
+
+        @param
+            @name=parameter
+            The command parameter. The value of this parameter may be [c]null[/c].
+        @end
+    @end
+
+
+    @member
+        @name=IsChecked
+        @sig=M:gehtsoft.xce.editor.command.IEditorCommand.IsChecked(gehtsoft.xce.editor.application.Application,System.String)
+        @key=IsChecked.0
+        @divisor=.
+        @brief=The method is called to find whether the command must be shown as "checked" in the menu.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=IsChecked
+            @return=bool
+            @params=[clink=gehtsoft.xce.editor.application.Application]gehtsoft.xce.editor.application.Application[/clink] application, string parameter
+        @end
+
+        @param
+            @name=application
+            The application.
+        @end
+
+        @param
+            @name=parameter
+            The command parameter. The value of this parameter may be [c]null[/c].
+        @end
+    @end
+
+
+    @member
+        @name=IsEnabled
+        @sig=M:gehtsoft.xce.editor.command.IEditorCommand.IsEnabled(gehtsoft.xce.editor.application.Application,System.String)
+        @key=IsEnabled.0
+        @divisor=.
+        @brief=The method is called to find whether the command must be shown as "disabled" in the menu.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=IsEnabled
+            @return=bool
+            @params=[clink=gehtsoft.xce.editor.application.Application]gehtsoft.xce.editor.application.Application[/clink] application, string parameter
+        @end
+
+        @param
+            @name=application
+            The application.
+        @end
+
+        @param
+            @name=parameter
+            The command parameter. The value of this parameter may be [c]null[/c].
+        @end
+    @end
+
+
+    @member
+        @name=Name
+        @sig=P:gehtsoft.xce.editor.command.IEditorCommand.Name
+        @key=Name.0
+        @divisor=.
+        @brief=Get the name of the command.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Name
+            @return=string
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.editor.command]gehtsoft.xce.editor.command[/clink].
+@end

@@ -1,0 +1,152 @@
+@class
+    @name=XceDialog
+    @key=gehtsoft.xce.editor.application.XceDialog
+    @brief=The editor dialog.
+    @type=class
+    @ingroup=gehtsoft.xce.editor.application
+    @sig=T:gehtsoft.xce.editor.application.XceDialog
+    @parent=[clink=gehtsoft.xce.conio.win.Dialog]gehtsoft.xce.conio.win.Dialog[/clink]
+    @import=gehtsoft.xce.conio.win.Dialog
+
+    The regular dialog which also handles "in-dialog commands" inside the editor controls.
+
+    @member
+        @name=mApplication
+        @sig=F:gehtsoft.xce.editor.application.XceDialog.mApplication
+        @key=mApplication.0
+        @divisor=.
+        @brief=The reference to the application object.
+        @scope=instance
+        @visibility=protected
+
+        @type=field
+
+        @declaration
+            @language=cs
+            @name=mApplication
+            @return=[clink=gehtsoft.xce.editor.application.Application]Application[/clink]
+        @end
+
+    @end
+
+    @member
+        @name=XceDialog
+        @sig=M:gehtsoft.xce.editor.application.XceDialog.#ctor(gehtsoft.xce.editor.application.Application,System.String,System.Boolean,System.Int32,System.Int32)
+        @key=XceDialog.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @visibility=public
+
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=XceDialog
+            @params=[clink=gehtsoft.xce.editor.application.Application]Application[/clink] application, string title, bool sizeable, int height, int width
+        @end
+
+        @param
+            @name=application
+            The reference to the application.
+        @end
+
+        @param
+            @name=title
+            The title of the dialog window.
+        @end
+
+        @param
+            @name=sizeable
+            The flag indicating whether the dialog window must be sizeable.
+        @end
+
+        @param
+            @name=height
+            Height of the dialog in rows (including the border).
+        @end
+
+        @param
+            @name=width
+            Width of the dialog in columns (including the border).
+        @end
+
+    @end
+
+    @member
+        @name=DoModal
+        @sig=M:gehtsoft.xce.editor.application.XceDialog.DoModal
+        @key=DoModal.0
+        @divisor=.
+        @brief=Executes the dialog.
+        @scope=instance
+        @visibility=public
+
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=DoModal
+            @return=int
+        @end
+
+        The method works exactly like [clink=gehtsoft.xce.conio.win.Dialog.DoModal.0]Dialog.DoModal()[/clink].
+    @end
+
+    @member
+        @name=PretranslateOnKeyPressed
+        @sig=M:gehtsoft.xce.editor.application.XceDialog.PretranslateOnKeyPressed(System.Int32,System.Char,System.Boolean,System.Boolean,System.Boolean)
+        @key=PretranslateOnKeyPressed.0
+        @divisor=.
+        @brief=The method is called before handling the key pressed in the dialog or any of the dialog's controls.
+        @scope=instance
+        @visibility=public
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=PretranslateOnKeyPressed
+            @return=bool
+            @params=int scanCode, char character, bool shift, bool ctrl, bool alt
+            @prefix=virtual
+        @end
+
+        @param
+            @name=scanCode
+            Key scan code (see [clink=gehtsoft.xce.conio.ScanCode]gehtsoft.xce.conio.ScanCode[/clink] for the list of scan codes).
+        @end
+
+        @param
+            @name=character
+            The character associated with the key or 0 in case the scancode is not associated with any character.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+        @return
+            If the method return [c]true[/c] the key is already handled and shall not be passed
+            to the control or handled by the dialog.
+        @end
+
+        The default implementation checks whether the key pressed is a editor hotkey which is associated with
+        the command which implements [clink=gehtsoft.xce.editor.command.IDialogCommand]IDialogCommand[/clink]
+        interface and executes such command if it exists.
+    @end
+
+    The type defined in the [c]gehtsoft.xce.editor.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.editor.application]gehtsoft.xce.editor.application[/clink].
+@end

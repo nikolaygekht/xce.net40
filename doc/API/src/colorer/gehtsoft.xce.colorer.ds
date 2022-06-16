@@ -1,0 +1,13 @@
+@group
+    @title=gehtsoft.xce.colorer
+    @key=gehtsoft.xce.colorer
+    @ingroup=index
+    @brief=.NET wrapper for colorer-take5
+
+    The gehtsoft.xce.colorer.dll assembly contains the set of the wrapper classes for
+    colorer ([eurl=http://colorer.sourceforge.net/]http://colorer.sourceforge.net/[/eurl])
+    syntax-highlighting library.
+
+    See [url=img/colorer1.png]Class Diagram[/url] of the [c]gehtsoft.xce.colorer[/c] package.
+@end
+

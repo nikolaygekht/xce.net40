@@ -1,0 +1,70 @@
+﻿@article
+    @title=Main XCE screen
+    @key=main-screen
+    @brief=The article describes the main XCE screen
+    @ingroup=ui
+
+    [img=img/main-screen.png]
+
+    At the top of the main screen there is the status line. The status line contains (from left to right):
+
+    @list
+        @list-item
+            A menu box. Click on the box to show the menu.
+        @end
+        @list-item
+            The number of the current line.
+        @end
+        @list-item
+            The total number of the lines in the file.
+        @end
+        @list-item
+            The number of the current column.
+        @end
+        @list-item
+            The type of the block selected (L for linear, S for stream and B for box).
+        @end
+        @list-item
+            The character under cursor.
+        @end
+        @list-item
+            The unicode code of the character under cursor.
+        @end
+        @list-item
+            The asterisk mark for the changed file.
+        @end
+        @list-item
+            The insert (I) or overtype (O) mode indicator
+        @end
+        @list-item
+            The codepage of the current file
+        @end
+        @list-item
+            The identifier of the current window (0 to 9 and then A to Z).
+        @end
+        @list-item
+            The file name.
+        @end
+        @list-item
+            The current keyboard layout name.
+        @end
+    @end
+@end
+
+@article
+    @title=Dialogs
+    @key=main-screen-dialogls
+    @brief=The article describes the main XCE dialogs
+    @ingroup=ui
+
+    All dialogs are moveable. You can drag them to another location on the screen. Press the left mouse button on the title of the dialog and then move
+    the dialog to a new place and then release the left mouse button.
+
+    If the dialog has ↔ mark at the right bottom edge, the dialog is sizeable. Drag this mark to change the size of the dialog.
+
+    Use <Tab> and <Shift-Tab> to navigate the dialog.
+
+    Use <Space> to click a currently selected button or check a check box.
+
+    If a control has a ↓ mark, a history of the control can be opened by clicking the mark or pressing Ctrl-Down.
+@end

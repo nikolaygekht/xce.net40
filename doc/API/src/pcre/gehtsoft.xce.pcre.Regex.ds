@@ -1,0 +1,249 @@
+@class
+    @name=Regex
+    @key=gehtsoft.xce.pcre.Regex
+    @brief=The regular expression.
+    @type=class
+    @ingroup=gehtsoft.xce.pcre
+    @sig=T:gehtsoft.xce.pcre.Regex
+    @parent=System.IDisposable
+
+    Please note that the regular expression is implemented on the base of native PCRE code and must
+    be disposed after the usage.
+
+    @member
+        @name=MatchNext
+        @sig=M:gehtsoft.xce.pcre.Regex.MatchNext
+        @key=MatchNext.0
+        @divisor=.
+        @brief=Matches the next occurrence in the text.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=MatchNext
+            @return=bool
+        @end
+
+        The method returns [c]true[/c] if another occurrence has been found.
+
+    @end
+
+
+    @member
+        @name=Regex
+        @sig=M:gehtsoft.xce.pcre.Regex.#ctor(System.String,gehtsoft.xce.pcre.RegexOption)
+        @key=Regex.1
+        @divisor=.
+        @brief=Compiles the regular expression with options.
+        @visibility=public
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=Regex
+            @params=string regex, [clink=gehtsoft.xce.pcre.RegexOption]RegexOption[/clink] options
+        @end
+
+        @param
+            @name=regex
+            The regular expression.
+
+            See [url=pcrepattern.html]PCRE documentation[/url] for details about the expression syntax.
+        @end
+
+        @param
+            @name=options
+            The options.
+        @end
+
+    @end
+
+
+    @member
+        @name=Regex
+        @sig=M:gehtsoft.xce.pcre.Regex.#ctor(System.String)
+        @key=Regex.0
+        @divisor=.
+        @brief=Compiles the regular expression.
+        @visibility=public
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=Regex
+            @params=string regex
+        @end
+
+        @param
+            @name=regex
+            The regular expression.
+
+            See [url=pcrepattern.html]PCRE documentation[/url] for details about the expression syntax.
+        @end
+
+    @end
+
+
+    @member
+        @name=Match
+        @sig=M:gehtsoft.xce.pcre.Regex.Match(System.Char[],System.Int32,System.Int32)
+        @key=Match.0
+        @divisor=.
+        @brief=Matches the character array.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Match
+            @return=bool
+            @params=char[] text, int startPosition, int length
+        @end
+
+        @param
+            @name=text
+            The text to find the matches
+        @end
+
+        @param
+            @name=startPosition
+            The first position in the text to match.
+        @end
+
+        @param
+            @name=length
+            The length of the text to match.
+        @end
+
+    @end
+
+
+    @member
+        @name=Match
+        @sig=M:gehtsoft.xce.pcre.Regex.Match(System.String)
+        @key=Match.1
+        @divisor=.
+        @brief=Matches a string
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Match
+            @return=bool
+            @params=string text
+        @end
+
+        @param
+            @name=text
+            The text to find the matches
+        @end
+
+    @end
+
+
+    @member
+        @name=Dispose
+        @sig=M:gehtsoft.xce.pcre.Regex.Dispose
+        @key=Dispose.0
+        @divisor=.
+        @brief=Disposes the regular expression.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=Dispose
+            @return=void
+
+        @end
+
+    @end
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.pcre.Regex.Item(System.String)
+        @key=Item.1
+        @divisor=.
+        @brief=Gets a match by the name.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=[clink=gehtsoft.xce.pcre.Group]Group[/clink]
+            @params=string name
+            @suffix= get;
+        @end
+
+        @param
+            @name=name
+            The name of the match.
+        @end
+
+        The method throws an exception in case the group with the name specified is not found.
+    @end
+
+
+    @member
+        @name=Item
+        @sig=P:gehtsoft.xce.pcre.Regex.Item(System.Int32)
+        @key=Item.0
+        @divisor=.
+        @brief=Gets a match by the index.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=this
+            @return=[clink=gehtsoft.xce.pcre.Group]Group[/clink]
+            @params=int index
+            @suffix= get;
+        @end
+
+        @param
+            @name=index
+            The index of the match.
+        @end
+
+        The method throws an exception in case the index is out of the range.
+
+        The match for the whole regular expression always has the index 0. All other matches corresponds
+        to the capturing parentheses in the expression. The leftmost group has the index 1, the next has index 2 and so on.
+    @end
+
+
+    @member
+        @name=GroupCount
+        @sig=P:gehtsoft.xce.pcre.Regex.GroupCount
+        @key=GroupCount.0
+        @divisor=.
+        @brief=Returns the number of the matches.
+        @visibility=public
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=GroupCount
+            @return=int
+            @suffix= get;
+        @end
+
+    @end
+
+    The type defined in the [c]gehtsoft.xce.pcre.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.pcre]gehtsoft.xce.pcre[/clink].
+@end
+

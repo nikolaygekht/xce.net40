@@ -1,0 +1,14 @@
+ScreenUp
+ScreenDown
+ScreenRight
+ScreenLeft
+ScreenHome
+ScreenEnd
+ScreenTop
+ScreenBottom
+FindNextWord
+FindPreviousWord
+FixLayoutMistype
+CondensedView
+ShowDefaultSnapshot
+ShowCharmap

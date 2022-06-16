@@ -1,0 +1,72 @@
+@class
+    @name=DialogItemLabel
+    @key=gehtsoft.xce.conio.win.DialogItemLabel
+    @brief=Dialog label control.
+    @type=class
+    @ingroup=gehtsoft.xce.conio.win
+    @sig=T:gehtsoft.xce.conio.win.DialogItemLabel
+    @parent=[clink=gehtsoft.xce.conio.win.DialogItem]DialogItem[/clink]
+    @import=gehtsoft.xce.conio.win.DialogItem
+
+    The label performs no activity and can be used to display the labels for other controls and to activate these controls
+    by hot keys. When label's hotkey is pressed, the control next to the label is activated.
+
+    @member
+        @name=DialogItemLabel
+        @sig=M:gehtsoft.xce.conio.win.DialogItemLabel.#ctor(System.String,System.Int32,System.Int32,System.Int32)
+        @key=DialogItemLabel.0
+        @divisor=.
+        @brief=Constructor.
+        @scope=instance
+        @type=constructor
+
+        @declaration
+            @language=cs
+            @name=DialogItemLabel
+            @params=string title, int id, int row, int column
+        @end
+
+        @param
+            @name=title
+            The label title.
+        @end
+
+        @param
+            @name=id
+            The control identifier.
+        @end
+
+        @param
+            @name=row
+            The row of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+        @param
+            @name=column
+            The column of the top-left corner of the dialog item relative to top-left corner of the dialog client area.
+        @end
+
+    @end
+
+    @member
+        @name=Title
+        @sig=P:gehtsoft.xce.conio.win.DialogItemLabel.Title
+        @key=Title.0
+        @divisor=.
+        @brief=Gets the title of the label.
+        @scope=instance
+        @type=property
+
+        @declaration
+            @language=cs
+            @name=Title
+            @return=string
+            @suffix= get;
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.win.dll[/c] assembly.
+
+    The namespace is [clink=gehtsoft.xce.conio.win]gehtsoft.xce.conio.win[/clink].
+@end
+

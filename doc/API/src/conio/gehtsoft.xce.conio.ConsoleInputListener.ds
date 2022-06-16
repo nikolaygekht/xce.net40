@@ -1,0 +1,483 @@
+@class
+    @name=ConsoleInputListener
+    @key=gehtsoft.xce.conio.ConsoleInputListener
+    @brief=The interface of the console-event listener.
+    @type=interface
+    @ingroup=gehtsoft.xce.conio
+    @sig=T:gehtsoft.xce.conio.ConsoleInputListener
+
+    The instance of a class implementing the interface may be specified as an argument of the
+    [clink=gehtsoft.xce.conio.ConsoleInput.read.0]ConsoleInput.read()[/clink] method.
+
+    @member
+        @name=onKeyPressed
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onKeyPressed(System.Int32,System.Char,System.Boolean,System.Boolean,System.Boolean)
+        @key=onKeyPressed.0
+        @divisor=.
+        @brief=The method is called when the user presses a key.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onKeyPressed
+            @return=void
+            @prefix=virtual abstract
+            @params=int scanCode, char character, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=scanCode
+            Key scan code (see [clink=gehtsoft.xce.conio.ScanCode]gehtsoft.xce.conio.ScanCode[/clink] for the list of scan codes).
+        @end
+
+        @param
+            @name=character
+            The character associated with the key or 0 in case the scancode is not associated with any character.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+    @end
+
+    @member
+        @name=onKeyReleased
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onKeyReleased(System.Int32,System.Char,System.Boolean,System.Boolean,System.Boolean)
+        @key=onKeyReleased.0
+        @divisor=.
+        @brief=The method is called when the user has just released a key.
+        @visibility=public
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onKeyReleased
+            @return=void
+            @prefix=virtual abstract
+            @params=int scanCode, char character, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=scanCode
+            Key scan code (see [clink=gehtsoft.xce.conio.ScanCode]gehtsoft.xce.conio.ScanCode[/clink] for the list of scan codes).
+        @end
+
+        @param
+            @name=character
+            The character associated with the key or 0 in case the scancode is not associated with any character.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+    @end
+
+
+    @member
+        @name=onMouseMove
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onMouseMove(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+        @key=onMouseMove.0
+        @divisor=.
+        @brief=The method is called when the user moves the mouse.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onMouseMove
+            @return=void
+            @prefix=virtual abstract
+            @params=int row, int column, bool shift, bool ctrl, bool alt, bool lb, bool rb
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+        @param
+            @name=lb
+            The flag indicating that the left mouse button is pressed.
+        @end
+
+        @param
+            @name=rb
+            The flag indicating that the right mouse button is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=onMouseLButtonDown
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onMouseLButtonDown(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=onMouseLButtonDown.0
+        @divisor=.
+        @brief=The method is called when the user presses the left mouse button.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onMouseLButtonDown
+            @return=void
+            @prefix=virtual abstract
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=onMouseLButtonUp
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onMouseLButtonUp(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=onMouseLButtonUp.0
+        @divisor=.
+        @brief=Events is fired when the user releases the left mouse button.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onMouseLButtonUp
+            @return=void
+            @prefix=virtual abstract
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=onMouseRButtonDown
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onMouseRButtonDown(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=onMouseRButtonDown.0
+        @divisor=.
+        @brief=The method is called when the user presses the right mouse button.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onMouseRButtonDown
+            @return=void
+            @prefix=virtual abstract
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=onMouseRButtonUp
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onMouseRButtonUp(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=onMouseRButtonUp.0
+        @divisor=.
+        @brief=The method is called when the user releases the right mouse button.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onMouseRButtonUp
+            @return=void
+            @prefix=virtual abstract
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+    @end
+
+    @member
+        @name=onMouseWheelUp
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onMouseWheelUp(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=onMouseWheelUp.0
+        @divisor=.
+        @brief=The method is called when the user scrolls the mouse wheel up.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onMouseWheelUp
+            @return=void
+            @prefix=virtual abstract
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=onMouseWheelDown
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onMouseWheelDown(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+        @key=onMouseWheelDown.0
+        @divisor=.
+        @brief=The method is called when the user scrolls the mouse wheel down.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onMouseWheelDown
+            @return=void
+
+            @params=int row, int column, bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=row
+            The zero-based index of the screen row.
+        @end
+
+        @param
+            @name=column
+            The zero-based index of the screen column.
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=onGetFocus
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onGetFocus(System.Boolean,System.Boolean,System.Boolean)
+        @key=onGetFocus.0
+        @divisor=.
+        @brief=The method is called when the console window receives the input focus.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onGetFocus
+            @return=void
+            @prefix=virtual abstract
+            @params=bool shift, bool ctrl, bool alt
+        @end
+
+        @param
+            @name=shift
+            The flag indicating that the shift key is pressed.
+        @end
+
+        @param
+            @name=ctrl
+            The flag indicating that the shift control is pressed.
+        @end
+
+        @param
+            @name=alt
+            The flag indicating that the alt control is pressed.
+        @end
+
+    @end
+
+    @member
+        @name=onScreenBufferChanged
+        @sig=M:gehtsoft.xce.conio.ConsoleInputListener.onScreenBufferChanged(System.Int32,System.Int32)
+        @key=onScreenBufferChanged.0
+        @divisor=.
+        @brief=The method is called when the user changes the size of the console window.
+        @scope=instance
+        @type=method
+
+        @declaration
+            @language=cs
+            @name=onScreenBufferChanged
+            @return=void
+            @prefix=virtual abstract
+            @params=int rows, int columns
+        @end
+
+        @param
+            @name=rows
+            The new size in rows.
+        @end
+
+        @param
+            @name=columns
+            The new size in columns.
+        @end
+    @end
+
+    The type defined in the [c]gehtsoft.xce.conio.dll[/c] assembly.
+    The namespace is [clink=gehtsoft.xce.conio]gehtsoft.xce.conio[/clink].
+@end
+

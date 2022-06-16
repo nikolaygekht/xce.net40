@@ -1,0 +1,55 @@
+<color-schemes>
+    <class>
+        <group name="Menu" doc="Menu colors">
+            <color name="Item" console="0x30" fg="0, 0, 0" bg="173, 207, 248" />
+            <color name="ItemSelected" console="0x0f" fg="0, 0, 0" bg="255, 255, 255" />
+            <color name="DisabledItem" console="0x37" fg="128, 128, 128" bg="173, 207, 248" />
+            <color name="DisabledItemSelected" console="0x07" fg="128, 128, 128" bg="255, 255, 255" />
+            <color name="HotKey" console="0x3e" fg="196, 196, 0" bg="173, 207, 248" />
+            <color name="HotKeySelected" console="0x0e" fg="196, 196, 0" bg="255, 255, 255" />
+        </group>
+
+        <group name="Dialog" doc="Dialog box colors">
+            <color name="Border" console="0x70"   />
+        </group>
+
+        <group name="DialogItemLabel" doc="Dialog box label colors">
+            <color name="Color" console="0x70"   />
+            <color name="HotKey" console="0x7e"   />
+        </group>
+
+        <group name="DialogItemCheckBox" doc="Dialog box check box label colors">
+            <color name="Color" console="0x70"   />
+            <color name="ColorFocused" console="0x70"   />
+            <color name="HotKey" console="0x7e"   />
+            <color name="HotKeyFocused" console="0x7e"   />
+            <color name="ColorDisabled" console="0x78"   />
+        </group>
+
+        <group name="DialogItemButton" doc="Dialog box button colors">
+            <color name="Color" console="0x70"   />
+            <color name="ColorDisabled" console="0x78"   />
+            <color name="ColorFocused" console="0x30"   />
+            <color name="HotKey" console="0x7e"   />
+            <color name="HotKeyFocused" console="0x3e"    />
+        </group>
+
+        <group name="DialogItemEdit" doc="Dialog box edit color">
+            <color name="Color" console="0x37" />
+            <color name="ColorDisabled" console="0x38" />
+            <color name="ColorFocused" console="0x30" />
+            <color name="Selection" console="0x1f" />
+            <color name="SelectionFocused" console="0x9f" />
+        </group>
+
+        <group name="DialogItemListBox" doc="Dialog box listbox color">
+            <color name="Color" console="0x37" />
+            <color name="ColorDisabled" console="0x38" />
+            <color name="ColorFocused" console="0x30" />
+            <color name="Selection" console="0x1f" />
+            <color name="SelectionFocused" console="0x9f" />
+            <color name="SelectionHighlighted" console="0xb7" />
+            <color name="SelectionFocusedHighlighted" console="0x3f" />
+        </group>
+    </class>
+</color-schemes>
