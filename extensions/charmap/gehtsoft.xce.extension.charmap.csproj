@@ -72,15 +72,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\CharacterExtension.cs" />
     <Compile Include="src\CharmapCommand.cs" />
     <Compile Include="src\ShowNonEnglish.cs" />
     <Compile Include="src\ShowWhitespace.cs" />
-    <Compile Include="src\UnicodeRangeCtrls.cs" />
+    <Compile Include="src\UnicodeRangeComboBox.cs" />
+    <Compile Include="src\CharmapDialog.cs" />
     <Compile Include="src\SnapshotCommand.cs" />
     <Compile Include="src\SnapshotDialog.cs" />
     <Compile Include="src\ShowRegions.cs" />
     <Compile Include="src\extension.cs" />
     <Compile Include="src\UnicodeRange.cs" />
+    <Compile Include="src\UnicodeRangeView.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="resource\resources.resx">
