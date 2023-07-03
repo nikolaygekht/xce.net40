@@ -44,7 +44,8 @@ ScanCode::ScanCode()
 
 ConsoleInput::ConsoleInput()
 {
-    SetConsoleMode(GetStdHandle(STD_INPUT_HANDLE), ENABLE_MOUSE_INPUT);
+    //SetConsoleMode(GetStdHandle(STD_INPUT_HANDLE), ENABLE_EXTENDED_FLAGS | ENABLE_QUICK_EDIT_MODE | ENABLE_MOUSE_INPUT);
+    SetConsoleMode(GetStdHandle(STD_INPUT_HANDLE), ENABLE_MOUSE_INPUT | ENABLE_EXTENDED_FLAGS);
     mLeftButtonPressed = false;
     mRightButtonPressed = false;
     mMouseRow = -1;
