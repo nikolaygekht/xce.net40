@@ -30,6 +30,7 @@ ConsoleOutput::ConsoleOutput(bool save, int rows, int columns)
 
 void ConsoleOutput::init(bool save, bool changeResolution, int rows, int columns)
 {
+    SetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), ENABLE_VIRTUAL_TERMINAL_PROCESSING | DISABLE_NEWLINE_AUTO_RETURN);
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     memset(&csbi, 0, sizeof(csbi));
     GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
