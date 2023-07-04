@@ -62,18 +62,18 @@ namespace gehtsoft.xce.conio.win
         }
 
         #region constructor/destuctor
-        public WindowManager(bool save)
+        public WindowManager(bool save, ConsoleOutputMode mode = ConsoleOutputMode.ConEmu)
         {
-            mConsoleOutput = new ConsoleOutput(save);
+            mConsoleOutput = new ConsoleOutput(save, mode);
             mScreenCanvas = new Canvas(mConsoleOutput.Rows, mConsoleOutput.Columns);
             mConsoleInput = new ConsoleInput();
             mLayoutCode = mConsoleInput.CurrentLayout;
             showCaret(false);
         }
 
-        public WindowManager(bool save, int rows, int columns)
+        public WindowManager(bool save, int rows, int columns, ConsoleOutputMode mode = ConsoleOutputMode.ConEmu)
         {
-            mConsoleOutput = new ConsoleOutput(save, rows, columns);
+            mConsoleOutput = new ConsoleOutput(save, rows, columns, mode);
             mScreenCanvas = new Canvas(mConsoleOutput.Rows, mConsoleOutput.Columns);
             mConsoleInput = new ConsoleInput();
             mLayoutCode = mConsoleInput.CurrentLayout;

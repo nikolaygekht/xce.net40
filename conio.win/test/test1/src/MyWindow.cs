@@ -30,6 +30,20 @@ namespace test1
             else
                 canvas.write(0, 0, "not focus");
             canvas.write(1, 0, mLastMessage);
+            double step = 256.0 / (double)Width;
+            for (int i = 0; i < Width; i++)
+            {
+                int component = (int)(step * i);
+                short plain = 0x00;
+                if (component > 192)
+                    plain = 0xff;
+                else if (component > 128)
+                    plain = 0x77;
+                else if (component > 64)
+                    plain = 0x88;
+                int rgb = ConsoleColor.rgb(component, component, component);
+                canvas.write(3, i, ' ', new ConsoleColor(plain, rgb, rgb));
+            }
         }
 
         public override void OnKeyPressed(int scanCode, char character, bool shift, bool ctrl, bool alt)

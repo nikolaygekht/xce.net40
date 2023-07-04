@@ -20,17 +20,37 @@ namespace conio
 
 ConsoleOutput::ConsoleOutput(bool save)
 {
-    init(save, false, 0, 0);
+    init(save, false, 0, 0, ConsoleOutputMode::ConEmu);
 }
 
 ConsoleOutput::ConsoleOutput(bool save, int rows, int columns)
 {
-    init(save, true, rows, columns);
+    init(save, true, rows, columns, ConsoleOutputMode::ConEmu);
+
 }
 
-void ConsoleOutput::init(bool save, bool changeResolution, int rows, int columns)
+ConsoleOutput::ConsoleOutput(bool save, ConsoleOutputMode outputMode)
 {
-    SetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), ENABLE_VIRTUAL_TERMINAL_PROCESSING | DISABLE_NEWLINE_AUTO_RETURN);
+    init(save, false, 0, 0, outputMode);
+}
+
+ConsoleOutput::ConsoleOutput(bool save, int rows, int columns, ConsoleOutputMode outputMode)
+{
+    init(save, true, rows, columns, outputMode);
+}
+
+void ConsoleOutput::init(bool save, bool changeResolution, int rows, int columns, ConsoleOutputMode outputMode)
+{
+    mOutputMode = outputMode;
+    if (outputMode == ConsoleOutputMode::VT)
+    {
+        DWORD dwMode = 0;
+        GetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), &dwMode);
+
+        if (!SetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), dwMode | ENABLE_VIRTUAL_TERMINAL_PROCESSING | DISABLE_NEWLINE_AUTO_RETURN))
+            if (SetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), dwMode | ENABLE_VIRTUAL_TERMINAL_PROCESSING))
+                throw gcnew ArgumentException("Terminal is not compatible with VT mode");
+    }
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     memset(&csbi, 0, sizeof(csbi));
     GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &csbi);
@@ -47,29 +67,30 @@ void ConsoleOutput::init(bool save, bool changeResolution, int rows, int columns
         rows = columns = 0;
     }
 
-
-
-    wchar_t shareName[255];
-    wsprintf(shareName, AnnotationShareName, sizeof(AnnotationInfo), GetConsoleWindow());
-    int m_dwSize = 0;
-    hSharedMem = OpenFileMapping(FILE_MAP_ALL_ACCESS, FALSE, shareName);
-    if (hSharedMem == 0)
+    if (outputMode == ConsoleOutputMode::ConEmu)
     {
-        mRGBHeader = 0;
-        mRGBInfo = 0;
-    }
-    else
-    {
-        char *address = (char *)MapViewOfFile(hSharedMem, FILE_MAP_ALL_ACCESS, 0, 0, 0);
-        mRGBHeader = (AnnotationHeader*)address;
-        if (mRGBHeader == 0)
+        wchar_t shareName[255];
+        wsprintf(shareName, AnnotationShareName, sizeof(AnnotationInfo), GetConsoleWindow());
+        int m_dwSize = 0;
+        hSharedMem = OpenFileMapping(FILE_MAP_ALL_ACCESS, FALSE, shareName);
+        if (hSharedMem == 0)
+        {
+            mRGBHeader = 0;
             mRGBInfo = 0;
+        }
         else
-            mRGBInfo = (AnnotationInfo*) (address + mRGBHeader->struct_size);
+        {
+            char *address = (char *)MapViewOfFile(hSharedMem, FILE_MAP_ALL_ACCESS, 0, 0, 0);
+            mRGBHeader = (AnnotationHeader*)address;
+            if (mRGBHeader == 0)
+                mRGBInfo = 0;
+            else
+                mRGBInfo = (AnnotationInfo*) (address + mRGBHeader->struct_size);
 
-        //wchar_t buff[256];
-        //wsprintf(buff,  L"%i %i", mRGBHeader->struct_size, mRGBHeader->bufferSize);
-        //MessageBox(0, buff, L"", MB_OK);
+            //wchar_t buff[256];
+            //wsprintf(buff,  L"%i %i", mRGBHeader->struct_size, mRGBHeader->bufferSize);
+            //MessageBox(0, buff, L"", MB_OK);
+        }
     }
 
     if (save)
@@ -206,6 +227,190 @@ void ConsoleOutput::paint(Canvas ^canvas, bool fast)
         canvas->Columns != mColumns)
             throw gcnew ArgumentException("Canvas size does not match the screen size");
 
+    if (mOutputMode == ConsoleOutputMode::Win32 ||
+        mOutputMode == ConsoleOutputMode::ConEmu)
+        paintWin32(canvas, fast);
+    else
+        paintVT(canvas, fast);
+
+}
+
+void ConsoleOutput::paintVT(Canvas ^canvas, bool fast)
+{
+    HANDLE oh = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_CURSOR_INFO cci;
+    memset(&cci, 0, sizeof(cci));
+    cci.dwSize = sizeof(cci);
+    cci.bVisible = false;
+
+    SetConsoleCursorInfo(oh, &cci);
+    ConsoleColor^ color = gcnew ConsoleColor(0x00);
+    wchar_t symbol[2] = L" ";
+    wchar_t currentEscape[256], previousEscape[256];
+    wchar_t buff[256];
+
+    *currentEscape = *previousEscape = 0;
+    DWORD lw;
+    for (int i = 0; i < mRows; i++)
+    {
+        COORD cc;
+        cc.X = 0;
+        cc.Y = i;
+        SetConsoleCursorPosition(oh, cc);
+
+        *previousEscape = 0;
+
+        for (int j = 0; j < mColumns; j++)
+        {
+            canvas->get(i, j, symbol[0], color);
+            EscapeCode(color, currentEscape);
+            *buff = 0;
+
+            if (wcscmp(previousEscape, currentEscape) != 0)
+            {
+                wprintf(currentEscape);
+                wcscpy_s(previousEscape, currentEscape);
+            }
+            wprintf(symbol);
+        }
+    }
+}
+
+void ConsoleOutput::EscapeCode(ConsoleColor^ color, wchar_t *sequence)
+{
+    *sequence = 0;
+
+    if (!color->RGBValid)
+    {
+        short paletteColor = color->PaletteColor;
+        short fb = paletteColor & 0xf;
+        short bg = (paletteColor & 0xf0) >> 4;
+
+        switch (fb)
+        {
+        case    0x0:
+                wcscat_s(sequence, 256, L"\x1b[30m");
+                break;
+        case    0x1:
+                wcscat_s(sequence, 256, L"\x1b[34m");
+                break;
+        case    0x2:
+                wcscat_s(sequence, 256, L"\x1b[32m");
+                break;
+        case    0x3:
+                wcscat_s(sequence, 256, L"\x1b[36m");
+                break;
+        case    0x4:
+                wcscat_s(sequence, 256, L"\x1b[31m");
+                break;
+        case    0x5:
+                wcscat_s(sequence, 256, L"\x1b[35m");
+                break;
+        case    0x6:
+                wcscat_s(sequence, 256, L"\x1b[33m");
+                break;
+        case    0x7:
+                wcscat_s(sequence, 256, L"\x1b[37m");
+                break;
+        case    0x8:
+                wcscat_s(sequence, 256, L"\x1b[90m");
+                break;
+        case    0x9:
+                wcscat_s(sequence, 256, L"\x1b[94m");
+                break;
+        case    0xa:
+                wcscat_s(sequence, 256, L"\x1b[92m");
+                break;
+        case    0xb:
+                wcscat_s(sequence, 256, L"\x1b[96m");
+                break;
+        case    0xc:
+                wcscat_s(sequence, 256, L"\x1b[91m");
+                break;
+        case    0xd:
+                wcscat_s(sequence, 256, L"\x1b[95m");
+                break;
+        case    0xe:
+                wcscat_s(sequence, 256, L"\x1b[93m");
+                break;
+        case    0xf:
+                wcscat_s(sequence, 256, L"\x1b[97m");
+                break;
+        }
+        switch (bg)
+        {
+        case    0x0:
+                wcscat_s(sequence, 256, L"\x1b[40m");
+                break;
+        case    0x1:
+                wcscat_s(sequence, 256, L"\x1b[44m");
+                break;
+        case    0x2:
+                wcscat_s(sequence, 256, L"\x1b[42m");
+                break;
+        case    0x3:
+                wcscat_s(sequence, 256, L"\x1b[46m");
+                break;
+        case    0x4:
+                wcscat_s(sequence, 256, L"\x1b[41m");
+                break;
+        case    0x5:
+                wcscat_s(sequence, 256, L"\x1b[45m");
+                break;
+        case    0x6:
+                wcscat_s(sequence, 256, L"\x1b[43m");
+                break;
+        case    0x7:
+                wcscat_s(sequence, 256, L"\x1b[47m");
+                break;
+        case    0x8:
+                wcscat_s(sequence, 256, L"\x1b[100m");
+                break;
+        case    0x9:
+                wcscat_s(sequence, 256, L"\x1b[104m");
+                break;
+        case    0xa:
+                wcscat_s(sequence, 256, L"\x1b[102m");
+                break;
+        case    0xb:
+                wcscat_s(sequence, 256, L"\x1b[106m");
+                break;
+        case    0xc:
+                wcscat_s(sequence, 256, L"\x1b[101m");
+                break;
+        case    0xd:
+                wcscat_s(sequence, 256, L"\x1b[105m");
+                break;
+        case    0xe:
+                wcscat_s(sequence, 256, L"\x1b[103m");
+                break;
+        case    0xf:
+                wcscat_s(sequence, 256, L"\x1b[107m");
+                break;
+        }
+    }
+    else
+    {
+        int fg = color->RGBForeground;
+        int bg = color->RGBBackground;
+        int fgr, fgb, fgg;
+        int bgr, bgb, bgg;
+
+        fgr = fg & 0xff;
+        fgb = (fg >> 8) & 0xff;
+        fgg = (fg >> 16) & 0xff;
+        bgr = bg & 0xff;
+        bgb = (bg >> 8) & 0xff;
+        bgg = (bg >> 16) & 0xff;
+
+        wsprintf(sequence, L"\x1b[38;2;%i;%i;%im\x1b[48;2;%i;%i;%im",
+                           fgr, fgb, fgg, bgr, bgb, bgg);
+    }
+}
+
+
+void ConsoleOutput::paintWin32(Canvas ^canvas, bool fast)
+{
     //update true color info
     if (mRGBHeader != 0)
     {

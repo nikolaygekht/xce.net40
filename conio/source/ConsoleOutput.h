@@ -7,6 +7,13 @@ namespace conio
 
 ref class Canvas;
 
+/** Output modes for the console */
+public enum class ConsoleOutputMode
+{
+    Win32,      //pure win32 mode
+    ConEmu,     //con emu true color mode
+    VT,         //VT terminal
+};
 
 
 public ref class ConsoleOutput
@@ -33,10 +40,18 @@ public ref class ConsoleOutput
     HANDLE hSharedMem;
     AnnotationHeader *mRGBHeader;
     AnnotationInfo *mRGBInfo;
-    void init(bool save, bool changeResolution, int rows, int columns);
+
+    ConsoleOutputMode mOutputMode;
+
+    void init(bool save, bool changeResolution, int rows, int column, ConsoleOutputMode outputMode);
+    void paintWin32(Canvas ^canvas, bool fast);
+    void paintVT(Canvas ^canvas, bool fast);
+    void EscapeCode(ConsoleColor^ color, wchar_t *sequence);
  public:
     ConsoleOutput(bool save);
+    ConsoleOutput(bool save, ConsoleOutputMode outputMode);
     ConsoleOutput(bool save, int rows, int columns);
+    ConsoleOutput(bool save, int rows, int columns, ConsoleOutputMode outputMode);
     ~ConsoleOutput();
     !ConsoleOutput();
 

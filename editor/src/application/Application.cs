@@ -185,6 +185,7 @@ namespace gehtsoft.xce.editor.application
             int rows = -1, columns = -1;
             List<string> toOpen = new List<string>();
             Encoding forceEncoding = null;
+            ConsoleOutputMode outputMode = ConsoleOutputMode.Win32;
 
             foreach (string s in commandLine)
             {
@@ -215,6 +216,14 @@ namespace gehtsoft.xce.editor.application
                 {
                     rows = columns = 0;
                 }
+                else if (s == "/conemu")
+                {
+                    outputMode = ConsoleOutputMode.ConEmu;
+                }
+                else if (s == "/vt")
+                {
+                    outputMode = ConsoleOutputMode.VT;
+                }
                 else
                 {
                     toOpen.Add(s);
@@ -223,11 +232,11 @@ namespace gehtsoft.xce.editor.application
 
             if (rows >= 0 && columns >= 0)
             {
-                mWindowManager = new WindowManager(false, rows, columns);
+                mWindowManager = new WindowManager(false, rows, columns, outputMode);
             }
             else
             {
-                mWindowManager = new WindowManager(true);
+                mWindowManager = new WindowManager(true, outputMode);
             }
 
             mAppWindow = new ApplicationWindow(this);
