@@ -47,6 +47,7 @@ public ref class ConsoleOutput
     void paintWin32(Canvas ^canvas, bool fast);
     void paintVT(Canvas ^canvas, bool fast);
     void EscapeCode(ConsoleColor^ color, wchar_t *sequence);
+    void WriteVtSequence(wchar_t *buffer);
  public:
     ConsoleOutput(bool save);
     ConsoleOutput(bool save, ConsoleOutputMode outputMode);

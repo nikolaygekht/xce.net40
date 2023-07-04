@@ -237,12 +237,17 @@ void ConsoleOutput::paint(Canvas ^canvas, bool fast)
 
 void ConsoleOutput::paintVT(Canvas ^canvas, bool fast)
 {
+    BOOL saveVisible;
+
     HANDLE oh = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_CURSOR_INFO cci;
+
     memset(&cci, 0, sizeof(cci));
     cci.dwSize = sizeof(cci);
-    cci.bVisible = false;
+    GetConsoleCursorInfo(oh, &cci);
+    saveVisible = cci.bVisible;
 
+    cci.bVisible = false;
     SetConsoleCursorInfo(oh, &cci);
     ConsoleColor^ color = gcnew ConsoleColor(0x00);
     wchar_t symbol[2] = L" ";
@@ -268,12 +273,20 @@ void ConsoleOutput::paintVT(Canvas ^canvas, bool fast)
 
             if (wcscmp(previousEscape, currentEscape) != 0)
             {
-                wprintf(currentEscape);
+                WriteVtSequence(currentEscape);
                 wcscpy_s(previousEscape, currentEscape);
             }
-            wprintf(symbol);
+            WriteVtSequence(symbol);
         }
     }
+    cci.bVisible = saveVisible;
+    SetConsoleCursorInfo(oh, &cci);
+}
+
+void ConsoleOutput::WriteVtSequence(wchar_t *sequence)
+{
+    DWORD dw = 0;
+    WriteConsoleW(GetStdHandle(STD_OUTPUT_HANDLE), sequence, wcslen(sequence), &dw, NULL);
 }
 
 void ConsoleOutput::EscapeCode(ConsoleColor^ color, wchar_t *sequence)
