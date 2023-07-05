@@ -42,7 +42,7 @@ ConsoleOutput::ConsoleOutput(bool save, int rows, int columns, ConsoleOutputMode
 void ConsoleOutput::init(bool save, bool changeResolution, int rows, int columns, ConsoleOutputMode outputMode)
 {
     mOutputMode = outputMode;
-    if (outputMode == ConsoleOutputMode::VT)
+    if (outputMode == ConsoleOutputMode::VT || outputMode == ConsoleOutputMode::VTTC)
     {
         DWORD dwMode = 0;
         GetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), &dwMode);
@@ -238,6 +238,13 @@ void ConsoleOutput::paint(Canvas ^canvas, bool fast)
 void ConsoleOutput::paintVT(Canvas ^canvas, bool fast)
 {
     BOOL saveVisible;
+    BOOL ignoreOldScreen = FALSE;
+
+    if (mOldScreen == nullptr || mOldScreen->Rows != mRows || mOldScreen->Columns != mColumns)
+    {
+        mOldScreen = gcnew Canvas(mRows, mColumns);
+        ignoreOldScreen = TRUE;
+    }
 
     HANDLE oh = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_CURSOR_INFO cci;
@@ -250,7 +257,9 @@ void ConsoleOutput::paintVT(Canvas ^canvas, bool fast)
     cci.bVisible = false;
     SetConsoleCursorInfo(oh, &cci);
     ConsoleColor^ color = gcnew ConsoleColor(0x00);
+    ConsoleColor^ oldColor = gcnew ConsoleColor(0x00);
     wchar_t symbol[2] = L" ";
+    wchar_t oldSymbol;
     wchar_t currentEscape[256], previousEscape[256];
     wchar_t buff[256];
 
@@ -259,15 +268,24 @@ void ConsoleOutput::paintVT(Canvas ^canvas, bool fast)
     for (int i = 0; i < mRows; i++)
     {
         COORD cc;
-        cc.X = 0;
-        cc.Y = i;
-        SetConsoleCursorPosition(oh, cc);
 
         *previousEscape = 0;
 
         for (int j = 0; j < mColumns; j++)
         {
             canvas->get(i, j, symbol[0], color);
+
+            if (!ignoreOldScreen)
+            {
+                mOldScreen->get(i, j, oldSymbol, oldColor);
+                if (oldSymbol == symbol[0] && oldColor->Equals(color))
+                    continue;
+            }
+
+            cc.X = j;
+            cc.Y = i;
+            SetConsoleCursorPosition(oh, cc);
+
             EscapeCode(color, currentEscape);
             *buff = 0;
 
@@ -277,6 +295,8 @@ void ConsoleOutput::paintVT(Canvas ^canvas, bool fast)
                 wcscpy_s(previousEscape, currentEscape);
             }
             WriteVtSequence(symbol);
+
+            mOldScreen->write(i, j, symbol[0], color);
         }
     }
     cci.bVisible = saveVisible;
@@ -293,7 +313,7 @@ void ConsoleOutput::EscapeCode(ConsoleColor^ color, wchar_t *sequence)
 {
     *sequence = 0;
 
-    if (!color->RGBValid)
+    if (!color->RGBValid || mOutputMode == ConsoleOutputMode::VT)
     {
         short paletteColor = color->PaletteColor;
         short fb = paletteColor & 0xf;

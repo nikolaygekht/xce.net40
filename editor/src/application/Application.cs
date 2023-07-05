@@ -187,6 +187,22 @@ namespace gehtsoft.xce.editor.application
             Encoding forceEncoding = null;
             ConsoleOutputMode outputMode = ConsoleOutputMode.Win32;
 
+            switch (common["output-mode", "win32"])
+            {
+            case    "win32":
+                    outputMode = ConsoleOutputMode.Win32;
+                    break;
+            case    "conemu":
+                    outputMode = ConsoleOutputMode.ConEmu;
+                    break;
+            case    "vt":
+                    outputMode = ConsoleOutputMode.VT;
+                    break;
+            case    "vttc":
+                    outputMode = ConsoleOutputMode.VTTC;
+                    break;
+            }
+
             foreach (string s in commandLine)
             {
                 if (s[0] == '/' && s[1] == 'r' && s[2] == ':')
@@ -223,6 +239,10 @@ namespace gehtsoft.xce.editor.application
                 else if (s == "/vt")
                 {
                     outputMode = ConsoleOutputMode.VT;
+                }
+                else if (s == "/vttc")
+                {
+                    outputMode = ConsoleOutputMode.VTTC;
                 }
                 else
                 {

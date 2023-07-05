@@ -13,6 +13,7 @@ public enum class ConsoleOutputMode
     Win32,      //pure win32 mode
     ConEmu,     //con emu true color mode
     VT,         //VT terminal
+    VTTC,       //VT terminal with true color support
 };
 
 
@@ -48,6 +49,8 @@ public ref class ConsoleOutput
     void paintVT(Canvas ^canvas, bool fast);
     void EscapeCode(ConsoleColor^ color, wchar_t *sequence);
     void WriteVtSequence(wchar_t *buffer);
+
+    Canvas ^mOldScreen;
  public:
     ConsoleOutput(bool save);
     ConsoleOutput(bool save, ConsoleOutputMode outputMode);

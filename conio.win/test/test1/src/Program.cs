@@ -35,6 +35,8 @@ namespace test1
                 mode = ConsoleOutputMode.Win32;
             if (args.Length > 0 && args[0] == "vt")
                 mode = ConsoleOutputMode.VT;
+            if (args.Length > 0 && args[0] == "vttc")
+                mode = ConsoleOutputMode.VTTC;
 
             mManager = new WindowManager(true, mode);
             mManager.FastDrawMode = false;

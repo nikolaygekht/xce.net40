@@ -85,6 +85,18 @@ void ConsoleColor::Style::set(int v)
     mStyle = v;
 }
 
+bool ConsoleColor::Equals(ConsoleColor ^other)
+{
+    if (other == nullptr)
+        return false;
+    if (mPalColor != other->mPalColor ||
+        mRGBFg != other->mRGBFg ||
+        mRGBBg != other->mRGBBg ||
+        mStyle != other->mStyle)
+        return false;
+    return true;
+}
+
 BoxBorder::BoxBorder(wchar_t topLeft, wchar_t top, wchar_t topRight, wchar_t left, wchar_t right, wchar_t bottomLeft, wchar_t bottom, wchar_t bottomRight)
 {
     mTopLeft = topLeft;

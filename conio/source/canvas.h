@@ -47,6 +47,8 @@ public ref class ConsoleColor
     }
 
     static int rgb(int red, int green, int blue);
+
+    bool Equals(ConsoleColor^ other);
 };
 
 public ref class BoxBorder
